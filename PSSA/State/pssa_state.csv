@@ -1,213 +1,849 @@
-Subject,Grade,Scored,Advanced,Proficient,Basic,BelowBasic,Year
-English Language Arts,3,125160,13,49,24.6,13.4,2015
-English Language Arts,4,123986,21.6,37,28.5,12.9,2015
-English Language Arts,5,126501,17.8,44.1,24.8,13.4,2015
-English Language Arts,6,126331,21.3,39.4,29.4,10,2015
-English Language Arts,7,126228,16.9,41.7,34.9,6.4,2015
-English Language Arts,8,128889,14.5,43.5,31.1,10.9,2015
-English Language Arts,State Total,757095,17.5,42.5,28.9,11.2,2015
-English Language Arts,3,69526,5.2,39.9,32.7,22.2,2015
-English Language Arts,4,67963,9.1,30.4,38.3,22.1,2015
-English Language Arts,5,67808,7,35.6,34,23.3,2015
-English Language Arts,6,65806,8.6,31.9,41.4,18,2015
-English Language Arts,7,65009,6.4,32.2,49.7,11.8,2015
-English Language Arts,8,64420,5,32.4,42.6,20,2015
-English Language Arts,State Total,400532,6.9,33.8,39.7,19.6,2015
-Math,3,125309,20,28.5,23.5,28,2015
-Math,4,124201,16.9,27.5,30.8,24.8,2015
-Math,5,126683,15.4,27.4,31.3,25.9,2015
-Math,6,126413,11.3,28.4,35.1,25.2,2015
-Math,7,126299,9.6,23.4,33.4,33.5,2015
-Math,8,128859,8,21.8,32.6,37.7,2015
-Math,State Total,757764,13.5,26.1,31.1,29.2,2015
-Math,3,69656,9.3,21.9,26.3,42.5,2015
-Math,4,68114,7,19.5,34.7,38.8,2015
-Math,5,67948,5.7,18.6,34.5,41.2,2015
-Math,6,65863,3.6,17.4,38,41,2015
-Math,7,65081,3.1,12.9,32.1,51.9,2015
-Math,8,64405,2.4,11.2,29,57.4,2015
-Math,State Total,401067,5.2,17,32.4,45.3,2015
-Science,4,124309,41.2,36.1,12.2,10.5,2015
-Science,8,128733,27,31.8,18.1,23.2,2015
-Science,State Total,253042,33.9,33.9,15.2,17,2015
-Science,4,68354,24,39.6,18.5,17.9,2015
-Science,8,64488,12.4,25.8,22.2,39.5,2015
-Science,State Total,132842,18.4,32.9,20.3,28.4,2015
-English Language Arts,3,125284,15.2,45.7,25.5,13.6,2016
-English Language Arts,4,123597,24.6,34,29.1,12.2,2016
-English Language Arts,5,122868,16.2,45.3,24.5,14.1,2016
-English Language Arts,6,125263,22.7,38.9,29.8,8.6,2016
-English Language Arts,7,124961,18.1,43.3,33.5,5,2016
-English Language Arts,8,123275,17.5,40.9,30.4,11.3,2016
-English Language Arts,Total,745248,19.1,41.4,28.8,10.8,2016
-English Language Arts,3,70844,6.3,37.5,33.9,22.4,2016
-English Language Arts,4,68712,11.4,29.1,38.8,20.7,2016
-English Language Arts,5,66552,6,36.1,33.7,24.2,2016
-English Language Arts,6,66123,9.6,32.6,42.4,15.5,2016
-English Language Arts,7,64131,6.7,34.6,49.4,9.3,2016
-English Language Arts,8,62474,7,31.5,41.3,20.2,2016
-English Language Arts,Total,398836,7.8,33.6,39.8,18.8,2016
-Math,3,125420,26.3,28.1,21,24.6,2016
-Math,4,123940,19.8,26.7,25.9,27.6,2016
-Math,5,122983,18.5,25.9,27.6,28,2016
-Math,6,125305,16.9,24.1,28.8,30.1,2016
-Math,7,124959,13.3,23.7,28.1,34.9,2016
-Math,8,123175,10.5,20.7,28.6,40.2,2016
-Math,Total,745782,17.6,24.9,26.7,30.9,2016
-Math,3,70954,13.5,23.8,24.6,38.1,2016
-Math,4,68964,8.8,20.1,28.5,42.6,2016
-Math,5,66664,7.4,18.2,30.4,44,2016
-Math,6,66173,6.2,15.6,30.2,47.9,2016
-Math,7,64128,4.5,13.9,27.5,54.1,2016
-Math,8,62452,3.5,11.2,24.9,60.4,2016
-Math,Total,399335,7.4,17.3,27.7,47.6,2016
-Science,4,123818,39.5,36.7,12.2,11.7,2016
-Science,8,122955,27.3,30.3,16.8,25.6,2016
-Science,Total,246773,33.4,33.5,14.5,18.6,2016
-Science,4,68862,23.6,39.1,18,19.3,2016
-Science,8,62310,12.9,24.7,20.1,42.3,2016
-Science,Total,131172,18.5,32.3,19,30.2,2016
-Math,07,125744,19.3,40.1,36.9,3.6,2017
-Math,08,123653,15.9,42.9,30.6,10.5,2017
-Math,Total,746873,19.42606038777677,41.744178729181534,29.578924395446084,9.250836487595615,2017
-Math,03,72264,7.7,40.9,31.6,19.7,2017
-Math,04,71245,12.6,31,38.2,18.2,2017
-Math,05,69039,6.6,34.6,39.3,19.5,2017
-English Language Arts,04,125575,18.1,28.5,27.3,26.1,2017
-English Language Arts,05,124405,16.2,27.5,31.4,24.8,2017
-English Language Arts,06,123112,14.1,26.1,30.6,29.1,2017
-English Language Arts,07,125584,15.7,22.1,25.2,37,2017
-English Language Arts,08,123271,10.6,21.9,27.8,39.7,2017
-English Language Arts,Total,747152,16.82442126903227,25.76048782577039,27.006552883482883,30.40853802171446,2017
-Science,Total,409390,7.370478028285985,17.998974083392362,28.39883729451135,46.231710593810305,2017
-Science,04,71414,18.5,42.4,30.3,8.8,2017
-English Language Arts,3,122397,19.1,44.4,26.1,10.4,2018
-English Language Arts,4,126223,25.1,34.7,30.6,9.7,2018
-English Language Arts,5,126761,14,45.4,31.7,8.9,2018
-English Language Arts,6,125341,26.2,36.3,32.2,5.3,2018
-English Language Arts,7,124226,17.7,44.3,35.5,2.5,2018
-English Language Arts,8,124907,14.4,47.1,30.6,7.8,2018
-English Language Arts,Total,749855,19.4,42,31.1,7.4,2018
-English Language Arts,3,70883,9.4,38.6,35.2,16.8,2018
-English Language Arts,4,72756,12.4,30.5,41.2,15.9,2018
-English Language Arts,5,71036,5.6,35.9,43.6,14.9,2018
-English Language Arts,6,68267,12.6,31.9,46.3,9.1,2018
-English Language Arts,7,66294,7.7,36,51.8,4.5,2018
-English Language Arts,8,64858,5.9,36.7,43.6,13.7,2018
-English Language Arts,Total,414094,9,34.9,43.5,12.6,2018
-Math,3,122563,22.7,31.4,21.4,24.5,2018
-Math,4,126481,17.8,25.8,26.7,29.8,2018
-Math,5,126868,17.8,27.4,26.1,28.7,2018
-Math,6,125385,14.7,24.8,30.8,29.7,2018
-Math,7,124225,16.2,22.8,23.3,37.8,2018
-Math,8,124780,10.8,20.2,27.9,41.1,2018
-Math,Total,750302,16.6,25.4,26.1,31.9,2018
-Math,3,71019,11.3,26.4,25.3,37,2018
-Math,4,72964,8.1,18.6,29,44.3,2018
-Math,5,71108,7.8,19.9,28.8,43.5,2018
-Math,6,68324,5.7,16.1,32.5,45.6,2018
-Math,7,66288,6.4,14.1,22.5,56.9,2018
-Math,8,64792,4.1,11.2,24.2,60.5,2018
-Math,Total,414495,7.3,17.9,27.1,47.7,2018
-Science,4,126353,35.8,39.7,19.1,5.4,2018
-Science,8,124417,20.4,33.5,23.9,22.2,2018
-Science,Total,250770,28.1,36.6,21.5,13.8,2018
-Science,4,72860,20.8,42,28.3,8.9,2018
-Science,8,64533,9.2,25.6,29.2,35.9,2018
-Science,Total,137393,15.4,34.3,28.7,21.6,2018
-English Language Arts,3,120564,16.5,45.4,26.6,11.4,2019
-English Language Arts,4,123172,27.3,36.3,26.1,10.3,2019
-English Language Arts,5,127550,15.8,42.7,31.8,9.6,2019
-English Language Arts,6,127560,20.8,42.2,31.3,5.7,2019
-English Language Arts,7,125998,14.9,45.6,36.9,2.6,2019
-English Language Arts,8,123503,16,41.9,30.2,11.9,2019
-English Language Arts,Total,748347,18.5384587631139,42.35227775350205,30.54679179578458,8.56247168759947,2019
-English Language Arts,3,68464,7.3,38.4,35.7,18.6,2019
-English Language Arts,4,69775,14,32.8,36.1,17.1,2019
-English Language Arts,5,70850,6.4,34.5,43,16.1,2019
-English Language Arts,6,68680,9.2,35.8,45.1,9.9,2019
-English Language Arts,7,65928,5.8,36.3,53.2,4.7,2019
-English Language Arts,8,63398,6.3,31.8,40.9,21,2019
-English Language Arts,Total,407095,8.206929586460163,34.955477222761274,42.27047740699346,14.567115783785113,2019
-Math,3,120604,26.7,29.3,21.6,22.4,2019
-Math,4,123286,19,27.2,27.7,26.1,2019
-Math,5,127592,15.8,27.2,33.7,23.3,2019
-Math,6,127496,15.8,23.2,35.1,25.9,2019
-Math,7,125808,13.9,24.3,26,35.8,2019
-Math,8,123186,9.9,22.3,28.2,39.6,2019
-Math,Total,747972,16.80143106961223,25.56432593733455,28.796265100832652,28.83797789222056,2019
-Math,3,68512,13.8,25.5,26.3,34.4,2019
-Math,4,69869,8.4,20.5,31.3,39.8,2019
-Math,5,70877,6.4,19,38.4,36.2,2019
-Math,6,68624,6,14.9,38.4,40.7,2019
-Math,7,65801,4.8,14.7,25.7,54.7,2019
-Math,8,63194,3.3,12.1,25.2,59.4,2019
-Math,Total,406877,7.19332869638736,17.910080933549942,31.030999540401645,43.86559082966105,2019
-Science,4,123093,38.8,39,17.2,5,2019
-Science,8,122654,23.1,35.1,21.9,20,2019
-Science,Total,245747,30.923673534163182,37.07552889760608,19.510309383227465,12.490488185003276,2019
-Science,4,69755,23.5,42.3,25.9,8.3,2019
-Science,8,62840,10.4,28.4,28,33.2,2019
-Science,Total,132595,17.288736377691468,35.712508013122665,26.918812926580944,20.079942682604926,2019
-English Language Arts,3,90980,14.2,44.1,27.7,14,2021
-English Language Arts,3,47137,5.7,34.1,36.4,23.8,2021
-English Language Arts,4,91862,21.4,35.2,31.5,11.9,2021
-English Language Arts,4,47316,9.7,28,41.4,20.9,2021
-English Language Arts,5,91028,8.6,46.4,34.4,10.6,2021
-English Language Arts,5,46136,2.8,32.9,45.2,19.1,2021
-English Language Arts,6,90232,17.5,39.8,35.6,7.1,2021
-English Language Arts,6,45115,6.8,30.1,49.9,13.1,2021
-English Language Arts,7,90515,9.8,43.5,42.8,3.9,2021
-English Language Arts,7,44350,3.3,30,59.4,7.3,2021
-English Language Arts,8,85686,10.9,41.7,36,11.4,2021
-English Language Arts,8,40649,3.9,28.7,46.6,20.7,2021
-Math,3,91693,17.8,29.5,21.7,31,2021
-Math,3,47786,7.3,21.2,23.3,48.2,2021
-Math,4,92387,12.1,23.4,30.6,33.9,2021
-Math,4,47777,4.4,13.9,29.6,52.1,2021
-Math,5,90866,11.8,24.3,32.6,31.3,2021
-Math,5,46073,4.1,14.4,32.6,49,2021
-Math,6,90563,7.6,20.6,36.6,35.1,2021
-Math,6,45481,2.2,10.2,33.4,54.2,2021
-Math,7,90812,8.1,18.8,27.1,46.1,2021
-Math,7,44736,2.4,9,21.8,66.9,2021
-Math,8,85253,6.3,15.8,24.5,53.5,2021
-Math,8,40462,1.9,7,17,74.1,2021
-Science,4,91071,32.3,43.5,16.6,7.6,2021
-Science,4,46669,17.6,44,25.2,13.3,2021
-Science,8,84244,19.6,31.2,22.5,26.7,2021
-Science,8,39842,8.4,22.4,25.3,43.9,2021
-English Language Arts,3,114398,11.8,40.6,29.7,17.9,2022
-English Language Arts,4,114533,21.3,30.9,29.2,18.6,2022
-English Language Arts,5,116274,13.3,40.3,28.7,17.7,2022
-English Language Arts,6,115785,19.4,36.7,35.6,8.3,2022
-English Language Arts,7,118352,17.8,39.5,37.7,5.1,2022
-English Language Arts,8,119366,16,39.7,29.9,14.4,2022
-English Language Arts,Total,698708,16.6,38,31.8,13.6,2022
-English Language Arts,3,64680,4.8,30.4,36.7,28.1,2022
-English Language Arts,4,64544,9.7,24.5,35.9,29.9,2022
-English Language Arts,5,64285,5.1,30.2,35.7,29.1,2022
-English Language Arts,6,63016,8.6,29.6,47.5,14.3,2022
-English Language Arts,7,63641,7.5,31.6,52.2,8.8,2022
-English Language Arts,8,62684,6.6,30.7,38.6,24,2022
-English Language Arts,Total,382850,7,29.5,41.1,22.4,2022
-Math,3,114714,20.9,26.9,23.4,28.9,2022
-Math,4,114822,17,25.3,26.8,30.9,2022
-Math,5,116489,12.2,23.3,33.5,31.1,2022
-Math,6,115844,13.3,18.9,28.8,38.9,2022
-Math,7,118357,9.7,17.4,30,43,2022
-Math,8,119039,6.8,15.7,27.1,50.3,2022
-Math,Total,699265,13.2,21.2,28.3,37.3,2022
-Math,3,64984,9.4,20.6,26.2,43.8,2022
-Math,4,64836,7.1,17.7,28.8,46.4,2022
-Math,5,64452,4.4,14.1,34.4,47.1,2022
-Math,6,63114,4.6,10.9,27.1,57.4,2022
-Math,7,63713,3.2,9.2,26,61.7,2022
-Math,8,62546,2.2,7.4,20.5,69.9,2022
-Math,Total,383645,5.2,13.4,27.2,54.3,2022
-Science,4,114497,37.2,36.5,18.3,8,2022
-Science,8,118412,20.1,31,20.6,28.3,2022
-Science,Total,232909,28.5,33.7,19.5,18.3,2022
-Science,4,64571,21.4,38.5,27,13.2,2022
-Science,8,62084,9.2,23.4,23.7,43.7,2022
-Science,Total,126655,15.4,31.1,25.3,28.2,2022
+Subject,Grade,Scored,Year,Baseline,Score
+English Language Arts,3,125160,2015,Advanced,13
+English Language Arts,4,123986,2015,Advanced,21.6
+English Language Arts,5,126501,2015,Advanced,17.8
+English Language Arts,6,126331,2015,Advanced,21.3
+English Language Arts,7,126228,2015,Advanced,16.9
+English Language Arts,8,128889,2015,Advanced,14.5
+English Language Arts,State Total,757095,2015,Advanced,17.5
+English Language Arts,3,69526,2015,Advanced,5.2
+English Language Arts,4,67963,2015,Advanced,9.1
+English Language Arts,5,67808,2015,Advanced,7
+English Language Arts,6,65806,2015,Advanced,8.6
+English Language Arts,7,65009,2015,Advanced,6.4
+English Language Arts,8,64420,2015,Advanced,5
+English Language Arts,State Total,400532,2015,Advanced,6.9
+Math,3,125309,2015,Advanced,20
+Math,4,124201,2015,Advanced,16.9
+Math,5,126683,2015,Advanced,15.4
+Math,6,126413,2015,Advanced,11.3
+Math,7,126299,2015,Advanced,9.6
+Math,8,128859,2015,Advanced,8
+Math,State Total,757764,2015,Advanced,13.5
+Math,3,69656,2015,Advanced,9.3
+Math,4,68114,2015,Advanced,7
+Math,5,67948,2015,Advanced,5.7
+Math,6,65863,2015,Advanced,3.6
+Math,7,65081,2015,Advanced,3.1
+Math,8,64405,2015,Advanced,2.4
+Math,State Total,401067,2015,Advanced,5.2
+Science,4,124309,2015,Advanced,41.2
+Science,8,128733,2015,Advanced,27
+Science,State Total,253042,2015,Advanced,33.9
+Science,4,68354,2015,Advanced,24
+Science,8,64488,2015,Advanced,12.4
+Science,State Total,132842,2015,Advanced,18.4
+English Language Arts,3,125160,2015,Proficient,49
+English Language Arts,4,123986,2015,Proficient,37
+English Language Arts,5,126501,2015,Proficient,44.1
+English Language Arts,6,126331,2015,Proficient,39.4
+English Language Arts,7,126228,2015,Proficient,41.7
+English Language Arts,8,128889,2015,Proficient,43.5
+English Language Arts,State Total,757095,2015,Proficient,42.5
+English Language Arts,3,69526,2015,Proficient,39.9
+English Language Arts,4,67963,2015,Proficient,30.4
+English Language Arts,5,67808,2015,Proficient,35.6
+English Language Arts,6,65806,2015,Proficient,31.9
+English Language Arts,7,65009,2015,Proficient,32.2
+English Language Arts,8,64420,2015,Proficient,32.4
+English Language Arts,State Total,400532,2015,Proficient,33.8
+Math,3,125309,2015,Proficient,28.5
+Math,4,124201,2015,Proficient,27.5
+Math,5,126683,2015,Proficient,27.4
+Math,6,126413,2015,Proficient,28.4
+Math,7,126299,2015,Proficient,23.4
+Math,8,128859,2015,Proficient,21.8
+Math,State Total,757764,2015,Proficient,26.1
+Math,3,69656,2015,Proficient,21.9
+Math,4,68114,2015,Proficient,19.5
+Math,5,67948,2015,Proficient,18.6
+Math,6,65863,2015,Proficient,17.4
+Math,7,65081,2015,Proficient,12.9
+Math,8,64405,2015,Proficient,11.2
+Math,State Total,401067,2015,Proficient,17
+Science,4,124309,2015,Proficient,36.1
+Science,8,128733,2015,Proficient,31.8
+Science,State Total,253042,2015,Proficient,33.9
+Science,4,68354,2015,Proficient,39.6
+Science,8,64488,2015,Proficient,25.8
+Science,State Total,132842,2015,Proficient,32.9
+English Language Arts,3,125160,2015,Basic,24.6
+English Language Arts,4,123986,2015,Basic,28.5
+English Language Arts,5,126501,2015,Basic,24.8
+English Language Arts,6,126331,2015,Basic,29.4
+English Language Arts,7,126228,2015,Basic,34.9
+English Language Arts,8,128889,2015,Basic,31.1
+English Language Arts,State Total,757095,2015,Basic,28.9
+English Language Arts,3,69526,2015,Basic,32.7
+English Language Arts,4,67963,2015,Basic,38.3
+English Language Arts,5,67808,2015,Basic,34
+English Language Arts,6,65806,2015,Basic,41.4
+English Language Arts,7,65009,2015,Basic,49.7
+English Language Arts,8,64420,2015,Basic,42.6
+English Language Arts,State Total,400532,2015,Basic,39.7
+Math,3,125309,2015,Basic,23.5
+Math,4,124201,2015,Basic,30.8
+Math,5,126683,2015,Basic,31.3
+Math,6,126413,2015,Basic,35.1
+Math,7,126299,2015,Basic,33.4
+Math,8,128859,2015,Basic,32.6
+Math,State Total,757764,2015,Basic,31.1
+Math,3,69656,2015,Basic,26.3
+Math,4,68114,2015,Basic,34.7
+Math,5,67948,2015,Basic,34.5
+Math,6,65863,2015,Basic,38
+Math,7,65081,2015,Basic,32.1
+Math,8,64405,2015,Basic,29
+Math,State Total,401067,2015,Basic,32.4
+Science,4,124309,2015,Basic,12.2
+Science,8,128733,2015,Basic,18.1
+Science,State Total,253042,2015,Basic,15.2
+Science,4,68354,2015,Basic,18.5
+Science,8,64488,2015,Basic,22.2
+Science,State Total,132842,2015,Basic,20.3
+English Language Arts,3,125160,2015,BelowBasic,13.4
+English Language Arts,4,123986,2015,BelowBasic,12.9
+English Language Arts,5,126501,2015,BelowBasic,13.4
+English Language Arts,6,126331,2015,BelowBasic,10
+English Language Arts,7,126228,2015,BelowBasic,6.4
+English Language Arts,8,128889,2015,BelowBasic,10.9
+English Language Arts,State Total,757095,2015,BelowBasic,11.2
+English Language Arts,3,69526,2015,BelowBasic,22.2
+English Language Arts,4,67963,2015,BelowBasic,22.1
+English Language Arts,5,67808,2015,BelowBasic,23.3
+English Language Arts,6,65806,2015,BelowBasic,18
+English Language Arts,7,65009,2015,BelowBasic,11.8
+English Language Arts,8,64420,2015,BelowBasic,20
+English Language Arts,State Total,400532,2015,BelowBasic,19.6
+Math,3,125309,2015,BelowBasic,28
+Math,4,124201,2015,BelowBasic,24.8
+Math,5,126683,2015,BelowBasic,25.9
+Math,6,126413,2015,BelowBasic,25.2
+Math,7,126299,2015,BelowBasic,33.5
+Math,8,128859,2015,BelowBasic,37.7
+Math,State Total,757764,2015,BelowBasic,29.2
+Math,3,69656,2015,BelowBasic,42.5
+Math,4,68114,2015,BelowBasic,38.8
+Math,5,67948,2015,BelowBasic,41.2
+Math,6,65863,2015,BelowBasic,41
+Math,7,65081,2015,BelowBasic,51.9
+Math,8,64405,2015,BelowBasic,57.4
+Math,State Total,401067,2015,BelowBasic,45.3
+Science,4,124309,2015,BelowBasic,10.5
+Science,8,128733,2015,BelowBasic,23.2
+Science,State Total,253042,2015,BelowBasic,17
+Science,4,68354,2015,BelowBasic,17.9
+Science,8,64488,2015,BelowBasic,39.5
+Science,State Total,132842,2015,BelowBasic,28.4
+English Language Arts,3,125284,2016,Advanced,15.2
+English Language Arts,4,123597,2016,Advanced,24.6
+English Language Arts,5,122868,2016,Advanced,16.2
+English Language Arts,6,125263,2016,Advanced,22.7
+English Language Arts,7,124961,2016,Advanced,18.1
+English Language Arts,8,123275,2016,Advanced,17.5
+English Language Arts,Total,745248,2016,Advanced,19.1
+English Language Arts,3,70844,2016,Advanced,6.3
+English Language Arts,4,68712,2016,Advanced,11.4
+English Language Arts,5,66552,2016,Advanced,6
+English Language Arts,6,66123,2016,Advanced,9.6
+English Language Arts,7,64131,2016,Advanced,6.7
+English Language Arts,8,62474,2016,Advanced,7
+English Language Arts,Total,398836,2016,Advanced,7.8
+Math,3,125420,2016,Advanced,26.3
+Math,4,123940,2016,Advanced,19.8
+Math,5,122983,2016,Advanced,18.5
+Math,6,125305,2016,Advanced,16.9
+Math,7,124959,2016,Advanced,13.3
+Math,8,123175,2016,Advanced,10.5
+Math,Total,745782,2016,Advanced,17.6
+Math,3,70954,2016,Advanced,13.5
+Math,4,68964,2016,Advanced,8.8
+Math,5,66664,2016,Advanced,7.4
+Math,6,66173,2016,Advanced,6.2
+Math,7,64128,2016,Advanced,4.5
+Math,8,62452,2016,Advanced,3.5
+Math,Total,399335,2016,Advanced,7.4
+Science,4,123818,2016,Advanced,39.5
+Science,8,122955,2016,Advanced,27.3
+Science,Total,246773,2016,Advanced,33.4
+Science,4,68862,2016,Advanced,23.6
+Science,8,62310,2016,Advanced,12.9
+Science,Total,131172,2016,Advanced,18.5
+English Language Arts,3,125284,2016,Proficient,45.7
+English Language Arts,4,123597,2016,Proficient,34
+English Language Arts,5,122868,2016,Proficient,45.3
+English Language Arts,6,125263,2016,Proficient,38.9
+English Language Arts,7,124961,2016,Proficient,43.3
+English Language Arts,8,123275,2016,Proficient,40.9
+English Language Arts,Total,745248,2016,Proficient,41.4
+English Language Arts,3,70844,2016,Proficient,37.5
+English Language Arts,4,68712,2016,Proficient,29.1
+English Language Arts,5,66552,2016,Proficient,36.1
+English Language Arts,6,66123,2016,Proficient,32.6
+English Language Arts,7,64131,2016,Proficient,34.6
+English Language Arts,8,62474,2016,Proficient,31.5
+English Language Arts,Total,398836,2016,Proficient,33.6
+Math,3,125420,2016,Proficient,28.1
+Math,4,123940,2016,Proficient,26.7
+Math,5,122983,2016,Proficient,25.9
+Math,6,125305,2016,Proficient,24.1
+Math,7,124959,2016,Proficient,23.7
+Math,8,123175,2016,Proficient,20.7
+Math,Total,745782,2016,Proficient,24.9
+Math,3,70954,2016,Proficient,23.8
+Math,4,68964,2016,Proficient,20.1
+Math,5,66664,2016,Proficient,18.2
+Math,6,66173,2016,Proficient,15.6
+Math,7,64128,2016,Proficient,13.9
+Math,8,62452,2016,Proficient,11.2
+Math,Total,399335,2016,Proficient,17.3
+Science,4,123818,2016,Proficient,36.7
+Science,8,122955,2016,Proficient,30.3
+Science,Total,246773,2016,Proficient,33.5
+Science,4,68862,2016,Proficient,39.1
+Science,8,62310,2016,Proficient,24.7
+Science,Total,131172,2016,Proficient,32.3
+English Language Arts,3,125284,2016,Basic,25.5
+English Language Arts,4,123597,2016,Basic,29.1
+English Language Arts,5,122868,2016,Basic,24.5
+English Language Arts,6,125263,2016,Basic,29.8
+English Language Arts,7,124961,2016,Basic,33.5
+English Language Arts,8,123275,2016,Basic,30.4
+English Language Arts,Total,745248,2016,Basic,28.8
+English Language Arts,3,70844,2016,Basic,33.9
+English Language Arts,4,68712,2016,Basic,38.8
+English Language Arts,5,66552,2016,Basic,33.7
+English Language Arts,6,66123,2016,Basic,42.4
+English Language Arts,7,64131,2016,Basic,49.4
+English Language Arts,8,62474,2016,Basic,41.3
+English Language Arts,Total,398836,2016,Basic,39.8
+Math,3,125420,2016,Basic,21
+Math,4,123940,2016,Basic,25.9
+Math,5,122983,2016,Basic,27.6
+Math,6,125305,2016,Basic,28.8
+Math,7,124959,2016,Basic,28.1
+Math,8,123175,2016,Basic,28.6
+Math,Total,745782,2016,Basic,26.7
+Math,3,70954,2016,Basic,24.6
+Math,4,68964,2016,Basic,28.5
+Math,5,66664,2016,Basic,30.4
+Math,6,66173,2016,Basic,30.2
+Math,7,64128,2016,Basic,27.5
+Math,8,62452,2016,Basic,24.9
+Math,Total,399335,2016,Basic,27.7
+Science,4,123818,2016,Basic,12.2
+Science,8,122955,2016,Basic,16.8
+Science,Total,246773,2016,Basic,14.5
+Science,4,68862,2016,Basic,18
+Science,8,62310,2016,Basic,20.1
+Science,Total,131172,2016,Basic,19
+English Language Arts,3,125284,2016,BelowBasic,13.6
+English Language Arts,4,123597,2016,BelowBasic,12.2
+English Language Arts,5,122868,2016,BelowBasic,14.1
+English Language Arts,6,125263,2016,BelowBasic,8.6
+English Language Arts,7,124961,2016,BelowBasic,5
+English Language Arts,8,123275,2016,BelowBasic,11.3
+English Language Arts,Total,745248,2016,BelowBasic,10.8
+English Language Arts,3,70844,2016,BelowBasic,22.4
+English Language Arts,4,68712,2016,BelowBasic,20.7
+English Language Arts,5,66552,2016,BelowBasic,24.2
+English Language Arts,6,66123,2016,BelowBasic,15.5
+English Language Arts,7,64131,2016,BelowBasic,9.3
+English Language Arts,8,62474,2016,BelowBasic,20.2
+English Language Arts,Total,398836,2016,BelowBasic,18.8
+Math,3,125420,2016,BelowBasic,24.6
+Math,4,123940,2016,BelowBasic,27.6
+Math,5,122983,2016,BelowBasic,28
+Math,6,125305,2016,BelowBasic,30.1
+Math,7,124959,2016,BelowBasic,34.9
+Math,8,123175,2016,BelowBasic,40.2
+Math,Total,745782,2016,BelowBasic,30.9
+Math,3,70954,2016,BelowBasic,38.1
+Math,4,68964,2016,BelowBasic,42.6
+Math,5,66664,2016,BelowBasic,44
+Math,6,66173,2016,BelowBasic,47.9
+Math,7,64128,2016,BelowBasic,54.1
+Math,8,62452,2016,BelowBasic,60.4
+Math,Total,399335,2016,BelowBasic,47.6
+Science,4,123818,2016,BelowBasic,11.7
+Science,8,122955,2016,BelowBasic,25.6
+Science,Total,246773,2016,BelowBasic,18.6
+Science,4,68862,2016,BelowBasic,19.3
+Science,8,62310,2016,BelowBasic,42.3
+Science,Total,131172,2016,BelowBasic,30.2
+Math,07,125744,2017,Advanced,19.3
+Math,08,123653,2017,Advanced,15.9
+Math,Total,746873,2017,Advanced,19.42606038777677
+Math,03,72264,2017,Advanced,7.7
+Math,04,71245,2017,Advanced,12.6
+Math,05,69039,2017,Advanced,6.6
+English Language Arts,04,125575,2017,Advanced,18.1
+English Language Arts,05,124405,2017,Advanced,16.2
+English Language Arts,06,123112,2017,Advanced,14.1
+English Language Arts,07,125584,2017,Advanced,15.7
+English Language Arts,08,123271,2017,Advanced,10.6
+English Language Arts,Total,747152,2017,Advanced,16.82442126903227
+Science,Total,409390,2017,Advanced,7.370478028285985
+Science,04,71414,2017,Advanced,18.5
+Math,07,125744,2017,Proficient,40.1
+Math,08,123653,2017,Proficient,42.9
+Math,Total,746873,2017,Proficient,41.744178729181534
+Math,03,72264,2017,Proficient,40.9
+Math,04,71245,2017,Proficient,31
+Math,05,69039,2017,Proficient,34.6
+English Language Arts,04,125575,2017,Proficient,28.5
+English Language Arts,05,124405,2017,Proficient,27.5
+English Language Arts,06,123112,2017,Proficient,26.1
+English Language Arts,07,125584,2017,Proficient,22.1
+English Language Arts,08,123271,2017,Proficient,21.9
+English Language Arts,Total,747152,2017,Proficient,25.76048782577039
+Science,Total,409390,2017,Proficient,17.998974083392362
+Science,04,71414,2017,Proficient,42.4
+Math,07,125744,2017,Basic,36.9
+Math,08,123653,2017,Basic,30.6
+Math,Total,746873,2017,Basic,29.578924395446084
+Math,03,72264,2017,Basic,31.6
+Math,04,71245,2017,Basic,38.2
+Math,05,69039,2017,Basic,39.3
+English Language Arts,04,125575,2017,Basic,27.3
+English Language Arts,05,124405,2017,Basic,31.4
+English Language Arts,06,123112,2017,Basic,30.6
+English Language Arts,07,125584,2017,Basic,25.2
+English Language Arts,08,123271,2017,Basic,27.8
+English Language Arts,Total,747152,2017,Basic,27.006552883482883
+Science,Total,409390,2017,Basic,28.39883729451135
+Science,04,71414,2017,Basic,30.3
+Math,07,125744,2017,BelowBasic,3.6
+Math,08,123653,2017,BelowBasic,10.5
+Math,Total,746873,2017,BelowBasic,9.250836487595615
+Math,03,72264,2017,BelowBasic,19.7
+Math,04,71245,2017,BelowBasic,18.2
+Math,05,69039,2017,BelowBasic,19.5
+English Language Arts,04,125575,2017,BelowBasic,26.1
+English Language Arts,05,124405,2017,BelowBasic,24.8
+English Language Arts,06,123112,2017,BelowBasic,29.1
+English Language Arts,07,125584,2017,BelowBasic,37
+English Language Arts,08,123271,2017,BelowBasic,39.7
+English Language Arts,Total,747152,2017,BelowBasic,30.40853802171446
+Science,Total,409390,2017,BelowBasic,46.231710593810305
+Science,04,71414,2017,BelowBasic,8.8
+English Language Arts,3,122397,2018,Advanced,19.1
+English Language Arts,4,126223,2018,Advanced,25.1
+English Language Arts,5,126761,2018,Advanced,14
+English Language Arts,6,125341,2018,Advanced,26.2
+English Language Arts,7,124226,2018,Advanced,17.7
+English Language Arts,8,124907,2018,Advanced,14.4
+English Language Arts,Total,749855,2018,Advanced,19.4
+English Language Arts,3,70883,2018,Advanced,9.4
+English Language Arts,4,72756,2018,Advanced,12.4
+English Language Arts,5,71036,2018,Advanced,5.6
+English Language Arts,6,68267,2018,Advanced,12.6
+English Language Arts,7,66294,2018,Advanced,7.7
+English Language Arts,8,64858,2018,Advanced,5.9
+English Language Arts,Total,414094,2018,Advanced,9
+Math,3,122563,2018,Advanced,22.7
+Math,4,126481,2018,Advanced,17.8
+Math,5,126868,2018,Advanced,17.8
+Math,6,125385,2018,Advanced,14.7
+Math,7,124225,2018,Advanced,16.2
+Math,8,124780,2018,Advanced,10.8
+Math,Total,750302,2018,Advanced,16.6
+Math,3,71019,2018,Advanced,11.3
+Math,4,72964,2018,Advanced,8.1
+Math,5,71108,2018,Advanced,7.8
+Math,6,68324,2018,Advanced,5.7
+Math,7,66288,2018,Advanced,6.4
+Math,8,64792,2018,Advanced,4.1
+Math,Total,414495,2018,Advanced,7.3
+Science,4,126353,2018,Advanced,35.8
+Science,8,124417,2018,Advanced,20.4
+Science,Total,250770,2018,Advanced,28.1
+Science,4,72860,2018,Advanced,20.8
+Science,8,64533,2018,Advanced,9.2
+Science,Total,137393,2018,Advanced,15.4
+English Language Arts,3,122397,2018,Proficient,44.4
+English Language Arts,4,126223,2018,Proficient,34.7
+English Language Arts,5,126761,2018,Proficient,45.4
+English Language Arts,6,125341,2018,Proficient,36.3
+English Language Arts,7,124226,2018,Proficient,44.3
+English Language Arts,8,124907,2018,Proficient,47.1
+English Language Arts,Total,749855,2018,Proficient,42
+English Language Arts,3,70883,2018,Proficient,38.6
+English Language Arts,4,72756,2018,Proficient,30.5
+English Language Arts,5,71036,2018,Proficient,35.9
+English Language Arts,6,68267,2018,Proficient,31.9
+English Language Arts,7,66294,2018,Proficient,36
+English Language Arts,8,64858,2018,Proficient,36.7
+English Language Arts,Total,414094,2018,Proficient,34.9
+Math,3,122563,2018,Proficient,31.4
+Math,4,126481,2018,Proficient,25.8
+Math,5,126868,2018,Proficient,27.4
+Math,6,125385,2018,Proficient,24.8
+Math,7,124225,2018,Proficient,22.8
+Math,8,124780,2018,Proficient,20.2
+Math,Total,750302,2018,Proficient,25.4
+Math,3,71019,2018,Proficient,26.4
+Math,4,72964,2018,Proficient,18.6
+Math,5,71108,2018,Proficient,19.9
+Math,6,68324,2018,Proficient,16.1
+Math,7,66288,2018,Proficient,14.1
+Math,8,64792,2018,Proficient,11.2
+Math,Total,414495,2018,Proficient,17.9
+Science,4,126353,2018,Proficient,39.7
+Science,8,124417,2018,Proficient,33.5
+Science,Total,250770,2018,Proficient,36.6
+Science,4,72860,2018,Proficient,42
+Science,8,64533,2018,Proficient,25.6
+Science,Total,137393,2018,Proficient,34.3
+English Language Arts,3,122397,2018,Basic,26.1
+English Language Arts,4,126223,2018,Basic,30.6
+English Language Arts,5,126761,2018,Basic,31.7
+English Language Arts,6,125341,2018,Basic,32.2
+English Language Arts,7,124226,2018,Basic,35.5
+English Language Arts,8,124907,2018,Basic,30.6
+English Language Arts,Total,749855,2018,Basic,31.1
+English Language Arts,3,70883,2018,Basic,35.2
+English Language Arts,4,72756,2018,Basic,41.2
+English Language Arts,5,71036,2018,Basic,43.6
+English Language Arts,6,68267,2018,Basic,46.3
+English Language Arts,7,66294,2018,Basic,51.8
+English Language Arts,8,64858,2018,Basic,43.6
+English Language Arts,Total,414094,2018,Basic,43.5
+Math,3,122563,2018,Basic,21.4
+Math,4,126481,2018,Basic,26.7
+Math,5,126868,2018,Basic,26.1
+Math,6,125385,2018,Basic,30.8
+Math,7,124225,2018,Basic,23.3
+Math,8,124780,2018,Basic,27.9
+Math,Total,750302,2018,Basic,26.1
+Math,3,71019,2018,Basic,25.3
+Math,4,72964,2018,Basic,29
+Math,5,71108,2018,Basic,28.8
+Math,6,68324,2018,Basic,32.5
+Math,7,66288,2018,Basic,22.5
+Math,8,64792,2018,Basic,24.2
+Math,Total,414495,2018,Basic,27.1
+Science,4,126353,2018,Basic,19.1
+Science,8,124417,2018,Basic,23.9
+Science,Total,250770,2018,Basic,21.5
+Science,4,72860,2018,Basic,28.3
+Science,8,64533,2018,Basic,29.2
+Science,Total,137393,2018,Basic,28.7
+English Language Arts,3,122397,2018,BelowBasic,10.4
+English Language Arts,4,126223,2018,BelowBasic,9.7
+English Language Arts,5,126761,2018,BelowBasic,8.9
+English Language Arts,6,125341,2018,BelowBasic,5.3
+English Language Arts,7,124226,2018,BelowBasic,2.5
+English Language Arts,8,124907,2018,BelowBasic,7.8
+English Language Arts,Total,749855,2018,BelowBasic,7.4
+English Language Arts,3,70883,2018,BelowBasic,16.8
+English Language Arts,4,72756,2018,BelowBasic,15.9
+English Language Arts,5,71036,2018,BelowBasic,14.9
+English Language Arts,6,68267,2018,BelowBasic,9.1
+English Language Arts,7,66294,2018,BelowBasic,4.5
+English Language Arts,8,64858,2018,BelowBasic,13.7
+English Language Arts,Total,414094,2018,BelowBasic,12.6
+Math,3,122563,2018,BelowBasic,24.5
+Math,4,126481,2018,BelowBasic,29.8
+Math,5,126868,2018,BelowBasic,28.7
+Math,6,125385,2018,BelowBasic,29.7
+Math,7,124225,2018,BelowBasic,37.8
+Math,8,124780,2018,BelowBasic,41.1
+Math,Total,750302,2018,BelowBasic,31.9
+Math,3,71019,2018,BelowBasic,37
+Math,4,72964,2018,BelowBasic,44.3
+Math,5,71108,2018,BelowBasic,43.5
+Math,6,68324,2018,BelowBasic,45.6
+Math,7,66288,2018,BelowBasic,56.9
+Math,8,64792,2018,BelowBasic,60.5
+Math,Total,414495,2018,BelowBasic,47.7
+Science,4,126353,2018,BelowBasic,5.4
+Science,8,124417,2018,BelowBasic,22.2
+Science,Total,250770,2018,BelowBasic,13.8
+Science,4,72860,2018,BelowBasic,8.9
+Science,8,64533,2018,BelowBasic,35.9
+Science,Total,137393,2018,BelowBasic,21.6
+English Language Arts,3,120564,2019,Advanced,16.5
+English Language Arts,4,123172,2019,Advanced,27.3
+English Language Arts,5,127550,2019,Advanced,15.8
+English Language Arts,6,127560,2019,Advanced,20.8
+English Language Arts,7,125998,2019,Advanced,14.9
+English Language Arts,8,123503,2019,Advanced,16
+English Language Arts,Total,748347,2019,Advanced,18.5384587631139
+English Language Arts,3,68464,2019,Advanced,7.3
+English Language Arts,4,69775,2019,Advanced,14
+English Language Arts,5,70850,2019,Advanced,6.4
+English Language Arts,6,68680,2019,Advanced,9.2
+English Language Arts,7,65928,2019,Advanced,5.8
+English Language Arts,8,63398,2019,Advanced,6.3
+English Language Arts,Total,407095,2019,Advanced,8.206929586460163
+Math,3,120604,2019,Advanced,26.7
+Math,4,123286,2019,Advanced,19
+Math,5,127592,2019,Advanced,15.8
+Math,6,127496,2019,Advanced,15.8
+Math,7,125808,2019,Advanced,13.9
+Math,8,123186,2019,Advanced,9.9
+Math,Total,747972,2019,Advanced,16.80143106961223
+Math,3,68512,2019,Advanced,13.8
+Math,4,69869,2019,Advanced,8.4
+Math,5,70877,2019,Advanced,6.4
+Math,6,68624,2019,Advanced,6
+Math,7,65801,2019,Advanced,4.8
+Math,8,63194,2019,Advanced,3.3
+Math,Total,406877,2019,Advanced,7.19332869638736
+Science,4,123093,2019,Advanced,38.8
+Science,8,122654,2019,Advanced,23.1
+Science,Total,245747,2019,Advanced,30.923673534163182
+Science,4,69755,2019,Advanced,23.5
+Science,8,62840,2019,Advanced,10.4
+Science,Total,132595,2019,Advanced,17.288736377691468
+English Language Arts,3,120564,2019,Proficient,45.4
+English Language Arts,4,123172,2019,Proficient,36.3
+English Language Arts,5,127550,2019,Proficient,42.7
+English Language Arts,6,127560,2019,Proficient,42.2
+English Language Arts,7,125998,2019,Proficient,45.6
+English Language Arts,8,123503,2019,Proficient,41.9
+English Language Arts,Total,748347,2019,Proficient,42.35227775350205
+English Language Arts,3,68464,2019,Proficient,38.4
+English Language Arts,4,69775,2019,Proficient,32.8
+English Language Arts,5,70850,2019,Proficient,34.5
+English Language Arts,6,68680,2019,Proficient,35.8
+English Language Arts,7,65928,2019,Proficient,36.3
+English Language Arts,8,63398,2019,Proficient,31.8
+English Language Arts,Total,407095,2019,Proficient,34.955477222761274
+Math,3,120604,2019,Proficient,29.3
+Math,4,123286,2019,Proficient,27.2
+Math,5,127592,2019,Proficient,27.2
+Math,6,127496,2019,Proficient,23.2
+Math,7,125808,2019,Proficient,24.3
+Math,8,123186,2019,Proficient,22.3
+Math,Total,747972,2019,Proficient,25.56432593733455
+Math,3,68512,2019,Proficient,25.5
+Math,4,69869,2019,Proficient,20.5
+Math,5,70877,2019,Proficient,19
+Math,6,68624,2019,Proficient,14.9
+Math,7,65801,2019,Proficient,14.7
+Math,8,63194,2019,Proficient,12.1
+Math,Total,406877,2019,Proficient,17.910080933549942
+Science,4,123093,2019,Proficient,39
+Science,8,122654,2019,Proficient,35.1
+Science,Total,245747,2019,Proficient,37.07552889760608
+Science,4,69755,2019,Proficient,42.3
+Science,8,62840,2019,Proficient,28.4
+Science,Total,132595,2019,Proficient,35.712508013122665
+English Language Arts,3,120564,2019,Basic,26.6
+English Language Arts,4,123172,2019,Basic,26.1
+English Language Arts,5,127550,2019,Basic,31.8
+English Language Arts,6,127560,2019,Basic,31.3
+English Language Arts,7,125998,2019,Basic,36.9
+English Language Arts,8,123503,2019,Basic,30.2
+English Language Arts,Total,748347,2019,Basic,30.54679179578458
+English Language Arts,3,68464,2019,Basic,35.7
+English Language Arts,4,69775,2019,Basic,36.1
+English Language Arts,5,70850,2019,Basic,43
+English Language Arts,6,68680,2019,Basic,45.1
+English Language Arts,7,65928,2019,Basic,53.2
+English Language Arts,8,63398,2019,Basic,40.9
+English Language Arts,Total,407095,2019,Basic,42.27047740699346
+Math,3,120604,2019,Basic,21.6
+Math,4,123286,2019,Basic,27.7
+Math,5,127592,2019,Basic,33.7
+Math,6,127496,2019,Basic,35.1
+Math,7,125808,2019,Basic,26
+Math,8,123186,2019,Basic,28.2
+Math,Total,747972,2019,Basic,28.796265100832652
+Math,3,68512,2019,Basic,26.3
+Math,4,69869,2019,Basic,31.3
+Math,5,70877,2019,Basic,38.4
+Math,6,68624,2019,Basic,38.4
+Math,7,65801,2019,Basic,25.7
+Math,8,63194,2019,Basic,25.2
+Math,Total,406877,2019,Basic,31.030999540401645
+Science,4,123093,2019,Basic,17.2
+Science,8,122654,2019,Basic,21.9
+Science,Total,245747,2019,Basic,19.510309383227465
+Science,4,69755,2019,Basic,25.9
+Science,8,62840,2019,Basic,28
+Science,Total,132595,2019,Basic,26.918812926580944
+English Language Arts,3,120564,2019,BelowBasic,11.4
+English Language Arts,4,123172,2019,BelowBasic,10.3
+English Language Arts,5,127550,2019,BelowBasic,9.6
+English Language Arts,6,127560,2019,BelowBasic,5.7
+English Language Arts,7,125998,2019,BelowBasic,2.6
+English Language Arts,8,123503,2019,BelowBasic,11.9
+English Language Arts,Total,748347,2019,BelowBasic,8.56247168759947
+English Language Arts,3,68464,2019,BelowBasic,18.6
+English Language Arts,4,69775,2019,BelowBasic,17.1
+English Language Arts,5,70850,2019,BelowBasic,16.1
+English Language Arts,6,68680,2019,BelowBasic,9.9
+English Language Arts,7,65928,2019,BelowBasic,4.7
+English Language Arts,8,63398,2019,BelowBasic,21
+English Language Arts,Total,407095,2019,BelowBasic,14.567115783785113
+Math,3,120604,2019,BelowBasic,22.4
+Math,4,123286,2019,BelowBasic,26.1
+Math,5,127592,2019,BelowBasic,23.3
+Math,6,127496,2019,BelowBasic,25.9
+Math,7,125808,2019,BelowBasic,35.8
+Math,8,123186,2019,BelowBasic,39.6
+Math,Total,747972,2019,BelowBasic,28.83797789222056
+Math,3,68512,2019,BelowBasic,34.4
+Math,4,69869,2019,BelowBasic,39.8
+Math,5,70877,2019,BelowBasic,36.2
+Math,6,68624,2019,BelowBasic,40.7
+Math,7,65801,2019,BelowBasic,54.7
+Math,8,63194,2019,BelowBasic,59.4
+Math,Total,406877,2019,BelowBasic,43.86559082966105
+Science,4,123093,2019,BelowBasic,5
+Science,8,122654,2019,BelowBasic,20
+Science,Total,245747,2019,BelowBasic,12.490488185003276
+Science,4,69755,2019,BelowBasic,8.3
+Science,8,62840,2019,BelowBasic,33.2
+Science,Total,132595,2019,BelowBasic,20.079942682604926
+English Language Arts,3,90980,2021,Advanced,14.2
+English Language Arts,3,47137,2021,Advanced,5.7
+English Language Arts,4,91862,2021,Advanced,21.4
+English Language Arts,4,47316,2021,Advanced,9.7
+English Language Arts,5,91028,2021,Advanced,8.6
+English Language Arts,5,46136,2021,Advanced,2.8
+English Language Arts,6,90232,2021,Advanced,17.5
+English Language Arts,6,45115,2021,Advanced,6.8
+English Language Arts,7,90515,2021,Advanced,9.8
+English Language Arts,7,44350,2021,Advanced,3.3
+English Language Arts,8,85686,2021,Advanced,10.9
+English Language Arts,8,40649,2021,Advanced,3.9
+Math,3,91693,2021,Advanced,17.8
+Math,3,47786,2021,Advanced,7.3
+Math,4,92387,2021,Advanced,12.1
+Math,4,47777,2021,Advanced,4.4
+Math,5,90866,2021,Advanced,11.8
+Math,5,46073,2021,Advanced,4.1
+Math,6,90563,2021,Advanced,7.6
+Math,6,45481,2021,Advanced,2.2
+Math,7,90812,2021,Advanced,8.1
+Math,7,44736,2021,Advanced,2.4
+Math,8,85253,2021,Advanced,6.3
+Math,8,40462,2021,Advanced,1.9
+Science,4,91071,2021,Advanced,32.3
+Science,4,46669,2021,Advanced,17.6
+Science,8,84244,2021,Advanced,19.6
+Science,8,39842,2021,Advanced,8.4
+English Language Arts,3,90980,2021,Proficient,44.1
+English Language Arts,3,47137,2021,Proficient,34.1
+English Language Arts,4,91862,2021,Proficient,35.2
+English Language Arts,4,47316,2021,Proficient,28
+English Language Arts,5,91028,2021,Proficient,46.4
+English Language Arts,5,46136,2021,Proficient,32.9
+English Language Arts,6,90232,2021,Proficient,39.8
+English Language Arts,6,45115,2021,Proficient,30.1
+English Language Arts,7,90515,2021,Proficient,43.5
+English Language Arts,7,44350,2021,Proficient,30
+English Language Arts,8,85686,2021,Proficient,41.7
+English Language Arts,8,40649,2021,Proficient,28.7
+Math,3,91693,2021,Proficient,29.5
+Math,3,47786,2021,Proficient,21.2
+Math,4,92387,2021,Proficient,23.4
+Math,4,47777,2021,Proficient,13.9
+Math,5,90866,2021,Proficient,24.3
+Math,5,46073,2021,Proficient,14.4
+Math,6,90563,2021,Proficient,20.6
+Math,6,45481,2021,Proficient,10.2
+Math,7,90812,2021,Proficient,18.8
+Math,7,44736,2021,Proficient,9
+Math,8,85253,2021,Proficient,15.8
+Math,8,40462,2021,Proficient,7
+Science,4,91071,2021,Proficient,43.5
+Science,4,46669,2021,Proficient,44
+Science,8,84244,2021,Proficient,31.2
+Science,8,39842,2021,Proficient,22.4
+English Language Arts,3,90980,2021,Basic,27.7
+English Language Arts,3,47137,2021,Basic,36.4
+English Language Arts,4,91862,2021,Basic,31.5
+English Language Arts,4,47316,2021,Basic,41.4
+English Language Arts,5,91028,2021,Basic,34.4
+English Language Arts,5,46136,2021,Basic,45.2
+English Language Arts,6,90232,2021,Basic,35.6
+English Language Arts,6,45115,2021,Basic,49.9
+English Language Arts,7,90515,2021,Basic,42.8
+English Language Arts,7,44350,2021,Basic,59.4
+English Language Arts,8,85686,2021,Basic,36
+English Language Arts,8,40649,2021,Basic,46.6
+Math,3,91693,2021,Basic,21.7
+Math,3,47786,2021,Basic,23.3
+Math,4,92387,2021,Basic,30.6
+Math,4,47777,2021,Basic,29.6
+Math,5,90866,2021,Basic,32.6
+Math,5,46073,2021,Basic,32.6
+Math,6,90563,2021,Basic,36.6
+Math,6,45481,2021,Basic,33.4
+Math,7,90812,2021,Basic,27.1
+Math,7,44736,2021,Basic,21.8
+Math,8,85253,2021,Basic,24.5
+Math,8,40462,2021,Basic,17
+Science,4,91071,2021,Basic,16.6
+Science,4,46669,2021,Basic,25.2
+Science,8,84244,2021,Basic,22.5
+Science,8,39842,2021,Basic,25.3
+English Language Arts,3,90980,2021,BelowBasic,14
+English Language Arts,3,47137,2021,BelowBasic,23.8
+English Language Arts,4,91862,2021,BelowBasic,11.9
+English Language Arts,4,47316,2021,BelowBasic,20.9
+English Language Arts,5,91028,2021,BelowBasic,10.6
+English Language Arts,5,46136,2021,BelowBasic,19.1
+English Language Arts,6,90232,2021,BelowBasic,7.1
+English Language Arts,6,45115,2021,BelowBasic,13.1
+English Language Arts,7,90515,2021,BelowBasic,3.9
+English Language Arts,7,44350,2021,BelowBasic,7.3
+English Language Arts,8,85686,2021,BelowBasic,11.4
+English Language Arts,8,40649,2021,BelowBasic,20.7
+Math,3,91693,2021,BelowBasic,31
+Math,3,47786,2021,BelowBasic,48.2
+Math,4,92387,2021,BelowBasic,33.9
+Math,4,47777,2021,BelowBasic,52.1
+Math,5,90866,2021,BelowBasic,31.3
+Math,5,46073,2021,BelowBasic,49
+Math,6,90563,2021,BelowBasic,35.1
+Math,6,45481,2021,BelowBasic,54.2
+Math,7,90812,2021,BelowBasic,46.1
+Math,7,44736,2021,BelowBasic,66.9
+Math,8,85253,2021,BelowBasic,53.5
+Math,8,40462,2021,BelowBasic,74.1
+Science,4,91071,2021,BelowBasic,7.6
+Science,4,46669,2021,BelowBasic,13.3
+Science,8,84244,2021,BelowBasic,26.7
+Science,8,39842,2021,BelowBasic,43.9
+English Language Arts,3,114398,2022,Advanced,11.8
+English Language Arts,4,114533,2022,Advanced,21.3
+English Language Arts,5,116274,2022,Advanced,13.3
+English Language Arts,6,115785,2022,Advanced,19.4
+English Language Arts,7,118352,2022,Advanced,17.8
+English Language Arts,8,119366,2022,Advanced,16
+English Language Arts,Total,698708,2022,Advanced,16.6
+English Language Arts,3,64680,2022,Advanced,4.8
+English Language Arts,4,64544,2022,Advanced,9.7
+English Language Arts,5,64285,2022,Advanced,5.1
+English Language Arts,6,63016,2022,Advanced,8.6
+English Language Arts,7,63641,2022,Advanced,7.5
+English Language Arts,8,62684,2022,Advanced,6.6
+English Language Arts,Total,382850,2022,Advanced,7
+Math,3,114714,2022,Advanced,20.9
+Math,4,114822,2022,Advanced,17
+Math,5,116489,2022,Advanced,12.2
+Math,6,115844,2022,Advanced,13.3
+Math,7,118357,2022,Advanced,9.7
+Math,8,119039,2022,Advanced,6.8
+Math,Total,699265,2022,Advanced,13.2
+Math,3,64984,2022,Advanced,9.4
+Math,4,64836,2022,Advanced,7.1
+Math,5,64452,2022,Advanced,4.4
+Math,6,63114,2022,Advanced,4.6
+Math,7,63713,2022,Advanced,3.2
+Math,8,62546,2022,Advanced,2.2
+Math,Total,383645,2022,Advanced,5.2
+Science,4,114497,2022,Advanced,37.2
+Science,8,118412,2022,Advanced,20.1
+Science,Total,232909,2022,Advanced,28.5
+Science,4,64571,2022,Advanced,21.4
+Science,8,62084,2022,Advanced,9.2
+Science,Total,126655,2022,Advanced,15.4
+English Language Arts,3,114398,2022,Proficient,40.6
+English Language Arts,4,114533,2022,Proficient,30.9
+English Language Arts,5,116274,2022,Proficient,40.3
+English Language Arts,6,115785,2022,Proficient,36.7
+English Language Arts,7,118352,2022,Proficient,39.5
+English Language Arts,8,119366,2022,Proficient,39.7
+English Language Arts,Total,698708,2022,Proficient,38
+English Language Arts,3,64680,2022,Proficient,30.4
+English Language Arts,4,64544,2022,Proficient,24.5
+English Language Arts,5,64285,2022,Proficient,30.2
+English Language Arts,6,63016,2022,Proficient,29.6
+English Language Arts,7,63641,2022,Proficient,31.6
+English Language Arts,8,62684,2022,Proficient,30.7
+English Language Arts,Total,382850,2022,Proficient,29.5
+Math,3,114714,2022,Proficient,26.9
+Math,4,114822,2022,Proficient,25.3
+Math,5,116489,2022,Proficient,23.3
+Math,6,115844,2022,Proficient,18.9
+Math,7,118357,2022,Proficient,17.4
+Math,8,119039,2022,Proficient,15.7
+Math,Total,699265,2022,Proficient,21.2
+Math,3,64984,2022,Proficient,20.6
+Math,4,64836,2022,Proficient,17.7
+Math,5,64452,2022,Proficient,14.1
+Math,6,63114,2022,Proficient,10.9
+Math,7,63713,2022,Proficient,9.2
+Math,8,62546,2022,Proficient,7.4
+Math,Total,383645,2022,Proficient,13.4
+Science,4,114497,2022,Proficient,36.5
+Science,8,118412,2022,Proficient,31
+Science,Total,232909,2022,Proficient,33.7
+Science,4,64571,2022,Proficient,38.5
+Science,8,62084,2022,Proficient,23.4
+Science,Total,126655,2022,Proficient,31.1
+English Language Arts,3,114398,2022,Basic,29.7
+English Language Arts,4,114533,2022,Basic,29.2
+English Language Arts,5,116274,2022,Basic,28.7
+English Language Arts,6,115785,2022,Basic,35.6
+English Language Arts,7,118352,2022,Basic,37.7
+English Language Arts,8,119366,2022,Basic,29.9
+English Language Arts,Total,698708,2022,Basic,31.8
+English Language Arts,3,64680,2022,Basic,36.7
+English Language Arts,4,64544,2022,Basic,35.9
+English Language Arts,5,64285,2022,Basic,35.7
+English Language Arts,6,63016,2022,Basic,47.5
+English Language Arts,7,63641,2022,Basic,52.2
+English Language Arts,8,62684,2022,Basic,38.6
+English Language Arts,Total,382850,2022,Basic,41.1
+Math,3,114714,2022,Basic,23.4
+Math,4,114822,2022,Basic,26.8
+Math,5,116489,2022,Basic,33.5
+Math,6,115844,2022,Basic,28.8
+Math,7,118357,2022,Basic,30
+Math,8,119039,2022,Basic,27.1
+Math,Total,699265,2022,Basic,28.3
+Math,3,64984,2022,Basic,26.2
+Math,4,64836,2022,Basic,28.8
+Math,5,64452,2022,Basic,34.4
+Math,6,63114,2022,Basic,27.1
+Math,7,63713,2022,Basic,26
+Math,8,62546,2022,Basic,20.5
+Math,Total,383645,2022,Basic,27.2
+Science,4,114497,2022,Basic,18.3
+Science,8,118412,2022,Basic,20.6
+Science,Total,232909,2022,Basic,19.5
+Science,4,64571,2022,Basic,27
+Science,8,62084,2022,Basic,23.7
+Science,Total,126655,2022,Basic,25.3
+English Language Arts,3,114398,2022,BelowBasic,17.9
+English Language Arts,4,114533,2022,BelowBasic,18.6
+English Language Arts,5,116274,2022,BelowBasic,17.7
+English Language Arts,6,115785,2022,BelowBasic,8.3
+English Language Arts,7,118352,2022,BelowBasic,5.1
+English Language Arts,8,119366,2022,BelowBasic,14.4
+English Language Arts,Total,698708,2022,BelowBasic,13.6
+English Language Arts,3,64680,2022,BelowBasic,28.1
+English Language Arts,4,64544,2022,BelowBasic,29.9
+English Language Arts,5,64285,2022,BelowBasic,29.1
+English Language Arts,6,63016,2022,BelowBasic,14.3
+English Language Arts,7,63641,2022,BelowBasic,8.8
+English Language Arts,8,62684,2022,BelowBasic,24
+English Language Arts,Total,382850,2022,BelowBasic,22.4
+Math,3,114714,2022,BelowBasic,28.9
+Math,4,114822,2022,BelowBasic,30.9
+Math,5,116489,2022,BelowBasic,31.1
+Math,6,115844,2022,BelowBasic,38.9
+Math,7,118357,2022,BelowBasic,43
+Math,8,119039,2022,BelowBasic,50.3
+Math,Total,699265,2022,BelowBasic,37.3
+Math,3,64984,2022,BelowBasic,43.8
+Math,4,64836,2022,BelowBasic,46.4
+Math,5,64452,2022,BelowBasic,47.1
+Math,6,63114,2022,BelowBasic,57.4
+Math,7,63713,2022,BelowBasic,61.7
+Math,8,62546,2022,BelowBasic,69.9
+Math,Total,383645,2022,BelowBasic,54.3
+Science,4,114497,2022,BelowBasic,8
+Science,8,118412,2022,BelowBasic,28.3
+Science,Total,232909,2022,BelowBasic,18.3
+Science,4,64571,2022,BelowBasic,13.2
+Science,8,62084,2022,BelowBasic,43.7
+Science,Total,126655,2022,BelowBasic,28.2

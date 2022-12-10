@@ -7,22 +7,22 @@ library(tidyverse)
 
 ks.sc = read_csv("Keystone/School/keystone_school.csv")
 ks.st = read_csv("Keystone/State/keystone_state.csv")
-ks.sc = read_csv("PSSA/School/pssa_school.csv")
-ks.st = read_csv("PSSA/State/pssa_state.csv")
+ps.sc = read_csv("PSSA/School/pssa_school.csv")
+ps.st = read_csv("PSSA/State/pssa_state.csv")
 
 # Objects imported
 
 # ks.sc      - keystone/school dataset
-# ks.sc.cols - keystone/school columns                    District, School, Subject, Group,        Scored, Advanced, Proficient, Basic, BelowBasic, Year, County
+# ks.sc.cols - keystone/school columns                    District, School, Subject, Group,        Scored, Baseline, Score, Year, County
 
 # ks.st      - keystone/state dataset
-# ks.st.cols - keystone/state columns                                       Subject,               Scored, Advanced, Proficient, Basic, BelowBasic, Year
+# ks.st.cols - keystone/state columns                                       Subject,               Scored, Baseline, Score, Year
 
 # ps.sc      - PSSA/school dataset
-# ps.sc.cols - PPSA/school columns         SchoolNum,    District,  School, Subject, Group, Grade, Scored, Advanced, Proficient, Basic, BelowBasic, Year, County
+# ps.sc.cols - PPSA/school columns         SchoolNum,    District,  School, Subject, Group, Grade, Scored, Baseline, Score, Year, County
 
 # ps.st      - PSSA/state dataset
-# ps.st.cols - PSSA/state columns                                           Subject,        Grade, Scored, Advanced, Proficient, Basic, BelowBasic, Year
+# ps.st.cols - PSSA/state columns                                           Subject,        Grade, Scored, Baseline, Score, Year
 
 
 

@@ -39,32 +39,39 @@ colnames(ks.sc.2022) = ks.sc.cols
 
 # Create keystone school level tibble
 ks.sc = bind_rows(
-  ks.sc.2016 %>% mutate(Year="2016") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ks.sc.2017 %>% mutate(Year="2017") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ks.sc.2018 %>% mutate(Year="2018") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ks.sc.2019 %>% mutate(Year="2019") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ks.sc.2021 %>% mutate(Year="2021") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ks.sc.2022 %>% mutate(Year="2022") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na()
+  ks.sc.2016 %>% mutate(Year="2016"),
+  ks.sc.2017 %>% mutate(Year="2017"),
+  ks.sc.2018 %>% mutate(Year="2018"),
+  ks.sc.2019 %>% mutate(Year="2019"),
+  ks.sc.2021 %>% mutate(Year="2021"),
+  ks.sc.2022 %>% mutate(Year="2022")
 )
 
 # Cast keystone school 2015 columns from character to double
-ks.sc.2015 = ks.sc.2015 %>% filter(Advanced != "IS" | Advanced != "NA" | Advanced != "") %>% mutate(
+ks.sc.2015 = ks.sc.2015 %>% filter(!(Advanced %in% c("IS", "NA", ""))) %>% mutate(
   across(Advanced,   as.double),
   across(Proficient, as.double),
   across(Basic,      as.double),
   across(BelowBasic, as.double)
 )
 
-# Add County column to 2015 dataset from other years district
-ks.sc.columbia.districts = ks.sc %>% filter(County == "Columbia") %>% select(District)
-ks.sc.montour.districts  = ks.sc %>% filter(County == "Montour")  %>% select(District)
+# Add County column to 2015 data set from other years district
+ks.sc.columbia.districts = ks.sc %>% filter(tolower(County) == "columbia") %>% select(District)
+ks.sc.montour.districts  = ks.sc %>% filter(tolower(County) == "montour")  %>% select(District)
 ks.sc.2015 = bind_rows(
-  ks.sc.2015 %>% filter(District %in% ks.sc.columbia.districts) %>% mutate(County="Columbia"),
-  ks.sc.2015 %>% filter(District %in% ks.sc.montour.districts)  %>% mutate(County="Montour")
+  ks.sc.2015 %>% filter(District %in% ks.sc.columbia.districts) %>% mutate(County="columbia"),
+  ks.sc.2015 %>% filter(District %in% ks.sc.montour.districts)  %>% mutate(County="montour")
 ) %>% mutate(Year="2015") %>% drop_na()
 
-# Add 2015 dataset to keystone school dataset
+# Add 2015 data set to keystone school data set
 ks.sc = bind_rows(ks.sc.2015, ks.sc)
+
+# County to common case
+ks.sc$County = str_to_sentence(ks.sc$County)
+
+# Select Columbia and Montour counties
+ks.sc = ks.sc %>% filter(County %in% c("Columbia", "Montour")) %>% drop_na()
+
 
 # Clean up of Keystone School data
 rm(ks.sc.2015)
@@ -76,6 +83,9 @@ rm(ks.sc.2021)
 rm(ks.sc.2022)
 rm(ks.sc.columbia.districts)
 rm(ks.sc.montour.districts)
+
+# Write Keystone School data set
+write_csv(ks.sc, "Keystone/School/keystone_school.csv")
 
 
 # Keystone State Level Data
@@ -109,14 +119,15 @@ colnames(ks.st.2022) = ks.st.cols
 
 # Create keystone state level tibble
 ks.st = bind_rows(
-  ks.st.2015 %>% mutate(Year="2015") %>% drop_na(),
-  ks.st.2016 %>% mutate(Year="2016") %>% drop_na(),
-  ks.st.2017 %>% mutate(Year="2017") %>% drop_na(),
-  ks.st.2018 %>% mutate(Year="2018") %>% drop_na(),
-  ks.st.2019 %>% mutate(Year="2019") %>% drop_na(),
-  ks.st.2021 %>% mutate(Year="2021") %>% drop_na(),
-  ks.st.2022 %>% mutate(Year="2022") %>% drop_na()
+  ks.st.2015 %>% mutate(Year="2015"),
+  ks.st.2016 %>% mutate(Year="2016"),
+  ks.st.2017 %>% mutate(Year="2017"),
+  ks.st.2018 %>% mutate(Year="2018"),
+  ks.st.2019 %>% mutate(Year="2019"),
+  ks.st.2021 %>% mutate(Year="2021"),
+  ks.st.2022 %>% mutate(Year="2022")
 )
+ks.st = ks.st %>% drop_na()
 
 # Clean up of Keystone state data
 rm(ks.st.2015)
@@ -126,6 +137,10 @@ rm(ks.st.2018)
 rm(ks.st.2019)
 rm(ks.st.2021)
 rm(ks.st.2022)
+
+# Write Keystone State data set
+write_csv(ks.st, "Keystone/State/keystone_state.csv")
+
 
 
 # PSSA school level data
@@ -159,17 +174,17 @@ colnames(ps.sc.2022) = ps.sc.cols
 
 # Create PSSA school level tibble
 ps.sc = bind_rows(
-  ps.sc.2016 %>% mutate(Year="2016") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ps.sc.2017 %>% mutate(Year="2017") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ps.sc.2018 %>% mutate(Year="2018") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ps.sc.2019 %>% mutate(Year="2019") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ps.sc.2021 %>% mutate(Year="2021") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na(),
-  ps.sc.2022 %>% mutate(Year="2022") %>% filter(County == "Columbia" | County == "Montour") %>% drop_na()
+  ps.sc.2016 %>% mutate(Year="2016"),
+  ps.sc.2017 %>% mutate(Year="2017"),
+  ps.sc.2018 %>% mutate(Year="2018"),
+  ps.sc.2019 %>% mutate(Year="2019"),
+  ps.sc.2021 %>% mutate(Year="2021"),
+  ps.sc.2022 %>% mutate(Year="2022")
 )
 
 # Add County column to 2015 data set from other years district
-ps.sc.columbia.districts = ps.sc %>% filter(County == "Columbia") %>% select(District)
-ps.sc.montour.districts  = ps.sc %>% filter(County == "Montour")  %>% select(District)
+ps.sc.columbia.districts = ps.sc %>% filter(tolower(County) == "columbia") %>% select(District)
+ps.sc.montour.districts  = ps.sc %>% filter(tolower(County) == "montour")  %>% select(District)
 ps.sc.2015 = bind_rows(
   ps.sc.2015 %>% filter(District %in% ps.sc.columbia.districts) %>% mutate(County="Columbia"),
   ps.sc.2015 %>% filter(District %in% ps.sc.montour.districts)  %>% mutate(County="Montour")
@@ -177,6 +192,12 @@ ps.sc.2015 = bind_rows(
 
 # Add 2015 data set to PSSA school data set
 ps.sc = bind_rows(ps.sc.2015, ps.sc)
+
+# County to common case
+ps.sc$County = str_to_sentence(ps.sc$County)
+
+# Select Columbia and Montour counties
+ps.sc = ps.sc %>% filter(County %in% c("Columbia", "Montour")) %>% drop_na()
 
 # Clean up of PSSA school data
 rm(ps.sc.2015)
@@ -188,6 +209,9 @@ rm(ps.sc.2021)
 rm(ps.sc.2022)
 rm(ps.sc.columbia.districts)
 rm(ps.sc.montour.districts)
+
+# Write PSSA School data set
+write_csv(ps.sc, "PSSA/School/pssa_school.csv")
 
 
 # PSSA state level data
@@ -206,7 +230,6 @@ ps.st.2017 = bind_rows(
   ps.st.2017[16:21,] %>% mutate(Subject="English Language Arts"),
   ps.st.2017[c(28, 32),] %>% mutate(Subject="Science")
 )
-
 
 # Organize columns
 ps.st.2015 = ps.st.2015 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic")
@@ -229,14 +252,15 @@ colnames(ps.st.2022) = ps.st.cols
 
 # Create PSSA state level tibble
 ps.st = bind_rows(
-  ps.st.2015,
-  ps.st.2016,
-  ps.st.2017,
-  ps.st.2018,
-  ps.st.2019,
-  ps.st.2021 %>% mutate(across(Grade, as.character)),
-  ps.st.2022
+  ps.st.2015 %>% mutate(Year="2015"),
+  ps.st.2016 %>% mutate(Year="2016"),
+  ps.st.2017 %>% mutate(Year="2017"),
+  ps.st.2018 %>% mutate(Year="2018"),
+  ps.st.2019 %>% mutate(Year="2019"),
+  ps.st.2021 %>% mutate(Year="2021", across(Grade, as.character)),
+  ps.st.2022 %>% mutate(Year="2022")
 )
+ps.st = ps.st %>% drop_na()
 
 # Clean up PSSA state data
 rm(ps.st.2015)
@@ -246,6 +270,9 @@ rm(ps.st.2018)
 rm(ps.st.2019)
 rm(ps.st.2021)
 rm(ps.st.2022)
+
+# Write PSSA School data set
+write_csv(ps.st, "PSSA/State/pssa_state.csv")
 
 # End Suppress Warnings
 options(warn=0)

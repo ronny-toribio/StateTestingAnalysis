@@ -1,9 +1,14 @@
 # @authors: Ronny Toribio, Anna T. Schlecht, Kadir O. Altunel
 # @project: State Testing Analysis
 # @file:    analysis.R
-# @desc:    Analysis of test data
+# @desc:    Analysis of testing data
 
-source("testing_data.R")
+library(tidyverse)
+
+ks.sc = read_csv("Keystone/School/keystone_school.csv")
+ks.st = read_csv("Keystone/State/keystone_state.csv")
+ks.sc = read_csv("PSSA/School/pssa_school.csv")
+ks.st = read_csv("PSSA/State/pssa_state.csv")
 
 # Objects imported
 

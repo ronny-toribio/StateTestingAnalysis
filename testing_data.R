@@ -96,12 +96,12 @@ ks.sc.2015 = ks.sc.2015 %>% filter(!(Advanced %in% c("IS", "NA", ""))) %>% mutat
 )
 
 # Add County column to 2015 data set from other years district
-ks.sc.columbia.districts = ks.sc %>% filter(tolower(County) == "columbia") %>% select(District)
-ks.sc.montour.districts  = ks.sc %>% filter(tolower(County) == "montour")  %>% select(District)
+ks.sc.columbia.districts = ks.sc %>% filter(tolower(County) == "columbia") %>% select(District) %>% distinct()
+ks.sc.montour.districts  = ks.sc %>% filter(tolower(County) == "montour")  %>% select(District) %>% distinct()
 ks.sc.2015 = bind_rows(
-  ks.sc.2015 %>% filter(District %in% ks.sc.columbia.districts) %>% mutate(County="columbia"),
-  ks.sc.2015 %>% filter(District %in% ks.sc.montour.districts)  %>% mutate(County="montour")
-) %>% mutate(Year="2015") %>% drop_na()
+  ks.sc.2015 %>% filter(District %in% ks.sc.columbia.districts$District) %>% mutate(County="columbia"),
+  ks.sc.2015 %>% filter(District %in% ks.sc.montour.districts$District)  %>% mutate(County="montour")
+) %>% mutate(Year="2015")
 
 # Add 2015 data set to keystone school data set
 ks.sc = bind_rows(ks.sc.2015, ks.sc)
@@ -128,14 +128,14 @@ ks.sc$Subject = standardize_subjects(ks.sc$Subject)
 
 # Clean up of Keystone School data
 rm(ks.sc.2015)
+rm(ks.sc.columbia.districts)
+rm(ks.sc.montour.districts)
 rm(ks.sc.2016)
 rm(ks.sc.2017)
 rm(ks.sc.2018)
 rm(ks.sc.2019)
 rm(ks.sc.2021)
 rm(ks.sc.2022)
-rm(ks.sc.columbia.districts)
-rm(ks.sc.montour.districts)
 rm(ks.sc.cols)
 
 # Keystone State Level Data
@@ -149,7 +149,7 @@ ks.st.2021 = readxl::read_xlsx("Keystone/State/2021.xlsx", skip=4)
 ks.st.2022 = readxl::read_xlsx("Keystone/State/2022.xlsx", skip=2)
 
 # Organize columns
-ks.st.2015 = ks.st.2015 %>% select(Subject, "N Scored", "Pct. Advanced", "Pct. Proficient", "Pct. Basic", "Pct. Below Basic", "Student Group")        %>% filter("Student Group"=="All Students") %>% select(-"Student Group")
+ks.st.2015 = ks.st.2015 %>% select(Subject, "N Scored", "Pct. Advanced", "Pct. Proficient", "Pct. Basic", "Pct. Below Basic", "Student Group")        %>% filter(ks.st.2015$"Student Group"=="All Students") %>% select(-"Student Group")
 ks.st.2016 = ks.st.2016 %>% select(Subject, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", Group) %>% filter(Group=="All Students") %>% select(-Group)
 ks.st.2017 = ks.st.2017 %>% select(Subject, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic")
 ks.st.2018 = ks.st.2018 %>% select(Subject, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                         %>% filter(Group=="All Students") %>% select(-Group)
@@ -314,7 +314,7 @@ ps.st.2017 = ps.st.2017 %>% select(Subject, Grade, "Number Scored", "Percent Adv
 ps.st.2018 = ps.st.2018 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                                   %>% filter(Group=="All Students") %>% select(-Group)
 ps.st.2019 = ps.st.2019 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                                   %>% filter(Group=="All Students") %>% select(-Group)
 ps.st.2021 = ps.st.2021 %>% select(Subject, Grade, "Number scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                                   %>% filter(Group=="All Students") %>% select(-Group)
-ps.st.2022 = ps.st.2022 %>% select(Subject, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", "Student Group") %>% filter("Student Group"=="All Students") %>% select(-"Student Group")
+ps.st.2022 = ps.st.2022 %>% select(Subject, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", "Student Group") %>% filter(ps.st.2022$"Student Group"=="All Students") %>% select(-"Student Group")
 
 # Column names
 ps.st.cols = c("Subject", "Grade", "Scored", "Advanced", "Proficient", "Basic", "BelowBasic")
@@ -336,7 +336,7 @@ ps.st = bind_rows(
   ps.st.2021 %>% mutate(Year="2021", across(Grade, as.character)),
   ps.st.2022 %>% mutate(Year="2022")
 )
-ps.st = ps.st %>% drop_na()
+ps.st = ps.st
 
 # Create baseline and score columns
 ps.st = bind_rows(

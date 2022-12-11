@@ -59,13 +59,16 @@ ks.sc.2021 = readxl::read_xlsx("Keystone/School/2021.xlsx", skip=4)
 ks.sc.2022 = readxl::read_xlsx("Keystone/School/2022.xlsx", skip=3)
 
 # Organize columns
-ks.sc.2015 = ks.sc.2015 %>% select("District Name", "School Name", Subject, Student_Group_Name, "N Scored", "Pct. Advanced", "Pct. Proficient", "Pct. Basic", "Pct. Below Basic")
+ks.sc.2015 = ks.sc.2015 %>% select("District Name", "School Name", Subject, Student_Group_Name, "N Scored", "Pct. Advanced", "Pct. Proficient", "Pct. Basic", "Pct. Below Basic", Grade)
 ks.sc.2016 = ks.sc.2016 %>% select(District, School, Subject, Group, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
 ks.sc.2017 = ks.sc.2017 %>% select("District Name", "School Name", Subject, Group, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", County)
 ks.sc.2018 = ks.sc.2018 %>% select("District Name", "School Name", Subject, Group, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
 ks.sc.2019 = ks.sc.2019 %>% select("District Name", "School Name", Subject, Group, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
 ks.sc.2021 = ks.sc.2021 %>% select("District Name", "School Name", Subject, Group, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
 ks.sc.2022 = ks.sc.2022 %>% select("District Name", "School Name", Subject, Group, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
+
+# Drop redundant rows
+ks.sc.2015 = ks.sc.2015 %>% filter(Grade == "Total") %>% select(-Grade)
 
 # Column names
 ks.sc.cols = c("District", "School","Subject", "Group", "Scored", "Advanced", "Proficient", "Basic", "BelowBasic", "County")

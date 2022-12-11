@@ -25,6 +25,26 @@ standardize_subjects = function(c){
   c
 }
 
+# County transformations
+replace_county = function(c){
+  if(c == "State"){
+    0
+  }
+  else if(c == "Columbia"){
+    1
+  }
+  else if(c == "Montour"){
+    2
+  }
+}
+
+standardize_counties = function(c){
+  for(i in 1:length(c)){
+    c[i] = replace_county(c[i])
+  }
+  c
+}
+
 # Begin Suppress Warnings
 options(warn=-1)
 
@@ -116,10 +136,7 @@ rm(ks.sc.2021)
 rm(ks.sc.2022)
 rm(ks.sc.columbia.districts)
 rm(ks.sc.montour.districts)
-
-# Write Keystone School data set
-write_csv(ks.sc, "Keystone/School/keystone_school.csv")
-
+rm(ks.sc.cols)
 
 # Keystone State Level Data
 ks.st.2015 = readxl::read_xlsx("Keystone/State/2015.xlsx", skip=4)
@@ -181,11 +198,14 @@ rm(ks.st.2018)
 rm(ks.st.2019)
 rm(ks.st.2021)
 rm(ks.st.2022)
+rm(ks.st.cols)
 
-# Write Keystone State data set
-write_csv(ks.st, "Keystone/State/keystone_state.csv")
-
-
+# Merge Keystone data
+ks.st = ks.st %>% mutate(District="", School="", County="State")
+ks = bind_rows(ks.st, ks.sc) %>% arrange(Year)
+write_csv(ks, "Keystone/keystone.csv")
+rm(ks.sc)
+rm(ks.st)
 
 # PSSA school level data
 ps.sc.2015 = readxl::read_xlsx("PSSA/School/2015.xlsx", skip=6)
@@ -267,10 +287,7 @@ rm(ps.sc.2021)
 rm(ps.sc.2022)
 rm(ps.sc.columbia.districts)
 rm(ps.sc.montour.districts)
-
-# Write PSSA School data set
-write_csv(ps.sc, "PSSA/School/pssa_school.csv")
-
+rm(ps.sc.cols)
 
 # PSSA state level data
 ps.st.2015 = readxl::read_xlsx("PSSA/State/2015.xlsx", skip=4)
@@ -339,9 +356,14 @@ rm(ps.st.2018)
 rm(ps.st.2019)
 rm(ps.st.2021)
 rm(ps.st.2022)
+rm(ps.st.cols)
 
-# Write PSSA School data set
-write_csv(ps.st, "PSSA/State/pssa_state.csv")
+# Merge PSSA data
+ps.st = ps.st %>% mutate(District="", School="", School="", County="State")
+ps = bind_rows(ps.st, ps.sc) %>% arrange(Year)
+write_csv(ps, "PSSA/pssa.csv")
+rm(ps.sc)
+rm(ps.st)
 
 # End Suppress Warnings
 options(warn=0)

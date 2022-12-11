@@ -5,26 +5,8 @@
 
 library(tidyverse)
 
-ks.sc = read_csv("Keystone/School/keystone_school.csv")
-ks.st = read_csv("Keystone/State/keystone_state.csv")
-ps.sc = read_csv("PSSA/School/pssa_school.csv")
-ps.st = read_csv("PSSA/State/pssa_state.csv")
-
-
-# Objects imported
-
-# ks.sc      - keystone/school dataset
-# ks.sc.cols - keystone/school columns          Subject, Scored, Baseline, Score, Year, County, District, School
-
-# ks.st      - keystone/state dataset
-# ks.st.cols - keystone/state columns           Subject, Scored, Baseline, Score, Year
-
-# ps.sc      - PSSA/school dataset
-# ps.sc.cols - PPSA/school columns              Subject, Scored, Baseline, Score, Year, County, District, School, Grade, SchoolNum
-
-# ps.st      - PSSA/state dataset
-# ps.st.cols - PSSA/state columns               Subject, Scored, Baseline, Score, Year,                           Grade 
-
+ks = read_csv("Keystone/keystone.csv")
+ps = read_csv("PSSA/pssa.csv")
 
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?

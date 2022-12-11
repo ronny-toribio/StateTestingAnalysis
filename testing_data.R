@@ -5,6 +5,26 @@
 
 library(tidyverse)
 
+# Subject transformations
+replace_subject = function(s){
+  if(s %in% c("E", "English", "English Language Arts", "Literature")){
+    "English"
+  }
+  else if(s %in% c("M", "Math", "Algebra I")){
+    "Math"
+  }
+  else if(s %in% c("S", "Science", "Biology")){
+    "Science"
+  }
+}
+
+standardize_subjects = function(c){
+  for(i in 1:length(c)){
+    c[i] = replace_subject(c[i])
+  }
+  c
+}
+
 # Begin Suppress Warnings
 options(warn=-1)
 
@@ -80,6 +100,12 @@ ks.sc = bind_rows(
   ks.sc %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
 
+# Remove historically underperforming rows and group column
+ks.sc = ks.sc %>% filter(Group=="All Students") %>% select(-Group)
+
+# Standardize Subjects
+ks.sc$Subject = standardize_subjects(ks.sc$Subject)
+
 # Clean up of Keystone School data
 rm(ks.sc.2015)
 rm(ks.sc.2016)
@@ -106,12 +132,12 @@ ks.st.2021 = readxl::read_xlsx("Keystone/State/2021.xlsx", skip=4)
 ks.st.2022 = readxl::read_xlsx("Keystone/State/2022.xlsx", skip=2)
 
 # Organize columns
-ks.st.2015 = ks.st.2015 %>% select(Subject, "N Scored", "Pct. Advanced", "Pct. Proficient", "Pct. Basic", "Pct. Below Basic")
-ks.st.2016 = ks.st.2016 %>% select(Subject, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic")
+ks.st.2015 = ks.st.2015 %>% select(Subject, "N Scored", "Pct. Advanced", "Pct. Proficient", "Pct. Basic", "Pct. Below Basic", "Student Group")        %>% filter("Student Group"=="All Students") %>% select(-"Student Group")
+ks.st.2016 = ks.st.2016 %>% select(Subject, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", Group) %>% filter(Group=="All Students") %>% select(-Group)
 ks.st.2017 = ks.st.2017 %>% select(Subject, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic")
-ks.st.2018 = ks.st.2018 %>% select(Subject, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic")
-ks.st.2019 = ks.st.2019 %>% select(Subject, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic")
-ks.st.2021 = ks.st.2021 %>% select(Subject, "Number scored 2021", "% Advanced", "% Proficient", "% Basic", "% Below Basic")
+ks.st.2018 = ks.st.2018 %>% select(Subject, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                         %>% filter(Group=="All Students") %>% select(-Group)
+ks.st.2019 = ks.st.2019 %>% select(Subject, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                         %>% filter(Group=="All Students") %>% select(-Group)
+ks.st.2021 = ks.st.2021 %>% select(Subject, "Number scored 2021", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                    %>% filter(Group=="All Students") %>% select(-Group)
 ks.st.2022 = ks.st.2022 %>% select(Subject, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic")
 
 # Column names
@@ -143,6 +169,9 @@ ks.st = bind_rows(
   ks.st %>% mutate(Baseline="Basic",      Score=Basic),
   ks.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
+
+# Standardize Subjects
+ks.st$Subject = standardize_subjects(ks.st$Subject)
 
 # Clean up of Keystone state data
 rm(ks.st.2015)
@@ -222,6 +251,12 @@ ps.sc = bind_rows(
   ps.sc %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
 
+# Remove historically underperforming rows and group column
+ps.sc = ps.sc %>% filter(Group=="All Students") %>% select(-Group)
+
+# Standardize Subjects
+ps.sc$Subject = standardize_subjects(ps.sc$Subject)
+
 # Clean up of PSSA school data
 rm(ps.sc.2015)
 rm(ps.sc.2016)
@@ -255,13 +290,13 @@ ps.st.2017 = bind_rows(
 )
 
 # Organize columns
-ps.st.2015 = ps.st.2015 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic")
-ps.st.2016 = ps.st.2016 %>% select(Subject, Grade, "Number scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic")
+ps.st.2015 = ps.st.2015 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                                   %>% filter(Group=="All Students") %>% select(-Group)
+ps.st.2016 = ps.st.2016 %>% select(Subject, Grade, "Number scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", Group)           %>% filter(Group=="All Students") %>% select(-Group)
 ps.st.2017 = ps.st.2017 %>% select(Subject, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic")
-ps.st.2018 = ps.st.2018 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic")
-ps.st.2019 = ps.st.2019 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic")
-ps.st.2021 = ps.st.2021 %>% select(Subject, Grade, "Number scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic")
-ps.st.2022 = ps.st.2022 %>% select(Subject, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic")
+ps.st.2018 = ps.st.2018 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                                   %>% filter(Group=="All Students") %>% select(-Group)
+ps.st.2019 = ps.st.2019 %>% select(Subject, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                                   %>% filter(Group=="All Students") %>% select(-Group)
+ps.st.2021 = ps.st.2021 %>% select(Subject, Grade, "Number scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", Group)                                   %>% filter(Group=="All Students") %>% select(-Group)
+ps.st.2022 = ps.st.2022 %>% select(Subject, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", "Student Group") %>% filter("Student Group"=="All Students") %>% select(-"Student Group")
 
 # Column names
 ps.st.cols = c("Subject", "Grade", "Scored", "Advanced", "Proficient", "Basic", "BelowBasic")
@@ -292,6 +327,9 @@ ps.st = bind_rows(
   ps.st %>% mutate(Baseline="Basic",      Score=Basic),
   ps.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
+
+# Standardize Subjects
+ps.st$Subject = standardize_subjects(ps.st$Subject)
 
 # Clean up PSSA state data
 rm(ps.st.2015)

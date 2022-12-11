@@ -1,1097 +1,581 @@
-District,School,Subject,Group,Scored,County,Year,Baseline,Score
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,38,Columbia,2016,Advanced,10.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,15,Columbia,2016,Advanced,6.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,38,Columbia,2016,Advanced,28.9
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,15,Columbia,2016,Advanced,40
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,38,Columbia,2016,Advanced,7.9
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,15,Columbia,2016,Advanced,6.7
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,176,Columbia,2016,Advanced,21.6
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,75,Columbia,2016,Advanced,10.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,170,Columbia,2016,Advanced,28.8
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,70,Columbia,2016,Advanced,15.7
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,173,Columbia,2016,Advanced,8.7
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,72,Columbia,2016,Advanced,2.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,103,Columbia,2016,Advanced,22.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,32,Columbia,2016,Advanced,3.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,102,Columbia,2016,Advanced,37.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,31,Columbia,2016,Advanced,12.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,102,Columbia,2016,Advanced,15.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,31,Columbia,2016,Advanced,6.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,107,Columbia,2016,Advanced,33.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,28,Columbia,2016,Advanced,14.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,108,Columbia,2016,Advanced,40.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,28,Columbia,2016,Advanced,14.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,111,Columbia,2016,Advanced,13.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,29,Columbia,2016,Advanced,3.4
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,143,Columbia,2016,Advanced,7
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,80,Columbia,2016,Advanced,3.8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,143,Columbia,2016,Advanced,12.6
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,80,Columbia,2016,Advanced,10
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,143,Columbia,2016,Advanced,2.8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,80,Columbia,2016,Advanced,0
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,42,Columbia,2016,Advanced,21.4
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,17,Columbia,2016,Advanced,11.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,43,Columbia,2016,Advanced,23.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,17,Columbia,2016,Advanced,5.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,43,Columbia,2016,Advanced,7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,17,Columbia,2016,Advanced,0
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,87,Columbia,2016,Advanced,12.6
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,23,Columbia,2016,Advanced,17.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,87,Columbia,2016,Advanced,19.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,23,Columbia,2016,Advanced,13
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,87,Columbia,2016,Advanced,4.6
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,23,Columbia,2016,Advanced,0
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,20,Columbia,2016,Advanced,0
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,19,Columbia,2016,Advanced,10.5
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,19,Columbia,2016,Advanced,0
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,140,Montour,2016,Advanced,41.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,37,Montour,2016,Advanced,24.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,144,Montour,2016,Advanced,48.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,38,Montour,2016,Advanced,28.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,145,Montour,2016,Advanced,17.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,38,Montour,2016,Advanced,13.2
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,38,Columbia,2016,Proficient,78.9
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,15,Columbia,2016,Proficient,73.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,38,Columbia,2016,Proficient,65.8
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,15,Columbia,2016,Proficient,53.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,38,Columbia,2016,Proficient,76.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,15,Columbia,2016,Proficient,60
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,176,Columbia,2016,Proficient,53.4
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,75,Columbia,2016,Proficient,42.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,170,Columbia,2016,Proficient,40
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,70,Columbia,2016,Proficient,32.9
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,173,Columbia,2016,Proficient,68.8
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,72,Columbia,2016,Proficient,56.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,103,Columbia,2016,Proficient,59.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,32,Columbia,2016,Proficient,59.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,102,Columbia,2016,Proficient,46.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,31,Columbia,2016,Proficient,51.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,102,Columbia,2016,Proficient,77.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,31,Columbia,2016,Proficient,74.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,107,Columbia,2016,Proficient,58.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,28,Columbia,2016,Proficient,71.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,108,Columbia,2016,Proficient,52.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,28,Columbia,2016,Proficient,75
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,111,Columbia,2016,Proficient,78.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,29,Columbia,2016,Proficient,79.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,143,Columbia,2016,Proficient,51
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,80,Columbia,2016,Proficient,38.8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,143,Columbia,2016,Proficient,44.1
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,80,Columbia,2016,Proficient,36.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,143,Columbia,2016,Proficient,64.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,80,Columbia,2016,Proficient,55
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,42,Columbia,2016,Proficient,59.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,17,Columbia,2016,Proficient,47.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,43,Columbia,2016,Proficient,58.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,17,Columbia,2016,Proficient,58.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,43,Columbia,2016,Proficient,76.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,17,Columbia,2016,Proficient,64.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,87,Columbia,2016,Proficient,72.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,23,Columbia,2016,Proficient,34.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,87,Columbia,2016,Proficient,63.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,23,Columbia,2016,Proficient,39.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,87,Columbia,2016,Proficient,83.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,23,Columbia,2016,Proficient,60.9
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,20,Columbia,2016,Proficient,40
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,19,Columbia,2016,Proficient,15.8
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,19,Columbia,2016,Proficient,63.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,140,Montour,2016,Proficient,47.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,37,Montour,2016,Proficient,37.8
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,144,Montour,2016,Proficient,41.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,38,Montour,2016,Proficient,42.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,145,Montour,2016,Proficient,78.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,38,Montour,2016,Proficient,71.1
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,38,Columbia,2016,Basic,2.6
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,15,Columbia,2016,Basic,6.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,38,Columbia,2016,Basic,2.6
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,15,Columbia,2016,Basic,0
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,38,Columbia,2016,Basic,10.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,15,Columbia,2016,Basic,20
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,176,Columbia,2016,Basic,21.6
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,75,Columbia,2016,Basic,38.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,170,Columbia,2016,Basic,17.6
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,70,Columbia,2016,Basic,25.7
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,173,Columbia,2016,Basic,19.1
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,72,Columbia,2016,Basic,33.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,103,Columbia,2016,Basic,16.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,32,Columbia,2016,Basic,31.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,102,Columbia,2016,Basic,11.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,31,Columbia,2016,Basic,22.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,102,Columbia,2016,Basic,3.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,31,Columbia,2016,Basic,9.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,107,Columbia,2016,Basic,7.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,28,Columbia,2016,Basic,14.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,108,Columbia,2016,Basic,3.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,28,Columbia,2016,Basic,3.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,111,Columbia,2016,Basic,7.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,29,Columbia,2016,Basic,13.8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,143,Columbia,2016,Basic,35.7
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,80,Columbia,2016,Basic,46.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,143,Columbia,2016,Basic,28.7
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,80,Columbia,2016,Basic,32.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,143,Columbia,2016,Basic,29.4
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,80,Columbia,2016,Basic,38.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,42,Columbia,2016,Basic,9.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,17,Columbia,2016,Basic,17.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,43,Columbia,2016,Basic,11.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,17,Columbia,2016,Basic,17.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,43,Columbia,2016,Basic,11.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,17,Columbia,2016,Basic,23.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,87,Columbia,2016,Basic,11.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,23,Columbia,2016,Basic,34.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,87,Columbia,2016,Basic,11.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,23,Columbia,2016,Basic,26.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,87,Columbia,2016,Basic,5.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,23,Columbia,2016,Basic,17.4
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,20,Columbia,2016,Basic,45
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,19,Columbia,2016,Basic,47.4
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,19,Columbia,2016,Basic,31.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,140,Montour,2016,Basic,10.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,37,Montour,2016,Basic,35.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,144,Montour,2016,Basic,8.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,38,Montour,2016,Basic,23.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,145,Montour,2016,Basic,3.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,38,Montour,2016,Basic,13.2
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,38,Columbia,2016,BelowBasic,7.9
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,15,Columbia,2016,BelowBasic,13.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,38,Columbia,2016,BelowBasic,2.6
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,15,Columbia,2016,BelowBasic,6.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,38,Columbia,2016,BelowBasic,5.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,15,Columbia,2016,BelowBasic,13.3
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,176,Columbia,2016,BelowBasic,3.4
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,75,Columbia,2016,BelowBasic,8
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,170,Columbia,2016,BelowBasic,13.5
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,70,Columbia,2016,BelowBasic,25.7
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,173,Columbia,2016,BelowBasic,3.5
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,72,Columbia,2016,BelowBasic,6.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,103,Columbia,2016,BelowBasic,1.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,32,Columbia,2016,BelowBasic,6.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,102,Columbia,2016,BelowBasic,4.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,31,Columbia,2016,BelowBasic,12.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,102,Columbia,2016,BelowBasic,2.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,31,Columbia,2016,BelowBasic,9.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,107,Columbia,2016,BelowBasic,0
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,28,Columbia,2016,BelowBasic,0
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,108,Columbia,2016,BelowBasic,2.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,28,Columbia,2016,BelowBasic,7.1
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,111,Columbia,2016,BelowBasic,0.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,29,Columbia,2016,BelowBasic,3.4
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,143,Columbia,2016,BelowBasic,6.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,80,Columbia,2016,BelowBasic,11.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,143,Columbia,2016,BelowBasic,14.7
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,80,Columbia,2016,BelowBasic,21.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,143,Columbia,2016,BelowBasic,3.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,80,Columbia,2016,BelowBasic,6.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,42,Columbia,2016,BelowBasic,9.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,17,Columbia,2016,BelowBasic,23.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,43,Columbia,2016,BelowBasic,7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,17,Columbia,2016,BelowBasic,17.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,43,Columbia,2016,BelowBasic,4.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,17,Columbia,2016,BelowBasic,11.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,87,Columbia,2016,BelowBasic,3.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,23,Columbia,2016,BelowBasic,13
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,87,Columbia,2016,BelowBasic,5.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,23,Columbia,2016,BelowBasic,21.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,87,Columbia,2016,BelowBasic,5.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,23,Columbia,2016,BelowBasic,21.7
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,20,Columbia,2016,BelowBasic,15
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,19,Columbia,2016,BelowBasic,26.3
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,19,Columbia,2016,BelowBasic,5.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,140,Montour,2016,BelowBasic,0.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,37,Montour,2016,BelowBasic,2.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,144,Montour,2016,BelowBasic,1.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,38,Montour,2016,BelowBasic,5.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,145,Montour,2016,BelowBasic,0.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,38,Montour,2016,BelowBasic,2.6
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,40,Columbia,2017,Advanced,40
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,21,Columbia,2017,Advanced,23.8
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,39,Columbia,2017,Advanced,46.2
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,20,Columbia,2017,Advanced,25
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,40,Columbia,2017,Advanced,2.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,21,Columbia,2017,Advanced,0
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,157,Columbia,2017,Advanced,35
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,70,Columbia,2017,Advanced,15.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,156,Columbia,2017,Advanced,29.5
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,69,Columbia,2017,Advanced,17.4
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,155,Columbia,2017,Advanced,3.2
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,68,Columbia,2017,Advanced,1.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,109,Columbia,2017,Advanced,21.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,29,Columbia,2017,Advanced,17.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,109,Columbia,2017,Advanced,37.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,29,Columbia,2017,Advanced,27.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,110,Columbia,2017,Advanced,6.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,29,Columbia,2017,Advanced,3.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,122,Columbia,2017,Advanced,27
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,34,Columbia,2017,Advanced,8.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,125,Columbia,2017,Advanced,40.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,34,Columbia,2017,Advanced,14.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,125,Columbia,2017,Advanced,12.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,35,Columbia,2017,Advanced,2.9
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,152,Columbia,2017,Advanced,10.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,84,Columbia,2017,Advanced,8.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,152,Columbia,2017,Advanced,12.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,84,Columbia,2017,Advanced,8.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,152,Columbia,2017,Advanced,2
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,84,Columbia,2017,Advanced,2.4
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,45,Columbia,2017,Advanced,37.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,15,Columbia,2017,Advanced,20
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,45,Columbia,2017,Advanced,20
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,15,Columbia,2017,Advanced,13.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,45,Columbia,2017,Advanced,13.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,15,Columbia,2017,Advanced,0
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,93,Columbia,2017,Advanced,9.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,26,Columbia,2017,Advanced,0
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,93,Columbia,2017,Advanced,30.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,26,Columbia,2017,Advanced,7.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,93,Columbia,2017,Advanced,4.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,26,Columbia,2017,Advanced,0
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,14,Columbia,2017,Advanced,0
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,14,Columbia,2017,Advanced,0
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,14,Columbia,2017,Advanced,0
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,135,Montour,2017,Advanced,43
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,37,Montour,2017,Advanced,13.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,140,Montour,2017,Advanced,52.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,33,Montour,2017,Advanced,15.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,142,Montour,2017,Advanced,25.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,33,Montour,2017,Advanced,9.1
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,40,Columbia,2017,Proficient,40
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,21,Columbia,2017,Proficient,47.6
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,39,Columbia,2017,Proficient,41
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,20,Columbia,2017,Proficient,55
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,40,Columbia,2017,Proficient,70
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,21,Columbia,2017,Proficient,57.1
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,157,Columbia,2017,Proficient,47.1
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,70,Columbia,2017,Proficient,54.3
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,156,Columbia,2017,Proficient,39.1
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,69,Columbia,2017,Proficient,36.2
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,155,Columbia,2017,Proficient,73.5
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,68,Columbia,2017,Proficient,58.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,109,Columbia,2017,Proficient,64.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,29,Columbia,2017,Proficient,65.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,109,Columbia,2017,Proficient,44
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,29,Columbia,2017,Proficient,48.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,110,Columbia,2017,Proficient,77.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,29,Columbia,2017,Proficient,65.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,122,Columbia,2017,Proficient,59.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,34,Columbia,2017,Proficient,61.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,125,Columbia,2017,Proficient,44
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,34,Columbia,2017,Proficient,50
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,125,Columbia,2017,Proficient,76.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,35,Columbia,2017,Proficient,71.4
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,152,Columbia,2017,Proficient,42.1
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,84,Columbia,2017,Proficient,31
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,152,Columbia,2017,Proficient,26.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,84,Columbia,2017,Proficient,15.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,152,Columbia,2017,Proficient,52.6
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,84,Columbia,2017,Proficient,38.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,45,Columbia,2017,Proficient,37.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,15,Columbia,2017,Proficient,20
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,45,Columbia,2017,Proficient,48.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,15,Columbia,2017,Proficient,33.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,45,Columbia,2017,Proficient,64.4
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,15,Columbia,2017,Proficient,40
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,93,Columbia,2017,Proficient,75.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,26,Columbia,2017,Proficient,61.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,93,Columbia,2017,Proficient,48.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,26,Columbia,2017,Proficient,46.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,93,Columbia,2017,Proficient,83.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,26,Columbia,2017,Proficient,61.5
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,14,Columbia,2017,Proficient,28.6
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,14,Columbia,2017,Proficient,35.7
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,14,Columbia,2017,Proficient,50
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,135,Montour,2017,Proficient,38.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,37,Montour,2017,Proficient,35.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,140,Montour,2017,Proficient,28.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,33,Montour,2017,Proficient,24.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,142,Montour,2017,Proficient,66.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,33,Montour,2017,Proficient,66.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,40,Columbia,2017,Basic,7.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,21,Columbia,2017,Basic,14.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,39,Columbia,2017,Basic,7.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,20,Columbia,2017,Basic,10
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,40,Columbia,2017,Basic,15
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,21,Columbia,2017,Basic,23.8
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,157,Columbia,2017,Basic,15.3
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,70,Columbia,2017,Basic,24.3
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,156,Columbia,2017,Basic,16.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,69,Columbia,2017,Basic,17.4
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,155,Columbia,2017,Basic,18.7
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,68,Columbia,2017,Basic,30.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,109,Columbia,2017,Basic,12.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,29,Columbia,2017,Basic,13.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,109,Columbia,2017,Basic,15.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,29,Columbia,2017,Basic,20.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,110,Columbia,2017,Basic,13.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,29,Columbia,2017,Basic,24.1
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,122,Columbia,2017,Basic,10.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,34,Columbia,2017,Basic,20.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,125,Columbia,2017,Basic,11.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,34,Columbia,2017,Basic,23.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,125,Columbia,2017,Basic,9.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,35,Columbia,2017,Basic,22.9
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,152,Columbia,2017,Basic,38.8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,84,Columbia,2017,Basic,45.2
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,152,Columbia,2017,Basic,44.1
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,84,Columbia,2017,Basic,48.8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,152,Columbia,2017,Basic,38.2
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,84,Columbia,2017,Basic,46.4
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,45,Columbia,2017,Basic,15.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,15,Columbia,2017,Basic,33.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,45,Columbia,2017,Basic,15.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,15,Columbia,2017,Basic,6.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,45,Columbia,2017,Basic,13.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,15,Columbia,2017,Basic,33.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,93,Columbia,2017,Basic,11.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,26,Columbia,2017,Basic,26.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,93,Columbia,2017,Basic,16.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,26,Columbia,2017,Basic,30.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,93,Columbia,2017,Basic,9.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,26,Columbia,2017,Basic,30.8
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,14,Columbia,2017,Basic,57.1
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,14,Columbia,2017,Basic,21.4
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,14,Columbia,2017,Basic,35.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,135,Montour,2017,Basic,14.8
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,37,Montour,2017,Basic,37.8
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,140,Montour,2017,Basic,17.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,33,Montour,2017,Basic,54.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,142,Montour,2017,Basic,5.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,33,Montour,2017,Basic,15.2
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,40,Columbia,2017,BelowBasic,12.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,21,Columbia,2017,BelowBasic,14.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,39,Columbia,2017,BelowBasic,5.1
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,20,Columbia,2017,BelowBasic,10
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,40,Columbia,2017,BelowBasic,12.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,21,Columbia,2017,BelowBasic,19
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,157,Columbia,2017,BelowBasic,2.5
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,70,Columbia,2017,BelowBasic,5.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,156,Columbia,2017,BelowBasic,14.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,69,Columbia,2017,BelowBasic,29
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,155,Columbia,2017,BelowBasic,4.5
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,68,Columbia,2017,BelowBasic,8.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,109,Columbia,2017,BelowBasic,1.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,29,Columbia,2017,BelowBasic,3.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,109,Columbia,2017,BelowBasic,2.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,29,Columbia,2017,BelowBasic,3.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,110,Columbia,2017,BelowBasic,2.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,29,Columbia,2017,BelowBasic,6.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,122,Columbia,2017,BelowBasic,2.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,34,Columbia,2017,BelowBasic,8.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,125,Columbia,2017,BelowBasic,4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,34,Columbia,2017,BelowBasic,11.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,125,Columbia,2017,BelowBasic,0.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,35,Columbia,2017,BelowBasic,2.9
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,152,Columbia,2017,BelowBasic,8.6
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,84,Columbia,2017,BelowBasic,15.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,152,Columbia,2017,BelowBasic,17.1
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,84,Columbia,2017,BelowBasic,27.4
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,152,Columbia,2017,BelowBasic,7.2
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,84,Columbia,2017,BelowBasic,13.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,45,Columbia,2017,BelowBasic,8.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,15,Columbia,2017,BelowBasic,26.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,45,Columbia,2017,BelowBasic,15.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,15,Columbia,2017,BelowBasic,46.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,45,Columbia,2017,BelowBasic,8.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,15,Columbia,2017,BelowBasic,26.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,93,Columbia,2017,BelowBasic,3.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,26,Columbia,2017,BelowBasic,11.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,93,Columbia,2017,BelowBasic,5.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,26,Columbia,2017,BelowBasic,15.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,93,Columbia,2017,BelowBasic,2.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,26,Columbia,2017,BelowBasic,7.7
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,14,Columbia,2017,BelowBasic,14.3
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,14,Columbia,2017,BelowBasic,42.9
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,14,Columbia,2017,BelowBasic,14.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,135,Montour,2017,BelowBasic,3.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,37,Montour,2017,BelowBasic,13.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,140,Montour,2017,BelowBasic,2.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,33,Montour,2017,BelowBasic,6.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,142,Montour,2017,BelowBasic,2.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,33,Montour,2017,BelowBasic,9.1
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,36,Columbia,2018,Advanced,13.9
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,24,Columbia,2018,Advanced,12.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,35,Columbia,2018,Advanced,37.1
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,23,Columbia,2018,Advanced,43.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,35,Columbia,2018,Advanced,8.6
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,23,Columbia,2018,Advanced,8.7
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,155,Columbia,2018,Advanced,22.6
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,69,Columbia,2018,Advanced,20.3
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,155,Columbia,2018,Advanced,31.6
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,71,Columbia,2018,Advanced,19.7
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,154,Columbia,2018,Advanced,9.1
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,70,Columbia,2018,Advanced,2.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,75,Columbia,2018,Advanced,25.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,29,Columbia,2018,Advanced,24.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,76,Columbia,2018,Advanced,17.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,29,Columbia,2018,Advanced,10.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,77,Columbia,2018,Advanced,2.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,30,Columbia,2018,Advanced,3.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,128,Columbia,2018,Advanced,41.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,38,Columbia,2018,Advanced,26.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,128,Columbia,2018,Advanced,42.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,37,Columbia,2018,Advanced,21.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,129,Columbia,2018,Advanced,15.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,38,Columbia,2018,Advanced,5.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,137,Columbia,2018,Advanced,8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,90,Columbia,2018,Advanced,4.4
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,138,Columbia,2018,Advanced,14.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,90,Columbia,2018,Advanced,11.1
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,138,Columbia,2018,Advanced,1.4
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,90,Columbia,2018,Advanced,0
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,42,Columbia,2018,Advanced,31
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,14,Columbia,2018,Advanced,7.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,42,Columbia,2018,Advanced,33.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,15,Columbia,2018,Advanced,6.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,41,Columbia,2018,Advanced,0
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,14,Columbia,2018,Advanced,0
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,106,Columbia,2018,Advanced,22.6
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,23,Columbia,2018,Advanced,17.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,107,Columbia,2018,Advanced,13.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,23,Columbia,2018,Advanced,4.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,107,Columbia,2018,Advanced,15.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,23,Columbia,2018,Advanced,4.3
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,11,Columbia,2018,Advanced,0
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,Historically Underperforming,11,Columbia,2018,Advanced,0
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,147,Montour,2018,Advanced,60.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,29,Montour,2018,Advanced,20.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,155,Montour,2018,Advanced,58.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,28,Montour,2018,Advanced,21.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,156,Montour,2018,Advanced,27.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,30,Montour,2018,Advanced,3.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,36,Columbia,2018,Proficient,61.1
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,24,Columbia,2018,Proficient,58.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,35,Columbia,2018,Proficient,48.6
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,23,Columbia,2018,Proficient,34.8
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,35,Columbia,2018,Proficient,74.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,23,Columbia,2018,Proficient,65.2
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,155,Columbia,2018,Proficient,54.2
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,69,Columbia,2018,Proficient,42
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,155,Columbia,2018,Proficient,39.4
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,71,Columbia,2018,Proficient,33.8
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,154,Columbia,2018,Proficient,68.8
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,70,Columbia,2018,Proficient,55.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,75,Columbia,2018,Proficient,45.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,29,Columbia,2018,Proficient,44.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,76,Columbia,2018,Proficient,42.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,29,Columbia,2018,Proficient,37.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,77,Columbia,2018,Proficient,77.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,30,Columbia,2018,Proficient,70
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,128,Columbia,2018,Proficient,46.1
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,38,Columbia,2018,Proficient,50
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,128,Columbia,2018,Proficient,45.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,37,Columbia,2018,Proficient,59.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,129,Columbia,2018,Proficient,74.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,38,Columbia,2018,Proficient,76.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,137,Columbia,2018,Proficient,46
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,90,Columbia,2018,Proficient,41.1
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,138,Columbia,2018,Proficient,34.1
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,90,Columbia,2018,Proficient,31.1
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,138,Columbia,2018,Proficient,42
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,90,Columbia,2018,Proficient,42.2
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,42,Columbia,2018,Proficient,35.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,14,Columbia,2018,Proficient,35.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,42,Columbia,2018,Proficient,31
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,15,Columbia,2018,Proficient,26.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,41,Columbia,2018,Proficient,68.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,14,Columbia,2018,Proficient,42.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,106,Columbia,2018,Proficient,63.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,23,Columbia,2018,Proficient,39.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,107,Columbia,2018,Proficient,68.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,23,Columbia,2018,Proficient,47.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,107,Columbia,2018,Proficient,72
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,23,Columbia,2018,Proficient,56.5
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,11,Columbia,2018,Proficient,18.2
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,Historically Underperforming,11,Columbia,2018,Proficient,18.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,147,Montour,2018,Proficient,24.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,29,Montour,2018,Proficient,20.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,155,Montour,2018,Proficient,29.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,28,Montour,2018,Proficient,28.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,156,Montour,2018,Proficient,64.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,30,Montour,2018,Proficient,56.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,36,Columbia,2018,Basic,16.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,24,Columbia,2018,Basic,16.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,35,Columbia,2018,Basic,5.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,23,Columbia,2018,Basic,8.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,35,Columbia,2018,Basic,11.4
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,23,Columbia,2018,Basic,17.4
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,155,Columbia,2018,Basic,18.1
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,69,Columbia,2018,Basic,30.4
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,155,Columbia,2018,Basic,14.8
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,71,Columbia,2018,Basic,22.5
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,154,Columbia,2018,Basic,15.6
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,70,Columbia,2018,Basic,28.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,75,Columbia,2018,Basic,25.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,29,Columbia,2018,Basic,24.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,76,Columbia,2018,Basic,35.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,29,Columbia,2018,Basic,37.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,77,Columbia,2018,Basic,14.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,30,Columbia,2018,Basic,13.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,128,Columbia,2018,Basic,12.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,38,Columbia,2018,Basic,23.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,128,Columbia,2018,Basic,8.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,37,Columbia,2018,Basic,13.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,129,Columbia,2018,Basic,7.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,38,Columbia,2018,Basic,13.2
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,137,Columbia,2018,Basic,35.8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,90,Columbia,2018,Basic,40
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,138,Columbia,2018,Basic,37
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,90,Columbia,2018,Basic,37.8
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,138,Columbia,2018,Basic,42
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,90,Columbia,2018,Basic,38.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,42,Columbia,2018,Basic,23.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,14,Columbia,2018,Basic,42.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,42,Columbia,2018,Basic,23.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,15,Columbia,2018,Basic,40
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,41,Columbia,2018,Basic,24.4
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,14,Columbia,2018,Basic,35.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,106,Columbia,2018,Basic,13.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,23,Columbia,2018,Basic,39.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,107,Columbia,2018,Basic,15.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,23,Columbia,2018,Basic,39.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,107,Columbia,2018,Basic,9.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,23,Columbia,2018,Basic,26.1
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,11,Columbia,2018,Basic,36.4
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,Historically Underperforming,11,Columbia,2018,Basic,36.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,147,Montour,2018,Basic,12.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,29,Montour,2018,Basic,51.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,155,Montour,2018,Basic,7.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,28,Montour,2018,Basic,32.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,156,Montour,2018,Basic,5.8
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,30,Montour,2018,Basic,26.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,All Students,36,Columbia,2018,BelowBasic,8.3
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Algebra I,Historically Underperforming,24,Columbia,2018,BelowBasic,12.5
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,All Students,35,Columbia,2018,BelowBasic,8.6
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Biology,Historically Underperforming,23,Columbia,2018,BelowBasic,13
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,All Students,35,Columbia,2018,BelowBasic,5.7
-BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Literature,Historically Underperforming,23,Columbia,2018,BelowBasic,8.7
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,155,Columbia,2018,BelowBasic,5.2
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,69,Columbia,2018,BelowBasic,7.2
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,155,Columbia,2018,BelowBasic,14.2
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,71,Columbia,2018,BelowBasic,23.9
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,154,Columbia,2018,BelowBasic,6.5
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,70,Columbia,2018,BelowBasic,12.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,75,Columbia,2018,BelowBasic,4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,29,Columbia,2018,BelowBasic,6.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,76,Columbia,2018,BelowBasic,5.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,29,Columbia,2018,BelowBasic,13.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,77,Columbia,2018,BelowBasic,5.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,30,Columbia,2018,BelowBasic,13.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,128,Columbia,2018,BelowBasic,0
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,38,Columbia,2018,BelowBasic,0
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,128,Columbia,2018,BelowBasic,3.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,37,Columbia,2018,BelowBasic,5.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,129,Columbia,2018,BelowBasic,2.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,38,Columbia,2018,BelowBasic,5.3
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,All Students,137,Columbia,2018,BelowBasic,10.2
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Algebra I,Historically Underperforming,90,Columbia,2018,BelowBasic,14.4
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,All Students,138,Columbia,2018,BelowBasic,14.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Biology,Historically Underperforming,90,Columbia,2018,BelowBasic,20
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,All Students,138,Columbia,2018,BelowBasic,14.5
-COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Literature,Historically Underperforming,90,Columbia,2018,BelowBasic,18.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,42,Columbia,2018,BelowBasic,9.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,14,Columbia,2018,BelowBasic,14.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,42,Columbia,2018,BelowBasic,11.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,15,Columbia,2018,BelowBasic,26.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,41,Columbia,2018,BelowBasic,7.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,14,Columbia,2018,BelowBasic,21.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,106,Columbia,2018,BelowBasic,0.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,23,Columbia,2018,BelowBasic,4.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,107,Columbia,2018,BelowBasic,2.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,23,Columbia,2018,BelowBasic,8.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,107,Columbia,2018,BelowBasic,2.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,23,Columbia,2018,BelowBasic,13
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,11,Columbia,2018,BelowBasic,45.5
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,Historically Underperforming,11,Columbia,2018,BelowBasic,45.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,147,Montour,2018,BelowBasic,2.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,29,Montour,2018,BelowBasic,6.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,155,Montour,2018,BelowBasic,3.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,28,Montour,2018,BelowBasic,17.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,156,Montour,2018,BelowBasic,2.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,30,Montour,2018,BelowBasic,13.3
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,54,Columbia,2019,Advanced,25.9
-BENTON AREA SD,BENTON AREA HS,Algebra I,Historically Underperforming,26,Columbia,2019,Advanced,15.4
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,54,Columbia,2019,Advanced,40.7
-BENTON AREA SD,BENTON AREA HS,Biology,Historically Underperforming,26,Columbia,2019,Advanced,30.8
-BENTON AREA SD,BENTON AREA HS,Literature,All Students,54,Columbia,2019,Advanced,9.3
-BENTON AREA SD,BENTON AREA HS,Literature,Historically Underperforming,26,Columbia,2019,Advanced,11.5
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,153,Columbia,2019,Advanced,17.6
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,49,Columbia,2019,Advanced,6.1
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,152,Columbia,2019,Advanced,22.4
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,48,Columbia,2019,Advanced,4.2
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,152,Columbia,2019,Advanced,3.3
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,48,Columbia,2019,Advanced,2.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,77,Columbia,2019,Advanced,36.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,30,Columbia,2019,Advanced,30
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,84,Columbia,2019,Advanced,22.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,31,Columbia,2019,Advanced,19.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,84,Columbia,2019,Advanced,10.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,31,Columbia,2019,Advanced,9.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,120,Columbia,2019,Advanced,36.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,30,Columbia,2019,Advanced,20
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,123,Columbia,2019,Advanced,37.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,31,Columbia,2019,Advanced,19.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,123,Columbia,2019,Advanced,23.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,31,Columbia,2019,Advanced,9.7
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,147,Columbia,2019,Advanced,15.6
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,102,Columbia,2019,Advanced,10.8
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,All Students,148,Columbia,2019,Advanced,14.2
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,Historically Underperforming,102,Columbia,2019,Advanced,9.8
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,All Students,147,Columbia,2019,Advanced,0.7
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,Historically Underperforming,101,Columbia,2019,Advanced,0
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,46,Columbia,2019,Advanced,21.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,23,Columbia,2019,Advanced,13
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,46,Columbia,2019,Advanced,21.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,23,Columbia,2019,Advanced,13
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,46,Columbia,2019,Advanced,10.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,23,Columbia,2019,Advanced,0
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,103,Columbia,2019,Advanced,14.6
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,17,Columbia,2019,Advanced,11.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,103,Columbia,2019,Advanced,24.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,17,Columbia,2019,Advanced,5.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,103,Columbia,2019,Advanced,18.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,17,Columbia,2019,Advanced,0
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,11,Columbia,2019,Advanced,9.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,152,Montour,2019,Advanced,45.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,52,Montour,2019,Advanced,23.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,157,Montour,2019,Advanced,43.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,53,Montour,2019,Advanced,26.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,157,Montour,2019,Advanced,19.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,52,Montour,2019,Advanced,5.8
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,54,Columbia,2019,Proficient,55.6
-BENTON AREA SD,BENTON AREA HS,Algebra I,Historically Underperforming,26,Columbia,2019,Proficient,53.8
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,54,Columbia,2019,Proficient,50
-BENTON AREA SD,BENTON AREA HS,Biology,Historically Underperforming,26,Columbia,2019,Proficient,53.8
-BENTON AREA SD,BENTON AREA HS,Literature,All Students,54,Columbia,2019,Proficient,75.9
-BENTON AREA SD,BENTON AREA HS,Literature,Historically Underperforming,26,Columbia,2019,Proficient,61.5
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,153,Columbia,2019,Proficient,49
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,49,Columbia,2019,Proficient,30.6
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,152,Columbia,2019,Proficient,43.4
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,48,Columbia,2019,Proficient,35.4
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,152,Columbia,2019,Proficient,65.8
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,48,Columbia,2019,Proficient,45.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,77,Columbia,2019,Proficient,46.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,30,Columbia,2019,Proficient,40
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,84,Columbia,2019,Proficient,56
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,31,Columbia,2019,Proficient,45.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,84,Columbia,2019,Proficient,67.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,31,Columbia,2019,Proficient,64.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,120,Columbia,2019,Proficient,50
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,30,Columbia,2019,Proficient,40
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,123,Columbia,2019,Proficient,51.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,31,Columbia,2019,Proficient,54.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,123,Columbia,2019,Proficient,65
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,31,Columbia,2019,Proficient,54.8
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,147,Columbia,2019,Proficient,38.1
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,102,Columbia,2019,Proficient,33.3
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,All Students,148,Columbia,2019,Proficient,31.8
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,Historically Underperforming,102,Columbia,2019,Proficient,26.5
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,All Students,147,Columbia,2019,Proficient,48.3
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,Historically Underperforming,101,Columbia,2019,Proficient,38.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,46,Columbia,2019,Proficient,32.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,23,Columbia,2019,Proficient,26.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,46,Columbia,2019,Proficient,32.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,23,Columbia,2019,Proficient,30.4
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,46,Columbia,2019,Proficient,58.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,23,Columbia,2019,Proficient,43.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,103,Columbia,2019,Proficient,76.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,17,Columbia,2019,Proficient,52.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,103,Columbia,2019,Proficient,65
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,17,Columbia,2019,Proficient,64.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,103,Columbia,2019,Proficient,70.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,17,Columbia,2019,Proficient,64.7
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,11,Columbia,2019,Proficient,9.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,152,Montour,2019,Proficient,32.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,52,Montour,2019,Proficient,34.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,157,Montour,2019,Proficient,38.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,53,Montour,2019,Proficient,28.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,157,Montour,2019,Proficient,66.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,52,Montour,2019,Proficient,63.5
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,54,Columbia,2019,Basic,14.8
-BENTON AREA SD,BENTON AREA HS,Algebra I,Historically Underperforming,26,Columbia,2019,Basic,23.1
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,54,Columbia,2019,Basic,3.7
-BENTON AREA SD,BENTON AREA HS,Biology,Historically Underperforming,26,Columbia,2019,Basic,3.8
-BENTON AREA SD,BENTON AREA HS,Literature,All Students,54,Columbia,2019,Basic,9.3
-BENTON AREA SD,BENTON AREA HS,Literature,Historically Underperforming,26,Columbia,2019,Basic,15.4
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,153,Columbia,2019,Basic,25.5
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,49,Columbia,2019,Basic,40.8
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,152,Columbia,2019,Basic,21.1
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,48,Columbia,2019,Basic,29.2
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,152,Columbia,2019,Basic,27
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,48,Columbia,2019,Basic,41.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,77,Columbia,2019,Basic,15.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,30,Columbia,2019,Basic,26.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,84,Columbia,2019,Basic,19
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,31,Columbia,2019,Basic,29
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,84,Columbia,2019,Basic,17.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,31,Columbia,2019,Basic,16.1
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,120,Columbia,2019,Basic,10.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,30,Columbia,2019,Basic,30
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,123,Columbia,2019,Basic,7.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,31,Columbia,2019,Basic,9.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,123,Columbia,2019,Basic,8.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,31,Columbia,2019,Basic,29
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,147,Columbia,2019,Basic,33.3
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,102,Columbia,2019,Basic,38.2
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,All Students,148,Columbia,2019,Basic,29.7
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,Historically Underperforming,102,Columbia,2019,Basic,31.4
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,All Students,147,Columbia,2019,Basic,41.5
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,Historically Underperforming,101,Columbia,2019,Basic,48.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,46,Columbia,2019,Basic,23.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,23,Columbia,2019,Basic,17.4
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,46,Columbia,2019,Basic,21.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,23,Columbia,2019,Basic,8.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,46,Columbia,2019,Basic,10.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,23,Columbia,2019,Basic,17.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,103,Columbia,2019,Basic,6.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,17,Columbia,2019,Basic,23.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,103,Columbia,2019,Basic,6.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,17,Columbia,2019,Basic,5.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,103,Columbia,2019,Basic,8.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,17,Columbia,2019,Basic,23.5
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,11,Columbia,2019,Basic,54.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,152,Montour,2019,Basic,16.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,52,Montour,2019,Basic,26.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,157,Montour,2019,Basic,8.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,53,Montour,2019,Basic,17
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,157,Montour,2019,Basic,7.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,52,Montour,2019,Basic,13.5
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,54,Columbia,2019,BelowBasic,3.7
-BENTON AREA SD,BENTON AREA HS,Algebra I,Historically Underperforming,26,Columbia,2019,BelowBasic,7.7
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,54,Columbia,2019,BelowBasic,5.6
-BENTON AREA SD,BENTON AREA HS,Biology,Historically Underperforming,26,Columbia,2019,BelowBasic,11.5
-BENTON AREA SD,BENTON AREA HS,Literature,All Students,54,Columbia,2019,BelowBasic,5.6
-BENTON AREA SD,BENTON AREA HS,Literature,Historically Underperforming,26,Columbia,2019,BelowBasic,11.5
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,153,Columbia,2019,BelowBasic,7.8
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,49,Columbia,2019,BelowBasic,22.4
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,152,Columbia,2019,BelowBasic,13.2
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,48,Columbia,2019,BelowBasic,31.3
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,152,Columbia,2019,BelowBasic,3.9
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,48,Columbia,2019,BelowBasic,10.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,77,Columbia,2019,BelowBasic,1.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,30,Columbia,2019,BelowBasic,3.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,84,Columbia,2019,BelowBasic,2.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,31,Columbia,2019,BelowBasic,6.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,84,Columbia,2019,BelowBasic,3.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,31,Columbia,2019,BelowBasic,9.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,120,Columbia,2019,BelowBasic,2.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,30,Columbia,2019,BelowBasic,10
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,123,Columbia,2019,BelowBasic,4.1
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,31,Columbia,2019,BelowBasic,16.1
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,123,Columbia,2019,BelowBasic,2.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,31,Columbia,2019,BelowBasic,6.5
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,147,Columbia,2019,BelowBasic,12.9
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,102,Columbia,2019,BelowBasic,17.6
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,All Students,148,Columbia,2019,BelowBasic,24.3
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,Historically Underperforming,102,Columbia,2019,BelowBasic,32.4
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,All Students,147,Columbia,2019,BelowBasic,9.5
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,Historically Underperforming,101,Columbia,2019,BelowBasic,12.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,46,Columbia,2019,BelowBasic,21.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,23,Columbia,2019,BelowBasic,43.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,46,Columbia,2019,BelowBasic,23.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,23,Columbia,2019,BelowBasic,47.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,46,Columbia,2019,BelowBasic,19.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,23,Columbia,2019,BelowBasic,39.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,103,Columbia,2019,BelowBasic,1.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,17,Columbia,2019,BelowBasic,11.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,103,Columbia,2019,BelowBasic,3.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,17,Columbia,2019,BelowBasic,23.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,103,Columbia,2019,BelowBasic,1.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,17,Columbia,2019,BelowBasic,11.8
-SUSQ-CYBER CS,SUSQ-CYBER CS,Biology,All Students,11,Columbia,2019,BelowBasic,27.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,152,Montour,2019,BelowBasic,5.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,52,Montour,2019,BelowBasic,15.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,157,Montour,2019,BelowBasic,10.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,53,Montour,2019,BelowBasic,28.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,157,Montour,2019,BelowBasic,6.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,52,Montour,2019,BelowBasic,17.3
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,43,Columbia,2021,Advanced,23.3
-BENTON AREA SD,BENTON AREA HS,Algebra I,Historically Underperforming,18,Columbia,2021,Advanced,11.1
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,13,Columbia,2021,Advanced,46.2
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,133,Columbia,2021,Advanced,11.3
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,66,Columbia,2021,Advanced,6.1
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,37,Columbia,2021,Advanced,51.4
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,13,Columbia,2021,Advanced,38.5
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,24,Columbia,2021,Advanced,37.5
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,11,Columbia,2021,Advanced,18.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,86,Columbia,2021,Advanced,30.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,25,Columbia,2021,Advanced,20
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,48,Columbia,2021,Advanced,35.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,132,Columbia,2021,Advanced,49.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,25,Columbia,2021,Advanced,20
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,61,Columbia,2021,Advanced,62.3
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,42,Columbia,2021,Advanced,26.2
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,24,Columbia,2021,Advanced,12.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,37,Columbia,2021,Advanced,18.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,15,Columbia,2021,Advanced,13.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,100,Columbia,2021,Advanced,34
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,27,Columbia,2021,Advanced,25.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,99,Columbia,2021,Advanced,4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,28,Columbia,2021,Advanced,3.6
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,16,Columbia,2021,Advanced,12.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,128,Montour,2021,Advanced,46.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,34,Montour,2021,Advanced,41.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,59,Montour,2021,Advanced,78
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,43,Columbia,2021,Proficient,30.2
-BENTON AREA SD,BENTON AREA HS,Algebra I,Historically Underperforming,18,Columbia,2021,Proficient,27.8
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,13,Columbia,2021,Proficient,53.8
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,133,Columbia,2021,Proficient,48.1
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,66,Columbia,2021,Proficient,28.8
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,37,Columbia,2021,Proficient,24.3
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,13,Columbia,2021,Proficient,7.7
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,24,Columbia,2021,Proficient,33.3
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,11,Columbia,2021,Proficient,27.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,86,Columbia,2021,Proficient,23.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,25,Columbia,2021,Proficient,20
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,48,Columbia,2021,Proficient,41.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,132,Columbia,2021,Proficient,34.1
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,25,Columbia,2021,Proficient,40
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,61,Columbia,2021,Proficient,26.2
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,42,Columbia,2021,Proficient,35.7
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,24,Columbia,2021,Proficient,37.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,37,Columbia,2021,Proficient,29.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,15,Columbia,2021,Proficient,13.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,100,Columbia,2021,Proficient,48
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,27,Columbia,2021,Proficient,37
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,99,Columbia,2021,Proficient,54.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,28,Columbia,2021,Proficient,42.9
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,16,Columbia,2021,Proficient,43.8
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,128,Montour,2021,Proficient,43
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,34,Montour,2021,Proficient,32.4
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,59,Montour,2021,Proficient,20.3
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,43,Columbia,2021,Basic,27.9
-BENTON AREA SD,BENTON AREA HS,Algebra I,Historically Underperforming,18,Columbia,2021,Basic,27.8
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,13,Columbia,2021,Basic,0
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,133,Columbia,2021,Basic,27.1
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,66,Columbia,2021,Basic,42.4
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,37,Columbia,2021,Basic,13.5
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,13,Columbia,2021,Basic,23.1
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,24,Columbia,2021,Basic,8.3
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,11,Columbia,2021,Basic,9.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,86,Columbia,2021,Basic,39.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,25,Columbia,2021,Basic,52
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,48,Columbia,2021,Basic,16.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,132,Columbia,2021,Basic,14.4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,25,Columbia,2021,Basic,36
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,61,Columbia,2021,Basic,9.8
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,42,Columbia,2021,Basic,35.7
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,24,Columbia,2021,Basic,45.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,37,Columbia,2021,Basic,37.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,15,Columbia,2021,Basic,46.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,100,Columbia,2021,Basic,13
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,27,Columbia,2021,Basic,18.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,99,Columbia,2021,Basic,27.3
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,28,Columbia,2021,Basic,17.9
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,16,Columbia,2021,Basic,31.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,128,Montour,2021,Basic,10.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,34,Montour,2021,Basic,23.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,59,Montour,2021,Basic,1.7
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,43,Columbia,2021,BelowBasic,18.6
-BENTON AREA SD,BENTON AREA HS,Algebra I,Historically Underperforming,18,Columbia,2021,BelowBasic,33.3
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,13,Columbia,2021,BelowBasic,0
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,133,Columbia,2021,BelowBasic,13.5
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,66,Columbia,2021,BelowBasic,22.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,37,Columbia,2021,BelowBasic,10.8
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,13,Columbia,2021,BelowBasic,30.8
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,24,Columbia,2021,BelowBasic,20.8
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,11,Columbia,2021,BelowBasic,45.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,86,Columbia,2021,BelowBasic,7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,25,Columbia,2021,BelowBasic,8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,48,Columbia,2021,BelowBasic,6.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,132,Columbia,2021,BelowBasic,2.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,25,Columbia,2021,BelowBasic,4
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,61,Columbia,2021,BelowBasic,1.6
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,42,Columbia,2021,BelowBasic,2.4
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,24,Columbia,2021,BelowBasic,4.2
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,37,Columbia,2021,BelowBasic,13.5
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,Historically Underperforming,15,Columbia,2021,BelowBasic,26.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,100,Columbia,2021,BelowBasic,5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,Historically Underperforming,27,Columbia,2021,BelowBasic,18.5
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,99,Columbia,2021,BelowBasic,14.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,28,Columbia,2021,BelowBasic,35.7
-SUSQ-CYBER CS,SUSQ-CYBER CS,Algebra I,All Students,16,Columbia,2021,BelowBasic,12.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,128,Montour,2021,BelowBasic,0.8
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,34,Montour,2021,BelowBasic,2.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,59,Montour,2021,BelowBasic,0
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,16,Columbia,2022,Advanced,68.8
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,24,Columbia,2022,Advanced,8.3
-BENTON AREA SD,BENTON AREA HS,Biology,Historically Underperforming,12,Columbia,2022,Advanced,0
-BENTON AREA SD,BENTON AREA HS,Literature,All Students,38,Columbia,2022,Advanced,5.3
-BENTON AREA SD,BENTON AREA HS,Literature,Historically Underperforming,17,Columbia,2022,Advanced,11.8
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,70,Columbia,2022,Advanced,34.3
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,25,Columbia,2022,Advanced,24
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,121,Columbia,2022,Advanced,1.7
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,68,Columbia,2022,Advanced,1.5
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,135,Columbia,2022,Advanced,0.7
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,69,Columbia,2022,Advanced,0
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,45,Columbia,2022,Advanced,68.9
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,13,Columbia,2022,Advanced,53.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,37,Columbia,2022,Advanced,16.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,19,Columbia,2022,Advanced,5.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,88,Columbia,2022,Advanced,13.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,29,Columbia,2022,Advanced,6.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,92,Columbia,2022,Advanced,54.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,16,Columbia,2022,Advanced,50
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,92,Columbia,2022,Advanced,19.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,24,Columbia,2022,Advanced,4.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,134,Columbia,2022,Advanced,17.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,32,Columbia,2022,Advanced,9.4
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,114,Columbia,2022,Advanced,7.9
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,82,Columbia,2022,Advanced,7.3
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,All Students,141,Columbia,2022,Advanced,2.1
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,Historically Underperforming,96,Columbia,2022,Advanced,2.1
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,All Students,144,Columbia,2022,Advanced,0
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,Historically Underperforming,98,Columbia,2022,Advanced,0
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,11,Columbia,2022,Advanced,9.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,30,Columbia,2022,Advanced,10
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,17,Columbia,2022,Advanced,5.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,32,Columbia,2022,Advanced,3.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,17,Columbia,2022,Advanced,5.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,43,Columbia,2022,Advanced,62.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,77,Columbia,2022,Advanced,16.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,13,Columbia,2022,Advanced,0
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,79,Columbia,2022,Advanced,12.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,13,Columbia,2022,Advanced,0
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,11,Columbia,2022,Advanced,0
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,108,Montour,2022,Advanced,46.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,22,Montour,2022,Advanced,22.7
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,82,Montour,2022,Advanced,23.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,24,Montour,2022,Advanced,4.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,135,Montour,2022,Advanced,18.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,34,Montour,2022,Advanced,8.8
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,16,Columbia,2022,Proficient,18.8
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,24,Columbia,2022,Proficient,37.5
-BENTON AREA SD,BENTON AREA HS,Biology,Historically Underperforming,12,Columbia,2022,Proficient,16.7
-BENTON AREA SD,BENTON AREA HS,Literature,All Students,38,Columbia,2022,Proficient,47.4
-BENTON AREA SD,BENTON AREA HS,Literature,Historically Underperforming,17,Columbia,2022,Proficient,29.4
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,70,Columbia,2022,Proficient,42.9
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,25,Columbia,2022,Proficient,44
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,121,Columbia,2022,Proficient,21.5
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,68,Columbia,2022,Proficient,19.1
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,135,Columbia,2022,Proficient,50.4
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,69,Columbia,2022,Proficient,34.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,45,Columbia,2022,Proficient,13.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,13,Columbia,2022,Proficient,15.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,37,Columbia,2022,Proficient,24.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,19,Columbia,2022,Proficient,21.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,88,Columbia,2022,Proficient,64.8
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,29,Columbia,2022,Proficient,48.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,92,Columbia,2022,Proficient,35.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,16,Columbia,2022,Proficient,31.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,92,Columbia,2022,Proficient,22.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,24,Columbia,2022,Proficient,20.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,134,Columbia,2022,Proficient,51.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,32,Columbia,2022,Proficient,50
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,114,Columbia,2022,Proficient,14.9
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,82,Columbia,2022,Proficient,11
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,All Students,141,Columbia,2022,Proficient,25.5
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,Historically Underperforming,96,Columbia,2022,Proficient,17.7
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,All Students,144,Columbia,2022,Proficient,34
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,Historically Underperforming,98,Columbia,2022,Proficient,27.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,11,Columbia,2022,Proficient,72.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,30,Columbia,2022,Proficient,40
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,17,Columbia,2022,Proficient,41.2
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,32,Columbia,2022,Proficient,65.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,17,Columbia,2022,Proficient,47.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,43,Columbia,2022,Proficient,32.6
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,77,Columbia,2022,Proficient,39
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,13,Columbia,2022,Proficient,30.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,79,Columbia,2022,Proficient,68.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,13,Columbia,2022,Proficient,53.8
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,11,Columbia,2022,Proficient,54.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,108,Montour,2022,Proficient,38.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,22,Montour,2022,Proficient,40.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,82,Montour,2022,Proficient,46.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,24,Montour,2022,Proficient,37.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,135,Montour,2022,Proficient,68.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,34,Montour,2022,Proficient,64.7
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,16,Columbia,2022,Basic,6.3
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,24,Columbia,2022,Basic,33.3
-BENTON AREA SD,BENTON AREA HS,Biology,Historically Underperforming,12,Columbia,2022,Basic,58.3
-BENTON AREA SD,BENTON AREA HS,Literature,All Students,38,Columbia,2022,Basic,31.6
-BENTON AREA SD,BENTON AREA HS,Literature,Historically Underperforming,17,Columbia,2022,Basic,35.3
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,70,Columbia,2022,Basic,14.3
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,25,Columbia,2022,Basic,12
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,121,Columbia,2022,Basic,47.1
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,68,Columbia,2022,Basic,41.2
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,135,Columbia,2022,Basic,31.1
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,69,Columbia,2022,Basic,37.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,45,Columbia,2022,Basic,13.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,13,Columbia,2022,Basic,23.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,37,Columbia,2022,Basic,43.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,19,Columbia,2022,Basic,42.1
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,88,Columbia,2022,Basic,19.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,29,Columbia,2022,Basic,37.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,92,Columbia,2022,Basic,8.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,16,Columbia,2022,Basic,12.5
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,92,Columbia,2022,Basic,46.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,24,Columbia,2022,Basic,54.2
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,134,Columbia,2022,Basic,27.6
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,32,Columbia,2022,Basic,28.1
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,114,Columbia,2022,Basic,50.9
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,82,Columbia,2022,Basic,48.8
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,All Students,141,Columbia,2022,Basic,45.4
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,Historically Underperforming,96,Columbia,2022,Basic,45.8
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,All Students,144,Columbia,2022,Basic,43.1
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,Historically Underperforming,98,Columbia,2022,Basic,40.8
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,11,Columbia,2022,Basic,9.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,30,Columbia,2022,Basic,36.7
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,17,Columbia,2022,Basic,35.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,32,Columbia,2022,Basic,21.9
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,17,Columbia,2022,Basic,41.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,43,Columbia,2022,Basic,0
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,77,Columbia,2022,Basic,36.4
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,13,Columbia,2022,Basic,46.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,79,Columbia,2022,Basic,15.2
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,13,Columbia,2022,Basic,30.8
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,11,Columbia,2022,Basic,27.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,108,Montour,2022,Basic,12
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,22,Montour,2022,Basic,27.3
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,82,Montour,2022,Basic,25.6
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,24,Montour,2022,Basic,45.8
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,135,Montour,2022,Basic,11.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,34,Montour,2022,Basic,23.5
-BENTON AREA SD,BENTON AREA HS,Algebra I,All Students,16,Columbia,2022,BelowBasic,6.3
-BENTON AREA SD,BENTON AREA HS,Biology,All Students,24,Columbia,2022,BelowBasic,20.8
-BENTON AREA SD,BENTON AREA HS,Biology,Historically Underperforming,12,Columbia,2022,BelowBasic,25
-BENTON AREA SD,BENTON AREA HS,Literature,All Students,38,Columbia,2022,BelowBasic,15.8
-BENTON AREA SD,BENTON AREA HS,Literature,Historically Underperforming,17,Columbia,2022,BelowBasic,23.5
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,All Students,70,Columbia,2022,BelowBasic,8.6
-BERWICK AREA SD,BERWICK AREA HS,Algebra I,Historically Underperforming,25,Columbia,2022,BelowBasic,20
-BERWICK AREA SD,BERWICK AREA HS,Biology,All Students,121,Columbia,2022,BelowBasic,29.8
-BERWICK AREA SD,BERWICK AREA HS,Biology,Historically Underperforming,68,Columbia,2022,BelowBasic,38.2
-BERWICK AREA SD,BERWICK AREA HS,Literature,All Students,135,Columbia,2022,BelowBasic,17.8
-BERWICK AREA SD,BERWICK AREA HS,Literature,Historically Underperforming,69,Columbia,2022,BelowBasic,27.5
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,All Students,45,Columbia,2022,BelowBasic,4.4
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Algebra I,Historically Underperforming,13,Columbia,2022,BelowBasic,7.7
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,All Students,37,Columbia,2022,BelowBasic,16.2
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Biology,Historically Underperforming,19,Columbia,2022,BelowBasic,31.6
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,All Students,88,Columbia,2022,BelowBasic,2.3
-BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Literature,Historically Underperforming,29,Columbia,2022,BelowBasic,6.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,All Students,92,Columbia,2022,BelowBasic,1.1
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Algebra I,Historically Underperforming,16,Columbia,2022,BelowBasic,6.3
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,All Students,92,Columbia,2022,BelowBasic,10.9
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Biology,Historically Underperforming,24,Columbia,2022,BelowBasic,20.8
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,All Students,134,Columbia,2022,BelowBasic,3.7
-CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Literature,Historically Underperforming,32,Columbia,2022,BelowBasic,12.5
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,All Students,114,Columbia,2022,BelowBasic,26.3
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Algebra I,Historically Underperforming,82,Columbia,2022,BelowBasic,32.9
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,All Students,141,Columbia,2022,BelowBasic,27
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Biology,Historically Underperforming,96,Columbia,2022,BelowBasic,34.4
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,All Students,144,Columbia,2022,BelowBasic,22.9
-COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Literature,Historically Underperforming,98,Columbia,2022,BelowBasic,31.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Algebra I,All Students,11,Columbia,2022,BelowBasic,9.1
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,All Students,30,Columbia,2022,BelowBasic,13.3
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Biology,Historically Underperforming,17,Columbia,2022,BelowBasic,17.6
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,All Students,32,Columbia,2022,BelowBasic,9.4
-MILLVILLE AREA SD,MILLVILLE AREA JSHS,Literature,Historically Underperforming,17,Columbia,2022,BelowBasic,5.9
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Algebra I,All Students,43,Columbia,2022,BelowBasic,4.7
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,All Students,77,Columbia,2022,BelowBasic,7.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Biology,Historically Underperforming,13,Columbia,2022,BelowBasic,23.1
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,All Students,79,Columbia,2022,BelowBasic,3.8
-SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Literature,Historically Underperforming,13,Columbia,2022,BelowBasic,15.4
-SUSQ-CYBER CS,SUSQ-CYBER CS,Literature,All Students,11,Columbia,2022,BelowBasic,18.2
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,All Students,108,Montour,2022,BelowBasic,2.8
-DANVILLE AREA SD,DANVILLE AREA SHS,Algebra I,Historically Underperforming,22,Montour,2022,BelowBasic,9.1
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,All Students,82,Montour,2022,BelowBasic,4.9
-DANVILLE AREA SD,DANVILLE AREA SHS,Biology,Historically Underperforming,24,Montour,2022,BelowBasic,12.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,All Students,135,Montour,2022,BelowBasic,1.5
-DANVILLE AREA SD,DANVILLE AREA SHS,Literature,Historically Underperforming,34,Montour,2022,BelowBasic,2.9
+District,School,Subject,Scored,County,Year,Baseline,Score
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,38,Columbia,2016,Advanced,10.5
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,38,Columbia,2016,Advanced,28.9
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,38,Columbia,2016,Advanced,7.9
+BERWICK AREA SD,BERWICK AREA HS,Math,176,Columbia,2016,Advanced,21.6
+BERWICK AREA SD,BERWICK AREA HS,Science,170,Columbia,2016,Advanced,28.8
+BERWICK AREA SD,BERWICK AREA HS,English,173,Columbia,2016,Advanced,8.7
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,103,Columbia,2016,Advanced,22.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,102,Columbia,2016,Advanced,37.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,102,Columbia,2016,Advanced,15.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,107,Columbia,2016,Advanced,33.6
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,108,Columbia,2016,Advanced,40.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,111,Columbia,2016,Advanced,13.5
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,143,Columbia,2016,Advanced,7
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,143,Columbia,2016,Advanced,12.6
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,143,Columbia,2016,Advanced,2.8
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,42,Columbia,2016,Advanced,21.4
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,43,Columbia,2016,Advanced,23.3
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,43,Columbia,2016,Advanced,7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,87,Columbia,2016,Advanced,12.6
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,87,Columbia,2016,Advanced,19.5
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,87,Columbia,2016,Advanced,4.6
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,20,Columbia,2016,Advanced,0
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,19,Columbia,2016,Advanced,10.5
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,19,Columbia,2016,Advanced,0
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,140,Montour,2016,Advanced,41.4
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,144,Montour,2016,Advanced,48.6
+DANVILLE AREA SD,DANVILLE AREA SHS,English,145,Montour,2016,Advanced,17.2
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,38,Columbia,2016,Proficient,78.9
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,38,Columbia,2016,Proficient,65.8
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,38,Columbia,2016,Proficient,76.3
+BERWICK AREA SD,BERWICK AREA HS,Math,176,Columbia,2016,Proficient,53.4
+BERWICK AREA SD,BERWICK AREA HS,Science,170,Columbia,2016,Proficient,40
+BERWICK AREA SD,BERWICK AREA HS,English,173,Columbia,2016,Proficient,68.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,103,Columbia,2016,Proficient,59.2
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,102,Columbia,2016,Proficient,46.1
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,102,Columbia,2016,Proficient,77.5
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,107,Columbia,2016,Proficient,58.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,108,Columbia,2016,Proficient,52.8
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,111,Columbia,2016,Proficient,78.4
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,143,Columbia,2016,Proficient,51
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,143,Columbia,2016,Proficient,44.1
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,143,Columbia,2016,Proficient,64.3
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,42,Columbia,2016,Proficient,59.5
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,43,Columbia,2016,Proficient,58.1
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,43,Columbia,2016,Proficient,76.7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,87,Columbia,2016,Proficient,72.4
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,87,Columbia,2016,Proficient,63.2
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,87,Columbia,2016,Proficient,83.9
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,20,Columbia,2016,Proficient,40
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,19,Columbia,2016,Proficient,15.8
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,19,Columbia,2016,Proficient,63.2
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,140,Montour,2016,Proficient,47.1
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,144,Montour,2016,Proficient,41.7
+DANVILLE AREA SD,DANVILLE AREA SHS,English,145,Montour,2016,Proficient,78.6
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,38,Columbia,2016,Basic,2.6
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,38,Columbia,2016,Basic,2.6
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,38,Columbia,2016,Basic,10.5
+BERWICK AREA SD,BERWICK AREA HS,Math,176,Columbia,2016,Basic,21.6
+BERWICK AREA SD,BERWICK AREA HS,Science,170,Columbia,2016,Basic,17.6
+BERWICK AREA SD,BERWICK AREA HS,English,173,Columbia,2016,Basic,19.1
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,103,Columbia,2016,Basic,16.5
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,102,Columbia,2016,Basic,11.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,102,Columbia,2016,Basic,3.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,107,Columbia,2016,Basic,7.5
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,108,Columbia,2016,Basic,3.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,111,Columbia,2016,Basic,7.2
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,143,Columbia,2016,Basic,35.7
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,143,Columbia,2016,Basic,28.7
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,143,Columbia,2016,Basic,29.4
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,42,Columbia,2016,Basic,9.5
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,43,Columbia,2016,Basic,11.6
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,43,Columbia,2016,Basic,11.6
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,87,Columbia,2016,Basic,11.5
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,87,Columbia,2016,Basic,11.5
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,87,Columbia,2016,Basic,5.7
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,20,Columbia,2016,Basic,45
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,19,Columbia,2016,Basic,47.4
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,19,Columbia,2016,Basic,31.6
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,140,Montour,2016,Basic,10.7
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,144,Montour,2016,Basic,8.3
+DANVILLE AREA SD,DANVILLE AREA SHS,English,145,Montour,2016,Basic,3.4
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,38,Columbia,2016,BelowBasic,7.9
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,38,Columbia,2016,BelowBasic,2.6
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,38,Columbia,2016,BelowBasic,5.3
+BERWICK AREA SD,BERWICK AREA HS,Math,176,Columbia,2016,BelowBasic,3.4
+BERWICK AREA SD,BERWICK AREA HS,Science,170,Columbia,2016,BelowBasic,13.5
+BERWICK AREA SD,BERWICK AREA HS,English,173,Columbia,2016,BelowBasic,3.5
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,103,Columbia,2016,BelowBasic,1.9
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,102,Columbia,2016,BelowBasic,4.9
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,102,Columbia,2016,BelowBasic,2.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,107,Columbia,2016,BelowBasic,0
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,108,Columbia,2016,BelowBasic,2.8
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,111,Columbia,2016,BelowBasic,0.9
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,143,Columbia,2016,BelowBasic,6.3
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,143,Columbia,2016,BelowBasic,14.7
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,143,Columbia,2016,BelowBasic,3.5
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,42,Columbia,2016,BelowBasic,9.5
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,43,Columbia,2016,BelowBasic,7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,43,Columbia,2016,BelowBasic,4.7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,87,Columbia,2016,BelowBasic,3.4
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,87,Columbia,2016,BelowBasic,5.7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,87,Columbia,2016,BelowBasic,5.7
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,20,Columbia,2016,BelowBasic,15
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,19,Columbia,2016,BelowBasic,26.3
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,19,Columbia,2016,BelowBasic,5.3
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,140,Montour,2016,BelowBasic,0.7
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,144,Montour,2016,BelowBasic,1.4
+DANVILLE AREA SD,DANVILLE AREA SHS,English,145,Montour,2016,BelowBasic,0.7
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,40,Columbia,2017,Advanced,40
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,39,Columbia,2017,Advanced,46.2
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,40,Columbia,2017,Advanced,2.5
+BERWICK AREA SD,BERWICK AREA HS,Math,157,Columbia,2017,Advanced,35
+BERWICK AREA SD,BERWICK AREA HS,Science,156,Columbia,2017,Advanced,29.5
+BERWICK AREA SD,BERWICK AREA HS,English,155,Columbia,2017,Advanced,3.2
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,109,Columbia,2017,Advanced,21.1
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,109,Columbia,2017,Advanced,37.6
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,110,Columbia,2017,Advanced,6.4
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,122,Columbia,2017,Advanced,27
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,125,Columbia,2017,Advanced,40.8
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,125,Columbia,2017,Advanced,12.8
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,152,Columbia,2017,Advanced,10.5
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,152,Columbia,2017,Advanced,12.5
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,152,Columbia,2017,Advanced,2
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,45,Columbia,2017,Advanced,37.8
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,45,Columbia,2017,Advanced,20
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,45,Columbia,2017,Advanced,13.3
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,93,Columbia,2017,Advanced,9.7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,93,Columbia,2017,Advanced,30.1
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,93,Columbia,2017,Advanced,4.3
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,14,Columbia,2017,Advanced,0
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,14,Columbia,2017,Advanced,0
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,14,Columbia,2017,Advanced,0
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,135,Montour,2017,Advanced,43
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,140,Montour,2017,Advanced,52.1
+DANVILLE AREA SD,DANVILLE AREA SHS,English,142,Montour,2017,Advanced,25.4
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,40,Columbia,2017,Proficient,40
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,39,Columbia,2017,Proficient,41
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,40,Columbia,2017,Proficient,70
+BERWICK AREA SD,BERWICK AREA HS,Math,157,Columbia,2017,Proficient,47.1
+BERWICK AREA SD,BERWICK AREA HS,Science,156,Columbia,2017,Proficient,39.1
+BERWICK AREA SD,BERWICK AREA HS,English,155,Columbia,2017,Proficient,73.5
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,109,Columbia,2017,Proficient,64.2
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,109,Columbia,2017,Proficient,44
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,110,Columbia,2017,Proficient,77.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,122,Columbia,2017,Proficient,59.8
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,125,Columbia,2017,Proficient,44
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,125,Columbia,2017,Proficient,76.8
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,152,Columbia,2017,Proficient,42.1
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,152,Columbia,2017,Proficient,26.3
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,152,Columbia,2017,Proficient,52.6
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,45,Columbia,2017,Proficient,37.8
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,45,Columbia,2017,Proficient,48.9
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,45,Columbia,2017,Proficient,64.4
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,93,Columbia,2017,Proficient,75.3
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,93,Columbia,2017,Proficient,48.4
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,93,Columbia,2017,Proficient,83.9
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,14,Columbia,2017,Proficient,28.6
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,14,Columbia,2017,Proficient,35.7
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,14,Columbia,2017,Proficient,50
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,135,Montour,2017,Proficient,38.5
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,140,Montour,2017,Proficient,28.6
+DANVILLE AREA SD,DANVILLE AREA SHS,English,142,Montour,2017,Proficient,66.9
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,40,Columbia,2017,Basic,7.5
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,39,Columbia,2017,Basic,7.7
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,40,Columbia,2017,Basic,15
+BERWICK AREA SD,BERWICK AREA HS,Math,157,Columbia,2017,Basic,15.3
+BERWICK AREA SD,BERWICK AREA HS,Science,156,Columbia,2017,Basic,16.7
+BERWICK AREA SD,BERWICK AREA HS,English,155,Columbia,2017,Basic,18.7
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,109,Columbia,2017,Basic,12.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,109,Columbia,2017,Basic,15.6
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,110,Columbia,2017,Basic,13.6
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,122,Columbia,2017,Basic,10.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,125,Columbia,2017,Basic,11.2
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,125,Columbia,2017,Basic,9.6
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,152,Columbia,2017,Basic,38.8
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,152,Columbia,2017,Basic,44.1
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,152,Columbia,2017,Basic,38.2
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,45,Columbia,2017,Basic,15.6
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,45,Columbia,2017,Basic,15.6
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,45,Columbia,2017,Basic,13.3
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,93,Columbia,2017,Basic,11.8
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,93,Columbia,2017,Basic,16.1
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,93,Columbia,2017,Basic,9.7
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,14,Columbia,2017,Basic,57.1
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,14,Columbia,2017,Basic,21.4
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,14,Columbia,2017,Basic,35.7
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,135,Montour,2017,Basic,14.8
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,140,Montour,2017,Basic,17.1
+DANVILLE AREA SD,DANVILLE AREA SHS,English,142,Montour,2017,Basic,5.6
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,40,Columbia,2017,BelowBasic,12.5
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,39,Columbia,2017,BelowBasic,5.1
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,40,Columbia,2017,BelowBasic,12.5
+BERWICK AREA SD,BERWICK AREA HS,Math,157,Columbia,2017,BelowBasic,2.5
+BERWICK AREA SD,BERWICK AREA HS,Science,156,Columbia,2017,BelowBasic,14.7
+BERWICK AREA SD,BERWICK AREA HS,English,155,Columbia,2017,BelowBasic,4.5
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,109,Columbia,2017,BelowBasic,1.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,109,Columbia,2017,BelowBasic,2.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,110,Columbia,2017,BelowBasic,2.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,122,Columbia,2017,BelowBasic,2.5
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,125,Columbia,2017,BelowBasic,4
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,125,Columbia,2017,BelowBasic,0.8
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,152,Columbia,2017,BelowBasic,8.6
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,152,Columbia,2017,BelowBasic,17.1
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,152,Columbia,2017,BelowBasic,7.2
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,45,Columbia,2017,BelowBasic,8.9
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,45,Columbia,2017,BelowBasic,15.6
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,45,Columbia,2017,BelowBasic,8.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,93,Columbia,2017,BelowBasic,3.2
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,93,Columbia,2017,BelowBasic,5.4
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,93,Columbia,2017,BelowBasic,2.2
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,14,Columbia,2017,BelowBasic,14.3
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,14,Columbia,2017,BelowBasic,42.9
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,14,Columbia,2017,BelowBasic,14.3
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,135,Montour,2017,BelowBasic,3.7
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,140,Montour,2017,BelowBasic,2.1
+DANVILLE AREA SD,DANVILLE AREA SHS,English,142,Montour,2017,BelowBasic,2.1
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,36,Columbia,2018,Advanced,13.9
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,35,Columbia,2018,Advanced,37.1
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,35,Columbia,2018,Advanced,8.6
+BERWICK AREA SD,BERWICK AREA HS,Math,155,Columbia,2018,Advanced,22.6
+BERWICK AREA SD,BERWICK AREA HS,Science,155,Columbia,2018,Advanced,31.6
+BERWICK AREA SD,BERWICK AREA HS,English,154,Columbia,2018,Advanced,9.1
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,75,Columbia,2018,Advanced,25.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,76,Columbia,2018,Advanced,17.1
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,77,Columbia,2018,Advanced,2.6
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,128,Columbia,2018,Advanced,41.4
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,128,Columbia,2018,Advanced,42.2
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,129,Columbia,2018,Advanced,15.5
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,137,Columbia,2018,Advanced,8
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,138,Columbia,2018,Advanced,14.5
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,138,Columbia,2018,Advanced,1.4
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,42,Columbia,2018,Advanced,31
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,42,Columbia,2018,Advanced,33.3
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,41,Columbia,2018,Advanced,0
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,106,Columbia,2018,Advanced,22.6
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,107,Columbia,2018,Advanced,13.1
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,107,Columbia,2018,Advanced,15.9
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,11,Columbia,2018,Advanced,0
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,147,Montour,2018,Advanced,60.5
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,155,Montour,2018,Advanced,58.7
+DANVILLE AREA SD,DANVILLE AREA SHS,English,156,Montour,2018,Advanced,27.6
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,36,Columbia,2018,Proficient,61.1
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,35,Columbia,2018,Proficient,48.6
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,35,Columbia,2018,Proficient,74.3
+BERWICK AREA SD,BERWICK AREA HS,Math,155,Columbia,2018,Proficient,54.2
+BERWICK AREA SD,BERWICK AREA HS,Science,155,Columbia,2018,Proficient,39.4
+BERWICK AREA SD,BERWICK AREA HS,English,154,Columbia,2018,Proficient,68.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,75,Columbia,2018,Proficient,45.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,76,Columbia,2018,Proficient,42.1
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,77,Columbia,2018,Proficient,77.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,128,Columbia,2018,Proficient,46.1
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,128,Columbia,2018,Proficient,45.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,129,Columbia,2018,Proficient,74.4
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,137,Columbia,2018,Proficient,46
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,138,Columbia,2018,Proficient,34.1
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,138,Columbia,2018,Proficient,42
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,42,Columbia,2018,Proficient,35.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,42,Columbia,2018,Proficient,31
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,41,Columbia,2018,Proficient,68.3
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,106,Columbia,2018,Proficient,63.2
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,107,Columbia,2018,Proficient,68.2
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,107,Columbia,2018,Proficient,72
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,11,Columbia,2018,Proficient,18.2
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,147,Montour,2018,Proficient,24.5
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,155,Montour,2018,Proficient,29.7
+DANVILLE AREA SD,DANVILLE AREA SHS,English,156,Montour,2018,Proficient,64.1
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,36,Columbia,2018,Basic,16.7
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,35,Columbia,2018,Basic,5.7
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,35,Columbia,2018,Basic,11.4
+BERWICK AREA SD,BERWICK AREA HS,Math,155,Columbia,2018,Basic,18.1
+BERWICK AREA SD,BERWICK AREA HS,Science,155,Columbia,2018,Basic,14.8
+BERWICK AREA SD,BERWICK AREA HS,English,154,Columbia,2018,Basic,15.6
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,75,Columbia,2018,Basic,25.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,76,Columbia,2018,Basic,35.5
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,77,Columbia,2018,Basic,14.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,128,Columbia,2018,Basic,12.5
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,128,Columbia,2018,Basic,8.6
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,129,Columbia,2018,Basic,7.8
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,137,Columbia,2018,Basic,35.8
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,138,Columbia,2018,Basic,37
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,138,Columbia,2018,Basic,42
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,42,Columbia,2018,Basic,23.8
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,42,Columbia,2018,Basic,23.8
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,41,Columbia,2018,Basic,24.4
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,106,Columbia,2018,Basic,13.2
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,107,Columbia,2018,Basic,15.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,107,Columbia,2018,Basic,9.3
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,11,Columbia,2018,Basic,36.4
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,147,Montour,2018,Basic,12.2
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,155,Montour,2018,Basic,7.7
+DANVILLE AREA SD,DANVILLE AREA SHS,English,156,Montour,2018,Basic,5.8
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Math,36,Columbia,2018,BelowBasic,8.3
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,Science,35,Columbia,2018,BelowBasic,8.6
+BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,English,35,Columbia,2018,BelowBasic,5.7
+BERWICK AREA SD,BERWICK AREA HS,Math,155,Columbia,2018,BelowBasic,5.2
+BERWICK AREA SD,BERWICK AREA HS,Science,155,Columbia,2018,BelowBasic,14.2
+BERWICK AREA SD,BERWICK AREA HS,English,154,Columbia,2018,BelowBasic,6.5
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,75,Columbia,2018,BelowBasic,4
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,76,Columbia,2018,BelowBasic,5.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,77,Columbia,2018,BelowBasic,5.2
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,128,Columbia,2018,BelowBasic,0
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,128,Columbia,2018,BelowBasic,3.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,129,Columbia,2018,BelowBasic,2.3
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Math,137,Columbia,2018,BelowBasic,10.2
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,Science,138,Columbia,2018,BelowBasic,14.5
+COLUMBIA - MONTOUR AVTS,COLUMBIA - MONTOUR AVTS,English,138,Columbia,2018,BelowBasic,14.5
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,42,Columbia,2018,BelowBasic,9.5
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,42,Columbia,2018,BelowBasic,11.9
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,41,Columbia,2018,BelowBasic,7.3
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,106,Columbia,2018,BelowBasic,0.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,107,Columbia,2018,BelowBasic,2.8
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,107,Columbia,2018,BelowBasic,2.8
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,11,Columbia,2018,BelowBasic,45.5
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,147,Montour,2018,BelowBasic,2.7
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,155,Montour,2018,BelowBasic,3.9
+DANVILLE AREA SD,DANVILLE AREA SHS,English,156,Montour,2018,BelowBasic,2.6
+BENTON AREA SD,BENTON AREA HS,Math,54,Columbia,2019,Advanced,25.9
+BENTON AREA SD,BENTON AREA HS,Science,54,Columbia,2019,Advanced,40.7
+BENTON AREA SD,BENTON AREA HS,English,54,Columbia,2019,Advanced,9.3
+BERWICK AREA SD,BERWICK AREA HS,Math,153,Columbia,2019,Advanced,17.6
+BERWICK AREA SD,BERWICK AREA HS,Science,152,Columbia,2019,Advanced,22.4
+BERWICK AREA SD,BERWICK AREA HS,English,152,Columbia,2019,Advanced,3.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,77,Columbia,2019,Advanced,36.4
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,84,Columbia,2019,Advanced,22.6
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,84,Columbia,2019,Advanced,10.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,120,Columbia,2019,Advanced,36.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,123,Columbia,2019,Advanced,37.4
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,123,Columbia,2019,Advanced,23.6
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,147,Columbia,2019,Advanced,15.6
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Science,148,Columbia,2019,Advanced,14.2
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,English,147,Columbia,2019,Advanced,0.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,46,Columbia,2019,Advanced,21.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,46,Columbia,2019,Advanced,21.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,46,Columbia,2019,Advanced,10.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,103,Columbia,2019,Advanced,14.6
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,103,Columbia,2019,Advanced,24.3
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,103,Columbia,2019,Advanced,18.4
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,11,Columbia,2019,Advanced,9.1
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,152,Montour,2019,Advanced,45.4
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,157,Montour,2019,Advanced,43.3
+DANVILLE AREA SD,DANVILLE AREA SHS,English,157,Montour,2019,Advanced,19.7
+BENTON AREA SD,BENTON AREA HS,Math,54,Columbia,2019,Proficient,55.6
+BENTON AREA SD,BENTON AREA HS,Science,54,Columbia,2019,Proficient,50
+BENTON AREA SD,BENTON AREA HS,English,54,Columbia,2019,Proficient,75.9
+BERWICK AREA SD,BERWICK AREA HS,Math,153,Columbia,2019,Proficient,49
+BERWICK AREA SD,BERWICK AREA HS,Science,152,Columbia,2019,Proficient,43.4
+BERWICK AREA SD,BERWICK AREA HS,English,152,Columbia,2019,Proficient,65.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,77,Columbia,2019,Proficient,46.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,84,Columbia,2019,Proficient,56
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,84,Columbia,2019,Proficient,67.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,120,Columbia,2019,Proficient,50
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,123,Columbia,2019,Proficient,51.2
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,123,Columbia,2019,Proficient,65
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,147,Columbia,2019,Proficient,38.1
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Science,148,Columbia,2019,Proficient,31.8
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,English,147,Columbia,2019,Proficient,48.3
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,46,Columbia,2019,Proficient,32.6
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,46,Columbia,2019,Proficient,32.6
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,46,Columbia,2019,Proficient,58.7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,103,Columbia,2019,Proficient,76.7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,103,Columbia,2019,Proficient,65
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,103,Columbia,2019,Proficient,70.9
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,11,Columbia,2019,Proficient,9.1
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,152,Montour,2019,Proficient,32.2
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,157,Montour,2019,Proficient,38.2
+DANVILLE AREA SD,DANVILLE AREA SHS,English,157,Montour,2019,Proficient,66.2
+BENTON AREA SD,BENTON AREA HS,Math,54,Columbia,2019,Basic,14.8
+BENTON AREA SD,BENTON AREA HS,Science,54,Columbia,2019,Basic,3.7
+BENTON AREA SD,BENTON AREA HS,English,54,Columbia,2019,Basic,9.3
+BERWICK AREA SD,BERWICK AREA HS,Math,153,Columbia,2019,Basic,25.5
+BERWICK AREA SD,BERWICK AREA HS,Science,152,Columbia,2019,Basic,21.1
+BERWICK AREA SD,BERWICK AREA HS,English,152,Columbia,2019,Basic,27
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,77,Columbia,2019,Basic,15.6
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,84,Columbia,2019,Basic,19
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,84,Columbia,2019,Basic,17.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,120,Columbia,2019,Basic,10.8
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,123,Columbia,2019,Basic,7.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,123,Columbia,2019,Basic,8.9
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,147,Columbia,2019,Basic,33.3
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Science,148,Columbia,2019,Basic,29.7
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,English,147,Columbia,2019,Basic,41.5
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,46,Columbia,2019,Basic,23.9
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,46,Columbia,2019,Basic,21.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,46,Columbia,2019,Basic,10.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,103,Columbia,2019,Basic,6.8
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,103,Columbia,2019,Basic,6.8
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,103,Columbia,2019,Basic,8.7
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,11,Columbia,2019,Basic,54.5
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,152,Montour,2019,Basic,16.4
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,157,Montour,2019,Basic,8.3
+DANVILLE AREA SD,DANVILLE AREA SHS,English,157,Montour,2019,Basic,7.6
+BENTON AREA SD,BENTON AREA HS,Math,54,Columbia,2019,BelowBasic,3.7
+BENTON AREA SD,BENTON AREA HS,Science,54,Columbia,2019,BelowBasic,5.6
+BENTON AREA SD,BENTON AREA HS,English,54,Columbia,2019,BelowBasic,5.6
+BERWICK AREA SD,BERWICK AREA HS,Math,153,Columbia,2019,BelowBasic,7.8
+BERWICK AREA SD,BERWICK AREA HS,Science,152,Columbia,2019,BelowBasic,13.2
+BERWICK AREA SD,BERWICK AREA HS,English,152,Columbia,2019,BelowBasic,3.9
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,77,Columbia,2019,BelowBasic,1.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,84,Columbia,2019,BelowBasic,2.4
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,84,Columbia,2019,BelowBasic,3.6
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,120,Columbia,2019,BelowBasic,2.5
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,123,Columbia,2019,BelowBasic,4.1
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,123,Columbia,2019,BelowBasic,2.4
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,147,Columbia,2019,BelowBasic,12.9
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Science,148,Columbia,2019,BelowBasic,24.3
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,English,147,Columbia,2019,BelowBasic,9.5
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,46,Columbia,2019,BelowBasic,21.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,46,Columbia,2019,BelowBasic,23.9
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,46,Columbia,2019,BelowBasic,19.6
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,103,Columbia,2019,BelowBasic,1.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,103,Columbia,2019,BelowBasic,3.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,103,Columbia,2019,BelowBasic,1.9
+SUSQ-CYBER CS,SUSQ-CYBER CS,Science,11,Columbia,2019,BelowBasic,27.3
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,152,Montour,2019,BelowBasic,5.9
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,157,Montour,2019,BelowBasic,10.2
+DANVILLE AREA SD,DANVILLE AREA SHS,English,157,Montour,2019,BelowBasic,6.4
+BENTON AREA SD,BENTON AREA HS,Math,43,Columbia,2021,Advanced,23.3
+BENTON AREA SD,BENTON AREA HS,Science,13,Columbia,2021,Advanced,46.2
+BERWICK AREA SD,BERWICK AREA HS,Math,133,Columbia,2021,Advanced,11.3
+BERWICK AREA SD,BERWICK AREA HS,Science,37,Columbia,2021,Advanced,51.4
+BERWICK AREA SD,BERWICK AREA HS,English,24,Columbia,2021,Advanced,37.5
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,86,Columbia,2021,Advanced,30.2
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,48,Columbia,2021,Advanced,35.4
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,132,Columbia,2021,Advanced,49.2
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,61,Columbia,2021,Advanced,62.3
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,42,Columbia,2021,Advanced,26.2
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,37,Columbia,2021,Advanced,18.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,100,Columbia,2021,Advanced,34
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,99,Columbia,2021,Advanced,4
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,16,Columbia,2021,Advanced,12.5
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,128,Montour,2021,Advanced,46.1
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,59,Montour,2021,Advanced,78
+BENTON AREA SD,BENTON AREA HS,Math,43,Columbia,2021,Proficient,30.2
+BENTON AREA SD,BENTON AREA HS,Science,13,Columbia,2021,Proficient,53.8
+BERWICK AREA SD,BERWICK AREA HS,Math,133,Columbia,2021,Proficient,48.1
+BERWICK AREA SD,BERWICK AREA HS,Science,37,Columbia,2021,Proficient,24.3
+BERWICK AREA SD,BERWICK AREA HS,English,24,Columbia,2021,Proficient,33.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,86,Columbia,2021,Proficient,23.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,48,Columbia,2021,Proficient,41.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,132,Columbia,2021,Proficient,34.1
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,61,Columbia,2021,Proficient,26.2
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,42,Columbia,2021,Proficient,35.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,37,Columbia,2021,Proficient,29.7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,100,Columbia,2021,Proficient,48
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,99,Columbia,2021,Proficient,54.5
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,16,Columbia,2021,Proficient,43.8
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,128,Montour,2021,Proficient,43
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,59,Montour,2021,Proficient,20.3
+BENTON AREA SD,BENTON AREA HS,Math,43,Columbia,2021,Basic,27.9
+BENTON AREA SD,BENTON AREA HS,Science,13,Columbia,2021,Basic,0
+BERWICK AREA SD,BERWICK AREA HS,Math,133,Columbia,2021,Basic,27.1
+BERWICK AREA SD,BERWICK AREA HS,Science,37,Columbia,2021,Basic,13.5
+BERWICK AREA SD,BERWICK AREA HS,English,24,Columbia,2021,Basic,8.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,86,Columbia,2021,Basic,39.5
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,48,Columbia,2021,Basic,16.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,132,Columbia,2021,Basic,14.4
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,61,Columbia,2021,Basic,9.8
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,42,Columbia,2021,Basic,35.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,37,Columbia,2021,Basic,37.8
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,100,Columbia,2021,Basic,13
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,99,Columbia,2021,Basic,27.3
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,16,Columbia,2021,Basic,31.3
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,128,Montour,2021,Basic,10.2
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,59,Montour,2021,Basic,1.7
+BENTON AREA SD,BENTON AREA HS,Math,43,Columbia,2021,BelowBasic,18.6
+BENTON AREA SD,BENTON AREA HS,Science,13,Columbia,2021,BelowBasic,0
+BERWICK AREA SD,BERWICK AREA HS,Math,133,Columbia,2021,BelowBasic,13.5
+BERWICK AREA SD,BERWICK AREA HS,Science,37,Columbia,2021,BelowBasic,10.8
+BERWICK AREA SD,BERWICK AREA HS,English,24,Columbia,2021,BelowBasic,20.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,86,Columbia,2021,BelowBasic,7
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,48,Columbia,2021,BelowBasic,6.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,132,Columbia,2021,BelowBasic,2.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,61,Columbia,2021,BelowBasic,1.6
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,42,Columbia,2021,BelowBasic,2.4
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,37,Columbia,2021,BelowBasic,13.5
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,100,Columbia,2021,BelowBasic,5
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,99,Columbia,2021,BelowBasic,14.1
+SUSQ-CYBER CS,SUSQ-CYBER CS,Math,16,Columbia,2021,BelowBasic,12.5
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,128,Montour,2021,BelowBasic,0.8
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,59,Montour,2021,BelowBasic,0
+BENTON AREA SD,BENTON AREA HS,Math,16,Columbia,2022,Advanced,68.8
+BENTON AREA SD,BENTON AREA HS,Science,24,Columbia,2022,Advanced,8.3
+BENTON AREA SD,BENTON AREA HS,English,38,Columbia,2022,Advanced,5.3
+BERWICK AREA SD,BERWICK AREA HS,Math,70,Columbia,2022,Advanced,34.3
+BERWICK AREA SD,BERWICK AREA HS,Science,121,Columbia,2022,Advanced,1.7
+BERWICK AREA SD,BERWICK AREA HS,English,135,Columbia,2022,Advanced,0.7
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,45,Columbia,2022,Advanced,68.9
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,37,Columbia,2022,Advanced,16.2
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,88,Columbia,2022,Advanced,13.6
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,92,Columbia,2022,Advanced,54.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,92,Columbia,2022,Advanced,19.6
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,134,Columbia,2022,Advanced,17.2
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,114,Columbia,2022,Advanced,7.9
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Science,141,Columbia,2022,Advanced,2.1
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,English,144,Columbia,2022,Advanced,0
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,11,Columbia,2022,Advanced,9.1
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,30,Columbia,2022,Advanced,10
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,32,Columbia,2022,Advanced,3.1
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,43,Columbia,2022,Advanced,62.8
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,77,Columbia,2022,Advanced,16.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,79,Columbia,2022,Advanced,12.7
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,11,Columbia,2022,Advanced,0
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,108,Montour,2022,Advanced,46.3
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,82,Montour,2022,Advanced,23.2
+DANVILLE AREA SD,DANVILLE AREA SHS,English,135,Montour,2022,Advanced,18.5
+BENTON AREA SD,BENTON AREA HS,Math,16,Columbia,2022,Proficient,18.8
+BENTON AREA SD,BENTON AREA HS,Science,24,Columbia,2022,Proficient,37.5
+BENTON AREA SD,BENTON AREA HS,English,38,Columbia,2022,Proficient,47.4
+BERWICK AREA SD,BERWICK AREA HS,Math,70,Columbia,2022,Proficient,42.9
+BERWICK AREA SD,BERWICK AREA HS,Science,121,Columbia,2022,Proficient,21.5
+BERWICK AREA SD,BERWICK AREA HS,English,135,Columbia,2022,Proficient,50.4
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,45,Columbia,2022,Proficient,13.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,37,Columbia,2022,Proficient,24.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,88,Columbia,2022,Proficient,64.8
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,92,Columbia,2022,Proficient,35.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,92,Columbia,2022,Proficient,22.8
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,134,Columbia,2022,Proficient,51.5
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,114,Columbia,2022,Proficient,14.9
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Science,141,Columbia,2022,Proficient,25.5
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,English,144,Columbia,2022,Proficient,34
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,11,Columbia,2022,Proficient,72.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,30,Columbia,2022,Proficient,40
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,32,Columbia,2022,Proficient,65.6
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,43,Columbia,2022,Proficient,32.6
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,77,Columbia,2022,Proficient,39
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,79,Columbia,2022,Proficient,68.4
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,11,Columbia,2022,Proficient,54.5
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,108,Montour,2022,Proficient,38.9
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,82,Montour,2022,Proficient,46.3
+DANVILLE AREA SD,DANVILLE AREA SHS,English,135,Montour,2022,Proficient,68.9
+BENTON AREA SD,BENTON AREA HS,Math,16,Columbia,2022,Basic,6.3
+BENTON AREA SD,BENTON AREA HS,Science,24,Columbia,2022,Basic,33.3
+BENTON AREA SD,BENTON AREA HS,English,38,Columbia,2022,Basic,31.6
+BERWICK AREA SD,BERWICK AREA HS,Math,70,Columbia,2022,Basic,14.3
+BERWICK AREA SD,BERWICK AREA HS,Science,121,Columbia,2022,Basic,47.1
+BERWICK AREA SD,BERWICK AREA HS,English,135,Columbia,2022,Basic,31.1
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,45,Columbia,2022,Basic,13.3
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,37,Columbia,2022,Basic,43.2
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,88,Columbia,2022,Basic,19.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,92,Columbia,2022,Basic,8.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,92,Columbia,2022,Basic,46.7
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,134,Columbia,2022,Basic,27.6
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,114,Columbia,2022,Basic,50.9
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Science,141,Columbia,2022,Basic,45.4
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,English,144,Columbia,2022,Basic,43.1
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,11,Columbia,2022,Basic,9.1
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,30,Columbia,2022,Basic,36.7
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,32,Columbia,2022,Basic,21.9
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,43,Columbia,2022,Basic,0
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,77,Columbia,2022,Basic,36.4
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,79,Columbia,2022,Basic,15.2
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,11,Columbia,2022,Basic,27.3
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,108,Montour,2022,Basic,12
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,82,Montour,2022,Basic,25.6
+DANVILLE AREA SD,DANVILLE AREA SHS,English,135,Montour,2022,Basic,11.1
+BENTON AREA SD,BENTON AREA HS,Math,16,Columbia,2022,BelowBasic,6.3
+BENTON AREA SD,BENTON AREA HS,Science,24,Columbia,2022,BelowBasic,20.8
+BENTON AREA SD,BENTON AREA HS,English,38,Columbia,2022,BelowBasic,15.8
+BERWICK AREA SD,BERWICK AREA HS,Math,70,Columbia,2022,BelowBasic,8.6
+BERWICK AREA SD,BERWICK AREA HS,Science,121,Columbia,2022,BelowBasic,29.8
+BERWICK AREA SD,BERWICK AREA HS,English,135,Columbia,2022,BelowBasic,17.8
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Math,45,Columbia,2022,BelowBasic,4.4
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,Science,37,Columbia,2022,BelowBasic,16.2
+BLOOMSBURG AREA SD,BLOOMSBURG AREA HS,English,88,Columbia,2022,BelowBasic,2.3
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Math,92,Columbia,2022,BelowBasic,1.1
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,Science,92,Columbia,2022,BelowBasic,10.9
+CENTRAL COLUMBIA SD,CENTRAL COLUMBIA SHS,English,134,Columbia,2022,BelowBasic,3.7
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Math,114,Columbia,2022,BelowBasic,26.3
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,Science,141,Columbia,2022,BelowBasic,27
+COLUMBIA-MONTOUR AVTS,COLUMBIA-MONTOUR AVTS,English,144,Columbia,2022,BelowBasic,22.9
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Math,11,Columbia,2022,BelowBasic,9.1
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,Science,30,Columbia,2022,BelowBasic,13.3
+MILLVILLE AREA SD,MILLVILLE AREA JSHS,English,32,Columbia,2022,BelowBasic,9.4
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Math,43,Columbia,2022,BelowBasic,4.7
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,Science,77,Columbia,2022,BelowBasic,7.8
+SOUTHERN COLUMBIA AREA SD,SOUTHERN COLUMBIA HS,English,79,Columbia,2022,BelowBasic,3.8
+SUSQ-CYBER CS,SUSQ-CYBER CS,English,11,Columbia,2022,BelowBasic,18.2
+DANVILLE AREA SD,DANVILLE AREA SHS,Math,108,Montour,2022,BelowBasic,2.8
+DANVILLE AREA SD,DANVILLE AREA SHS,Science,82,Montour,2022,BelowBasic,4.9
+DANVILLE AREA SD,DANVILLE AREA SHS,English,135,Montour,2022,BelowBasic,1.5

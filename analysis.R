@@ -10,19 +10,20 @@ ks.st = read_csv("Keystone/State/keystone_state.csv")
 ps.sc = read_csv("PSSA/School/pssa_school.csv")
 ps.st = read_csv("PSSA/State/pssa_state.csv")
 
+
 # Objects imported
 
 # ks.sc      - keystone/school dataset
-# ks.sc.cols - keystone/school columns                    District, School, Subject, Group,        Scored, Baseline, Score, Year, County
+# ks.sc.cols - keystone/school columns          Subject, Scored, Baseline, Score, Year, County, District, School
 
 # ks.st      - keystone/state dataset
-# ks.st.cols - keystone/state columns                                       Subject,               Scored, Baseline, Score, Year
+# ks.st.cols - keystone/state columns           Subject, Scored, Baseline, Score, Year
 
 # ps.sc      - PSSA/school dataset
-# ps.sc.cols - PPSA/school columns         SchoolNum,    District,  School, Subject, Group, Grade, Scored, Baseline, Score, Year, County
+# ps.sc.cols - PPSA/school columns              Subject, Scored, Baseline, Score, Year, County, District, School, Grade, SchoolNum
 
 # ps.st      - PSSA/state dataset
-# ps.st.cols - PSSA/state columns                                           Subject,        Grade, Scored, Baseline, Score, Year
+# ps.st.cols - PSSA/state columns               Subject, Scored, Baseline, Score, Year,                           Grade 
 
 
 

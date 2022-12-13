@@ -4,9 +4,23 @@
 # @desc:    Analysis of testing data
 
 library(tidyverse)
+library(ggplot2)
+library(GGally)
 
 ks = read_csv("Keystone/keystone.csv")
 ps = read_csv("PSSA/pssa.csv")
+
+m = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
+summary(m)
+
+m1 = glm(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
+summary(m1)
+
+plot(m)
+ggpairs(m)
+
+ks1 = read.csv("Keystone/keystone.csv")
+plot(ks1)
 
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?

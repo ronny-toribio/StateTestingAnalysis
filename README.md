@@ -15,6 +15,7 @@
 - analysis.R      (Analysis of the data)
 
 ### Authors
-- Ronny Toribio
-- Anna T. Schlecht
-- Kadir O. Altunel
+- Ronny Toribio    - Project lead, data wrangling
+- Anna T. Schlecht - Graphs 
+- Kadir O. Altunel - Analysis
+- John Seibert

@@ -5,46 +5,6 @@
 
 library(tidyverse)
 
-# Subject transformations
-replace_subject = function(s){
-  if(s %in% c("E", "English", "English Language Arts", "Literature")){
-    "English"
-  }
-  else if(s %in% c("M", "Math", "Algebra I")){
-    "Math"
-  }
-  else if(s %in% c("S", "Science", "Biology")){
-    "Science"
-  }
-}
-
-standardize_subjects = function(c){
-  for(i in 1:length(c)){
-    c[i] = replace_subject(c[i])
-  }
-  c
-}
-
-# County transformations
-replace_county = function(c){
-  if(c == "State"){
-    0
-  }
-  else if(c == "Columbia"){
-    1
-  }
-  else if(c == "Montour"){
-    2
-  }
-}
-
-standardize_counties = function(c){
-  for(i in 1:length(c)){
-    c[i] = replace_county(c[i])
-  }
-  c
-}
-
 # Begin Suppress Warnings
 options(warn=-1)
 
@@ -126,8 +86,9 @@ ks.sc = bind_rows(
 # Remove historically underperforming rows and group column
 ks.sc = ks.sc %>% filter(Group=="All Students") %>% select(-Group)
 
-# Standardize Subjects
-ks.sc$Subject = standardize_subjects(ks.sc$Subject)
+# Rename Columbia-Montour AVTS
+ks.sc = ks.sc %>% mutate(across(School, str_replace, "COLUMBIA - MONTOUR AVTS", "COLUMBIA-MONTOUR AVTS"))
+ks.sc = ks.sc %>% mutate(across(District, str_replace, "COLUMBIA - MONTOUR AVTS", "COLUMBIA-MONTOUR AVTS"))
 
 # Clean up of Keystone School data
 rm(ks.sc.2015)
@@ -135,7 +96,7 @@ rm(ks.sc.columbia.districts)
 rm(ks.sc.montour.districts)
 rm(ks.sc.2016)
 rm(ks.sc.2017)
-rm(ks.sc.2018)
+#rm(ks.sc.2018)
 rm(ks.sc.2019)
 rm(ks.sc.2021)
 rm(ks.sc.2022)
@@ -190,9 +151,6 @@ ks.st = bind_rows(
   ks.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
 
-# Standardize Subjects
-ks.st$Subject = standardize_subjects(ks.st$Subject)
-
 # Clean up of Keystone state data
 rm(ks.st.2015)
 rm(ks.st.2016)
@@ -206,10 +164,20 @@ rm(ks.st.cols)
 # Merge Keystone data
 ks.st = ks.st %>% mutate(District="", School="", County="State")
 ks = bind_rows(ks.st, ks.sc) %>% arrange(Year)
-ks$County = standardize_counties(ks$County)
+ks = ks %>% mutate(across(County, str_replace, "State", "0"))
+ks = ks %>% mutate(across(County, str_replace, "Columbia", "1"))
+ks = ks %>% mutate(across(County, str_replace, "Montour", "2"))
+ks = ks %>% mutate(across(Subject, str_replace, "E", "English"))
+ks = ks %>% mutate(across(Subject, str_replace, "M", "Math"))
+ks = ks %>% mutate(across(Subject, str_replace, "S", "Science"))
+ks = ks %>% mutate(across(Subject, str_replace, "Literature", "English"))
+ks = ks %>% mutate(across(Subject, str_replace, "Algebra I", "Math"))
+ks = ks %>% mutate(across(Subject, str_replace, "Biology", "Science"))
 write_csv(ks, "Keystone/keystone.csv")
 rm(ks.sc)
 rm(ks.st)
+
+
 
 # PSSA school level data
 ps.sc.2015 = readxl::read_xlsx("PSSA/School/2015.xlsx", skip=6)
@@ -277,9 +245,6 @@ ps.sc = bind_rows(
 
 # Remove historically underperforming rows and group column
 ps.sc = ps.sc %>% filter(Group=="All Students") %>% select(-Group)
-
-# Standardize Subjects
-ps.sc$Subject = standardize_subjects(ps.sc$Subject)
 
 # Clean up of PSSA school data
 rm(ps.sc.2015)
@@ -349,9 +314,6 @@ ps.st = bind_rows(
   ps.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
 
-# Standardize Subjects
-ps.st$Subject = standardize_subjects(ps.st$Subject)
-
 # Clean up PSSA state data
 rm(ps.st.2015)
 rm(ps.st.2016)
@@ -365,7 +327,10 @@ rm(ps.st.cols)
 # Merge PSSA data
 ps.st = ps.st %>% mutate(District="", School="", School="", County="State")
 ps = bind_rows(ps.st, ps.sc) %>% arrange(Year)
-ps$County = standardize_counties(ps$County)
+ps = ps %>% mutate(across(County, str_replace, "State", "0"))
+ps = ps %>% mutate(across(County, str_replace, "Columbia", "1"))
+ps = ps %>% mutate(across(County, str_replace, "Montour", "2"))
+ps = ps %>% mutate(across(Subject, str_replace, "English Language Arts", "English"))
 write_csv(ps, "PSSA/pssa.csv")
 rm(ps.sc)
 rm(ps.st)

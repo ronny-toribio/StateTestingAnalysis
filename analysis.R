@@ -6,21 +6,41 @@
 library(tidyverse)
 library(ggplot2)
 library(GGally)
+library(hrbrthemes)
+library(gganimate)
+library(viridis)
+library(gifski)
+library(png)
 
 ks = read_csv("Keystone/keystone.csv")
 ps = read_csv("PSSA/pssa.csv")
 
-m = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
+m = aov(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
+          as_factor(District) + as_factor(School) + 
+          as_factor(County), data = ks)
 summary(m)
 
-m1 = glm(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
-summary(m1)
+
+
+m2 = glm(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
+           as_factor(District) + as_factor(School) + 
+           as_factor(County), data = ks)
+summary(m2)
 
 plot(m)
 ggpairs(m)
 
-ks1 = read.csv("Keystone/keystone.csv")
-plot(ks1)
+m3 = glm(Score ~ as_factor(Baseline) + Year, data = ks)
+summary(m3)
+
+p1 = ggplot(data = ks, aes(x = Year, y = Score)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  facet_wrap(~ as_factor(Baseline))
+
+p1
+
+
+
 
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?

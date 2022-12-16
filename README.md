@@ -7,6 +7,11 @@
 - How they compare to the state trend since 2015?
 - Is there any COVID impact we might be able to deduce?
 - Any other information that data might tell us?
+- Visualizing the averages of scores from each year.
+   - As a whole
+   - Grouped by subject
+   - Grouped by district
+- Compare scores between districts.
 
 ### Contents
 - /Keystone/      (Keystone Exams Data)

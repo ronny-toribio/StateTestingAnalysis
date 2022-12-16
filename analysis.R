@@ -7,13 +7,17 @@ library(tidyverse)
 library(ggplot2)
 library(GGally)
 library(hrbrthemes)
-library(gganimate)
-library(viridis)
-library(gifski)
-library(png)
+
 
 ks = read_csv("Keystone/keystone.csv")
 ps = read_csv("PSSA/pssa.csv")
+
+
+# Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
+
+# Objective 2: How they compare to the state trend since 2015?
+
+# Objective 3: Is there any COVID impact we might be able to deduce?
 
 m = aov(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
           as_factor(District) + as_factor(School) + 
@@ -38,15 +42,5 @@ p1 = ggplot(data = ks, aes(x = Year, y = Score)) +
   facet_wrap(~ as_factor(Baseline))
 
 p1
-
-
-
-
-
-# Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
-
-# Objective 2: How they compare to the state trend since 2015?
-
-# Objective 3: Is there any COVID impact we might be able to deduce?
 
 # Objective 4: Any other information that data might tell us?

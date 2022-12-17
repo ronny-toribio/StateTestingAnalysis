@@ -43,4 +43,39 @@ p1 = ggplot(data = ks, aes(x = Year, y = Score)) +
 
 p1
 
+ks$County = as_factor(ks$County)
+str(ks$County)
+levels(ks$County) = c("State", "Colombia", "Montour")
+levels(ks$County)
+
+
+p2 = ggplot(data = ks, aes(fill = as_factor(Baseline), y = Score, x = as_factor(County))) + 
+  geom_bar(position="dodge", stat="identity") +
+  facet_wrap(~Year) +
+  xlab("State vs Counties")
+
+p2
+
+#BelowBasic: Colombia County outperformed State and Montour County prior to COVID.
+#After COVID, Colombia County suffered some against State Level. Montour County ranked the worst
+#throughout the years and reached all time low in 2021.
+
+#Basic: Colombia County outperformed both State and Montour County throughout the years.
+#After COVID, all levels experienced some losses. Montour County kept ranking the worst.
+
+#Proficient: Once again Colombia County outperformed State and Montour County throughout the years.
+#Both Montour and Colombia Counties fared better compared to State levels. There was a 
+#some decline in Montour County in 2021 causing the score averages to reach to state levels.
+#However in 2022, there was a strong spike in Proficient in Montour and Colombia,
+#outpacing State
+
+#Advanced: Colombia County outperformed State and Montour County across the years.
+#Montour County performed slightly better than State. Once again, in 2021, there
+#was a slight delcine in scores possibly due to COVID
+
+#As graph suggests, all baseline levels experienced some decline in scores due to COVID
+#with one exception. As a matter of fact in 2021, there was a spike in Advanced Baseline which 
+#suggests that COVID was not a determinator for scores in this level.
+#Proficient level seemed to suffer the most due to COVID19 pandemic.
+
 # Objective 4: Any other information that data might tell us?

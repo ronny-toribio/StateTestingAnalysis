@@ -312,7 +312,8 @@ ps.st = bind_rows(
   ps.st %>% mutate(Baseline="Proficient", Score=Proficient),
   ps.st %>% mutate(Baseline="Basic",      Score=Basic),
   ps.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
-) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
+) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic) %>% 
+  mutate(across(Grade, str_replace, "State Total", "Total"))
 
 # Clean up PSSA state data
 rm(ps.st.2015)
@@ -337,54 +338,38 @@ rm(ps.st)
 
 # Cohorts
 cohort.1 = bind_rows(
-  ps %>% filter(Year==2015 & Grade==4),
-  ps %>% filter(Year==2016 & Grade==5),
-  ps %>% filter(Year==2017 & Grade==6),
-  ps %>% filter(Year==2018 & Grade==7),
-  ps %>% filter(Year==2019 & Grade==8),
-  ks %>% filter(Year==2022) %>% mutate(Grade="11", SchoolNum="")
+  ps %>% filter(Year==2016 & Grade==5 & County!=0),
+  ps %>% filter(Year==2017 & Grade==6 & County!=0),
+  ps %>% filter(Year==2018 & Grade==7 & County!=0),
+  ps %>% filter(Year==2019 & Grade==8 & County!=0),
+  ks %>% filter(Year==2022 & County!=0) %>% mutate(Grade="11", SchoolNum="")
 ) %>% mutate(Cohort=1)
 
 cohort.2 = bind_rows(
-  ps %>% filter(Year==2015 & Grade==5),
-  ps %>% filter(Year==2016 & Grade==6),
-  ps %>% filter(Year==2017 & Grade==7),
-  ps %>% filter(Year==2018 & Grade==8),
-  ks %>% filter(Year==2021) %>% mutate(Grade="11", SchoolNum="")
+  ps %>% filter(Year==2016 & Grade==6 & County!=0),
+  ps %>% filter(Year==2017 & Grade==7 & County!=0),
+  ps %>% filter(Year==2018 & Grade==8 & County!=0),
+  ks %>% filter(Year==2021 & County!=0) %>% mutate(Grade="11", SchoolNum="")
 ) %>% mutate(Cohort=2)
 
 cohort.3 = bind_rows(
-  ps %>% filter(Year==2015 & Grade==6),
-  ps %>% filter(Year==2016 & Grade==7),
-  ps %>% filter(Year==2017 & Grade==8),
-  ks %>% filter(Year==2020) %>% mutate(Grade="11", SchoolNum="")
+  ps %>% filter(Year==2016 & Grade==8 & County!=0),
+  ks %>% filter(Year==2019 & County!=0) %>% mutate(Grade="11", SchoolNum="")
 ) %>% mutate(Cohort=3)
-
-cohort.4 = bind_rows(
-  ps %>% filter(Year==2015 & Grade==7),
-  ps %>% filter(Year==2016 & Grade==8),
-  ks %>% filter(Year==2019) %>% mutate(Grade="11", SchoolNum="")
-) %>% mutate(Cohort=4)
-
-cohort.5 = bind_rows(
-  ps %>% filter(Year==2015 & Grade==8),
-  ks %>% filter(Year==2018) %>% mutate(Grade="11", SchoolNum="")
-) %>% mutate(Cohort=5)
 
 cohorts = bind_rows(
   cohort.1,
   cohort.2,
-  cohort.3,
-  cohort.4,
-  cohort.5
+  cohort.3
 )
 
 write_csv(cohorts, "Cohorts/cohorts.csv")
 rm(cohort.1)
 rm(cohort.2)
 rm(cohort.3)
-rm(cohort.4)
-rm(cohort.5)
+
+# Recreate PSSA data with aggregations where possible
+
 
 
 # End Suppress Warnings

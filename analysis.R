@@ -102,13 +102,14 @@ p2
 # Objective 7. Study Cohorts
 cohorts
 
-# Cohorts
+# Cohorts County Level
 #             |<------PSSA----------->|
 #                               |<--------Keystone----->|
-#          2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022
-# Cohort 1    4     5     6     7     8                11
-# Cohort 2    5     6     7     8                11
-# Cohort 3    6     7     8                11
-# Cohort 4    7     8                11
-# Cohort 5    8                11
+#          2016, 2017, 2018, 2019, 2020, 2021, 2022
+# Cohort 1    5     6     7     8                11
+# Cohort 2    6     7     8                11
+# No 2020
+# Cohort 3    8                11
+
+
 

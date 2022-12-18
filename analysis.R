@@ -10,6 +10,7 @@ library(hrbrthemes)
 
 ks = read_csv("Keystone/keystone.csv")
 ps = read_csv("PSSA/pssa.csv")
+cohorts = read_csv("Cohorts/cohorts.csv")
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
 
@@ -98,5 +99,16 @@ p2
 # Objective 6. Compare scores between districts.
 
 
-# Objective 7. (John's objective)
+# Objective 7. Study Cohorts
+cohorts
+
+# Cohorts
+#             |<------PSSA----------->|
+#                               |<--------Keystone----->|
+#          2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022
+# Cohort 1    4     5     6     7     8                11
+# Cohort 2    5     6     7     8                11
+# Cohort 3    6     7     8                11
+# Cohort 4    7     8                11
+# Cohort 5    8                11
 

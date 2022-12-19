@@ -219,12 +219,12 @@ ps.sc = bind_rows(
 )
 
 # Add County column to 2015 data set from other years district
-ps.sc.columbia.districts = ps.sc %>% filter(tolower(County) == "columbia") %>% select(District)
-ps.sc.montour.districts  = ps.sc %>% filter(tolower(County) == "montour")  %>% select(District)
+ps.sc.columbia.districts = ps.sc %>% filter(tolower(County) == "columbia") %>% select(District) %>% distinct()
+ps.sc.montour.districts  = ps.sc %>% filter(tolower(County) == "montour")  %>% select(District) %>% distinct()
 ps.sc.2015 = bind_rows(
   ps.sc.2015 %>% filter(District %in% ps.sc.columbia.districts) %>% mutate(County="Columbia"),
   ps.sc.2015 %>% filter(District %in% ps.sc.montour.districts)  %>% mutate(County="Montour")
-) %>% mutate(Year="2015") %>% drop_na()
+) %>% mutate(Year="2015")
 
 # Add 2015 data set to PSSA school data set
 ps.sc = bind_rows(ps.sc.2015, ps.sc)
@@ -338,6 +338,7 @@ rm(ps.st)
 
 # Cohorts
 cohort.1 = bind_rows(
+  ps %>% filter(Year==2015 & Grade==4 & County!=0),
   ps %>% filter(Year==2016 & Grade==5 & County!=0),
   ps %>% filter(Year==2017 & Grade==6 & County!=0),
   ps %>% filter(Year==2018 & Grade==7 & County!=0),
@@ -346,6 +347,7 @@ cohort.1 = bind_rows(
 ) %>% mutate(Cohort=1)
 
 cohort.2 = bind_rows(
+  ps %>% filter(Year==2015 & Grade==5 & County!=0),
   ps %>% filter(Year==2016 & Grade==6 & County!=0),
   ps %>% filter(Year==2017 & Grade==7 & County!=0),
   ps %>% filter(Year==2018 & Grade==8 & County!=0),
@@ -353,14 +355,21 @@ cohort.2 = bind_rows(
 ) %>% mutate(Cohort=2)
 
 cohort.3 = bind_rows(
+  ps %>% filter(Year==2015 & Grade==7 & County!=0),
   ps %>% filter(Year==2016 & Grade==8 & County!=0),
   ks %>% filter(Year==2019 & County!=0) %>% mutate(Grade="11", SchoolNum="")
 ) %>% mutate(Cohort=3)
 
+cohort.4 = bind_rows(
+  ps %>% filter(Year==2015 & Grade==8 & County!=0),
+  ks %>% filter(Year==2018 & County!=0) %>% mutate(Grade="11", SchoolNum="")
+) %>% mutate(Cohort=4)
+
 cohorts = bind_rows(
   cohort.1,
   cohort.2,
-  cohort.3
+  cohort.3,
+  cohort.4
 )
 
 write_csv(cohorts, "Cohorts/cohorts.csv")

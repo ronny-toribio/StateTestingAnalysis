@@ -376,6 +376,7 @@ write_csv(cohorts, "Cohorts/cohorts.csv")
 rm(cohort.1)
 rm(cohort.2)
 rm(cohort.3)
+rm(cohort.4)
 
 # Recreate PSSA data with aggregations where possible
 

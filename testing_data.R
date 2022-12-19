@@ -312,8 +312,7 @@ ps.st = bind_rows(
   ps.st %>% mutate(Baseline="Proficient", Score=Proficient),
   ps.st %>% mutate(Baseline="Basic",      Score=Basic),
   ps.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
-) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic) %>% 
-  mutate(across(Grade, str_replace, "State Total", "Total"))
+) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
 
 # Clean up PSSA state data
 rm(ps.st.2015)
@@ -332,6 +331,13 @@ ps = ps %>% mutate(across(County, str_replace, "State", "0"))
 ps = ps %>% mutate(across(County, str_replace, "Columbia", "1"))
 ps = ps %>% mutate(across(County, str_replace, "Montour", "2"))
 ps = ps %>% mutate(across(Subject, str_replace, "English Language Arts", "English"))
+ps = ps %>% mutate(across(Grade, str_replace, "State Total", "Total"))
+ps = ps %>% mutate(across(Grade, str_replace, "03", "3"))
+ps = ps %>% mutate(across(Grade, str_replace, "04", "4"))
+ps = ps %>% mutate(across(Grade, str_replace, "05", "5"))
+ps = ps %>% mutate(across(Grade, str_replace, "06", "6"))
+ps = ps %>% mutate(across(Grade, str_replace, "07", "7"))
+ps = ps %>% mutate(across(Grade, str_replace, "08", "8"))
 write_csv(ps, "PSSA/pssa.csv")
 rm(ps.sc)
 rm(ps.st)

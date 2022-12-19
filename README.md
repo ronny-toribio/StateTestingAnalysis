@@ -23,5 +23,5 @@
 ### Authors
 - Ronny Toribio    - Project lead, data wrangling
 - Anna T. Schlecht - Graphs 
-- Kadir O. Altunel - Analysis
-- John Seibert
+- Kadir O. Altunel - Statistical Analysis
+- John Seibert     - Cohort Analysis

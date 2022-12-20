@@ -15,19 +15,19 @@
 7. Study cohorts as they progress from PSSA to Keystone
 
 ### 3. Is there any COVID impact we might be able to deduce?
-*BelowBasic*: Colombia County outperformed State and Montour County prior to COVID.
+**BelowBasic**: Colombia County outperformed State and Montour County prior to COVID.
 After COVID, Colombia County suffered some against State Level. Montour County ranked the worst
 throughout the years and reached all time low in 2021.
 
-*Basic*: Colombia County outperformed both State and Montour County throughout the years.
+**Basic**: Colombia County outperformed both State and Montour County throughout the years.
 After COVID, all levels experienced some losses. Montour County kept ranking the worst.
 
-*Proficient*: Once again Colombia County outperformed State and Montour County throughout the years.
+**Proficient**: Once again Colombia County outperformed State and Montour County throughout the years.
 Both Montour and Colombia Counties fared better compared to State levels. There was a 
 some decline in Montour County in 2021 causing the score averages to reach to state levels.
 However in 2022, there was a strong spike in Proficient in Montour and Colombia, outpacing State
 
-*Advanced*: Colombia County outperformed State and Montour County across the years.
+**Advanced**: Colombia County outperformed State and Montour County across the years.
 Montour County performed slightly better than State. Once again, in 2021, there
 was a slight delcine in scores possibly due to COVID
 

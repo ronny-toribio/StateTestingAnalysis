@@ -13,13 +13,13 @@ ps = read_csv("PSSA/pssa.csv")
 cohorts = read_csv("Cohorts/cohorts.csv")
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
-kscm %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+kscm = ks %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 
 kscm
 plot(kscm)
 ggpairs(kscm)
 
-pscm %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+pscm = ps %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 
 pscm
 plot(pscm)
@@ -111,24 +111,24 @@ ps
 plot(ps)
 
 # Objective 5b. Grouped by subject.
-kss %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+kss = ks %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 kss
 plot(kss)
 ggpairs(kss)
 
-pss %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+pss = ps %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 pss
 plot(pss)
 
 # Objective 5c. Grouped by district.
 
-ksd %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ksd = ks %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 ksd
 plot(ksd)
 ggpairs(ksd)
 
 
-psd %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+psd = ps %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 psd
 plot(psd)
 

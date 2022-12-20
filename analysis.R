@@ -1,4 +1,4 @@
-# @authors: Ronny Toribio, Anna T. Schlecht, Kadir O. Altunel
+# @authors: Ronny Toribio, Anna T. Schlecht, Kadir O. Altunel, John Seibert
 # @project: State Testing Analysis
 # @file:    analysis.R
 # @desc:    Analysis of testing data
@@ -13,16 +13,19 @@ ps = read_csv("PSSA/pssa.csv")
 cohorts = read_csv("Cohorts/cohorts.csv")
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
-kscm = ks %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-
+kscm = ks %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(County, Score) %>% distinct()
 kscm
+png("Graphs/obj1-kscm.png")
 plot(kscm)
+dev.off()
 ggpairs(kscm)
+ggsave("Graphs/obj1-kscm-ggpairs.png")
 
-pscm = ps %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-
+pscm = ps %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(County, Score) %>% distinct()
 pscm
+png("Graphs/obj1-pscm.png")
 plot(pscm)
+dev.off()
 
 # Objective 2: How they compare to the state trend since 2015?
 m = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
@@ -31,9 +34,11 @@ summary(m)
 m1 = glm(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
 summary(m1)
 
+png("Graphs/obj2-ks-m.png")
 plot(m)
+dev.off()
 ggpairs(m)
-
+ggsave("Graphs/obj2-ks-m-ggpairs.png")
 
 # Objective 3: Is there any COVID impact we might be able to deduce?
 m = aov(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
@@ -47,8 +52,11 @@ m2 = glm(Score ~ as_factor(Subject) + Year + as_factor(Baseline) +
            as_factor(County), data = ks)
 summary(m2)
 
+png("Graphs/obj3-ks-m.png")
 plot(m)
+dev.off()
 ggpairs(m)
+ggsave("Graphs/obj3-ks-m-ggpairs.png")
 
 m3 = glm(Score ~ as_factor(Baseline) + Year, data = ks)
 summary(m3)
@@ -56,6 +64,7 @@ summary(m3)
 p1 = ggplot(data = ks, aes(x = Year, y = Score)) +
   geom_bar(stat = "identity", fill = "blue") +
   facet_wrap(~ as_factor(Baseline))
+ggsave("Graphs/obj3-ks-graph1.png")
 
 p1
 
@@ -69,7 +78,7 @@ p2 = ggplot(data = ks, aes(fill = as_factor(Baseline), y = Score, x = as_factor(
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~Year) +
   xlab("State vs Counties")
-
+ggsave("Graphs/obj3-ks-graph2.png")
 p2
 
 #BelowBasic: Colombia County outperformed State and Montour County prior to COVID.
@@ -102,35 +111,47 @@ p2
 
 ks %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 ks
+png("Graphs/obj5a-ks-plot.png")
 plot(ks)
+dev.off()
 ggpairs(ks)
-
+ggsave("Graphs/obj5a-ks-ggpairs.png")
 
 ps %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 ps
+png("Graphs/obj5a-ps-plot.png")
 plot(ps)
 
 # Objective 5b. Grouped by subject.
 kss = ks %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 kss
+png("Graphs/obj5b-kss-plot.png")
 plot(kss)
+dev.off()
 ggpairs(kss)
+ggsave("Graphs/obj5b-kss-ggpairs.png")
 
 pss = ps %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 pss
+png("Graphs/obj5b-pss-plot.png")
 plot(pss)
+dev.off()
 
 # Objective 5c. Grouped by district.
 
 ksd = ks %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 ksd
+png("Graphs/obj5c-ksd-plot.png")
 plot(ksd)
+dev.off()
 ggpairs(ksd)
-
+ggsave("Graphs/obj5c-ksd-ggpairs.png")
 
 psd = ps %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 psd
+png("Graphs/obj5c-psd-plot.png")
 plot(psd)
+dev.off()
 
 # Objective 6. Study Cohorts
 cohorts

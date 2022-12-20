@@ -75,9 +75,13 @@ ks.sc$County = str_to_sentence(ks.sc$County)
 # Select Columbia and Montour counties
 ks.sc = ks.sc %>% filter(County %in% c("Columbia", "Montour")) %>% drop_na()
 
+# Create Top column (Proficient + Advanced)
+ks.sc = ks.sc %>% mutate(Top=Proficient+Advanced)
+
 # Create baseline and score columns
 ks.sc = bind_rows(
-  ks.sc %>% mutate(Baseline="Advanced",   Score=Advanced) ,
+  ks.sc %>% mutate(Baseline="Top",        Score=Top),
+  ks.sc %>% mutate(Baseline="Advanced",   Score=Advanced),
   ks.sc %>% mutate(Baseline="Proficient", Score=Proficient),
   ks.sc %>% mutate(Baseline="Basic",      Score=Basic),
   ks.sc %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
@@ -143,8 +147,12 @@ ks.st = bind_rows(
 )
 ks.st = ks.st %>% drop_na()
 
+# Create Top column (Proficient + Advanced)
+ks.st = ks.st %>% mutate(Top=Proficient+Advanced)
+
 # Create baseline and score columns
 ks.st = bind_rows(
+  ks.st %>% mutate(Baseline="Top",       Score=Top),
   ks.st %>% mutate(Baseline="Advanced",   Score=Advanced) ,
   ks.st %>% mutate(Baseline="Proficient", Score=Proficient),
   ks.st %>% mutate(Baseline="Basic",      Score=Basic),
@@ -235,9 +243,13 @@ ps.sc$County = str_to_sentence(ps.sc$County)
 # Select Columbia and Montour counties
 ps.sc = ps.sc %>% filter(County %in% c("Columbia", "Montour")) %>% drop_na()
 
+# Create Top column (Proficient + Advanced)
+ps.sc = ps.sc %>% mutate(Top=Proficient+Advanced)
+
 # Create baseline and score columns
 ps.sc = bind_rows(
-  ps.sc %>% mutate(Baseline="Advanced",   Score=Advanced) ,
+  ps.sc %>% mutate(Baseline="Top",        Score=Top),
+  ps.sc %>% mutate(Baseline="Advanced",   Score=Advanced),
   ps.sc %>% mutate(Baseline="Proficient", Score=Proficient),
   ps.sc %>% mutate(Baseline="Basic",      Score=Basic),
   ps.sc %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
@@ -322,9 +334,13 @@ ps.st = bind_rows(
   ps.st.2022 %>% mutate(Year="2022")
 )
 
+# Create Top column (Proficient + Advanced)
+ps.st = ps.st %>% mutate(Top=Proficient+Advanced)
+
 # Create baseline and score columns
 ps.st = bind_rows(
-  ps.st %>% mutate(Baseline="Advanced",   Score=Advanced) ,
+  ps.st %>% mutate(Baseline="Top",        Score=Top),
+  ps.st %>% mutate(Baseline="Advanced",   Score=Advanced),
   ps.st %>% mutate(Baseline="Proficient", Score=Proficient),
   ps.st %>% mutate(Baseline="Basic",      Score=Basic),
   ps.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)

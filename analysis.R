@@ -13,6 +13,16 @@ ps = read_csv("PSSA/pssa.csv")
 cohorts = read_csv("Cohorts/cohorts.csv")
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
+kscm %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+
+kscm
+plot(kscm)
+ggpairs(kscm)
+
+pscm %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+
+pscm
+plot(pscm)
 
 # Objective 2: How they compare to the state trend since 2015?
 m = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
@@ -88,18 +98,41 @@ p2
 
 
 # Objective 5: Visualizing the averages of scores from each year.
-
 # Objective 5a. As a whole.
 
+ks %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ks
+plot(ks)
+ggpairs(ks)
+
+
+ps %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ps
+plot(ps)
+
 # Objective 5b. Grouped by subject.
+kss %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+kss
+plot(kss)
+ggpairs(kss)
+
+pss %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+pss
+plot(pss)
 
 # Objective 5c. Grouped by district.
 
+ksd %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ksd
+plot(ksd)
+ggpairs(ksd)
 
-# Objective 6. Compare scores between districts.
 
+psd %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+psd
+plot(psd)
 
-# Objective 7. Study Cohorts
+# Objective 6. Study Cohorts
 cohorts
 
 # Cohorts Local Level

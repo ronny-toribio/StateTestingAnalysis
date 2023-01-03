@@ -52,6 +52,11 @@ p
 
 dev.off()
 
+# We see that in general, Montour and Colombia county fared better than State 
+# since 2015 in terms of baseline levels. Basic level showed a sharp increase in Montour
+# and Colombia counties in 2022. Proficient level also showed a sharp
+# increase especially in 2022 for Montour county
+
 
 mps = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ps)
 summary(mps)
@@ -67,12 +72,11 @@ str(ps$County)
 levels(ps$County) = c("State", "Colombia", "Montour")
 levels(ps$County)
 
-newps = ps[60:1765, 1:10]
-newps
+
 
 png(filename = "Obj2b.png", width = 1280, height = 1280)
 
-pps = ggplot(data = newps, aes(y = Score, x = Year, fill = as_factor(County))) + 
+pps = ggplot(data = ps, aes(y = Score, x = Year, fill = as_factor(County))) + 
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~as_factor(Baseline))
 
@@ -80,11 +84,29 @@ pps
 
 dev.off()
 
+# Top baseline showed a slight decline between 2019 - 2021 in State and Colombia County.
+# Top baseline remained steady in Montour throughout the time frame. 
 
-# We see that in general, Montour and Colombia county fared better than State 
-# since 2015 in terms of scores. Basic level showed a sharp increase in Montour
-# and Colombia counties in 2022. Proficient level also showed a sharp
-# increase especially in 2022 for Montour county
+# Advanced baseline showed a sharp decline in Colombia County and State from 2019
+# to 2021. Montour County baseline were pretty much stable.
+
+# Proficient baseline showed an increase in Colombia County in 2021 and then
+# it swung back to its previous levels in 2022. State and Montour County fluctuated
+# slightly throughout the time frame without any significant observation.
+
+# Basic baseline  dropped slightly in Colombia county from 2018 to 2019. It remained
+# steady in State from 2017 to 2019. Montour County showed a slight decline
+# in 2019. Basic baseline increased in both counties and state in 2021, only to
+# drop slightly in Montour County and State in 2022. Colombia County showed
+# a moderate decline in Basic baseline. 
+
+# BelowBasic baseline remained stable for Montour County until 2019. There was a
+# sharp increase between 2016 and 2017 in Colombia County and State. Both
+# counties and state showed a decline in BelowBasic baseline in 2019. There was
+# a significant increase in all places in the baseline from 2019 to 2021,
+# especially in Colombia. From 2021 to 2022, baseline remained stable in State 
+# and dropped moderately in both counties
+
 
 
 # Objective 3: Is there any COVID impact we might be able to deduce?
@@ -127,6 +149,15 @@ p1
 dev.off()
 
 
+# Checking baseline averages throughout the years for counties and subjects, it
+# is interesting to see that COVID didn't impact Math and English for baselines
+# dramatically for Colombia, Montour and State. In fact, there was a significant
+# improvement in the scores in 2022 compared to 2019 for math top, advanced
+# and proficient baseline in Colombia county.
+# However, there was a steep decline in Science for baselines between 2021
+# and 2022 throughout the state which may be an indication of a COVID impact.
+
+
 mps1 = aov(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
            as_factor(District) + as_factor(School) + 
            as_factor(County), data = ks)
@@ -151,12 +182,10 @@ str(ps$County)
 levels(ps$County) = c("State", "Colombia", "Montour")
 levels(ps$County)
 
-newps = ps[60:1765, 1:10]
-newps
 
 png(filename = "Obj3b.png", width = 1280, height = 1280)
 
-p1ps = ggplot(data = newps, aes(fill = as_factor(Baseline), y = Score, x = as_factor(Subject))) + 
+p1ps = ggplot(data = ps, aes(fill = as_factor(Baseline), y = Score, x = as_factor(Subject))) + 
   geom_bar(position="dodge", stat="identity") +
   facet_wrap(~Year + County, ncol = 3) +
   xlab("State vs Counties") +
@@ -167,13 +196,9 @@ p1ps
 dev.off()
 
 
-# Checking score averages throughout the years for counties and subjects, it
-# is interesting to see that COVID didn't impact Math and English scores
-# dramatically for Colombia, Montour and State. In fact, there was a significant
-# improvement in the scores in 2022 compared to 2019 for math scores in Colombia
-# county. Math scores remained stable if not slightly improved for both state
-# and Montour. However, there was a steep decline in Science scores between 2021
-# and 2022 throughout the state which may be an indication of a COVID impact.
+# From 2019 to 2022, baseline levels seemed stable for the counties and the state
+# There were only slight fluctuations which were inconclusive if COVID affected
+# baseline levels or not.
 
 
 # Objective 4: Any other information that data might tell us?

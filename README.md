@@ -1,6 +1,6 @@
 # State Testing Analysis
 
-![Fletcher](/Resources/fletcher.jpg "Fletcher")
+![Fletcher](/Resources/fletcher.jpg)
 
 ### Objectives
 1. How our local districts in Columbia and Montour Counties are trending since 2015?
@@ -14,27 +14,65 @@
 6. Compare scores between districts.
 7. Study cohorts as they progress from PSSA to Keystone
 
-### 3. Is there any COVID impact we might be able to deduce?
-**BelowBasic**: Colombia County outperformed State and Montour County prior to COVID.
-After COVID, Colombia County suffered some against State Level. Montour County ranked the worst
-throughout the years and reached all time low in 2021.
+### Objective 2: How they compare to the state trend since 2015?
 
-**Basic**: Colombia County outperformed both State and Montour County throughout the years.
-After COVID, all levels experienced some losses. Montour County kept ranking the worst.
+##### Keystone
 
-**Proficient**: Once again Colombia County outperformed State and Montour County throughout the years.
-Both Montour and Colombia Counties fared better compared to State levels. There was a 
-some decline in Montour County in 2021 causing the score averages to reach to state levels.
-However in 2022, there was a strong spike in Proficient in Montour and Colombia, outpacing State
+![obj2a](/Resources/Obj2a.png)
 
-**Advanced**: Colombia County outperformed State and Montour County across the years.
-Montour County performed slightly better than State. Once again, in 2021, there
-was a slight delcine in scores possibly due to COVID
+We see that in general, Montour and Colombia county fared better than State 
+since 2015 in terms of baseline levels. Basic level showed a sharp increase in Montour
+and Colombia counties in 2022. Proficient level also showed a sharp
+increase especially in 2022 for Montour county
 
-As graph suggests, all baseline levels experienced some decline in scores due to COVID
-with one exception. As a matter of fact in 2021, there was a spike in Advanced Baseline which 
-suggests that COVID was not a determinator for scores in this level.
-Proficient level seemed to suffer the most due to COVID19 pandemic.
+##### PSSA
+
+![obj2b](/Resources/Obj2b.png)
+
+**Top** baseline showed a slight decline between 2019 - 2021 in State and Colombia County.
+Top baseline remained steady in Montour throughout the time frame. 
+
+**Advanced** baseline showed a sharp decline in Colombia County and State from 2019
+to 2021. Montour County baseline were pretty much stable.
+
+**Proficient** baseline showed an increase in Colombia County in 2021 and then
+it swung back to its previous levels in 2022. State and Montour County fluctuated
+slightly throughout the time frame without any significant observation.
+
+**Basic** baseline  dropped slightly in Colombia county from 2018 to 2019. It remained
+steady in State from 2017 to 2019. Montour County showed a slight decline
+in 2019. Basic baseline increased in both counties and state in 2021, only to
+drop slightly in Montour County and State in 2022. Colombia County showed
+a moderate decline in Basic baseline. 
+
+**BelowBasic** baseline remained stable for Montour County until 2019. There was a
+sharp increase between 2016 and 2017 in Colombia County and State. Both
+counties and state showed a decline in BelowBasic baseline in 2019. There was
+a significant increase in all places in the baseline from 2019 to 2021,
+especially in Colombia. From 2021 to 2022, baseline remained stable in State 
+and dropped moderately in both counties
+
+### Objective 3: Is there any COVID impact we might be able to deduce?
+
+##### Keystone
+
+![obj3a](/Resources/Obj3a.png)
+
+Checking baseline averages throughout the years for counties and subjects, it
+is interesting to see that COVID didn't impact Math and English for baselines
+dramatically for Colombia, Montour and State. In fact, there was a significant
+improvement in the scores in 2022 compared to 2019 for math top, advanced
+and proficient baseline in Colombia county.
+However, there was a steep decline in Science for baselines between 2021
+and 2022 throughout the state which may be an indication of a COVID impact.
+
+##### PSSA
+
+![obj3b](/Resources/Obj3b.png)
+
+From 2019 to 2022, baseline levels seemed stable for the counties and the state
+There were only slight fluctuations which were inconclusive if COVID affected
+baseline levels or not.
 
 ### Contents
 - /Cohorts/       (Generated Cohorts Data)

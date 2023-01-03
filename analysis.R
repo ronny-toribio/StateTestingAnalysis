@@ -13,19 +13,20 @@ ps = read_csv("PSSA/pssa.csv")
 cohorts = read_csv("Cohorts/cohorts.csv")
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
-kscm = ks %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(County, Score) %>% distinct()
-kscm
-png("Graphs/obj1-kscm.png")
-plot(kscm)
-dev.off()
-ggpairs(kscm)
-ggsave("Graphs/obj1-kscm-ggpairs.png")
+ks %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ks
+p11 = ggplot(data = ks, aes(x = County, y = Score)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p11)
 
-pscm = ps %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(County, Score) %>% distinct()
-pscm
-png("Graphs/obj1-pscm.png")
-plot(pscm)
-dev.off()
+
+ps %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ps
+p12 = ggplot(data = ps, aes(x = County, y = Score)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p12)
 
 # Objective 2: How they compare to the state trend since 2015?
 m = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
@@ -207,49 +208,73 @@ dev.off()
 
 ks %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 ks
-png("Graphs/obj5a-ks-plot.png")
-plot(ks)
-dev.off()
-ggpairs(ks)
-ggsave("Graphs/obj5a-ks-ggpairs.png")
+
+p3 = ggplot(data = ks, aes(x = Year, y = Score)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p3)
+
 
 ps %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 ps
-png("Graphs/obj5a-ps-plot.png")
-plot(ps)
+p4 = ggplot(data = ps, aes(x = Year, y = Score)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p4)
 
 # Objective 4b. Grouped by subject.
-kss = ks %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-kss
-png("Graphs/obj5b-kss-plot.png")
-plot(kss)
-dev.off()
-ggpairs(kss)
-ggsave("Graphs/obj5b-kss-ggpairs.png")
+ks %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ks
+p5 = ggplot(data = ks, aes(x = Subject, y = Score)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p5)
 
-pss = ps %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-pss
-png("Graphs/obj5b-pss-plot.png")
-plot(pss)
-dev.off()
+
+ps %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ps
+
+p6 = ggplot(data = ps, aes(x = Subject, y = Score)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p6)
 
 # Objective 4c. Grouped by district.
 
-ksd = ks %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ksd
-png("Graphs/obj5c-ksd-plot.png")
-plot(ksd)
-dev.off()
-ggpairs(ksd)
-ggsave("Graphs/obj5c-ksd-ggpairs.png")
+ks %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ks
+p7 = ggplot(data = ks, aes(x = District, y = Score)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p7)
 
-psd = ps %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-psd
-png("Graphs/obj5c-psd-plot.png")
-plot(psd)
-dev.off()
+
+ps %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ps
+
+p8 = ggplot(data = ps, aes(x = District, y = Score)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p8)
 
 # Objective 5: Compare scores between districts.
+ks %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ks
+
+p9 = ggplot(data = ks, aes(x = Score, y = District)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p9)
+
+
+ps %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
+ps
+p10 = ggplot(data = ps, aes(x = Score, y = District)) +
+  geom_bar(stat = "identity", fill = "pink") +
+  facet_wrap(~ as_factor(Baseline))
+plot(p10)
+
+
 
 # Objective 6: Study Cohorts
 cohorts

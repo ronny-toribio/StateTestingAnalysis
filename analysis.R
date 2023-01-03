@@ -37,6 +37,50 @@ summary(m1)
 plot(m)
 ggpairs(m)
 
+ks$County = as_factor(ks$County)
+str(ks$County)
+levels(ks$County) = c("State", "Colombia", "Montour")
+levels(ks$County)
+
+png(filename = "Obj2a.png", width = 1280, height = 1280)
+
+p = ggplot(data = ks, aes(y = Score, x = Year, fill = as_factor(County))) + 
+  geom_bar(position="dodge", stat="identity") +
+  facet_wrap(~as_factor(Baseline))
+
+p
+
+dev.off()
+
+
+mps = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ps)
+summary(mps)
+
+m1ps = glm(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ps)
+summary(m1ps)
+
+plot(mps)
+ggpairs(mps)
+
+ps$County = as_factor(ps$County)
+str(ps$County)
+levels(ps$County) = c("State", "Colombia", "Montour")
+levels(ps$County)
+
+newps = ps[60:1765, 1:10]
+newps
+
+png(filename = "Obj2b.png", width = 1280, height = 1280)
+
+pps = ggplot(data = newps, aes(y = Score, x = Year, fill = as_factor(County))) + 
+  geom_bar(position="dodge", stat="identity") +
+  facet_wrap(~as_factor(Baseline))
+
+pps
+
+dev.off()
+
+
 # We see that in general, Montour and Colombia county fared better than State 
 # since 2015 in terms of scores. Basic level showed a sharp increase in Montour
 # and Colombia counties in 2022. Proficient level also showed a sharp
@@ -44,10 +88,10 @@ ggpairs(m)
 
 
 # Objective 3: Is there any COVID impact we might be able to deduce?
-m = aov(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
+m1 = aov(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
           as_factor(District) + as_factor(School) + 
           as_factor(County), data = ks)
-summary(m)
+summary(m1)
 
 
 m2 = glm(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
@@ -70,17 +114,58 @@ levels(ks$County) = c("State", "Colombia", "Montour")
 levels(ks$County)
 
 
-png(filename = "Obj3.png", width = 1280, height = 1280)
+png(filename = "Obj3a.png", width = 1280, height = 1280)
 
-p1 = ggplot(data = ks, aes(fill = as_factor(Baseline), y = Score, x = as_factor(County))) + 
+p1 = ggplot(data = ks, aes(fill = as_factor(Baseline), y = Score, x = as_factor(Subject))) + 
   geom_bar(position="dodge", stat="identity") +
-  facet_wrap(~Year) +
+  facet_wrap(~Year + County, ncol = 3) +
   xlab("State vs Counties") +
   scale_fill_discrete(name = "Baseline")
 
 p1
 
 dev.off()
+
+
+mps1 = aov(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
+           as_factor(District) + as_factor(School) + 
+           as_factor(County), data = ks)
+summary(mps1)
+
+
+mps2 = glm(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
+           as_factor(District) + as_factor(School) + 
+           as_factor(County), data = ks)
+summary(mps2)
+
+
+plot(mps1)
+ggpairs(mps1)
+
+
+mps3 = glm(Score ~ as_factor(Baseline) + Year, data = ks)
+summary(mps3)
+
+ps$County = as_factor(ps$County)
+str(ps$County)
+levels(ps$County) = c("State", "Colombia", "Montour")
+levels(ps$County)
+
+newps = ps[60:1765, 1:10]
+newps
+
+png(filename = "Obj3b.png", width = 1280, height = 1280)
+
+p1ps = ggplot(data = newps, aes(fill = as_factor(Baseline), y = Score, x = as_factor(Subject))) + 
+  geom_bar(position="dodge", stat="identity") +
+  facet_wrap(~Year + County, ncol = 3) +
+  xlab("State vs Counties") +
+  scale_fill_discrete(name = "Baseline")
+
+p1ps
+
+dev.off()
+
 
 # Checking score averages throughout the years for counties and subjects, it
 # is interesting to see that COVID didn't impact Math and English scores

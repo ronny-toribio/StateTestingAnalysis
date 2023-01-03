@@ -14,6 +14,17 @@
 6. Study cohorts as they progress from PSSA to Keystone
 7. Any other information that data might tell us?
 
+### Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
+
+##### Keystone
+
+![obj1a](/Resources/Obj1ak.png)
+
+##### PSSA
+
+![obj1b](/Resources/Obj1bp.png)
+
+
 ### Objective 2: How they compare to the state trend since 2015?
 
 ##### Keystone
@@ -73,6 +84,49 @@ and 2022 throughout the state which may be an indication of a COVID impact.
 From 2019 to 2022, baseline levels seemed stable for the counties and the state
 There were only slight fluctuations which were inconclusive if COVID affected
 baseline levels or not.
+
+
+### Objective 4: Visualizing the averages of scores from each year.
+
+#### As a whole.
+
+##### Keystone
+
+![obj4ak](/Resources/Obj4ak.png)
+
+##### PSSA
+
+![obj4ap](/Resources/Obj4ap.png)
+
+#### Grouped by subject.
+
+##### Keystone
+
+![obj4bk](/Resources/Obj4bk.png)
+
+##### PSSA
+
+![obj4bp](/Resources/Obj4bp.png)
+
+#### Grouped by district.
+
+##### Keystone
+
+![obj4ck](/Resources/Obj4ck.png)
+
+##### PSSA
+
+![obj4cp](/Resources/Obj4cp.png)
+
+### Objective 5: Compare scores between districts.
+
+##### Keystone
+
+![obj5ak](/Resources/Obj5ak.png)
+
+##### PSSA
+
+![obj5ap](/Resources/Obj5ap.png)
 
 ### Contents
 - /Cohorts/       (Generated Cohorts Data)

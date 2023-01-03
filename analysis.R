@@ -201,11 +201,9 @@ dev.off()
 # baseline levels or not.
 
 
-# Objective 4: Any other information that data might tell us?
 
-
-# Objective 5: Visualizing the averages of scores from each year.
-# Objective 5a. As a whole.
+# Objective 4: Visualizing the averages of scores from each year.
+# Objective 4a. As a whole.
 
 ks %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 ks
@@ -220,7 +218,7 @@ ps
 png("Graphs/obj5a-ps-plot.png")
 plot(ps)
 
-# Objective 5b. Grouped by subject.
+# Objective 4b. Grouped by subject.
 kss = ks %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 kss
 png("Graphs/obj5b-kss-plot.png")
@@ -235,7 +233,7 @@ png("Graphs/obj5b-pss-plot.png")
 plot(pss)
 dev.off()
 
-# Objective 5c. Grouped by district.
+# Objective 4c. Grouped by district.
 
 ksd = ks %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
 ksd
@@ -251,7 +249,9 @@ png("Graphs/obj5c-psd-plot.png")
 plot(psd)
 dev.off()
 
-# Objective 6. Study Cohorts
+# Objective 5: Compare scores between districts.
+
+# Objective 6: Study Cohorts
 cohorts
 
 # Cohorts Local Level
@@ -264,5 +264,5 @@ cohorts
 # Cohort 3    7     8                11
 # Cohort 4    8                11
 
-
+# Objective 7: Any other information that data might tell us? Summary.
 

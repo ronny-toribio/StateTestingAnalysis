@@ -6,13 +6,13 @@
 1. How our local districts in Columbia and Montour Counties are trending since 2015?
 2. How they compare to the state trend since 2015?
 3. Is there any COVID impact we might be able to deduce?
-4. Any other information that data might tell us?
-5. Visualizing the averages of scores from each year.
+4. Visualizing the averages of scores from each year.
    - As a whole
    - Grouped by subject
    - Grouped by district
-6. Compare scores between districts.
-7. Study cohorts as they progress from PSSA to Keystone
+5. Compare scores between districts.
+6. Study cohorts as they progress from PSSA to Keystone
+7. Any other information that data might tell us?
 
 ### Objective 2: How they compare to the state trend since 2015?
 

@@ -126,9 +126,13 @@ Contrary to the Keystone analysis, the data for PSSA score averages by subject, 
 
 ![obj4ck](/Resources/Obj4ck.png)
 
+When looking at the Keystone average scores grouped by district, we can see a strong amount of Top and Proficient scores overall. We can see that the majority of average scores remain in the Top category and that there is an extreme difference when comparing to those who scored below basic and basic. Otherwise, there is no clear correlation between districts directly.
+
 ##### PSSA
 
 ![obj4cp](/Resources/Obj4cp.png)
+
+We can see when analyzing the PSSA average scores grouped by district, that there is a strong amount of top scores from students especially within the Berwick Area School District and Bloomsburg Area School District. We can see, these two school districts amount of students scoring within the top four categories is considerably higher in comparison to other school district. Otherwise, there is no direct correlation between districts.
 
 ### Objective 5: Compare scores between districts.
 
@@ -136,9 +140,12 @@ Contrary to the Keystone analysis, the data for PSSA score averages by subject, 
 
 ![obj5ak](/Resources/Obj5ak.png)
 
+When comparing Keystone average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 ##### PSSA
 
 ![obj5ap](/Resources/Obj5ap.png)
+
+When comparing PSSA average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 
 ### Contents
 - /Cohorts/       (Generated Cohorts Data)

@@ -3,8 +3,8 @@
 ![Fletcher](/Resources/fletcher.jpg)
 
 ### Objectives
-1. How our local districts in Columbia and Montour Counties are trending since 2015?
-2. How they compare to the state trend since 2015?
+1. How our local districts in Columbia and Montour Counties are trending since 2016?
+2. How they compare to the state trend since 2016?
 3. Is there any COVID impact we might be able to deduce?
 4. Visualizing the averages of scores from each year.
    - As a whole
@@ -14,18 +14,22 @@
 6. Study cohorts as they progress from PSSA to Keystone
 7. Any other information that data might tell us?
 
-### Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
+### Objective 1: How our local districts in Columbia and Montour Counties are trending since 2016?
 
 ##### Keystone
 
 ![obj1a](/Resources/Obj1ak.png)
 
+We see from taking the averages of Keystone scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022. Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exceptions of basic and below basic scores.
+
 ##### PSSA
 
 ![obj1b](/Resources/Obj1bp.png)
 
+We see from taking the averages of PSSA scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022.  Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exception of below basic scores, where the State and montour county averages were equal basically.
 
-### Objective 2: How they compare to the state trend since 2015?
+
+### Objective 2: How they compare to the state trend since 2016?
 
 ##### Keystone
 
@@ -94,9 +98,13 @@ baseline levels or not.
 
 ![obj4ak](/Resources/Obj4ak.png)
 
+When looking at the Keystone Score averages by year, there was no data collected for the 2020 year, as the pandemic haulted all testing. Even so, we see an extreme dip in Top and Proficient scores from 2019 to 2022. There was also a slight increase in Basic and Below Basic scores for the 2022 year.
+
 ##### PSSA
 
 ![obj4ap](/Resources/Obj4ap.png)
+
+We see when analyzing the data for PPSA Score averages by year, there are little to no changes in scoring and in some cases. Top and advanced scores from 2019 to 2022 slightly suffered most likely due to the pandemic. There was also a slight increase in Basic and Below Basic scores from 2019 to 2022.
 
 #### Grouped by subject.
 
@@ -104,9 +112,13 @@ baseline levels or not.
 
 ![obj4bk](/Resources/Obj4bk.png)
 
+We see when analyzing the data for Keystone Score averages by subject, students on average scored highly in Math and English while more likely struggling with science. Both in top and advanced categories, more students scored well on the Math sections, with English being the highest in the proficient category. When looking at the scores for below basic, Science has the highest average for those scoring in th is category.
+
 ##### PSSA
 
 ![obj4bp](/Resources/Obj4bp.png)
+
+Contrary to the Keystone analysis, the data for PSSA score averages by subject, student on average scored highly in Science and English, while having higher below basic and basic scores within Math. Science was the highest subject for both Top and advanced categories, with English remaining the highest subject for proficient scores. 
 
 #### Grouped by district.
 

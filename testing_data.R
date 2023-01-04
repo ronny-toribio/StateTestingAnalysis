@@ -94,6 +94,9 @@ ks.sc = ks.sc %>% filter(Group=="All Students") %>% select(-Group)
 ks.sc = ks.sc %>% mutate(across(School, str_replace, "COLUMBIA - MONTOUR AVTS", "COLUMBIA-MONTOUR AVTS"))
 ks.sc = ks.sc %>% mutate(across(District, str_replace, "COLUMBIA - MONTOUR AVTS", "COLUMBIA-MONTOUR AVTS"))
 
+# Create wscore column
+ks.sc = ks.sc %>% mutate(WScore=Score * Scored)
+
 # Clean up of Keystone School data
 #rm(ks.sc.2015)
 #rm(ks.sc.columbia.districts)
@@ -152,12 +155,15 @@ ks.st = ks.st %>% mutate(Top=Proficient+Advanced)
 
 # Create baseline and score columns
 ks.st = bind_rows(
-  ks.st %>% mutate(Baseline="Top",       Score=Top),
+  ks.st %>% mutate(Baseline="Top",        Score=Top),
   ks.st %>% mutate(Baseline="Advanced",   Score=Advanced) ,
   ks.st %>% mutate(Baseline="Proficient", Score=Proficient),
   ks.st %>% mutate(Baseline="Basic",      Score=Basic),
   ks.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
+
+# Create wscore column
+ks.st = ks.st %>% mutate(WScore=Score * Scored)
 
 # Clean up of Keystone state data
 #rm(ks.st.2015)
@@ -258,6 +264,9 @@ ps.sc = bind_rows(
 # Remove historically underperforming rows and group column
 ps.sc = ps.sc %>% filter(Group=="All Students") %>% select(-Group)
 
+# Create wscore column
+ps.sc = ps.sc %>% mutate(WScore=Score * Scored)
+
 # Clean up of PSSA school data
 #rm(ps.sc.columbia.districts)
 #rm(ps.sc.montour.districts)
@@ -268,7 +277,6 @@ rm(ps.sc.2018)
 rm(ps.sc.2019)
 rm(ps.sc.2021)
 rm(ps.sc.2022)
-
 rm(ps.sc.cols)
 
 # PSSA state level data
@@ -345,6 +353,9 @@ ps.st = bind_rows(
   ps.st %>% mutate(Baseline="Basic",      Score=Basic),
   ps.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
+
+# Create wscore column
+ps.st = ps.st %>% mutate(WScore=Score * Scored)
 
 # Clean up PSSA state data
 #rm(ps.st.2015)

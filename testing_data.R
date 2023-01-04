@@ -95,7 +95,7 @@ ks.sc = ks.sc %>% mutate(across(School, str_replace, "COLUMBIA - MONTOUR AVTS", 
 ks.sc = ks.sc %>% mutate(across(District, str_replace, "COLUMBIA - MONTOUR AVTS", "COLUMBIA-MONTOUR AVTS"))
 
 # Create wscore column
-ks.sc = ks.sc %>% mutate(WScore=Score * Scored)
+ks.sc = ks.sc %>% mutate(WScore=ceiling(Score * Scored))
 
 # Clean up of Keystone School data
 #rm(ks.sc.2015)
@@ -163,7 +163,7 @@ ks.st = bind_rows(
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
 
 # Create wscore column
-ks.st = ks.st %>% mutate(WScore=Score * Scored)
+ks.st = ks.st %>% mutate(WScore=ceiling(Score * Scored))
 
 # Clean up of Keystone state data
 #rm(ks.st.2015)
@@ -265,7 +265,7 @@ ps.sc = bind_rows(
 ps.sc = ps.sc %>% filter(Group=="All Students") %>% select(-Group)
 
 # Create wscore column
-ps.sc = ps.sc %>% mutate(WScore=Score * Scored)
+ps.sc = ps.sc %>% mutate(WScore=ceiling(Score * Scored))
 
 # Clean up of PSSA school data
 #rm(ps.sc.columbia.districts)
@@ -355,7 +355,7 @@ ps.st = bind_rows(
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
 
 # Create wscore column
-ps.st = ps.st %>% mutate(WScore=Score * Scored)
+ps.st = ps.st %>%mutate(WScore=ceiling(Score * Scored))
 
 # Clean up PSSA state data
 #rm(ps.st.2015)

@@ -8,6 +8,21 @@ library(ggplot2)
 library(GGally)
 library(hrbrthemes)
 
+theme_main = function(base_size=11, base_family=""){
+  theme(
+    plot.background = element_rect(fill="grey"),
+    panel.background = element_rect(fill="darkblue", color="darkblue", linewidth=0.5, linetype="solid"),
+    legend.background = element_rect(fill="grey"),
+    panel.grid.major = element_line(color="white", linewidth=0.5, linetype="solid"),
+    panel.grid.minor = element_line(color="white", linewidth=0.5, linetype="solid"),
+    panel.border = element_rect(color="darkblue", fill = NA),
+    axis.line = element_line(color="darkblue"),
+    axis.ticks = element_line(color="darkblue"),
+    axis.text = element_text(color="white")
+  )
+}
+theme_set(theme_main())
+
 ks = read_csv("Keystone/keystone.csv")
 ps = read_csv("PSSA/pssa.csv")
 cohorts = read_csv("Cohorts/cohorts.csv")

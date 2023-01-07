@@ -14,20 +14,21 @@ library(ggthemes)
 theme_main = function(base_size=11, base_family=""){
   theme(
     plot.background = element_rect(fill="black"),
-    panel.background = element_rect(fill="darkblue", color="darkblue", linewidth=0.5, linetype="solid"),
+    panel.background = element_rect(fill="darkblue", color="darkblue", linetype="solid"),
     strip.background = element_rect(fill="steelblue"),
     strip.text = element_text(color="white", face = "bold"),
     legend.background = element_rect(fill="black"),
     legend.text = element_text(color="white"),
     legend.title = element_text(color="white"),
-    panel.grid.major = element_line(color="white", linewidth=0.5, linetype="solid"),
-    panel.grid.minor = element_line(color="white", linewidth=0.5, linetype="solid"),
+    panel.grid.major = element_line(color="white", linetype="solid"),
+    panel.grid.minor = element_line(color="white", linetype="solid"),
     panel.border = element_rect(color="darkblue", fill = NA),
     axis.line = element_line(color="darkblue"),
     axis.ticks = element_line(color="darkblue"),
     axis.text = element_text(color="white"),
     axis.text.x = element_text(color="white"),
-    axis.text.y = element_text(color="white")
+    axis.text.y = element_text(color="white"),
+    plot.title = element_text(color="white")
   )
 }
 
@@ -404,19 +405,44 @@ p10 = ggplot(data = ps, aes(x = Score, y = District)) +
 plot(p10)
 
 
-
 # Objective 6: Study Cohorts
 
 # Cohorts Local Level
 #             |<------PSSA----------->|
 #                               |<--------Keystone----->|
 #          2016, 2017, 2018, 2019, 2020, 2021, 2022
-# Cohort 1    5     6     7     8                11
-# Cohort 2    6     7     8                11
+# Cohort 1    8                11
 # No 2020
-# Cohort 3    8                11
+# Cohort 2    6     7     8                11
+# Cohort 3    5     6     7     8                11
 
-cohorts2 = cohorts %>% filter(Grade==8 | Grade==11)
+cohorts %>% ggplot(aes(xmin=Year-1, xmax=Year, ymin=Cohort-1, ymax=Cohort, fill=as_factor(Grade))) + 
+  geom_rect() +
+  labs(title="Cohorts Timeline")
+
+cohorts1 = cohorts %>% filter(Baseline != "Top")
+cohorts1 %>% ggplot(aes(x=Grade, y=Score, fill=as_factor(Baseline))) + 
+  geom_col() +
+  facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
+  labs(title="Cohorts 1-3 All Grades All Scores")
+
+cohorts1_top = cohorts1 %>% filter(Baseline=="Advanced" | Baseline=="Proficient")
+cohorts1_top %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+  geom_col() + 
+  facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
+  labs(title="Cohorts 1-3 All Grades Top Scores")
+
+cohorts2 = cohorts1 %>% filter(Grade==8 | Grade==11)
+cohorts2 %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+  geom_col() + 
+  facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
+  labs(title="Cohorts 1-3 Grades 8, 11 All Scores")
+
+cohorts2_top = cohorts2 %>% filter(Baseline=="Advanced" | Baseline=="Proficient")
+cohorts2_top %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+  geom_col() + 
+  facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
+  labs(title="Cohorts 1-3 Grades 8, 11 Top Scores")
 
 # Objective 7: Any other information that data might tell us? Summary.
 

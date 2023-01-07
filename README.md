@@ -147,6 +147,26 @@ When comparing Keystone average scores between districts, there seems to be no c
 
 When comparing PSSA average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 
+### Objective 6: Cohort analysis
+
+![obj6ac1](/Resources/Obj6_timeline.png)
+
+##### Cohorts 1-3 All Grades All Scores
+
+![obj6ac1](/Resources/Obj6ac1.png)
+
+##### Cohorts 1-3 All Grades Top Scores
+
+![obj6bc1t](/Resources/Obj6bc1t.png)
+
+##### Cohorts 1-3 Grades 8, 11 All Scores
+
+![obj6cc2](/Resources/Obj6cc2.png)
+
+##### Cohorts 1-3 Grades 8, 11 Top Scores
+
+![obj6dc2t](/Resources/Obj6dc2t.png)
+
 ### Contents
 - /Cohorts/       (Generated Cohorts Data)
 - /Keystone/      (Keystone Exams Data)

@@ -416,7 +416,7 @@ plot(p10)
 # Cohort 2    6     7     8                11
 # Cohort 3    5     6     7     8                11
 
-cohorts %>% ggplot(aes(xmin=Year-1, xmax=Year, ymin=Cohort-1, ymax=Cohort, fill=as_factor(Grade))) + 
+cohorts %>% ggplot(aes(xmin=Year, xmax=Year+1, ymin=Cohort-1, ymax=Cohort, fill=as_factor(Grade))) + 
   geom_rect() +
   labs(title="Cohorts Timeline")
 

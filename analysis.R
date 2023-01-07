@@ -7,20 +7,30 @@ library(tidyverse)
 library(ggplot2)
 library(GGally)
 library(hrbrthemes)
+library(patchwork)
+library(ggthemes)
+
 
 theme_main = function(base_size=11, base_family=""){
   theme(
-    plot.background = element_rect(fill="grey"),
+    plot.background = element_rect(fill="black"),
     panel.background = element_rect(fill="darkblue", color="darkblue", linewidth=0.5, linetype="solid"),
-    legend.background = element_rect(fill="grey"),
+    strip.background = element_rect(fill="steelblue"),
+    strip.text = element_text(color="white", face = "bold"),
+    legend.background = element_rect(fill="black"),
+    legend.text = element_text(color="white"),
+    legend.title = element_text(color="white"),
     panel.grid.major = element_line(color="white", linewidth=0.5, linetype="solid"),
     panel.grid.minor = element_line(color="white", linewidth=0.5, linetype="solid"),
     panel.border = element_rect(color="darkblue", fill = NA),
     axis.line = element_line(color="darkblue"),
     axis.ticks = element_line(color="darkblue"),
-    axis.text = element_text(color="white")
+    axis.text = element_text(color="white"),
+    axis.text.x = element_text(color="white"),
+    axis.text.y = element_text(color="white")
   )
 }
+
 theme_set(theme_main())
 
 ks = read_csv("Keystone/keystone.csv")
@@ -44,61 +54,202 @@ p12 = ggplot(data = ps, aes(x = County, y = Score)) +
 plot(p12)
 
 # Objective 2: How they compare to the state trend since 2015?
-m = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
-summary(m)
 
-m1 = glm(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ks)
-summary(m1)
-
-plot(m)
-ggpairs(m)
 
 ks$County = as_factor(ks$County)
 str(ks$County)
 levels(ks$County) = c("State", "Colombia", "Montour")
 levels(ks$County)
 
-png(filename = "Obj2a.png", width = 1280, height = 1280)
 
-p = ggplot(data = ks, aes(y = Score, x = Year, fill = as_factor(County))) + 
+group_by_year_county = ks %>% 
+  group_by(Year, County) %>%
+  summarise(across(c(Scored, WScore), sum)) %>%
+  mutate(WAvg = WScore/Scored)
+
+group_by_year_county
+
+
+group_by_year_county_baseline = ks %>% 
+  group_by(Year, County, Baseline) %>%
+  summarise(across(c(Scored, WScore), sum)) %>%
+  mutate(WAvg = WScore/Scored)
+
+group_by_year_county_baseline
+
+
+group_by_year_county_baseline_subject = ks %>%
+  group_by(Year, County, Baseline, Subject) %>%
+  summarize(across(c(Scored, WScore), sum)) %>%
+  mutate(WAvg = WScore/Scored)
+
+group_by_year_county_baseline_subject
+
+group_by_year_county_baseline_subject_school = ks %>%
+  group_by(Year, County, Baseline, Subject, School) %>%
+  summarize(across(c(Scored, WScore), sum)) %>%
+  mutate(WAvg = WScore/Scored)
+
+group_by_year_county_baseline_subject_school
+
+state_bar = group_by_year_county %>%
+  filter(County == "State") %>% 
+  ggplot(aes(x = Year, y = WAvg, fill = County)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "County") + 
+  ggtitle("WAvg by Years in State")
+
+state_bar
+
+
+colombia_bar =  group_by_year_county %>%
+  filter(County == "Colombia") %>% 
+  ggplot(aes(x = Year, y = WAvg, fill = County)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "County") +
+  ggtitle("WAvg by Years in Colombia County")
+
+colombia_bar
+
+montour_bar =  group_by_year_county %>%
+  filter(County == "Montour") %>% 
+  ggplot(aes(x = Year, y = WAvg, fill = County)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "County") +
+  ggtitle("WAvg by Years in Montour County")
+
+montour_bar
+
+
+combined_bar = state_bar + colombia_bar + montour_bar
+combined_bar
+
+
+compact_combined_bar = ggplot(data = group_by_year_county, aes(y = WAvg, x = Year, fill = as_factor(County))) + 
   geom_bar(position="dodge", stat="identity") +
-  facet_wrap(~as_factor(Baseline))
+  scale_fill_discrete(name = "County") +
+  ggtitle("WAvg by Years in State, Colombia County and Montour County") 
 
-p
+compact_combined_bar
 
-dev.off()
+
+state_top = group_by_year_county_baseline %>%
+  filter(County == "State" & Baseline == "Top") %>% 
+  ggplot(aes(x = Year, y = WAvg, fill = as_factor(Baseline))) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Baseline") + 
+  ggtitle("WAvg of Top Baseline by Years in State") 
+
+state_top
+
+
+colombia_top = group_by_year_county_baseline %>%
+  filter(County == "Colombia" & Baseline == "Top") %>% 
+  ggplot(aes(x = Year, y = WAvg, fill = as_factor(Baseline))) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Baseline") + 
+  ggtitle("WAvg of Top Baseline by Years in Colombia")
+
+colombia_top
+
+montour_top = group_by_year_county_baseline %>%
+  filter(County == "Montour" & Baseline == "Top") %>% 
+  ggplot(aes(x = Year, y = WAvg, fill = as_factor(Baseline))) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Baseline") + 
+  ggtitle("WAvg of Top Baseline by Years in Montour") 
+
+montour_top
+
+combined_top = state_top + colombia_top + montour_top
+combined_top
+
+compact_combined_top = ggplot(data = group_by_year_county_baseline %>% 
+                                filter(Baseline == "Top"), 
+                              aes(y = WAvg, x = Year, fill = as_factor(County))) + 
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "County") +
+  ggtitle("WAvg of Top Baseline in State, Colombia County and Montour County") 
+
+compact_combined_top
+
+all_baselines_by_county = ggplot(data = group_by_year_county_baseline, 
+                                 aes(y = WAvg, x = County, fill = as_factor(Baseline))) + 
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "Baseline") +
+  facet_wrap(~Year, ncol = 3) +
+  ggtitle("WAvg by Baseline in State, Colombia County and Montour County")
+
+all_baselines_by_county
+
+
+colombia_subject_wg_top = group_by_year_county_baseline_subject_school %>%
+  filter(County == "Colombia" & Baseline == "Top") %>% 
+  ggplot(aes(x = Subject, y = WAvg, fill = as_factor(Baseline))) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Baseline") + 
+  facet_wrap(~Year) +
+  ggtitle("WAvg of Top Baseline in Colombia by Subjects") 
+
+colombia_subject_wg_top
+
+state_subject_wg_top = group_by_year_county_baseline_subject_school %>%
+  filter(County == "State" & Baseline == "Top") %>% 
+  ggplot(aes(x = Subject, y = WAvg, fill = as_factor(Baseline))) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Baseline") + 
+  facet_wrap(~Year) +
+  ggtitle("WAvg of Top Baseline in State by Subjects") 
+
+state_subject_wg_top
+
+
+montour_subject_wg_top = group_by_year_county_baseline_subject_school %>%
+  filter(County == "Montour" & Baseline == "Top") %>% 
+  ggplot(aes(x = Subject, y = WAvg, fill = as_factor(Baseline))) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Baseline") + 
+  facet_wrap(~Year) +
+  ggtitle("WAvg of Top Baseline in Montour by Subjects") 
+
+montour_subject_wg_top
+
+compact_subject_wg_top = ggplot(data = group_by_year_county_baseline_subject_school %>% 
+                                  filter(Baseline == "Top"), 
+                                aes(y = WAvg, x = Subject, fill = as_factor(County))) + 
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "County") +
+  facet_wrap(~Year) +
+  ggtitle("WAvg of Top Baseline in State, Colombia County and Montour County by Subjects") 
+
+compact_subject_wg_top
+
+compact_subject_wg = ggplot(data = group_by_year_county_baseline_subject_school, 
+                            aes(y = WAvg, x = Subject, fill = as_factor(Baseline))) + 
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "Baseline") +
+  facet_wrap(~Year + County, ncol = 3) +
+  ggtitle("WAvg of All Baselines in State, Colombia County and Montour County") 
+
+compact_subject_wg
+
+colombia_subject_wg_top_school = ggplot(data = group_by_year_county_baseline_subject_school %>%
+                                          filter(Baseline == "Top" & County == "Colombia"),
+                                        aes(y = WAvg, x = Subject, fill = as_factor(School))) + 
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") +
+  facet_wrap(~Year, ncol = 3) +
+  ggtitle("WAvg of Top Baseline in Colombia County by School")
+
+colombia_subject_wg_top_school
+
+
+
 
 # We see that in general, Montour and Colombia county fared better than State 
 # since 2015 in terms of baseline levels. Basic level showed a sharp increase in Montour
 # and Colombia counties in 2022. Proficient level also showed a sharp
 # increase especially in 2022 for Montour county
-
-
-mps = aov(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ps)
-summary(mps)
-
-m1ps = glm(Score ~ as_factor(Baseline) + as_factor(Subject) + Year, data = ps)
-summary(m1ps)
-
-plot(mps)
-ggpairs(mps)
-
-ps$County = as_factor(ps$County)
-str(ps$County)
-levels(ps$County) = c("State", "Colombia", "Montour")
-levels(ps$County)
-
-
-
-png(filename = "Obj2b.png", width = 1280, height = 1280)
-
-pps = ggplot(data = ps, aes(y = Score, x = Year, fill = as_factor(County))) + 
-  geom_bar(position="dodge", stat="identity") +
-  facet_wrap(~as_factor(Baseline))
-
-pps
-
-dev.off()
 
 # Top baseline showed a slight decline between 2019 - 2021 in State and Colombia County.
 # Top baseline remained steady in Montour throughout the time frame. 
@@ -126,43 +277,6 @@ dev.off()
 
 
 # Objective 3: Is there any COVID impact we might be able to deduce?
-m1 = aov(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
-          as_factor(District) + as_factor(School) + 
-          as_factor(County), data = ks)
-summary(m1)
-
-
-m2 = glm(Score ~ as_factor(Subject) + Year + as_factor(Baseline) + 
-           as_factor(District) + as_factor(School) + 
-           as_factor(County), data = ks)
-summary(m2)
-
-
-plot(m)
-ggpairs(m)
-
-
-m3 = glm(Score ~ as_factor(Baseline) + Year, data = ks)
-summary(m3)
-
-
-ks$County = as_factor(ks$County)
-str(ks$County)
-levels(ks$County) = c("State", "Colombia", "Montour")
-levels(ks$County)
-
-
-png(filename = "Obj3a.png", width = 1280, height = 1280)
-
-p1 = ggplot(data = ks, aes(fill = as_factor(Baseline), y = Score, x = as_factor(Subject))) + 
-  geom_bar(position="dodge", stat="identity") +
-  facet_wrap(~Year + County, ncol = 3) +
-  xlab("State vs Counties") +
-  scale_fill_discrete(name = "Baseline")
-
-p1
-
-dev.off()
 
 
 # Checking baseline averages throughout the years for counties and subjects, it

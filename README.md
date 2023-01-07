@@ -162,4 +162,3 @@ When comparing PSSA average scores between districts, there seems to be no corre
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling
 - [Anna T. Schlecht](https://github.com/atschlecht) - Graphs 
 - [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz) - Statistical Analysis
-- [John Seibert](https://github.com/johnseibert19) - Cohort Analysis

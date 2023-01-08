@@ -22,9 +22,9 @@ theme_main = function(base_size=11, base_family=""){
     legend.title = element_text(color="white"),
     panel.grid.major = element_line(color="white", linetype="solid"),
     panel.grid.minor = element_line(color="white", linetype="solid"),
-    panel.border = element_rect(color="darkblue", fill = NA),
-    axis.line = element_line(color="darkblue"),
-    axis.ticks = element_line(color="darkblue"),
+    panel.border = element_rect(color="white", fill = NA),
+    axis.line = element_line(color="white"),
+    axis.ticks = element_line(color="white"),
     axis.text = element_text(color="white"),
     axis.text.x = element_text(color="white"),
     axis.text.y = element_text(color="white"),
@@ -416,33 +416,46 @@ plot(p10)
 # Cohort 2    6     7     8                11
 # Cohort 3    5     6     7     8                11
 
-cohorts %>% ggplot(aes(xmin=Year, xmax=Year+1, ymin=Cohort-1, ymax=Cohort, fill=as_factor(Grade))) + 
+cohorts$Cohort = as.integer(cohorts$Cohort)
+
+cohorts_timeline = cohorts %>% ggplot(
+    aes(xmin=Year, xmax=Year+1, ymin=Cohort-1, ymax=Cohort, fill=as_factor(Grade))) + 
   geom_rect() +
   labs(title="Cohorts Timeline")
+plot(cohorts_timeline)
+ggsave("Resources/Obj6_timeline.png", cohorts_timeline)
 
 cohorts1 = cohorts %>% filter(Baseline != "Top")
-cohorts1 %>% ggplot(aes(x=Grade, y=Score, fill=as_factor(Baseline))) + 
+obj6ac1 = cohorts1 %>% ggplot(aes(x=Grade, y=Score, fill=as_factor(Baseline))) + 
   geom_col() +
   facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
   labs(title="Cohorts 1-3 All Grades All Scores")
+plot(obj6ac1)
+ggsave("Resources/Obj6ac1.png", obj6ac1)
 
 cohorts1_top = cohorts1 %>% filter(Baseline=="Advanced" | Baseline=="Proficient")
-cohorts1_top %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+obj6bc1t = cohorts1_top %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
   geom_col() + 
   facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
   labs(title="Cohorts 1-3 All Grades Top Scores")
+plot(obj6bc1t)
+ggsave("Resources/Obj6bc1t.png", obj6bc1t)
 
 cohorts2 = cohorts1 %>% filter(Grade==8 | Grade==11)
-cohorts2 %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+obj6cc2 = cohorts2 %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
   geom_col() + 
   facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
   labs(title="Cohorts 1-3 Grades 8, 11 All Scores")
+plot(obj6cc2)
+ggsave("Resources/Obj6cc2.png", obj6cc2)
 
 cohorts2_top = cohorts2 %>% filter(Baseline=="Advanced" | Baseline=="Proficient")
-cohorts2_top %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+obj6dc2t = cohorts2_top %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
   geom_col() + 
   facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
   labs(title="Cohorts 1-3 Grades 8, 11 Top Scores")
+plot(obj6dc2t)
+ggsave("Resources/Obj6dc2t.png", obj6dc2t)
 
 # Objective 7: Any other information that data might tell us? Summary.
 

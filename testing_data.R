@@ -341,7 +341,7 @@ rm(ps.st)
 cohort.1 = bind_rows(
   ps2 %>% filter(Year==2016 & Grade==8 & County!=0),
   ks %>% filter(Year==2019 & County!=0) %>% mutate(Grade="11", SchoolNum="")
-) %>% mutate(Cohort=3)
+) %>% mutate(Cohort=1)
 
 cohort.2 = bind_rows(
   ps2 %>% filter(Year==2016 & Grade==6 & County!=0),
@@ -356,7 +356,7 @@ cohort.3 = bind_rows(
   ps2 %>% filter(Year==2018 & Grade==7 & County!=0),
   ps2 %>% filter(Year==2019 & Grade==8 & County!=0),
   ks %>% filter(Year==2022 & County!=0) %>% mutate(Grade="11", SchoolNum="")
-) %>% mutate(Cohort=1)
+) %>% mutate(Cohort=3)
 rm(ps2)
 
 cohorts = bind_rows(

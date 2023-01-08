@@ -52,23 +52,23 @@ Grade 11 was extracted from the Keystone set.
 
 ### Issues, mitigations, design choices
 - The PSSA and Keystone local level data set for 2015 doesn't have a County column.
-   - Mitigation: I used the school districts from Columbia and Montour counties from the following years to select them in 2015.
+   - **Mitigation**: I used the school districts from Columbia and Montour counties from the following years to select them in 2015.
 - Columbia county data is mostly missing for 2015.
-   - Mitigation: I removed 2015 data and the cohort which was in Grade 8 in 2015
+   - **Mitigation**: I removed 2015 data and the cohort which was in Grade 8 in 2015
 - For the Keystone sets all Grades are 11
-   - Mitigation: I selected Grade == "Total" and dropped the Grade Column to avoid duplicate entries.
+   - **Mitigation**: I selected Grade == "Total" and dropped the Grade Column to avoid duplicate entries.
 - There was a group column in PSSA and Keystone whose values were "All students" or "Historically Underperforming" that was not available for all years.
-   - Mitigation: I selected Group == "All Students" and dropped the group column.
+   - **Mitigation**: I selected Group == "All Students" and dropped the group column.
 - The original data sets contained the columns Advanced, Proficient, Basic, BelowBasic but Kadir needed them as a type column and percent column for ANOVA testing.
-   - Mitigation: I used the names of the columns as a type (Baseline) and their values as the percentage (Score).
+   - **Mitigation**: I used the names of the columns as a type (Baseline) and their values as the percentage (Score).
 - Dr. Calhoun suggested creating a Top type by summing Advanced and Proficient.
 - Dr. Calhoun noticed that in some of our analysis we were taking averages of percentages that had different sizes and suggested weighted averages.
-   - Mitigation: I created a column named WScore (Students) by multiplying Scores by the amount of students Scored.
+   - **Mitigation**: I created a column named WScore (Students) by multiplying Scores by the amount of students Scored.
 - The PSSA state level data for 2017 and 2022 don't include a "Total".
-   - Mitigation: For English and Math I used the other grades to recreate a "Total" row.
-   - No mitigation: Science doesn't have the individual Grades to recreate a "Total" from.
+   - **Mitigation**: For English and Math I used the other grades to recreate a "Total" row.
+   - **No mitigation**: Science doesn't have the individual Grades to recreate a "Total" from.
 - The PSSA for 2021 doesn't include score percentages for all subjects.
-   - No mitigation
+   - **No mitigation**
    
 # Project Objectives
 1. [How our local districts in Columbia and Montour Counties are trending since 2016?](#objective-1-how-our-local-districts-in-columbia-and-montour-counties-are-trending-since-2016) (Anna)

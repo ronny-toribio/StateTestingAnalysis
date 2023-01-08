@@ -6,10 +6,10 @@
 The aim of this project is to understand the performance of public school students in Columbia and Montour counties in Pennsylvania.
 It was requested by Jeffrey Emanuel, the director of the Foundation of the Columbia Montour Chamber of Commerce.
 Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises and coordinates with us on this project.
-Our team consists of senior data science students [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz), [Anna T. Schlecht](https://github.com/atschlecht) and [myself](https://github.com/ronny-phoenix).
+Our team consists of senior data science students [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz), [Anna T. Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-phoenix).
 
 ##### There are two major tasks in this project:
-- Setup/Data Wrangling - Worked on by me [testing_data.R](/testing_data.R)
+- Data Wrangling - Worked on by me [testing_data.R](/testing_data.R)
 - Project Objectives - Worked on by our team [analysis.R](/analysis.R)
 
 # Data Wrangling
@@ -17,12 +17,14 @@ The data sets used in this project are the results from the [PSSA](https://www.e
 These sets contain aggregate data at the state level for both the PSSA and Keystone.
 They contain more granular data at the school level including counties, districts and schools.
 
-To wrangle this data and prepare it for analysis I created a script in R [testing_data.R](/testing_data.R) that loads the raw XLSX files and generates 3 CSV files.
+To wrangle this data and prepare it for analysis I created a script in R [testing_data.R](/testing_data.R) that loads the raw XLSX files and generates 3 CSV files and 2 XLSX files.
 The XLSX files are organized by year (2015 - 2022) and level (state, local).
 
 ##### The CSV files generated are:
-- [pssa.csv](/PSSA/pssa.csv) - A data set containing the PSSA data at the state and local levels.
-- [keyston.csv](/Keystone/keystone.csv) - A data set containing the Keystone data at the state and local levels.
+- [pssa.csv](/PSSA/pssa.csv) - A data set containing the PSSA data at the state and local levels for use in R.
+- [pssa.xlsx](/PSSA/pssa.xlsx) - For use by Kadir in tableau
+- [keystone.csv](/Keystone/keystone.csv) - A data set containing the Keystone data at the state and local levels.
+- [keystone.xlsx](Keystone/keystone.xlsx) - For use by Kadir in tableau
 - [cohorts.csv](/Cohorts/cohorts.csv) - A data set containing both PSSA and Keystone data at the local level that follow cohorts.
 
 ### Data Conventions
@@ -63,7 +65,7 @@ Grade 11 was extracted from the Keystone set.
    - **Mitigation**: I used the names of the columns as a type (Baseline) and their values as the percentage (Score).
 - Dr. Calhoun suggested creating a Top type by summing Advanced and Proficient.
 - Dr. Calhoun noticed that in some of our analysis we were taking averages of percentages that had different sizes and suggested weighted averages.
-   - **Mitigation**: I created a column named WScore (Students) by multiplying Scores by the amount of students Scored.
+   - **Mitigation**: I created a column named Students by multiplying Scores by the amount of students Scored.
 - The PSSA state level data for 2017 and 2022 don't include a "Total".
    - **Mitigation**: For English and Math I used the other grades to recreate a "Total" row.
    - **No mitigation**: Science doesn't have the individual Grades to recreate a "Total" from.

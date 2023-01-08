@@ -65,31 +65,31 @@ levels(ks$County)
 
 group_by_year_county = ks %>% 
   group_by(Year, County) %>%
-  summarise(across(c(Scored, WScore), sum)) %>%
-  mutate(WAvg = WScore/Scored)
+  summarise(across(c(Scored, Students), sum)) %>%
+  mutate(WAvg = Students/Scored)
 
 group_by_year_county
 
 
 group_by_year_county_baseline = ks %>% 
   group_by(Year, County, Baseline) %>%
-  summarise(across(c(Scored, WScore), sum)) %>%
-  mutate(WAvg = WScore/Scored)
+  summarise(across(c(Scored, Students), sum)) %>%
+  mutate(WAvg = Students/Scored)
 
 group_by_year_county_baseline
 
 
 group_by_year_county_baseline_subject = ks %>%
   group_by(Year, County, Baseline, Subject) %>%
-  summarize(across(c(Scored, WScore), sum)) %>%
-  mutate(WAvg = WScore/Scored)
+  summarize(across(c(Scored, Students), sum)) %>%
+  mutate(WAvg = Students/Scored)
 
 group_by_year_county_baseline_subject
 
 group_by_year_county_baseline_subject_school = ks %>%
   group_by(Year, County, Baseline, Subject, School) %>%
-  summarize(across(c(Scored, WScore), sum)) %>%
-  mutate(WAvg = WScore/Scored)
+  summarize(across(c(Scored, Students), sum)) %>%
+  mutate(WAvg = Students/Scored)
 
 group_by_year_county_baseline_subject_school
 
@@ -408,8 +408,8 @@ plot(p10)
 # Objective 6: Study Cohorts
 
 # Cohorts Local Level
-#             |<------PSSA----------->|
-#                               |<--------Keystone----->|
+#             |<------PSSA----->|
+#                               |<---Keystone--->|
 #          2016, 2017, 2018, 2019, 2020, 2021, 2022
 # Cohort 1    8                11
 # No 2020
@@ -434,7 +434,7 @@ plot(obj6ac1)
 ggsave("Resources/Obj6ac1.png", obj6ac1)
 
 cohorts1_top = cohorts1 %>% filter(Baseline=="Advanced" | Baseline=="Proficient")
-obj6bc1t = cohorts1_top %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+obj6bc1t = cohorts1_top %>% ggplot(aes(x=Grade, y=Students, fill=as_factor(Baseline))) + 
   geom_col() + 
   facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
   labs(title="Cohorts 1-3 All Grades Top Scores")
@@ -442,7 +442,7 @@ plot(obj6bc1t)
 ggsave("Resources/Obj6bc1t.png", obj6bc1t)
 
 cohorts2 = cohorts1 %>% filter(Grade==8 | Grade==11)
-obj6cc2 = cohorts2 %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+obj6cc2 = cohorts2 %>% ggplot(aes(x=Grade, y=Students, fill=as_factor(Baseline))) + 
   geom_col() + 
   facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
   labs(title="Cohorts 1-3 Grades 8, 11 All Scores")
@@ -450,7 +450,7 @@ plot(obj6cc2)
 ggsave("Resources/Obj6cc2.png", obj6cc2)
 
 cohorts2_top = cohorts2 %>% filter(Baseline=="Advanced" | Baseline=="Proficient")
-obj6dc2t = cohorts2_top %>% ggplot(aes(x=Grade, y=WScore, fill=as_factor(Baseline))) + 
+obj6dc2t = cohorts2_top %>% ggplot(aes(x=Grade, y=Students, fill=as_factor(Baseline))) + 
   geom_col() + 
   facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
   labs(title="Cohorts 1-3 Grades 8, 11 Top Scores")

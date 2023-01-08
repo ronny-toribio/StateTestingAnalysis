@@ -25,9 +25,6 @@ ks.sc.2019 = ks.sc.2019 %>% select("District Name", "School Name", Subject, Grou
 ks.sc.2021 = ks.sc.2021 %>% select("District Name", "School Name", Subject, Group, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
 ks.sc.2022 = ks.sc.2022 %>% select("District Name", "School Name", Subject, Group, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
 
-# Drop redundant rows
-#ks.sc.2015 = ks.sc.2015 %>% filter(Grade == "Total") %>% select(-Grade)
-
 # Column names
 ks.sc.cols = c("District", "School","Subject", "Group", "Scored", "Advanced", "Proficient", "Basic", "BelowBasic", "County")
 colnames(ks.sc.2016) = ks.sc.cols
@@ -36,6 +33,7 @@ colnames(ks.sc.2018) = ks.sc.cols
 colnames(ks.sc.2019) = ks.sc.cols
 colnames(ks.sc.2021) = ks.sc.cols
 colnames(ks.sc.2022) = ks.sc.cols
+rm(ks.sc.cols)
 
 # Create keystone school level tibble
 ks.sc = bind_rows(
@@ -47,23 +45,19 @@ ks.sc = bind_rows(
   ks.sc.2022 %>% mutate(Year="2022")
 )
 
+# Clean up of Keystone School data
+rm(ks.sc.2016)
+rm(ks.sc.2017)
+rm(ks.sc.2018)
+rm(ks.sc.2019)
+rm(ks.sc.2021)
+rm(ks.sc.2022)
+
 # County to common case
 ks.sc$County = str_to_sentence(ks.sc$County)
 
 # Select Columbia and Montour counties
-ks.sc = ks.sc %>% filter(County %in% c("Columbia", "Montour")) %>% drop_na()
-
-# Create Top column (Proficient + Advanced)
-ks.sc = ks.sc %>% mutate(Top=Proficient+Advanced)
-
-# Create baseline and score columns
-ks.sc = bind_rows(
-  ks.sc %>% mutate(Baseline="Top",        Score=Top),
-  ks.sc %>% mutate(Baseline="Advanced",   Score=Advanced),
-  ks.sc %>% mutate(Baseline="Proficient", Score=Proficient),
-  ks.sc %>% mutate(Baseline="Basic",      Score=Basic),
-  ks.sc %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
-) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
+ks.sc = ks.sc %>% filter(County %in% c("Columbia", "Montour"))
 
 # Remove historically underperforming rows and group column
 ks.sc = ks.sc %>% filter(Group=="All Students") %>% select(-Group)
@@ -72,17 +66,6 @@ ks.sc = ks.sc %>% filter(Group=="All Students") %>% select(-Group)
 ks.sc = ks.sc %>% mutate(across(School, str_replace, "COLUMBIA - MONTOUR AVTS", "COLUMBIA-MONTOUR AVTS"))
 ks.sc = ks.sc %>% mutate(across(District, str_replace, "COLUMBIA - MONTOUR AVTS", "COLUMBIA-MONTOUR AVTS"))
 
-# Create wscore column
-ks.sc = ks.sc %>% mutate(WScore=ceiling(Score * Scored))
-
-# Clean up of Keystone School data
-rm(ks.sc.2016)
-rm(ks.sc.2017)
-rm(ks.sc.2018)
-rm(ks.sc.2019)
-rm(ks.sc.2021)
-rm(ks.sc.2022)
-rm(ks.sc.cols)
 
 # Keystone State Level Data
 ks.st.2016 = readxl::read_xlsx("Keystone/State/2016.xlsx", skip=4)
@@ -109,6 +92,7 @@ colnames(ks.st.2018) = ks.st.cols
 colnames(ks.st.2019) = ks.st.cols
 colnames(ks.st.2021) = ks.st.cols
 colnames(ks.st.2022) = ks.st.cols
+rm(ks.st.cols)
 
 # Create keystone state level tibble
 ks.st = bind_rows(
@@ -119,22 +103,6 @@ ks.st = bind_rows(
   ks.st.2021 %>% mutate(Year="2021"),
   ks.st.2022 %>% mutate(Year="2022")
 )
-ks.st = ks.st %>% drop_na()
-
-# Create Top column (Proficient + Advanced)
-ks.st = ks.st %>% mutate(Top=Proficient+Advanced)
-
-# Create baseline and score columns
-ks.st = bind_rows(
-  ks.st %>% mutate(Baseline="Top",        Score=Top),
-  ks.st %>% mutate(Baseline="Advanced",   Score=Advanced) ,
-  ks.st %>% mutate(Baseline="Proficient", Score=Proficient),
-  ks.st %>% mutate(Baseline="Basic",      Score=Basic),
-  ks.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
-) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
-
-# Create wscore column
-ks.st = ks.st %>% mutate(WScore=ceiling(Score * Scored))
 
 # Clean up of Keystone state data
 rm(ks.st.2016)
@@ -143,11 +111,13 @@ rm(ks.st.2018)
 rm(ks.st.2019)
 rm(ks.st.2021)
 rm(ks.st.2022)
-rm(ks.st.cols)
 
-# Merge Keystone data
+
+# Merge state and school level Keystone data
 ks.st = ks.st %>% mutate(District="", School="", County="State")
 ks = bind_rows(ks.st, ks.sc) %>% arrange(Year)
+rm(ks.sc)
+rm(ks.st)
 ks = ks %>% mutate(across(County, str_replace, "State", "0"))
 ks = ks %>% mutate(across(County, str_replace, "Columbia", "1"))
 ks = ks %>% mutate(across(County, str_replace, "Montour", "2"))
@@ -157,10 +127,31 @@ ks = ks %>% mutate(across(Subject, str_replace, "S", "Science"))
 ks = ks %>% mutate(across(Subject, str_replace, "Literature", "English"))
 ks = ks %>% mutate(across(Subject, str_replace, "Algebra I", "Math"))
 ks = ks %>% mutate(across(Subject, str_replace, "Biology", "Science"))
-write_csv(ks, "Keystone/keystone.csv")
-rm(ks.sc)
-rm(ks.st)
 
+# Create Top column (Proficient + Advanced)
+ks = ks %>% mutate(Top=Proficient+Advanced)
+
+# Create baseline and score columns
+ks = bind_rows(
+  ks %>% mutate(Baseline="Top",        Score=Top),
+  ks %>% mutate(Baseline="Advanced",   Score=Advanced) ,
+  ks %>% mutate(Baseline="Proficient", Score=Proficient),
+  ks %>% mutate(Baseline="Basic",      Score=Basic),
+  ks %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
+) %>% arrange(Year) %>% select(-Top, -Advanced, -Proficient, -Basic, -BelowBasic)
+
+# Convert Score from percentages to decimal percentages
+ks = ks %>% mutate(Score = Score / 100)
+
+# Create Students column
+ks = ks %>% mutate(Students=ceiling(Score * Scored))
+
+# Organize columns for Keystone
+ks = ks %>% select(Year, County, District, School, Subject, Scored, Baseline, Score, Students)
+
+# Export the Keystone data set as CSV for R and XLSX for tableau
+write_csv(ks, "Keystone/keystone.csv")
+write_excel_csv(ks, "Keystone/keystone.xlsx")
 
 
 # PSSA school level data
@@ -173,21 +164,22 @@ ps.sc.2021 = readxl::read_xlsx("PSSA/School/2021.xlsx", skip=6)[, 1:15]
 ps.sc.2022 = readxl::read_xlsx("PSSA/School/2022.xlsx", skip=3)
 
 # Organize columns
-ps.sc.2016 = ps.sc.2016 %>% select("School Number", District, School, Subject, Group, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", County)
-ps.sc.2017 = ps.sc.2017 %>% select("School Number", "District Name", "School Name", Subject, Group, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", County)
-ps.sc.2018 = ps.sc.2018 %>% select("School Number", "District Name", "School Name", Subject, Group, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
-ps.sc.2019 = ps.sc.2019 %>% select("School Number", "District Name", "School Name", Subject, Group, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
-ps.sc.2021 = ps.sc.2021 %>% select("School Number", "District Name", "School Name", Subject, Group, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
-ps.sc.2022 = ps.sc.2022 %>% select("School Number", "District Name", "School Name", Subject, "Student Group", Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
+ps.sc.2016 = ps.sc.2016 %>% select(District, School, Subject, Group, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", County)
+ps.sc.2017 = ps.sc.2017 %>% select("District Name", "School Name", Subject, Group, Grade, "Number Scored", "% Advanced", "% Proficient", "% Basic", "% Below Basic", County)
+ps.sc.2018 = ps.sc.2018 %>% select("District Name", "School Name", Subject, Group, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
+ps.sc.2019 = ps.sc.2019 %>% select("District Name", "School Name", Subject, Group, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
+ps.sc.2021 = ps.sc.2021 %>% select("District Name", "School Name", Subject, Group, Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
+ps.sc.2022 = ps.sc.2022 %>% select("District Name", "School Name", Subject, "Student Group", Grade, "Number Scored", "Percent Advanced", "Percent Proficient", "Percent Basic", "Percent Below Basic", County)
 
 # Column names
-ps.sc.cols = c("SchoolNum", "District", "School", "Subject", "Group", "Grade", "Scored", "Advanced", "Proficient", "Basic", "BelowBasic", "County")
+ps.sc.cols = c("District", "School", "Subject", "Group", "Grade", "Scored", "Advanced", "Proficient", "Basic", "BelowBasic", "County")
 colnames(ps.sc.2016) = ps.sc.cols
 colnames(ps.sc.2017) = ps.sc.cols
 colnames(ps.sc.2018) = ps.sc.cols
 colnames(ps.sc.2019) = ps.sc.cols
 colnames(ps.sc.2021) = ps.sc.cols
 colnames(ps.sc.2022) = ps.sc.cols
+rm(ps.sc.cols)
 
 # Create PSSA school level tibble
 ps.sc = bind_rows(
@@ -199,30 +191,6 @@ ps.sc = bind_rows(
   ps.sc.2022 %>% mutate(Year="2022")
 )
 
-# County to common case
-ps.sc$County = str_to_sentence(ps.sc$County)
-
-# Select Columbia and Montour counties
-ps.sc = ps.sc %>% filter(County %in% c("Columbia", "Montour")) %>% drop_na()
-
-# Create Top column (Proficient + Advanced)
-ps.sc = ps.sc %>% mutate(Top=Proficient+Advanced)
-
-# Create baseline and score columns
-ps.sc = bind_rows(
-  ps.sc %>% mutate(Baseline="Top",        Score=Top),
-  ps.sc %>% mutate(Baseline="Advanced",   Score=Advanced),
-  ps.sc %>% mutate(Baseline="Proficient", Score=Proficient),
-  ps.sc %>% mutate(Baseline="Basic",      Score=Basic),
-  ps.sc %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
-) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
-
-# Remove historically underperforming rows and group column
-ps.sc = ps.sc %>% filter(Group=="All Students") %>% select(-Group)
-
-# Create wscore column
-ps.sc = ps.sc %>% mutate(WScore=ceiling(Score / 100 * Scored))
-
 # Clean up of PSSA school data
 rm(ps.sc.2016)
 rm(ps.sc.2017)
@@ -230,7 +198,16 @@ rm(ps.sc.2018)
 rm(ps.sc.2019)
 rm(ps.sc.2021)
 rm(ps.sc.2022)
-rm(ps.sc.cols)
+
+# County to common case
+ps.sc$County = str_to_sentence(ps.sc$County)
+
+# Select Columbia and Montour counties
+ps.sc = ps.sc %>% filter(County %in% c("Columbia", "Montour"))
+
+# Remove historically underperforming rows and group column
+ps.sc = ps.sc %>% filter(Group=="All Students") %>% select(-Group)
+
 
 # PSSA state level data
 ps.st.2016 = readxl::read_xlsx("PSSA/State/2016.xlsx", skip=4)
@@ -264,6 +241,7 @@ colnames(ps.st.2018) = ps.st.cols
 colnames(ps.st.2019) = ps.st.cols
 colnames(ps.st.2021) = ps.st.cols
 colnames(ps.st.2022) = ps.st.cols
+rm(ps.st.cols)
 
 # recreate 2021 totals
 ps.st.2021 = ps.st.2021 %>% mutate(across(Subject, str_replace, "English Language Arts", "English"))
@@ -283,7 +261,6 @@ rm(ps.st.2021.total)
 
 # Create PSSA state level tibble
 ps.st = bind_rows(
-#  ps.st.2015 %>% mutate(Year="2015"),
   ps.st.2016 %>% mutate(Year="2016"),
   ps.st.2017 %>% mutate(Year="2017"),
   ps.st.2018 %>% mutate(Year="2018"),
@@ -292,21 +269,6 @@ ps.st = bind_rows(
   ps.st.2022 %>% mutate(Year="2022")
 )
 
-# Create Top column (Proficient + Advanced)
-ps.st = ps.st %>% mutate(Top=Proficient+Advanced)
-
-# Create baseline and score columns
-ps.st = bind_rows(
-  ps.st %>% mutate(Baseline="Top",        Score=Top),
-  ps.st %>% mutate(Baseline="Advanced",   Score=Advanced),
-  ps.st %>% mutate(Baseline="Proficient", Score=Proficient),
-  ps.st %>% mutate(Baseline="Basic",      Score=Basic),
-  ps.st %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
-) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
-
-# Create wscore column
-ps.st = ps.st %>%mutate(WScore=ceiling(Score / 100 * Scored))
-
 # Clean up PSSA state data
 rm(ps.st.2016)
 rm(ps.st.2017)
@@ -314,11 +276,13 @@ rm(ps.st.2018)
 rm(ps.st.2019)
 rm(ps.st.2021)
 rm(ps.st.2022)
-rm(ps.st.cols)
+
 
 # Merge PSSA data
 ps.st = ps.st %>% mutate(District="", School="", School="", County="State")
 ps = bind_rows(ps.st, ps.sc) %>% arrange(Year)
+rm(ps.sc)
+rm(ps.st)
 ps = ps %>% mutate(across(County, str_replace, "State", "0"))
 ps = ps %>% mutate(across(County, str_replace, "Columbia", "1"))
 ps = ps %>% mutate(across(County, str_replace, "Montour", "2"))
@@ -331,11 +295,36 @@ ps = ps %>% mutate(across(Grade, str_replace, "05", "5"))
 ps = ps %>% mutate(across(Grade, str_replace, "06", "6"))
 ps = ps %>% mutate(across(Grade, str_replace, "07", "7"))
 ps = ps %>% mutate(across(Grade, str_replace, "08", "8"))
+
+# Create Top column (Proficient + Advanced)
+ps = ps %>% mutate(Top=Proficient+Advanced)
+
+# Create baseline and score columns
+ps = bind_rows(
+  ps %>% mutate(Baseline="Top",        Score=Top),
+  ps %>% mutate(Baseline="Advanced",   Score=Advanced),
+  ps %>% mutate(Baseline="Proficient", Score=Proficient),
+  ps %>% mutate(Baseline="Basic",      Score=Basic),
+  ps %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
+) %>% arrange(Year) %>% select(-Top, -Advanced, -Proficient, -Basic, -BelowBasic)
+
+# Convert Score percentages to decimal percentages
+ps = ps %>% mutate(Score = Score / 100)
+
+# Create Students column
+ps = ps %>% mutate(Students=ceiling(Score * Scored))
+
+# Create 2 PSSA data sets with and without Grades
 ps2 = ps
 ps = ps %>% filter(Grade=="Total") %>% select(-Grade)
+
+# Organize columns for PSSA
+ps = ps %>% select(Year, County, District, School, Subject, Scored, Baseline, Score, Students)
+
+# Export PSSA data to CSV for R and XLSX for tableau
 write_csv(ps, "PSSA/pssa.csv")
-rm(ps.sc)
-rm(ps.st)
+write_excel_csv(ps, "PSSA/pssa.xlsx")
+
 
 # Cohorts
 cohort.1 = bind_rows(
@@ -359,6 +348,7 @@ cohort.3 = bind_rows(
 ) %>% mutate(Cohort=3)
 rm(ps2)
 
+# Merge cohorts
 cohorts = bind_rows(
   cohort.1,
   cohort.2,
@@ -368,6 +358,10 @@ rm(cohort.1)
 rm(cohort.2)
 rm(cohort.3)
 
+# Organize Cohorts columns
+cohorts = cohorts %>% select(Cohort, Year, County, District, School, Grade, Subject, Scored, Baseline, Score, Students)
+
+# Export Cohorts set to CSV for R
 write_csv(cohorts, "Cohorts/cohorts.csv")
 
 # End Suppress Warnings

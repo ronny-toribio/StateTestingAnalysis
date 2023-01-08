@@ -140,11 +140,8 @@ ks = bind_rows(
   ks %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Top, -Advanced, -Proficient, -Basic, -BelowBasic)
 
-# Convert Score from percentages to decimal percentages
-ks = ks %>% mutate(Score = Score / 100)
-
 # Create Students column
-ks = ks %>% mutate(Students=ceiling(Score * Scored))
+ks = ks %>% mutate(Students=ceiling(Score / 100 * Scored))
 
 # Organize columns for Keystone
 ks = ks %>% select(Year, County, District, School, Subject, Scored, Baseline, Score, Students)
@@ -311,11 +308,8 @@ ps = bind_rows(
   ps %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Top, -Advanced, -Proficient, -Basic, -BelowBasic)
 
-# Convert Score percentages to decimal percentages
-ps = ps %>% mutate(Score = Score / 100)
-
 # Create Students column
-ps = ps %>% mutate(Students=ceiling(Score * Scored))
+ps = ps %>% mutate(Students=ceiling(Score /100 * Scored))
 
 # Create 2 PSSA data sets with and without Grades
 ps2 = ps

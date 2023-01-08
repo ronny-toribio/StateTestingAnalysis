@@ -149,6 +149,9 @@ ks = ks %>% mutate(Students=ceiling(Score * Scored))
 # Organize columns for Keystone
 ks = ks %>% select(Year, County, District, School, Subject, Scored, Baseline, Score, Students)
 
+# Drop NA's in Score
+ks = ks %>% filter(!is.na(Score))
+
 # Export the Keystone data set as CSV for R and XLSX for tableau
 write_csv(ks, "Keystone/keystone.csv")
 write_excel_csv(ks, "Keystone/keystone.xlsx")
@@ -321,6 +324,9 @@ ps = ps %>% filter(Grade=="Total") %>% select(-Grade)
 # Organize columns for PSSA
 ps = ps %>% select(Year, County, District, School, Subject, Scored, Baseline, Score, Students)
 
+# Drop NA's in Score
+ps = ps %>% filter(!is.na(Score))
+
 # Export PSSA data to CSV for R and XLSX for tableau
 write_csv(ps, "PSSA/pssa.csv")
 write_excel_csv(ps, "PSSA/pssa.xlsx")
@@ -360,6 +366,9 @@ rm(cohort.3)
 
 # Organize Cohorts columns
 cohorts = cohorts %>% select(Cohort, Year, County, District, School, Grade, Subject, Scored, Baseline, Score, Students)
+
+# Drop NA's in Score
+cohorts = cohorts %>% filter(!is.na(Score))
 
 # Export Cohorts set to CSV for R
 write_csv(cohorts, "Cohorts/cohorts.csv")

@@ -152,10 +152,9 @@ When comparing PSSA average scores between districts, there seems to be no corre
 ##### Cohort timeline
 
 ![obj6ac1](/Resources/Obj6_timeline.png)
-
-- Cohort 1: years: 2016 - 2022, grades: 5 - 8(PSSA), 11(Keystone)
+- Cohort 1: years: 2016 - 2019, grades: 8(PSSA),     11(Keystone)
 - Cohort 2: years: 2016 - 2021, grades: 6 - 8(PSSA), 11(Keystone)
-- Cohort 3: years: 2016 - 2019, grades: 8(PSSA),     11(Keystone)
+- Cohort 3: years: 2016 - 2022, grades: 5 - 8(PSSA), 11(Keystone)
 
 ##### Cohorts 1-3 All Grades All Scores
 
@@ -178,7 +177,6 @@ When comparing PSSA average scores between districts, there seems to be no corre
 - /Keystone/      (Keystone Exams Data)
 - /PSSA/          (PSSA Exams Data)
 - analysis.R      (Analysis of the data)
-- cohort.R        (Cohort study)
 - testing_data.py (Processes and Generates data sets)
 
 ### Supplementary Graphs

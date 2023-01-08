@@ -14,21 +14,21 @@ library(ggthemes)
 theme_main = function(base_size=11, base_family=""){
   theme(
     plot.background = element_rect(fill="black"),
+    plot.title = element_text(color="white", face="bold"),
     panel.background = element_rect(fill="darkblue", color="darkblue", linetype="solid"),
+    panel.grid.major = element_line(color="white", linetype="solid"),
+    panel.grid.minor = element_line(color="white", linetype="solid"),
+    panel.border = element_rect(color="white", fill = NA),
     strip.background = element_rect(fill="steelblue"),
     strip.text = element_text(color="white", face = "bold"),
     legend.background = element_rect(fill="black"),
     legend.text = element_text(color="white"),
     legend.title = element_text(color="white"),
-    panel.grid.major = element_line(color="white", linetype="solid"),
-    panel.grid.minor = element_line(color="white", linetype="solid"),
-    panel.border = element_rect(color="white", fill = NA),
     axis.line = element_line(color="white"),
     axis.ticks = element_line(color="white"),
     axis.text = element_text(color="white"),
     axis.text.x = element_text(color="white"),
     axis.text.y = element_text(color="white"),
-    plot.title = element_text(color="white")
   )
 }
 

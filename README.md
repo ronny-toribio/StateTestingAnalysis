@@ -2,16 +2,82 @@
 
 ![Fletcher](/Resources/fletcher.jpg)
 
-### Objectives
-1. How our local districts in Columbia and Montour Counties are trending since 2016?
-2. How they compare to the state trend since 2016?
-3. Is there any COVID impact we might be able to deduce?
-4. Visualizing the averages of scores from each year.
+### Introduction
+The aim of this project is to understand the performance of public school students in Columbia and Montour counties in Pennsylvania.
+It was requested by Jeffrey Emanuel, the director of the Foundation of the Columbia Montour Chamber of Commerce.
+Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises and coordinates with us on this project.
+Our team consists of senior data science students [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz), [Anna T. Schlecht](https://github.com/atschlecht) and [myself](https://github.com/ronny-phoenix).
+There are two major tasks in this project:
+- Setup/Data Wrangling - Worked on by me [testing_data.R](/testing_data.R)
+- Project Objectives - Worked on by our team [analysis.R](/analysis.R)
+
+### Data Wrangling
+The data sets used in this project are the results from the [PSSA](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/PSSA-Results.aspx) and [Keystone](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/Keystone-Exams-Results.aspx) state tests.
+These sets contain aggregate data at the state level for both the PSSA and Keystone.
+They contain more granular data at the school level including counties, districts and schools.
+
+To wrangle this data and prepare it for analysis I created a script in R [testing_data.R](/testing_data.R) that loads the raw XLSX files and generates 3 CSV files.
+The XLSX files are organized by year (2015 - 2022) and level (state, local).
+The CSV files generated are:
+- [pssa.csv](/PSSA/pssa.csv) - A data set containing the PSSA data at the state and local levels.
+- [keyston.csv](/Keystone/keystone.csv) - A data set containing the Keystone data at the state and local levels.
+- [cohorts.csv](/Cohorts/cohorts.csv) - A data set containing both PSSA and Keystone data at the local level that follow cohorts.
+
+###### Data Conventions
+Score types:
+- Top (Created by adding Advanced and Proficient)
+- Advanced
+- Proficient
+- Basic
+- Below Basic
+
+The convention used in this project for counties is as follows:
+- 0 is the state level aggregate data
+- 1 is Columbia county
+- 2 is Montour county
+
+The convention used for subjects is the following:
+- English - is used for English, English Language Arts and Literature
+- Math - is used for Math and Algebra I
+- Science - is used for Science and Biology
+
+The convention for cohorts is:
+- 1 - Cohort 1: Grade 8 (2016), Grade 11 (2019)
+- 2 - Cohort 2: Grade 6 (2016), Grade 7 (2017), Grade 8 (2018), Grade 11 (2021)
+- 3 - Cohort 3: Grade 5 (2016), Grade 6 (2017), Grade 7 (2018), Grade 8 (2019), Grade 11 (2022)
+Grades 5-8 were extracted from the PSSA set.
+Grade 11 was extracted from the Keystone set.
+
+##### Issues, mitigations, design choices
+- The PSSA and Keystone local level data set for 2015 doesn't have a County column.
+   - Mitigation: I used the school districts from Columbia and Montour counties from the following years to select them in 2015.
+- Columbia county data is mostly missing for 2015.
+   - Mitigation: I removed 2015 data and the cohort which was in Grade 8 in 2015
+- For the Keystone sets all Grades are 11
+   - Mitigation: I selected Grade == "Total" and dropped the Grade Column to avoid duplicate entries.
+- There was a group column in PSSA and Keystone whose values were "All students" or "Historically Underperforming" that was not available for all years.
+   - Mitigation: I selected Group == "All Students" and dropped the group column.
+- The original data sets contained the columns Advanced, Proficient, Basic, BelowBasic but Kadir needed them as a type column and percent column for ANOVA testing.
+   - Mitigation: I used the names of the columns as a type (Baseline) and their values as the percentage (Score).
+- Dr. Calhoun suggested creating a Top type by summing Advanced and Proficient.
+- Dr. Calhoun noticed that in some of our analysis we were taking averages of percentages that had different sizes and suggested weighted averages.
+   - Mitigation: I created a column named WScore (Students) by multiplying Scores by the amount of students Scored.
+- The PSSA state level data for 2017 and 2022 don't include a "Total".
+   - Mitigation: For English and Math I used the other grades to recreate a "Total" row.
+   - No mitigation: Science doesn't have the individual Grades to recreate a "Total" from.
+- The PSSA for 2021 doesn't include score percentages for all subjects.
+   - No mitigation
+   
+### Project Objectives
+1. How our local districts in Columbia and Montour Counties are trending since 2016? (Anna)
+2. How they compare to the state trend since 2016? (Kadir)
+3. Is there any COVID impact we might be able to deduce? ((Kadir))
+4. Visualizing the averages of scores from each year. (Anna)
    - As a whole
    - Grouped by subject
    - Grouped by district
-5. Compare scores between districts.
-6. Study cohorts as they progress from PSSA to Keystone
+5. Compare scores between districts. (Anna)
+6. Study cohorts as they progress from PSSA to Keystone (Ronny)
 7. Any other information that data might tell us?
 
 ### Objective 1: How our local districts in Columbia and Montour Counties are trending since 2016?
@@ -183,6 +249,6 @@ When comparing PSSA average scores between districts, there seems to be no corre
 [Tableau Graphs of School Performance by Year by Kadir](https://public.tableau.com/app/profile/kadir7189/viz/SchoolPerfomanceByYear/Sheet1)
 
 ### Authors
-- [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling
-- [Anna T. Schlecht](https://github.com/atschlecht) - Graphs 
+- [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis
+- [Anna T. Schlecht](https://github.com/atschlecht) - Statistical Analysis
 - [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz) - Statistical Analysis

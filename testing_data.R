@@ -221,7 +221,7 @@ ps.sc = bind_rows(
 ps.sc = ps.sc %>% filter(Group=="All Students") %>% select(-Group)
 
 # Create wscore column
-ps.sc = ps.sc %>% mutate(WScore=ceiling(Score * Scored))
+ps.sc = ps.sc %>% mutate(WScore=ceiling(Score / 100 * Scored))
 
 # Clean up of PSSA school data
 rm(ps.sc.2016)
@@ -305,7 +305,7 @@ ps.st = bind_rows(
 ) %>% arrange(Year) %>% select(-Advanced, -Proficient, -Basic, -BelowBasic)
 
 # Create wscore column
-ps.st = ps.st %>%mutate(WScore=ceiling(Score * Scored))
+ps.st = ps.st %>%mutate(WScore=ceiling(Score / 100 * Scored))
 
 # Clean up PSSA state data
 rm(ps.st.2016)

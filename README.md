@@ -2,28 +2,30 @@
 
 ![Fletcher](/Resources/fletcher.jpg)
 
-### Introduction
+# Introduction
 The aim of this project is to understand the performance of public school students in Columbia and Montour counties in Pennsylvania.
 It was requested by Jeffrey Emanuel, the director of the Foundation of the Columbia Montour Chamber of Commerce.
 Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises and coordinates with us on this project.
 Our team consists of senior data science students [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz), [Anna T. Schlecht](https://github.com/atschlecht) and [myself](https://github.com/ronny-phoenix).
-There are two major tasks in this project:
+
+##### There are two major tasks in this project:
 - Setup/Data Wrangling - Worked on by me [testing_data.R](/testing_data.R)
 - Project Objectives - Worked on by our team [analysis.R](/analysis.R)
 
-### Data Wrangling
+# Data Wrangling
 The data sets used in this project are the results from the [PSSA](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/PSSA-Results.aspx) and [Keystone](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/Keystone-Exams-Results.aspx) state tests.
 These sets contain aggregate data at the state level for both the PSSA and Keystone.
 They contain more granular data at the school level including counties, districts and schools.
 
 To wrangle this data and prepare it for analysis I created a script in R [testing_data.R](/testing_data.R) that loads the raw XLSX files and generates 3 CSV files.
 The XLSX files are organized by year (2015 - 2022) and level (state, local).
-The CSV files generated are:
+
+##### The CSV files generated are:
 - [pssa.csv](/PSSA/pssa.csv) - A data set containing the PSSA data at the state and local levels.
 - [keyston.csv](/Keystone/keystone.csv) - A data set containing the Keystone data at the state and local levels.
 - [cohorts.csv](/Cohorts/cohorts.csv) - A data set containing both PSSA and Keystone data at the local level that follow cohorts.
 
-###### Data Conventions
+### Data Conventions
 Score types:
 - Top (Created by adding Advanced and Proficient)
 - Advanced
@@ -31,24 +33,24 @@ Score types:
 - Basic
 - Below Basic
 
-The convention used in this project for counties is as follows:
+##### The convention used in this project for counties is as follows:
 - 0 is the state level aggregate data
 - 1 is Columbia county
 - 2 is Montour county
 
-The convention used for subjects is the following:
+##### The convention used for subjects is the following:
 - English - is used for English, English Language Arts and Literature
 - Math - is used for Math and Algebra I
 - Science - is used for Science and Biology
 
-The convention for cohorts is:
+##### The convention for cohorts is:
 - 1 - Cohort 1: Grade 8 (2016), Grade 11 (2019)
 - 2 - Cohort 2: Grade 6 (2016), Grade 7 (2017), Grade 8 (2018), Grade 11 (2021)
 - 3 - Cohort 3: Grade 5 (2016), Grade 6 (2017), Grade 7 (2018), Grade 8 (2019), Grade 11 (2022)
 Grades 5-8 were extracted from the PSSA set.
 Grade 11 was extracted from the Keystone set.
 
-##### Issues, mitigations, design choices
+### Issues, mitigations, design choices
 - The PSSA and Keystone local level data set for 2015 doesn't have a County column.
    - Mitigation: I used the school districts from Columbia and Montour counties from the following years to select them in 2015.
 - Columbia county data is mostly missing for 2015.
@@ -68,19 +70,19 @@ Grade 11 was extracted from the Keystone set.
 - The PSSA for 2021 doesn't include score percentages for all subjects.
    - No mitigation
    
-### Project Objectives
-1. How our local districts in Columbia and Montour Counties are trending since 2016? (Anna)
-2. How they compare to the state trend since 2016? (Kadir)
-3. Is there any COVID impact we might be able to deduce? ((Kadir))
-4. Visualizing the averages of scores from each year. (Anna)
-   - As a whole
-   - Grouped by subject
-   - Grouped by district
-5. Compare scores between districts. (Anna)
-6. Study cohorts as they progress from PSSA to Keystone (Ronny)
+# Project Objectives
+1. [How our local districts in Columbia and Montour Counties are trending since 2016?](#objective-1-how-our-local-districts-in-columbia-and-montour-counties-are-trending-since-2016) (Anna)
+2. [How they compare to the state trend since 2016?](#objective-2-how-they-compare-to-the-state-trend-since-2016) (Kadir)
+3. [Is there any COVID impact we might be able to deduce?](#objective-3-is-there-any-covid-impact-we-might-be-able-to-deduce) (Kadir)
+4. [Visualizing the averages of scores from each year.](#objective-4-visualizing-the-averages-of-scores-from-each-year) (Anna)
+   - [As a whole](#as-a-whole)
+   - [Grouped by subject](#grouped-by-subject)
+   - [Grouped by district](#grouped-by-district)
+5. [Compare scores between districts.](#objective-5-compare-scores-between-districts) (Anna)
+6. [Study cohorts as they progress from PSSA to Keystone](#objective-6-cohort-analysis) (Ronny)
 7. Any other information that data might tell us?
 
-### Objective 1: How our local districts in Columbia and Montour Counties are trending since 2016?
+# Objective 1: How our local districts in Columbia and Montour Counties are trending since 2016?
 
 ##### Keystone
 
@@ -95,7 +97,7 @@ We see from taking the averages of Keystone scores from Columbia(1) and Montour(
 We see from taking the averages of PSSA scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022.  Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exception of below basic scores, where the State and montour county averages were equal basically.
 
 
-### Objective 2: How they compare to the state trend since 2016?
+# Objective 2: How they compare to the state trend since 2016?
 
 ##### Keystone
 
@@ -133,7 +135,7 @@ a significant increase in all places in the baseline from 2019 to 2021,
 especially in Colombia. From 2021 to 2022, baseline remained stable in State 
 and dropped moderately in both counties
 
-### Objective 3: Is there any COVID impact we might be able to deduce?
+# Objective 3: Is there any COVID impact we might be able to deduce?
 
 ##### Keystone
 
@@ -156,9 +158,9 @@ There were only slight fluctuations which were inconclusive if COVID affected
 baseline levels or not.
 
 
-### Objective 4: Visualizing the averages of scores from each year.
+# Objective 4: Visualizing the averages of scores from each year.
 
-#### As a whole.
+### As a whole.
 
 ##### Keystone
 
@@ -172,7 +174,7 @@ When looking at the Keystone Score averages by year, there was no data collected
 
 We see when analyzing the data for PPSA Score averages by year, there are little to no changes in scoring and in some cases. Top and advanced scores from 2019 to 2022 slightly suffered most likely due to the pandemic. There was also a slight increase in Basic and Below Basic scores from 2019 to 2022.
 
-#### Grouped by subject.
+### Grouped by subject.
 
 ##### Keystone
 
@@ -186,7 +188,7 @@ We see when analyzing the data for Keystone Score averages by subject, students 
 
 Contrary to the Keystone analysis, the data for PSSA score averages by subject, student on average scored highly in Science and English, while having higher below basic and basic scores within Math. Science was the highest subject for both Top and advanced categories, with English remaining the highest subject for proficient scores. 
 
-#### Grouped by district.
+### Grouped by district.
 
 ##### Keystone
 
@@ -200,7 +202,7 @@ When looking at the Keystone average scores grouped by district, we can see a st
 
 We can see when analyzing the PSSA average scores grouped by district, that there is a strong amount of top scores from students especially within the Berwick Area School District and Bloomsburg Area School District. We can see, these two school districts amount of students scoring within the top four categories is considerably higher in comparison to other school district. Otherwise, there is no direct correlation between districts.
 
-### Objective 5: Compare scores between districts.
+# Objective 5: Compare scores between districts.
 
 ##### Keystone
 
@@ -213,7 +215,7 @@ When comparing Keystone average scores between districts, there seems to be no c
 
 When comparing PSSA average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 
-### Objective 6: Cohort analysis
+# Objective 6: Cohort analysis
 
 ##### Cohort timeline
 
@@ -238,17 +240,14 @@ When comparing PSSA average scores between districts, there seems to be no corre
 
 ![obj6dc2t](/Resources/Obj6dc2t.png)
 
-### Contents
-- /Cohorts/       (Generated Cohorts Data)
-- /Keystone/      (Keystone Exams Data)
-- /PSSA/          (PSSA Exams Data)
-- analysis.R      (Analysis of the data)
-- testing_data.py (Processes and Generates data sets)
+<!-- # Objective7 -->
 
-### Supplementary Graphs
+<!-- # Summary/Conclusion -->
+
+# Supplementary Graphs
 [Tableau Graphs of School Performance by Year by Kadir](https://public.tableau.com/app/profile/kadir7189/viz/SchoolPerfomanceByYear/Sheet1)
 
-### Authors
+# Authors
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis
 - [Anna T. Schlecht](https://github.com/atschlecht) - Statistical Analysis
 - [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz) - Statistical Analysis

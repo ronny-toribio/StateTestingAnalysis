@@ -20,12 +20,12 @@ They contain more granular data at the school level including counties, district
 To wrangle this data and prepare it for analysis I created a script in R [testing_data.R](/testing_data.R) that loads the raw XLSX files and generates 3 CSV files and 2 XLSX files.
 The XLSX files are organized by year (2015 - 2022) and level (state, local).
 
-##### The CSV files generated are:
+##### The files generated are:
 - [pssa.csv](/PSSA/pssa.csv) - A data set containing the PSSA data at the state and local levels for use in R.
 - [pssa.xlsx](/PSSA/pssa.xlsx) - For use by Kadir in tableau
 - [keystone.csv](/Keystone/keystone.csv) - A data set containing the Keystone data at the state and local levels.
 - [keystone.xlsx](Keystone/keystone.xlsx) - For use by Kadir in tableau
-- [cohorts.csv](/Cohorts/cohorts.csv) - A data set containing both PSSA and Keystone data at the local level that follow cohorts.
+- [cohorts.csv](/Cohorts/cohorts.csv) - A data set containing both PSSA and Keystone data at the state and local levels that follows cohorts.
 
 ### Data Conventions
 Score types:

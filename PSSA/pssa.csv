@@ -1,4 +1,4 @@
-Year,County,District,School,Subject,Scored,Baseline,Score,Students
+Year,County,District,School,Subject,Scored,Category,Score,Students
 2016,0,,,English,745248,Top,60.5,450876
 2016,0,,,Math,745782,Top,42.5,316958
 2016,0,,,Science,246773,Top,66.9,165092

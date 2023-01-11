@@ -1,4 +1,4 @@
-Cohort,Year,County,District,School,Grade,Subject,Scored,Baseline,Score,Students
+Cohort,Year,County,District,School,Grade,Subject,Scored,Category,Score,Students
 1,2016,1,BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,8,English,61,Top,70.5,44
 1,2016,1,BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,8,Math,61,Top,23,15
 1,2016,1,BENTON AREA SD,BENTON MIDDLE-SR HIGH SCHOOL,8,Science,61,Top,77,47

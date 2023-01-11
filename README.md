@@ -28,7 +28,7 @@ The XLSX files are organized by year (2015 - 2022) and level (state, local).
 - [cohorts.csv](/Cohorts/cohorts.csv) - A data set containing both PSSA and Keystone data at the state and local levels that follows cohorts.
 
 ### Data Conventions
-Score types:
+Score categories:
 - Top (Created by adding Advanced and Proficient)
 - Advanced
 - Proficient
@@ -62,7 +62,7 @@ Grade 11 was extracted from the Keystone set.
 - There was a group column in PSSA and Keystone whose values were "All students" or "Historically Underperforming" that was not available for all years.
    - **Mitigation**: I selected Group == "All Students" and dropped the group column.
 - The original data sets contained the columns Advanced, Proficient, Basic, BelowBasic but Kadir needed them as a type column and percent column for ANOVA testing.
-   - **Mitigation**: I used the names of the columns as a type (Baseline) and their values as the percentage (Score).
+   - **Mitigation**: I used the names of the columns as a type (Category) and their values as the percentage (Score).
 - Dr. Calhoun suggested creating a Top type by summing Advanced and Proficient.
 - Dr. Calhoun noticed that in some of our analysis we were taking averages of percentages that had different sizes and suggested weighted averages.
    - **Mitigation**: I created a column named Students by multiplying Scores by the amount of students Scored.
@@ -106,7 +106,7 @@ We see from taking the averages of PSSA scores from Columbia(1) and Montour(2) c
 ![obj2a](/Resources/Obj2a.png)
 
 We see that in general, Montour and Colombia county fared better than State 
-since 2015 in terms of baseline levels. Basic level showed a sharp increase in Montour
+since 2015 in terms of Category levels. Basic level showed a sharp increase in Montour
 and Colombia counties in 2022. Proficient level also showed a sharp
 increase especially in 2022 for Montour county
 
@@ -114,27 +114,27 @@ increase especially in 2022 for Montour county
 
 ![obj2b](/Resources/Obj2b.png)
 
-**Top** baseline showed a slight decline between 2019 - 2021 in State and Colombia County.
-Top baseline remained steady in Montour throughout the time frame. 
+**Top** Category showed a slight decline between 2019 - 2021 in State and Colombia County.
+Top Category remained steady in Montour throughout the time frame. 
 
-**Advanced** baseline showed a sharp decline in Colombia County and State from 2019
-to 2021. Montour County baseline were pretty much stable.
+**Advanced** Category showed a sharp decline in Colombia County and State from 2019
+to 2021. Montour County Category were pretty much stable.
 
-**Proficient** baseline showed an increase in Colombia County in 2021 and then
+**Proficient** Category showed an increase in Colombia County in 2021 and then
 it swung back to its previous levels in 2022. State and Montour County fluctuated
 slightly throughout the time frame without any significant observation.
 
-**Basic** baseline  dropped slightly in Colombia county from 2018 to 2019. It remained
+**Basic** Category  dropped slightly in Colombia county from 2018 to 2019. It remained
 steady in State from 2017 to 2019. Montour County showed a slight decline
-in 2019. Basic baseline increased in both counties and state in 2021, only to
+in 2019. Basic Category increased in both counties and state in 2021, only to
 drop slightly in Montour County and State in 2022. Colombia County showed
-a moderate decline in Basic baseline. 
+a moderate decline in Basic Category. 
 
-**BelowBasic** baseline remained stable for Montour County until 2019. There was a
+**BelowBasic** Category remained stable for Montour County until 2019. There was a
 sharp increase between 2016 and 2017 in Colombia County and State. Both
-counties and state showed a decline in BelowBasic baseline in 2019. There was
-a significant increase in all places in the baseline from 2019 to 2021,
-especially in Colombia. From 2021 to 2022, baseline remained stable in State 
+counties and state showed a decline in BelowBasic Category in 2019. There was
+a significant increase in all places in the Category from 2019 to 2021,
+especially in Colombia. From 2021 to 2022, Category remained stable in State 
 and dropped moderately in both counties
 
 # Objective 3: Is there any COVID impact we might be able to deduce?
@@ -143,21 +143,21 @@ and dropped moderately in both counties
 
 ![obj3a](/Resources/Obj3a.png)
 
-Checking baseline averages throughout the years for counties and subjects, it
-is interesting to see that COVID didn't impact Math and English for baselines
+Checking Category averages throughout the years for counties and subjects, it
+is interesting to see that COVID didn't impact Math and English for Categorys
 dramatically for Colombia, Montour and State. In fact, there was a significant
 improvement in the scores in 2022 compared to 2019 for math top, advanced
-and proficient baseline in Colombia county.
-However, there was a steep decline in Science for baselines between 2021
+and proficient Category in Colombia county.
+However, there was a steep decline in Science for Categorys between 2021
 and 2022 throughout the state which may be an indication of a COVID impact.
 
 ##### PSSA
 
 ![obj3b](/Resources/Obj3b.png)
 
-From 2019 to 2022, baseline levels seemed stable for the counties and the state
+From 2019 to 2022, Category levels seemed stable for the counties and the state
 There were only slight fluctuations which were inconclusive if COVID affected
-baseline levels or not.
+Category levels or not.
 
 
 # Objective 4: Visualizing the averages of scores from each year.

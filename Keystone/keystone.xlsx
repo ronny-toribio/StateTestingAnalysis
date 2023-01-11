@@ -1,4 +1,4 @@
-﻿"Year","County","District","School","Subject","Scored","Baseline","Score","Students"
+﻿"Year","County","District","School","Subject","Scored","Category","Score","Students"
 "2016","0","","","Math",123525,"Top",68.2,84245
 "2016","0","","","Science",122602,"Top",65.80000000000001,80673
 "2016","0","","","English",123292,"Top",76.8,94689

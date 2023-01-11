@@ -131,20 +131,20 @@ ks = ks %>% mutate(across(Subject, str_replace, "Biology", "Science"))
 # Create Top column (Proficient + Advanced)
 ks = ks %>% mutate(Top=Proficient+Advanced)
 
-# Create baseline and score columns
+# Create Category and score columns
 ks = bind_rows(
-  ks %>% mutate(Baseline="Top",        Score=Top),
-  ks %>% mutate(Baseline="Advanced",   Score=Advanced) ,
-  ks %>% mutate(Baseline="Proficient", Score=Proficient),
-  ks %>% mutate(Baseline="Basic",      Score=Basic),
-  ks %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
+  ks %>% mutate(Category="Top",        Score=Top),
+  ks %>% mutate(Category="Advanced",   Score=Advanced) ,
+  ks %>% mutate(Category="Proficient", Score=Proficient),
+  ks %>% mutate(Category="Basic",      Score=Basic),
+  ks %>% mutate(Category="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Top, -Advanced, -Proficient, -Basic, -BelowBasic)
 
 # Create Students column
 ks = ks %>% mutate(Students=ceiling(Score / 100 * Scored))
 
 # Organize columns for Keystone
-ks = ks %>% select(Year, County, District, School, Subject, Scored, Baseline, Score, Students)
+ks = ks %>% select(Year, County, District, School, Subject, Scored, Category, Score, Students)
 
 # Drop NA's in Score
 ks = ks %>% filter(!is.na(Score))
@@ -299,13 +299,13 @@ ps = ps %>% mutate(across(Grade, str_replace, "08", "8"))
 # Create Top column (Proficient + Advanced)
 ps = ps %>% mutate(Top=Proficient+Advanced)
 
-# Create baseline and score columns
+# Create Category and score columns
 ps = bind_rows(
-  ps %>% mutate(Baseline="Top",        Score=Top),
-  ps %>% mutate(Baseline="Advanced",   Score=Advanced),
-  ps %>% mutate(Baseline="Proficient", Score=Proficient),
-  ps %>% mutate(Baseline="Basic",      Score=Basic),
-  ps %>% mutate(Baseline="BelowBasic", Score=BelowBasic)
+  ps %>% mutate(Category="Top",        Score=Top),
+  ps %>% mutate(Category="Advanced",   Score=Advanced),
+  ps %>% mutate(Category="Proficient", Score=Proficient),
+  ps %>% mutate(Category="Basic",      Score=Basic),
+  ps %>% mutate(Category="BelowBasic", Score=BelowBasic)
 ) %>% arrange(Year) %>% select(-Top, -Advanced, -Proficient, -Basic, -BelowBasic)
 
 # Create Students column
@@ -316,7 +316,7 @@ ps2 = ps
 ps = ps %>% filter(Grade=="Total") %>% select(-Grade)
 
 # Organize columns for PSSA
-ps = ps %>% select(Year, County, District, School, Subject, Scored, Baseline, Score, Students)
+ps = ps %>% select(Year, County, District, School, Subject, Scored, Category, Score, Students)
 
 # Drop NA's in Score
 ps = ps %>% filter(!is.na(Score))
@@ -359,7 +359,7 @@ rm(cohort.2)
 rm(cohort.3)
 
 # Organize Cohorts columns
-cohorts = cohorts %>% select(Cohort, Year, County, District, School, Grade, Subject, Scored, Baseline, Score, Students)
+cohorts = cohorts %>% select(Cohort, Year, County, District, School, Grade, Subject, Scored, Category, Score, Students)
 
 # Drop NA's in Score
 cohorts = cohorts %>% filter(!is.na(Score))

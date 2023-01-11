@@ -9,8 +9,8 @@ Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises
 Our team consists of senior data science students [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz), [Anna T. Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-phoenix).
 
 ##### There are two major tasks in this project:
-- Data Wrangling - Worked on by me [testing_data.R](/testing_data.R)
-- Project Objectives - Worked on by our team [analysis.R](/analysis.R)
+- [Data Wrangling](#data-wrangling) - Worked on by me [testing_data.R](/testing_data.R)
+- [Project Objectives](#project-objectives) - Worked on by our team [analysis.R](/analysis.R)
 
 # Data Wrangling
 The data sets used in this project are the results from the [PSSA](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/PSSA-Results.aspx) and [Keystone](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/Keystone-Exams-Results.aspx) state tests.

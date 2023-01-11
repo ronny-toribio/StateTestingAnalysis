@@ -9,15 +9,15 @@ Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises
 Our team consists of senior data science students [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz), [Anna T. Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-phoenix).
 
 ##### There are two major tasks in this project:
-- [Data Wrangling](#data-wrangling) - Worked on by me [testing_data.R](/testing_data.R)
-- [Project Objectives](#project-objectives) - Worked on by our team [analysis.R](/analysis.R)
+- [Data Wrangling](#data-wrangling) - Worked on by me [data_wrangling.R](/data_wrangling.R)
+- [Project Objectives](#project-objectives) - Worked on by our team [objectives.R](/objectives.R)
 
 # Data Wrangling
 The data sets used in this project are the results from the [PSSA](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/PSSA-Results.aspx) and [Keystone](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/Keystone-Exams-Results.aspx) state tests.
 These sets contain aggregate data at the state level for both the PSSA and Keystone.
 They contain more granular data at the school level including counties, districts and schools.
 
-To wrangle this data and prepare it for analysis I created a script in R [testing_data.R](/testing_data.R) that loads the raw XLSX files and generates 3 CSV files and 2 XLSX files.
+To wrangle this data and prepare it for analysis I created a script in R [data_wrangling.R](/data_wrangling.R) that loads the raw XLSX files and generates 3 CSV files and 2 XLSX files.
 The XLSX files are organized by year (2015 - 2022) and level (state, local).
 
 ##### The files generated are:

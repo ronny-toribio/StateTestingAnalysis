@@ -10,19 +10,18 @@ library(hrbrthemes)
 library(patchwork)
 library(ggthemes)
 
-
 theme_main = function(base_size=11, base_family=""){
   theme(
     plot.background = element_rect(fill="black"),
     plot.title = element_text(color="white", size=12, face="bold"),
-    panel.background = element_rect(fill="darkblue", color="darkblue", linewidth=0.5, linetype="solid"),
+    panel.background = element_rect(fill="darkblue", color="darkblue", linetype="solid"),
     strip.background = element_rect(fill="steelblue"),
     strip.text = element_text(color="white", face = "bold"),
     legend.background = element_rect(fill="black"),
     legend.text = element_text(color="white"),
     legend.title = element_text(color="white"),
-    panel.grid.major = element_line(color="white", linewidth=0.5, linetype="solid"),
-    panel.grid.minor = element_line(color="white", linewidth=0.5, linetype="solid"),
+    panel.grid.major = element_line(color="white", linetype="solid"),
+    panel.grid.minor = element_line(color="white", linetype="solid"),
     panel.border = element_rect(color="darkblue", fill = NA),
     axis.line = element_line(color="darkblue"),
     axis.ticks = element_line(color="darkblue"),
@@ -32,12 +31,9 @@ theme_main = function(base_size=11, base_family=""){
     axis.title.x = element_text(color="white", face="bold", vjust=-2),
     axis.title.y = element_text(color="white", face="bold", angle=90, vjust=3)
   )
-  
 }
 
 theme_set(theme_main())
-
-
 
 ks = read_csv("Keystone/keystone.csv")
 ps = read_csv("PSSA/pssa.csv")
@@ -549,46 +545,63 @@ plot(p10)
 # Cohort 2    6     7     8                11
 # Cohort 3    5     6     7     8                11
 
+# prepare columns
 cohorts$Cohort = as.integer(cohorts$Cohort)
+cohorts$Grade = as_factor(cohorts$Grade)
+cohorts$Category = as_factor(cohorts$Category)
 
-cohorts_timeline = cohorts %>% ggplot(
-    aes(xmin=Year, xmax=Year+1, ymin=Cohort-1, ymax=Cohort, fill=as_factor(Grade))) + 
-  geom_rect() +
-  labs(title="Cohorts Timeline")
+# cohorts timeline
+cohorts_timeline = cohorts %>% 
+  ggplot() + 
+  geom_rect(aes(xmin = Year, xmax = Year + 1, ymin = Cohort-0.5, ymax = Cohort, fill = Grade)) +
+  geom_text(aes(x = Year, y = Cohort, label = "")) +
+  theme(
+    axis.text.y = element_text(vjust=4)
+  ) +
+  labs(title = "Cohorts Timeline")
 plot(cohorts_timeline)
 ggsave("Resources/Obj6_timeline.png", cohorts_timeline)
 
-cohorts1 = cohorts %>% filter(Category != "Top")
-obj6ac1 = cohorts1 %>% ggplot(aes(x=Grade, y=Score, fill=as_factor(Category))) + 
-  geom_col() +
-  facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
-  labs(title="Cohorts 1-3 All Grades All Scores")
-plot(obj6ac1)
-ggsave("Resources/Obj6ac1.png", obj6ac1)
 
-cohorts1_top = cohorts1 %>% filter(Category=="Advanced" | Category=="Proficient")
-obj6bc1t = cohorts1_top %>% ggplot(aes(x=Grade, y=Students, fill=as_factor(Category))) + 
-  geom_col() + 
+# average scores by cohort and grade
+cas = cohorts %>%
+  filter(Category=="Top") %>%
+  select(Cohort, Grade, Students, Scored) %>%
+  group_by(Cohort, Grade) %>%
+  mutate(
+    AvgScore = sum(Students)/sum(Scored) * 100,
+    AvgScoreLabel = round(AvgScore, 2)
+  ) %>% 
+  select(-Students, -Scored) %>%
+  distinct()
+
+# get change for each cohort
+cas1 = cas %>% filter(Cohort==1)
+cas1$AvgScoreChange = round(cas1$AvgScore-lag(cas1$AvgScore), 2)
+cas2 = cas %>% filter(Cohort==2)
+cas2$AvgScoreChange = round(cas2$AvgScore-lag(cas2$AvgScore), 2)
+cas3 = cas %>% filter(Cohort==3)
+cas3$AvgScoreChange = round(cas3$AvgScore-lag(cas3$AvgScore), 2)
+cas = rbind(cas1, cas2, cas3)
+rm(cas1)
+rm(cas2)
+rm(cas3)
+cas$AvgScoreChangePos = cas$AvgScoreChange
+cas$AvgScoreChangePos[cas$AvgScoreChangePos < 0] = NA
+cas$AvgScoreChangeNeg = cas$AvgScoreChange
+cas$AvgScoreChangeNeg[cas$AvgScoreChangeNeg > 0] = NA
+
+# graph cas
+obj6bc1t = cas %>%
+  ggplot(aes(x=Grade, y=AvgScore, fill=Grade)) +
+  geom_col(position="dodge") +
+  geom_text(aes(x=Grade, y=AvgScore-1, label=AvgScoreLabel), color="white") +
+  geom_text(aes(x=Grade, y=20, label=AvgScoreChangePos), color="green") +
+  geom_text(aes(x=Grade, y=20, label=AvgScoreChangeNeg), color="red") +
   facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
   labs(title="Cohorts 1-3 All Grades Top Scores")
 plot(obj6bc1t)
-ggsave("Resources/Obj6bc1t.png", obj6bc1t)
-
-cohorts2 = cohorts1 %>% filter(Grade==8 | Grade==11)
-obj6cc2 = cohorts2 %>% ggplot(aes(x=Grade, y=Students, fill=as_factor(Category))) + 
-  geom_col() + 
-  facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
-  labs(title="Cohorts 1-3 Grades 8, 11 All Scores")
-plot(obj6cc2)
-ggsave("Resources/Obj6cc2.png", obj6cc2)
-
-cohorts2_top = cohorts2 %>% filter(Category=="Advanced" | Category=="Proficient")
-obj6dc2t = cohorts2_top %>% ggplot(aes(x=Grade, y=Students, fill=as_factor(Category))) + 
-  geom_col() + 
-  facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
-  labs(title="Cohorts 1-3 Grades 8, 11 Top Scores")
-plot(obj6dc2t)
-ggsave("Resources/Obj6dc2t.png", obj6dc2t)
+ggsave("Resources/Obj6a_cohort_grade.png", obj6bc1t)
 
 # Objective 7: Any other information that data might tell us? Summary.
 

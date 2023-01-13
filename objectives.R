@@ -13,23 +13,23 @@ library(ggthemes)
 theme_main = function(base_size=11, base_family=""){
   theme(
     plot.background = element_rect(fill="black"),
-    plot.title = element_text(color="white", size=12, face="bold"),
+    plot.title = element_text(color="white", size=24, face="bold", vjust=1),
     panel.background = element_rect(fill="darkblue", color="darkblue", linetype="solid"),
     strip.background = element_rect(fill="steelblue"),
     strip.text = element_text(color="white", face = "bold"),
     legend.background = element_rect(fill="black"),
-    legend.text = element_text(color="white"),
-    legend.title = element_text(color="white"),
+    legend.text = element_text(color="white", size=24),
+    legend.title = element_text(color="white", size=24),
     panel.grid.major = element_line(color="white", linetype="solid"),
     panel.grid.minor = element_line(color="white", linetype="solid"),
     panel.border = element_rect(color="darkblue", fill = NA),
     axis.line = element_line(color="darkblue"),
     axis.ticks = element_line(color="darkblue"),
-    axis.text = element_text(color="white"),
-    axis.text.x = element_text(color="white"),
+    axis.text = element_text(color="white", size=24),
+    axis.text.x = element_text(color="white",size=24),
     axis.text.y = element_text(color="white"),
-    axis.title.x = element_text(color="white", face="bold", vjust=-2),
-    axis.title.y = element_text(color="white", face="bold", angle=90, vjust=3)
+    axis.title.x = element_text(color="white", face="bold", vjust=-1, size=24),
+    axis.title.y = element_text(color="white", face="bold", angle=90, vjust=2, size=24)
   )
 }
 
@@ -64,39 +64,39 @@ levels(ks$County) = c("State", "Colombia", "Montour")
 levels(ks$County)
 
 
-group_by_year_county_top = ks %>% 
+ks_group_by_year_county_top = ks %>% 
   select(Year, County, Category, Scored, Students) %>%
   group_by(Year, County) %>%
   filter(Category == "Top") %>%
   summarise(across(c(Scored, Students), sum)) %>%
   mutate(AvgScore = Students/Scored)
 
-group_by_year_county_top
+ks_group_by_year_county_top
 
 
-group_by_year_state_subject_top = ks %>%
+ks_group_by_year_state_subject_top = ks %>%
   select(Year, County, Category, Scored, Students, Subject) %>%
   group_by(Year, County, Subject) %>%
   filter(Category == "Top") %>%
   summarise(across(c(Scored, Students), sum)) %>%
   mutate(AvgScore = Students/Scored)
 
-group_by_year_state_subject_top
+ks_group_by_year_state_subject_top
 
 
-group_by_year_county_subject_school_top = ks %>% 
+ks_group_by_year_county_subject_school_top = ks %>% 
   select(Year, County, School, Category, Scored, Students, Subject) %>%
   group_by(Year, County, Subject, School) %>%
   filter(Category == "Top") %>%
   summarise(across(c(Scored, Students), sum)) %>%
   mutate(AvgScore = Students/Scored)
 
-group_by_year_county_subject_school_top
+ks_group_by_year_county_subject_school_top
 
 
-png(filename = "Obj2state.png", width = 1280, height = 1280)
+png(filename = "Obj2stateKS.png", width = 1280, height = 1280)
 
-state_bar = group_by_year_county_top %>%
+ks_state_bar = ks_group_by_year_county_top %>%
   filter(County == "State") %>% 
   ggplot(aes(x = Year, y = AvgScore, fill = County)) +
   geom_bar(position="dodge", stat="identity", fill = "green") +
@@ -105,13 +105,13 @@ state_bar = group_by_year_county_top %>%
   xlab("Years") + 
   ylab("Average Score in %")
 
-state_bar
+ks_state_bar
 
 dev.off()
 
-png(filename = "Obj2colombia.png", width = 1280, height = 1280)
+png(filename = "Obj2colombiaKS.png", width = 1280, height = 1280)
 
-colombia_bar =  group_by_year_county_top %>%
+ks_colombia_bar =  ks_group_by_year_county_top %>%
   filter(County == "Colombia") %>% 
   ggplot(aes(x = Year, y = AvgScore, fill = County)) +
   geom_bar(position="dodge", stat="identity", fill = "green") +
@@ -120,13 +120,13 @@ colombia_bar =  group_by_year_county_top %>%
   xlab("Years") + 
   ylab("Average Score in %")
 
-colombia_bar
+ks_colombia_bar
 
 dev.off()
 
-png(filename = "Obj2montour.png", width = 1280, height = 1280)
+png(filename = "Obj2montourKS.png", width = 1280, height = 1280)
 
-montour_bar = group_by_year_county_top%>%
+ks_montour_bar = ks_group_by_year_county_top%>%
   filter(County == "Montour") %>% 
   ggplot(aes(x = Year, y = AvgScore, fill = County)) +
   geom_bar(position="dodge", stat="identity", fill = "green") +
@@ -135,13 +135,13 @@ montour_bar = group_by_year_county_top%>%
   xlab("Years") + 
   ylab("Average Score in %")
 
-montour_bar
+ks_montour_bar
 
 dev.off()
 
-png(filename = "Obj2combined.png", width = 1280, height = 1280)
+png(filename = "Obj2combinedKS.png", width = 1280, height = 1280)
 
-compact_combined_bar = ggplot(data = group_by_year_county_top, aes(y = AvgScore, x = Year, fill = County)) + 
+ks_compact_combined_bar = ggplot(data = ks_group_by_year_county_top, aes(y = AvgScore, x = Year, fill = County)) + 
   geom_bar(position="dodge", stat="identity") +
   scale_fill_discrete(name = "County") +
   ggtitle("Score Average for Top Category by Years") +
@@ -149,60 +149,672 @@ compact_combined_bar = ggplot(data = group_by_year_county_top, aes(y = AvgScore,
   ylab("Average Score in %")
 
 
-compact_combined_bar
+ks_compact_combined_bar
 
 dev.off()
 
+png(filename = "Obj3stateEngKS.png", width = 1280, height = 1280)
 
+ks_state_subject_top_english = ks_group_by_year_state_subject_top %>%
+  filter(County == "State" & Subject == "English") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in State by Subject (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_state_subject_top_english
+
+dev.off()
+
+png(filename = "Obj3stateMathKS.png", width = 1280, height = 1280)
+
+ks_state_subject_top_math = ks_group_by_year_state_subject_top %>%
+  filter(County == "State" & Subject == "Math") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in State by Subject (Math)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_state_subject_top_math
+
+dev.off()
+
+png(filename = "Obj3stateScienceKS.png", width = 1280, height = 1280)
+
+ks_state_subject_top_science = ks_group_by_year_state_subject_top %>%
+  filter(County == "State" & Subject == "Science") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in State by Subject (Science") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_state_subject_top_science
+
+dev.off()
+
+png(filename = "Obj3stateCombKS.png", width = 1280, height = 1280)
+
+ks_state_subject_top_compact = ks_group_by_year_state_subject_top %>%
+  filter(County == "State") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in State by Subjects") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_state_subject_top_compact
+
+dev.off()
+
+png(filename = "Obj3colombiaEngKS.png", width = 1280, height = 1280)
+
+ks_colombia_subject_top_english = ks_group_by_year_state_subject_top %>%
+  filter(County == "Colombia" & Subject == "English") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Colombia County by Subject (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_colombia_subject_top_english
+
+dev.off()
+
+png(filename = "Obj3colombiaMathKS.png", width = 1280, height = 1280)
+
+ks_colombia_subject_top_math = ks_group_by_year_state_subject_top %>%
+  filter(County == "Colombia" & Subject == "Math") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Colombia County by Subject (Math)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_colombia_subject_top_math
+
+dev.off()
+
+png(filename = "Obj3colombiaScienceKS.png", width = 1280, height = 1280)
+
+ks_colombia_subject_top_science = ks_group_by_year_state_subject_top %>%
+  filter(County == "Colombia" & Subject == "Science") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Colombia County by Subject (Science") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_colombia_subject_top_science
+
+dev.off()
+
+png(filename = "Obj3colombiaCombKS.png", width = 1280, height = 1280)
+
+ks_colombia_subject_top_compact = ks_group_by_year_state_subject_top %>%
+  filter(County == "Colombia") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Colombia County by Subjects") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_colombia_subject_top_compact
+
+dev.off()
+
+png(filename = "Obj3montourEngKS.png", width = 1280, height = 1280)
+
+ks_montour_subject_top_english = ks_group_by_year_state_subject_top %>%
+  filter(County == "Montour" & Subject == "English") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Montour County by Subject (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_montour_subject_top_english
+
+dev.off()
+
+png(filename = "Obj3montourMathKS.png", width = 1280, height = 1280)
+
+ks_montour_subject_top_math = ks_group_by_year_state_subject_top %>%
+  filter(County == "Montour" & Subject == "Math") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Montour County by Subject (Math)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_montour_subject_top_math
+
+dev.off()
+
+png(filename = "Obj3montourSciKS.png", width = 1280, height = 1280)
+
+ks_montour_subject_top_science = ks_group_by_year_state_subject_top %>%
+  filter(County == "Montour" & Subject == "Science") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Montour County by Subject (Science") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_montour_subject_top_science
+
+dev.off()
+
+png(filename = "Obj3montourCombKS.png", width = 1280, height = 1280)
+
+ks_montour_subject_top_compact = ks_group_by_year_state_subject_top %>%
+  filter(County == "Montour") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Montour County by Subjects") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_montour_subject_top_compact
+
+dev.off()
+
+#granular graphs
+
+png(filename = "Misc1KS.png", width = 1280, height = 1280)
+
+ks_colombia_top_school_english = ks_group_by_year_county_subject_school_top %>%
+  filter(County == "Colombia" & Subject == "English") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") + 
+  ggtitle("Average Score of Top Category in Colombia County Schools (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_colombia_top_school_english
+
+dev.off()
+
+png(filename = "Misc2KS.png", width = 1280, height = 1280)
+
+ks_colombia_top_school_math = ks_group_by_year_county_subject_school_top %>%
+  filter(County == "Colombia" & Subject == "Math") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") + 
+  ggtitle("Average Score of Top Category in Colombia County Schools (Math)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_colombia_top_school_math
+
+dev.off()
+
+png(filename = "Misc3KS.png", width = 1280, height = 1280)
+
+ks_colombia_top_school_science = ks_group_by_year_county_subject_school_top %>%
+  filter(County == "Colombia" & Subject == "Science") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") + 
+  ggtitle("Average Score of Top Category in Colombia County Schools (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_colombia_top_school_science
+
+dev.off()
+
+png(filename = "Misc4KS.png", width = 1280, height = 1280)
+
+ks_colombia_top_school_subjects_compact = ks_group_by_year_county_subject_school_top %>%
+  filter(County == "Colombia") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") +
+  facet_wrap(~Subject) +
+  ggtitle("Average Score of Top Category in Colombia County Schools (All Subjects)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ks_colombia_top_school_subjects_compact
+
+dev.off()
 
 #anova analysis
 
-anova = aov(Score ~ Year + as_factor(County) + as_factor(District) + 
-              as_factor(School) + as_factor(Subject) + Scored +
-              as_factor(Category) + Score + Students, data = ks)
-summary(anova)
+ks_anova = aov(Score ~ Year + as_factor(County) + as_factor(District) + 
+                 as_factor(School) + as_factor(Subject) + Scored +
+                 as_factor(Category) + Score + Students, data = ks)
+summary(ks_anova)
 
-model = glm(Score ~ Year + as_factor(County) + as_factor(District) + 
-              as_factor(School) + as_factor(Subject) + Scored +
-              as_factor(Category) + Score + Students, data = ks)
-summary(model)
+ks_model = glm(Score ~ Year + as_factor(County) + as_factor(District) + 
+                 as_factor(School) + as_factor(Subject) + Scored +
+                 as_factor(Category) + Score + Students, data = ks)
+summary(ks_model)
 
+#----------------------------------------------------------------------
+#PSSA Data
 
-
-
-
-
-# We see that in general, Montour and Colombia county fared better than State 
-# since 2015 in terms of Category levels. Basic level showed a sharp increase in Montour
-# and Colombia counties in 2022. Proficient level also showed a sharp
-# increase especially in 2022 for Montour county
-
-# Top Category showed a slight decline between 2019 - 2021 in State and Colombia County.
-# Top Category remained steady in Montour throughout the time frame. 
-
-# Advanced Category showed a sharp decline in Colombia County and State from 2019
-# to 2021. Montour County Category were pretty much stable.
-
-# Proficient Category showed an increase in Colombia County in 2021 and then
-# it swung back to its previous levels in 2022. State and Montour County fluctuated
-# slightly throughout the time frame without any significant observation.
-
-# Basic Category  dropped slightly in Colombia county from 2018 to 2019. It remained
-# steady in State from 2017 to 2019. Montour County showed a slight decline
-# in 2019. Basic Category increased in both counties and state in 2021, only to
-# drop slightly in Montour County and State in 2022. Colombia County showed
-# a moderate decline in Basic Category. 
-
-# BelowBasic Category remained stable for Montour County until 2019. There was a
-# sharp increase between 2016 and 2017 in Colombia County and State. Both
-# counties and state showed a decline in BelowBasic Category in 2019. There was
-# a significant increase in all places in the Category from 2019 to 2021,
-# especially in Colombia. From 2021 to 2022, Category remained stable in State 
-# and dropped moderately in both counties
+ps$County = as_factor(ps$County)
+str(ps$County)
+levels(ps$County) = c("State", "Colombia", "Montour")
+levels(ps$County)
 
 
+ps_group_by_year_county_top = ps %>% 
+  select(Year, County, Category, Scored, Students) %>%
+  group_by(Year, County) %>%
+  filter(Category == "Top") %>%
+  summarise(across(c(Scored, Students), sum)) %>%
+  mutate(AvgScore = Students/Scored)
+
+ps_group_by_year_county_top
+
+
+ps_group_by_year_state_subject_top = ps %>%
+  select(Year, County, Category, Scored, Students, Subject) %>%
+  group_by(Year, County, Subject) %>%
+  filter(Category == "Top") %>%
+  summarise(across(c(Scored, Students), sum)) %>%
+  mutate(AvgScore = Students/Scored)
+
+ps_group_by_year_state_subject_top
+
+
+ps_group_by_year_county_subject_school_top = ps %>% 
+  select(Year, County, School, Category, Scored, Students, Subject) %>%
+  group_by(Year, County, Subject, School) %>%
+  filter(Category == "Top") %>%
+  summarise(across(c(Scored, Students), sum)) %>%
+  mutate(AvgScore = Students/Scored)
+
+ps_group_by_year_county_subject_school_top
+
+
+png(filename = "Obj2statePS.png", width = 1280, height = 1280)
+
+ps_state_bar = ps_group_by_year_county_top %>%
+  filter(County == "State") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "County") + 
+  ggtitle("Score Average for Top Category by Years in State") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_state_bar
+
+dev.off()
+
+png(filename = "Obj2colombiaPS.png", width = 1280, height = 1280)
+
+ps_colombia_bar =  ps_group_by_year_county_top %>%
+  filter(County == "Colombia") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "County") +
+  ggtitle("Score Average for Top Category by Years in Colombia County") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_bar
+
+dev.off()
+
+png(filename = "Obj2montourPS.png", width = 1280, height = 1280)
+
+ps_montour_bar = ps_group_by_year_county_top%>%
+  filter(County == "Montour") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "County") +
+  ggtitle("Score Average for Top Category by Years in Montour County") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_montour_bar
+
+dev.off()
+
+png(filename = "Obj2combinedPS.png", width = 1280, height = 1280)
+
+ps_compact_combined_bar = ggplot(data = ps_group_by_year_county_top, aes(y = AvgScore, x = Year, fill = County)) + 
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "County") +
+  ggtitle("Score Average for Top Category by Years") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+
+ps_compact_combined_bar
+
+dev.off()
+
+#anova analysis
+
+ps_anova = aov(Score ~ Year + as_factor(County) + as_factor(District) + 
+                 as_factor(School) + as_factor(Subject) + Scored +
+                 as_factor(Category) + Score + Students, data = ps)
+summary(ps_anova)
+
+ps_model = glm(Score ~ Year + as_factor(County) + as_factor(District) + 
+                 as_factor(School) + as_factor(Subject) + Scored +
+                 as_factor(Category) + Score + Students, data = ps)
+summary(ps_model)
+
+
+#-------------------------------------------------------------------
+
+#Keystone Data
+
+# When we look at the graphs, we see that top category, which combines advanced
+# and proficient categories, fluctuates for every levels (State, Montour County,
+# and Colombia County). 
+
+# For state level, average score percentage for top category is trending lower 
+# than its high in 2016. We see that average score percentage declined in 2017 
+# and rose in 2018 and then started declining again for the rest of the years.
+
+# In Colombia County, average score for the top category is also trending lower
+# than its high in 2016. We see that average score percentage declined in 2017
+# and rose in 2018 and stayed steady for 2019. However, it started to dip
+# in 2021 and 2022
+
+# In Montour County, average score for the top category shows fluctuations for
+# the years observed. The average score percentage dipped in 2017 only to rise
+# and dip again in 2018 and 2019 respectively. The same pattern of rise and dip
+# was also observed in 2021 and 2022.
+
+#PSSA DATA
+
+# PSSA data also shows similar observations all levels for the top category.
+
+# For state level, average score percentage dipped in 2017 and went back to 2016
+# levels in 2018 and 2019. There was a decline in 2021 and a slight increase in 2022
+
+# In Colombia County, average score percentage stayed steady from 2016 to 2019.
+# There was a decline in percentage in 2021 which showed some recovery in 2022.
+
+# In Montour County, average score percentage rose all time high in 2019 in
+# observed years (2016-2022). There was a sharp decline in 2021 and some
+# recovery in 2022. 
+
+#---------------------------------------------------------------------------
 
 # Objective 3: Is there any COVID impact we might be able to deduce?
+
+png(filename = "Obj3stateEngPS.png", width = 1280, height = 1280)
+
+ps_state_subject_top_english = ps_group_by_year_state_subject_top %>%
+  filter(County == "State" & Subject == "English") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in State by Subject (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_state_subject_top_english
+
+dev.off()
+
+png(filename = "Obj3stateMathPS.png", width = 1280, height = 1280)
+
+ps_state_subject_top_math = ps_group_by_year_state_subject_top %>%
+  filter(County == "State" & Subject == "Math") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in State by Subject (Math)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_state_subject_top_math
+
+dev.off()
+
+png(filename = "Obj3stateSciencePS.png", width = 1280, height = 1280)
+
+ps_state_subject_top_science = ps_group_by_year_state_subject_top %>%
+  filter(County == "State" & Subject == "Science") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in State by Subject (Science") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_state_subject_top_science
+
+dev.off()
+
+png(filename = "Obj3stateCombPS.png", width = 1280, height = 1280)
+
+ps_state_subject_top_compact = ps_group_by_year_state_subject_top %>%
+  filter(County == "State") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in State by Subjects") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_state_subject_top_compact
+
+dev.off()
+
+png(filename = "Obj3colombiaEngPS.png", width = 1280, height = 1280)
+
+ps_colombia_subject_top_english = ps_group_by_year_state_subject_top %>%
+  filter(County == "Colombia" & Subject == "English") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Colombia County by Subject (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_subject_top_english
+
+dev.off()
+png(filename = "Obj3colombiaMathPS.png", width = 1280, height = 1280)
+
+ps_colombia_subject_top_math = ps_group_by_year_state_subject_top %>%
+  filter(County == "Colombia" & Subject == "Math") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Colombia County by Subject (Math)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_subject_top_math
+
+dev.off()
+
+png(filename = "Obj3colombiaSciencePS.png", width = 1280, height = 1280)
+
+ps_colombia_subject_top_science = ps_group_by_year_state_subject_top %>%
+  filter(County == "Colombia" & Subject == "Science") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Colombia County by Subject (Science") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_subject_top_science
+
+dev.off()
+
+png(filename = "Obj3colombiaCombPS.png", width = 1280, height = 1280)
+
+ps_colombia_subject_top_compact = ps_group_by_year_state_subject_top %>%
+  filter(County == "Colombia") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Colombia County by Subjects") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_subject_top_compact
+
+dev.off()
+
+png(filename = "Obj3montourEngPS.png", width = 1280, height = 1280)
+
+ps_montour_subject_top_english = ps_group_by_year_state_subject_top %>%
+  filter(County == "Montour" & Subject == "English") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Montour County by Subject (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_montour_subject_top_english
+
+dev.off()
+
+png(filename = "Obj3montourMathPS.png", width = 1280, height = 1280)
+
+ps_montour_subject_top_math = ps_group_by_year_state_subject_top %>%
+  filter(County == "Montour" & Subject == "Math") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Montour County by Subject (Math)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_montour_subject_top_math
+
+dev.off()
+
+png(filename = "Obj3montourSciPS.png", width = 1280, height = 1280)
+
+ps_montour_subject_top_science = ps_group_by_year_state_subject_top %>%
+  filter(County == "Montour" & Subject == "Science") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity", fill = "green") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Montour County by Subject (Science") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_montour_subject_top_science
+
+dev.off()
+
+png(filename = "Obj3montourCombPS.png", width = 1280, height = 1280)
+
+ps_montour_subject_top_compact = ps_group_by_year_state_subject_top %>%
+  filter(County == "Montour") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "Subject") + 
+  ggtitle("Average Score of Top Category in Montour County by Subjects") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_montour_subject_top_compact
+
+dev.off()
+
+#-------------------------------------------------------------------------
+
+# When we look at both Keystone and PSSA data, we can clearly see that, COVID-19
+# has impacted top score average percentages. Especially in 2021, we see a sharp
+# decline in all levels (State, Colombia County and Montour County). However,
+# starting 2022, we see some recovery in percentages in those levels. 
+
+# However, there's no linearity between years and average score percentages so as
+# to say, we don't see an upward or downward trend every year. 
+# The ANOVA table also indicates the absence of linearity in trend without
+# any significant impact between top score average percentages and year.
+
+#------------------------------------------------------------------------------
+
+#granular graphs
+
+png(filename = "Misc1PS.png", width = 1280, height = 1280)
+
+ps_colombia_top_school_english = ps_group_by_year_county_subject_school_top %>%
+  filter(County == "Colombia" & Subject == "English") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") + 
+  ggtitle("Average Score of Top Category in Colombia County Schools (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_top_school_english
+
+dev.off()
+
+png(filename = "Misc2PS.png", width = 1280, height = 1280)
+
+ps_colombia_top_school_math = ps_group_by_year_county_subject_school_top %>%
+  filter(County == "Colombia" & Subject == "Math") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") + 
+  ggtitle("Average Score of Top Category in Colombia County Schools (Math)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_top_school_math
+
+dev.off()
+
+png(filename = "Misc3PS.png", width = 1280, height = 1280)
+
+ps_colombia_top_school_science = ps_group_by_year_county_subject_school_top %>%
+  filter(County == "Colombia" & Subject == "Science") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") + 
+  ggtitle("Average Score of Top Category in Colombia County Schools (English)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_top_school_science
+
+dev.off()
+
+png(filename = "Misc4PS.png", width = 1280, height = 1280)
+
+ps_colombia_top_school_subjects_compact = ps_group_by_year_county_subject_school_top %>%
+  filter(County == "Colombia") %>% 
+  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_discrete(name = "School") +
+  facet_wrap(~Subject) +
+  ggtitle("Average Score of Top Category in Colombia County Schools (All Subjects)") +
+  xlab("Years") + 
+  ylab("Average Score in %")
+
+ps_colombia_top_school_subjects_compact
+
+dev.off()
+
 
 
 # Checking Category averages throughout the years for counties and subjects, it
@@ -213,252 +825,7 @@ summary(model)
 # However, there was a steep decline in Science for Categorys between 2021
 # and 2022 throughout the state which may be an indication of a COVID impact.
 
-png(filename = "Obj3stateEng.png", width = 1280, height = 1280)
 
-state_subject_top_english = group_by_year_state_subject_top %>%
-  filter(County == "State" & Subject == "English") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in State by Subject (English)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-state_subject_top_english
-
-dev.off()
-
-png(filename = "Obj3stateMath.png", width = 1280, height = 1280)
-
-state_subject_top_math = group_by_year_state_subject_top %>%
-  filter(County == "State" & Subject == "Math") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in State by Subject (Math)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-state_subject_top_math
-
-dev.off()
-
-png(filename = "Obj3state.science", width = 1280, height = 1280)
-
-state_subject_top_science = group_by_year_state_subject_top %>%
-  filter(County == "State" & Subject == "Science") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in State by Subject (Science") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-state_subject_top_science
-
-dev.off()
-
-png(filename = "Obj3stateComb.png", width = 1280, height = 1280)
-
-state_subject_top_compact = group_by_year_state_subject_top %>%
-  filter(County == "State") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in State by Subjects") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-state_subject_top_compact
-
-dev.off()
-
-png(filename = "Obj3colombiaEng.png", width = 1280, height = 1280)
-
-colombia_subject_top_english = group_by_year_state_subject_top %>%
-  filter(County == "Colombia" & Subject == "English") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in Colombia County by Subject (English)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-colombia_subject_top_english
-
-dev.off()
-png(filename = "Obj3colombiaMath.png", width = 1280, height = 1280)
-
-colombia_subject_top_math = group_by_year_state_subject_top %>%
-  filter(County == "Colombia" & Subject == "Math") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in Colombia County by Subject (Math)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-colombia_subject_top_math
-
-dev.off()
-
-png(filename = "Obj3colombiaScience.png", width = 1280, height = 1280)
-
-colombia_subject_top_science = group_by_year_state_subject_top %>%
-  filter(County == "Colombia" & Subject == "Science") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in Colombia County by Subject (Science") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-colombia_subject_top_science
-
-dev.off()
-
-png(filename = "Obj3colombiaComb.png", width = 1280, height = 1280)
-
-colombia_subject_top_compact = group_by_year_state_subject_top %>%
-  filter(County == "Colombia") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in Colombia County by Subjects") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-colombia_subject_top_compact
-
-dev.off()
-
-png(filename = "Obj3montourEng.png", width = 1280, height = 1280)
-
-montour_subject_top_english = group_by_year_state_subject_top %>%
-  filter(County == "Montour" & Subject == "English") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in Montour County by Subject (English)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-montour_subject_top_english
-
-dev.off()
-
-png(filename = "Obj3montourMath.png", width = 1280, height = 1280)
-
-montour_subject_top_math = group_by_year_state_subject_top %>%
-  filter(County == "Montour" & Subject == "Math") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in Montour County by Subject (Math)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-montour_subject_top_math
-
-dev.off()
-
-png(filename = "Obj3montourSci.png", width = 1280, height = 1280)
-
-montour_subject_top_science = group_by_year_state_subject_top %>%
-  filter(County == "Montour" & Subject == "Science") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity", fill = "green") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in Montour County by Subject (Science") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-montour_subject_top_science
-
-dev.off()
-
-png(filename = "Obj3montourComb.png", width = 1280, height = 1280)
-
-montour_subject_top_compact = group_by_year_state_subject_top %>%
-  filter(County == "Montour") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
-  geom_bar(position="dodge", stat="identity") +
-  scale_fill_discrete(name = "Subject") + 
-  ggtitle("Average Score of Top Category in Montour County by Subjects") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-montour_subject_top_compact
-
-dev.off()
-
-#granular graphs
-
-png(filename = "Misc1.png", width = 1280, height = 1280)
-
-colombia_top_school_english = group_by_year_county_subject_school_top %>%
-  filter(County == "Colombia" & Subject == "English") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
-  geom_bar(position="dodge", stat="identity") +
-  scale_fill_discrete(name = "School") + 
-  ggtitle("Average Score of Top Category in Colombia County Schools (English)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-colombia_top_school_english
-
-dev.off()
-
-png(filename = "Misc2.png", width = 1280, height = 1280)
-
-colombia_top_school_math = group_by_year_county_subject_school_top %>%
-  filter(County == "Colombia" & Subject == "Math") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
-  geom_bar(position="dodge", stat="identity") +
-  scale_fill_discrete(name = "School") + 
-  ggtitle("Average Score of Top Category in Colombia County Schools (Math)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-colombia_top_school_math
-
-dev.off()
-
-png(filename = "Misc3.png", width = 1280, height = 1280)
-
-colombia_top_school_science = group_by_year_county_subject_school_top %>%
-  filter(County == "Colombia" & Subject == "Science") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
-  geom_bar(position="dodge", stat="identity") +
-  scale_fill_discrete(name = "School") + 
-  ggtitle("Average Score of Top Category in Colombia County Schools (English)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-colombia_top_school_science
-
-dev.off()
-
-png(filename = "Misc4.png", width = 1280, height = 1280)
-
-colombia_top_school_subjects_compact = group_by_year_county_subject_school_top %>%
-  filter(County == "Colombia") %>% 
-  ggplot(aes(x = Year, y = AvgScore, fill = School)) +
-  geom_bar(position="dodge", stat="identity") +
-  scale_fill_discrete(name = "School") +
-  facet_wrap(~Subject) +
-  ggtitle("Average Score of Top Category in Colombia County Schools (All Subjects)") +
-  xlab("Years") + 
-  ylab("Average Score in %")
-
-colombia_top_school_subjects_compact
-
-dev.off()
-
-
-# From 2019 to 2022, Category levels seemed stable for the counties and the state
-# There were only slight fluctuations which were inconclusive if COVID affected
-# Category levels or not.
 
 
 

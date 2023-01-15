@@ -28,7 +28,8 @@ The XLSX files are organized by year (2015 - 2022) and level (state, local).
 - [cohorts.csv](/Cohorts/cohorts.csv) - A data set containing both PSSA and Keystone data at the state and local levels that follows cohorts.
 
 ### Data Conventions
-Score categories:
+
+##### Score categories:
 - Top (Created by adding Advanced and Proficient)
 - Advanced
 - Proficient
@@ -117,7 +118,7 @@ State | Columbia County | Montour County
 
 ##### ~~PSSA old interpretation~~
 
-**Top** Category showed a slight decline between 2019 - 2021 in State and Colombia County.
+~~**Top** Category showed a slight decline between 2019 - 2021 in State and Colombia County.
 Top Category remained steady in Montour throughout the time frame. 
 
 **Advanced** Category showed a sharp decline in Colombia County and State from 2019
@@ -138,14 +139,14 @@ sharp increase between 2016 and 2017 in Colombia County and State. Both
 counties and state showed a decline in BelowBasic Category in 2019. There was
 a significant increase in all places in the Category from 2019 to 2021,
 especially in Colombia. From 2021 to 2022, Category remained stable in State 
-and dropped moderately in both counties
+and dropped moderately in both counties~~
 
 ##### ~~Keystone old interpretation~~
 
-We see that in general, Montour and Colombia county fared better than State 
+~~We see that in general, Montour and Colombia county fared better than State 
 since 2015 in terms of Category levels. Basic level showed a sharp increase in Montour
 and Colombia counties in 2022. Proficient level also showed a sharp
-increase especially in 2022 for Montour county
+increase especially in 2022 for Montour county~~
 
 # Objective 3: Is there any COVID impact we might be able to deduce?
 

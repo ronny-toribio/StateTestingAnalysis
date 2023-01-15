@@ -188,19 +188,19 @@ State | Columbia County | Montour County
 
 ##### ~~PSSA old interpretation~~
 
-From 2019 to 2022, Category levels seemed stable for the counties and the state
+~~From 2019 to 2022, Category levels seemed stable for the counties and the state
 There were only slight fluctuations which were inconclusive if COVID affected
-Category levels or not.
+Category levels or not.~~
 
 ##### ~~Keystone old interpretation~~
 
-Checking Category averages throughout the years for counties and subjects, it
+~~Checking Category averages throughout the years for counties and subjects, it
 is interesting to see that COVID didn't impact Math and English for Categorys
 dramatically for Colombia, Montour and State. In fact, there was a significant
 improvement in the scores in 2022 compared to 2019 for math top, advanced
 and proficient Category in Colombia county.
 However, there was a steep decline in Science for Categorys between 2021
-and 2022 throughout the state which may be an indication of a COVID impact.
+and 2022 throughout the state which may be an indication of a COVID impact.~~
 
 
 # Objective 4: Visualizing the averages of scores from each year.

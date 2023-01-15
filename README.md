@@ -165,7 +165,7 @@ State | Columbia County | Montour County
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ps_sci_st](/Resources/Obj3stateSciPS.png) | ![obj2_ps_sci_col](/Resources/Obj3colombiaSciencePS.png) | ![obj2_ps_sci_mon](/Resources/Obj3montourSciPS.png) |
+| ![obj3_ps_sci_st](/Resources/Obj3stateSciencePS.png) | ![obj2_ps_sci_col](/Resources/Obj3colombiaSciencePS.png) | ![obj2_ps_sci_mon](/Resources/Obj3montourSciPS.png) |
 
 ##### Keystone English
 

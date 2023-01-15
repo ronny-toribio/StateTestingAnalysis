@@ -71,7 +71,8 @@ Grade 11 was extracted from the Keystone set.
    - **No mitigation**: Science doesn't have the individual Grades to recreate a "Total" from.
 - The PSSA for 2021 doesn't include score percentages for all subjects.
    - **No mitigation**
-   
+
+
 # Project Objectives
 1. [How our local districts in Columbia and Montour Counties are trending since 2016?](#objective-1-how-our-local-districts-in-columbia-and-montour-counties-are-trending-since-2016) (Anna)
 2. [How they compare to the state trend since 2016?](#objective-2-how-they-compare-to-the-state-trend-since-2016) (Kadir)
@@ -84,13 +85,8 @@ Grade 11 was extracted from the Keystone set.
 6. [Study cohorts as they progress from PSSA to Keystone](#objective-6-cohort-analysis) (Ronny)
 7. Any other information that data might tell us?
 
+
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2016?
-
-##### Keystone
-
-![obj1a](/Resources/Obj1ak.png)
-
-We see from taking the averages of Keystone scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022. Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exceptions of basic and below basic scores.
 
 ##### PSSA
 
@@ -98,21 +94,27 @@ We see from taking the averages of Keystone scores from Columbia(1) and Montour(
 
 We see from taking the averages of PSSA scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022.  Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exception of below basic scores, where the State and montour county averages were equal basically.
 
+##### Keystone
+
+![obj1a](/Resources/Obj1ak.png)
+
+We see from taking the averages of Keystone scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022. Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exceptions of basic and below basic scores.
+
 
 # Objective 2: How they compare to the state trend since 2016?
 
-##### Keystone
-
-![obj2a](/Resources/Obj2a.png)
-
-We see that in general, Montour and Colombia county fared better than State 
-since 2015 in terms of Category levels. Basic level showed a sharp increase in Montour
-and Colombia counties in 2022. Proficient level also showed a sharp
-increase especially in 2022 for Montour county
-
 ##### PSSA
 
-![obj2b](/Resources/Obj2b.png)
+| ![obj2_ps_st](/Resources/Obj2statePS.png) | ![obj2_ps_col](/Resources/Obj2columbiaPS.png) | ![obj2_ps_mon](/Resources/Obj2montourPS.png) |
+
+
+
+##### Keystone
+
+| ![obj2_ks_st](/Resources/Obj2stateKS.png) | ![obj2_ks_col](/Resources/Obj2columbiaKS.png) | ![obj2_ks_mon](/Resources/Obj2montourKS.png) |
+
+
+##### ~~PSSA old interpretation~~
 
 **Top** Category showed a slight decline between 2019 - 2021 in State and Colombia County.
 Top Category remained steady in Montour throughout the time frame. 
@@ -137,11 +139,47 @@ a significant increase in all places in the Category from 2019 to 2021,
 especially in Colombia. From 2021 to 2022, Category remained stable in State 
 and dropped moderately in both counties
 
+##### ~~Keystone old interpretation~~
+
+We see that in general, Montour and Colombia county fared better than State 
+since 2015 in terms of Category levels. Basic level showed a sharp increase in Montour
+and Colombia counties in 2022. Proficient level also showed a sharp
+increase especially in 2022 for Montour county
+
 # Objective 3: Is there any COVID impact we might be able to deduce?
 
-##### Keystone
+##### PSSA English
 
-![obj3a](/Resources/Obj3a.png)
+| ![obj3_ps_eng_st](/Resources/Obj3stateEngPS.png) | ![obj2_ps_eng_col](/Resources/Obj3columbiaEngPS.png) | ![obj2_ps_eng_mon](/Resources/Obj3montourEngPS.png) |
+
+##### PSSA Math
+
+| ![obj3_ps_math_st](/Resources/Obj3stateMathPS.png) | ![obj2_ps_math_col](/Resources/Obj3columbiaMathPS.png) | ![obj2_ps_math_mon](/Resources/Obj3montourMathPS.png) |
+
+##### PSSA Science
+
+| ![obj3_ps_sci_st](/Resources/Obj3stateSciPS.png) | ![obj2_ps_sci_col](/Resources/Obj3columbiaSciPS.png) | ![obj2_ps_sci_mon](/Resources/Obj3montourSciPS.png) |
+
+
+##### Keystone English
+
+| ![obj3_ks_eng_st](/Resources/Obj3stateEngKS.png) | ![obj2_ks_eng_col](/Resources/Obj3columbiaEngKS.png) | ![obj2_ks_eng_mon](/Resources/Obj3montourEngKS.png) |
+
+##### Keystone Math
+
+| ![obj3_ks_math_st](/Resources/Obj3stateMathKS.png) | ![obj2_ks_math_col](/Resources/Obj3columbiaMathKS.png) | ![obj2_ks_math_mon](/Resources/Obj3montourMathKS.png) |
+
+##### Keystone Science
+
+| ![obj3_ks_sci_st](/Resources/Obj3stateSciKS.png) | ![obj2_ks_sci_col](/Resources/Obj3columbiaSciKS.png) | ![obj2_ks_sci_mon](/Resources/Obj3montourSciKS.png) |
+
+##### ~~PSSA old interpretation~~
+
+From 2019 to 2022, Category levels seemed stable for the counties and the state
+There were only slight fluctuations which were inconclusive if COVID affected
+Category levels or not.
+
+##### ~~Keystone old interpretation~~
 
 Checking Category averages throughout the years for counties and subjects, it
 is interesting to see that COVID didn't impact Math and English for Categorys
@@ -150,14 +188,6 @@ improvement in the scores in 2022 compared to 2019 for math top, advanced
 and proficient Category in Colombia county.
 However, there was a steep decline in Science for Categorys between 2021
 and 2022 throughout the state which may be an indication of a COVID impact.
-
-##### PSSA
-
-![obj3b](/Resources/Obj3b.png)
-
-From 2019 to 2022, Category levels seemed stable for the counties and the state
-There were only slight fluctuations which were inconclusive if COVID affected
-Category levels or not.
 
 
 # Objective 4: Visualizing the averages of scores from each year.
@@ -178,25 +208,20 @@ We see when analyzing the data for PPSA Score averages by year, there are little
 
 ### Grouped by subject.
 
-##### Keystone
-
-![obj4bk](/Resources/Obj4bk.png)
-
-We see when analyzing the data for Keystone Score averages by subject, students on average scored highly in Math and English while more likely struggling with science. Both in top and advanced categories, more students scored well on the Math sections, with English being the highest in the proficient category. When looking at the scores for below basic, Science has the highest average for those scoring in th is category.
-
 ##### PSSA
 
 ![obj4bp](/Resources/Obj4bp.png)
 
 Contrary to the Keystone analysis, the data for PSSA score averages by subject, student on average scored highly in Science and English, while having higher below basic and basic scores within Math. Science was the highest subject for both Top and advanced categories, with English remaining the highest subject for proficient scores. 
 
-### Grouped by district.
 
 ##### Keystone
 
-![obj4ck](/Resources/Obj4ck.png)
+![obj4bk](/Resources/Obj4bk.png)
 
-When looking at the Keystone average scores grouped by district, we can see a strong amount of Top and Proficient scores overall. We can see that the majority of average scores remain in the Top category and that there is an extreme difference when comparing to those who scored below basic and basic. Otherwise, there is no clear correlation between districts directly.
+We see when analyzing the data for Keystone Score averages by subject, students on average scored highly in Math and English while more likely struggling with science. Both in top and advanced categories, more students scored well on the Math sections, with English being the highest in the proficient category. When looking at the scores for below basic, Science has the highest average for those scoring in th is category.
+
+### Grouped by district.
 
 ##### PSSA
 
@@ -204,18 +229,29 @@ When looking at the Keystone average scores grouped by district, we can see a st
 
 We can see when analyzing the PSSA average scores grouped by district, that there is a strong amount of top scores from students especially within the Berwick Area School District and Bloomsburg Area School District. We can see, these two school districts amount of students scoring within the top four categories is considerably higher in comparison to other school district. Otherwise, there is no direct correlation between districts.
 
+
+##### Keystone
+
+![obj4ck](/Resources/Obj4ck.png)
+
+When looking at the Keystone average scores grouped by district, we can see a strong amount of Top and Proficient scores overall. We can see that the majority of average scores remain in the Top category and that there is an extreme difference when comparing to those who scored below basic and basic. Otherwise, there is no clear correlation between districts directly.
+
+
 # Objective 5: Compare scores between districts.
+
+##### PSSA
+
+![obj5ap](/Resources/Obj5ap.png)
+
+When comparing PSSA average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
+
 
 ##### Keystone
 
 ![obj5ak](/Resources/Obj5ak.png)
 
 When comparing Keystone average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
-##### PSSA
 
-![obj5ap](/Resources/Obj5ap.png)
-
-When comparing PSSA average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 
 # Objective 6: Cohort analysis
 
@@ -233,9 +269,6 @@ When comparing PSSA average scores between districts, there seems to be no corre
 <!-- # Objective7 -->
 
 <!-- # Summary/Conclusion -->
-
-# Supplementary Graphs
-[Tableau Graphs of School Performance by Year by Kadir](https://public.tableau.com/app/profile/kadir7189/viz/SchoolPerfomanceByYear/Sheet1)
 
 # Authors
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis

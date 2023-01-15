@@ -118,23 +118,23 @@ State | Columbia County | Montour County
 
 ##### ~~PSSA old interpretation~~
 
-~~**Top** Category showed a slight decline between 2019 - 2021 in State and Colombia County.
-Top Category remained steady in Montour throughout the time frame. 
+**Top** ~~Category showed a slight decline between 2019 - 2021 in State and Colombia County.
+Top Category remained steady in Montour throughout the time frame.~~
 
-**Advanced** Category showed a sharp decline in Colombia County and State from 2019
-to 2021. Montour County Category were pretty much stable.
+**Advanced** ~~Category showed a sharp decline in Colombia County and State from 2019
+to 2021. Montour County Category were pretty much stable.~~
 
-**Proficient** Category showed an increase in Colombia County in 2021 and then
+**Proficient** ~~Category showed an increase in Colombia County in 2021 and then
 it swung back to its previous levels in 2022. State and Montour County fluctuated
-slightly throughout the time frame without any significant observation.
+slightly throughout the time frame without any significant observation.~~
 
-**Basic** Category  dropped slightly in Colombia county from 2018 to 2019. It remained
+**Basic** ~~Category  dropped slightly in Colombia county from 2018 to 2019. It remained
 steady in State from 2017 to 2019. Montour County showed a slight decline
 in 2019. Basic Category increased in both counties and state in 2021, only to
 drop slightly in Montour County and State in 2022. Colombia County showed
-a moderate decline in Basic Category. 
+a moderate decline in Basic Category.~~
 
-**BelowBasic** Category remained stable for Montour County until 2019. There was a
+**BelowBasic** ~~Category remained stable for Montour County until 2019. There was a
 sharp increase between 2016 and 2017 in Colombia County and State. Both
 counties and state showed a decline in BelowBasic Category in 2019. There was
 a significant increase in all places in the Category from 2019 to 2021,

@@ -106,13 +106,14 @@ We see from taking the averages of Keystone scores from Columbia(1) and Montour(
 ##### PSSA
 
 | ![obj2_ps_st](/Resources/Obj2statePS.png) | ![obj2_ps_col](/Resources/Obj2columbiaPS.png) | ![obj2_ps_mon](/Resources/Obj2montourPS.png) |
+| --- | --- | --- |
 
 
 
 ##### Keystone
 
 | ![obj2_ks_st](/Resources/Obj2stateKS.png) | ![obj2_ks_col](/Resources/Obj2columbiaKS.png) | ![obj2_ks_mon](/Resources/Obj2montourKS.png) |
-
+| --- | --- | --- |
 
 ##### ~~PSSA old interpretation~~
 
@@ -151,27 +152,32 @@ increase especially in 2022 for Montour county
 ##### PSSA English
 
 | ![obj3_ps_eng_st](/Resources/Obj3stateEngPS.png) | ![obj2_ps_eng_col](/Resources/Obj3columbiaEngPS.png) | ![obj2_ps_eng_mon](/Resources/Obj3montourEngPS.png) |
+| --- | --- | --- |
 
 ##### PSSA Math
 
 | ![obj3_ps_math_st](/Resources/Obj3stateMathPS.png) | ![obj2_ps_math_col](/Resources/Obj3columbiaMathPS.png) | ![obj2_ps_math_mon](/Resources/Obj3montourMathPS.png) |
+| --- | --- | --- |
 
 ##### PSSA Science
 
 | ![obj3_ps_sci_st](/Resources/Obj3stateSciPS.png) | ![obj2_ps_sci_col](/Resources/Obj3columbiaSciPS.png) | ![obj2_ps_sci_mon](/Resources/Obj3montourSciPS.png) |
-
+| --- | --- | --- |
 
 ##### Keystone English
 
 | ![obj3_ks_eng_st](/Resources/Obj3stateEngKS.png) | ![obj2_ks_eng_col](/Resources/Obj3columbiaEngKS.png) | ![obj2_ks_eng_mon](/Resources/Obj3montourEngKS.png) |
+| --- | --- | --- |
 
 ##### Keystone Math
 
 | ![obj3_ks_math_st](/Resources/Obj3stateMathKS.png) | ![obj2_ks_math_col](/Resources/Obj3columbiaMathKS.png) | ![obj2_ks_math_mon](/Resources/Obj3montourMathKS.png) |
+| --- | --- | --- |
 
 ##### Keystone Science
 
 | ![obj3_ks_sci_st](/Resources/Obj3stateSciKS.png) | ![obj2_ks_sci_col](/Resources/Obj3columbiaSciKS.png) | ![obj2_ks_sci_mon](/Resources/Obj3montourSciKS.png) |
+| --- | --- | --- |
 
 ##### ~~PSSA old interpretation~~
 

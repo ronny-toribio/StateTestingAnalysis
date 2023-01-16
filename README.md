@@ -91,13 +91,16 @@ Grade 11 was extracted from the Keystone set.
 
 ##### PSSA
 
-![obj1b](/Resources/Obj1bp.png)
+![obj1ps](/Resources/Obj1ps.png)
+
+
 
 We see from taking the averages of PSSA scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022.  Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exception of below basic scores, where the State and montour county averages were equal basically.
 
 ##### Keystone
 
-![obj1a](/Resources/Obj1ak.png)
+![obj1ks](/Resources/Obj1ks.png)
+
 
 We see from taking the averages of Keystone scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022. Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exceptions of basic and below basic scores.
 
@@ -209,13 +212,24 @@ and 2022 throughout the state which may be an indication of a COVID impact.~~
 
 ##### Keystone
 
-![obj4ak](/Resources/Obj4ak.png)
+![obj4ksa](/Resources/Obj4ksa.png)
+![obj4ksb](/Resources/Obj4ksb.png)
+![obj4ksc](/Resources/Obj4ksc.png)
+![obj4ksd](/Resources/Obj4ksd.png)
+![obj4kse](/Resources/Obj4kse.png)
+
+
+
 
 When looking at the Keystone Score averages by year, there was no data collected for the 2020 year, as the pandemic haulted all testing. Even so, we see an extreme dip in Top and Proficient scores from 2019 to 2022. There was also a slight increase in Basic and Below Basic scores for the 2022 year.
 
 ##### PSSA
 
-![obj4ap](/Resources/Obj4ap.png)
+![obj4psa](/Resources/Obj4psa.png)
+![obj4psb](/Resources/Obj4psb.png)
+![obj4psc](/Resources/Obj4psc.png)
+![obj4psd](/Resources/Obj4psd.png)
+![obj4pse](/Resources/Obj4pse.png)
 
 We see when analyzing the data for PPSA Score averages by year, there are little to no changes in scoring and in some cases. Top and advanced scores from 2019 to 2022 slightly suffered most likely due to the pandemic. There was also a slight increase in Basic and Below Basic scores from 2019 to 2022.
 
@@ -223,14 +237,23 @@ We see when analyzing the data for PPSA Score averages by year, there are little
 
 ##### PSSA
 
-![obj4bp](/Resources/Obj4bp.png)
+![obj4bpsa](/Resources/Obj4bpsa.png)
+![obj4bpsb](/Resources/Obj4bpsb.png)
+![obj4bpsc](/Resources/Obj4bpsc.png)
+![obj4bpsd](/Resources/Obj4bpsd.png)
+![obj4bpse](/Resources/Obj4bpse.png)
 
 Contrary to the Keystone analysis, the data for PSSA score averages by subject, student on average scored highly in Science and English, while having higher below basic and basic scores within Math. Science was the highest subject for both Top and advanced categories, with English remaining the highest subject for proficient scores. 
 
 
 ##### Keystone
 
-![obj4bk](/Resources/Obj4bk.png)
+![obj4bksa](/Resources/Obj4bksa.png)
+![obj4bksb](/Resources/Obj4bksb.png)
+![obj4bksc](/Resources/Obj4bksc.png)
+![obj4bksd](/Resources/Obj4bksd.png)
+![obj4bkse](/Resources/Obj4bkse.png)
+
 
 We see when analyzing the data for Keystone Score averages by subject, students on average scored highly in Math and English while more likely struggling with science. Both in top and advanced categories, more students scored well on the Math sections, with English being the highest in the proficient category. When looking at the scores for below basic, Science has the highest average for those scoring in th is category.
 
@@ -238,14 +261,22 @@ We see when analyzing the data for Keystone Score averages by subject, students 
 
 ##### PSSA
 
-![obj4cp](/Resources/Obj4cp.png)
+![obj4cpsa](/Resources/Obj4cpsa.png)
+![obj4cpsb](/Resources/Obj4cpsb.png)
+![obj4cpsc](/Resources/Obj4cpsc.png)
+![obj4cpsd](/Resources/Obj4cpsd.png)
+![obj4cpse](/Resources/Obj4cpse.png)
 
 We can see when analyzing the PSSA average scores grouped by district, that there is a strong amount of top scores from students especially within the Berwick Area School District and Bloomsburg Area School District. We can see, these two school districts amount of students scoring within the top four categories is considerably higher in comparison to other school district. Otherwise, there is no direct correlation between districts.
 
 
 ##### Keystone
 
-![obj4ck](/Resources/Obj4ck.png)
+![obj4cksa](/Resources/Obj4cksa.png)
+![obj4cksb](/Resources/Obj4cksb.png)
+![obj4cksc](/Resources/Obj4cksc.png)
+![obj4cksd](/Resources/Obj4cksd.png)
+![obj4ckse](/Resources/Obj4ckse.png)
 
 When looking at the Keystone average scores grouped by district, we can see a strong amount of Top and Proficient scores overall. We can see that the majority of average scores remain in the Top category and that there is an extreme difference when comparing to those who scored below basic and basic. Otherwise, there is no clear correlation between districts directly.
 
@@ -254,14 +285,14 @@ When looking at the Keystone average scores grouped by district, we can see a st
 
 ##### PSSA
 
-![obj5ap](/Resources/Obj5ap.png)
+![obj5ps](/Resources/Obj5ps.png)
 
 When comparing PSSA average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 
 
 ##### Keystone
 
-![obj5ak](/Resources/Obj5ak.png)
+![obj5ks](/Resources/Obj5ks.png)
 
 When comparing Keystone average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 

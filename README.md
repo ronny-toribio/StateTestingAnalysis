@@ -12,6 +12,8 @@ Our team consists of senior data science students [Kadir O. Altunel](https://git
 - [Data Wrangling](#data-wrangling) - Worked on by me [data_wrangling.R](/data_wrangling.R)
 - [Project Objectives](#project-objectives) - Worked on by our team [objectives.R](/objectives.R)
 
+<!-- Summary -->
+
 # Data Wrangling
 The data sets used in this project are the results from the [PSSA](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/PSSA-Results.aspx) and [Keystone](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/Keystone-Exams-Results.aspx) state tests.
 These sets contain aggregate data at the state level for both the PSSA and Keystone.
@@ -79,12 +81,10 @@ Grade 11 was extracted from the Keystone set.
 2. [How they compare to the state trend since 2016?](#objective-2-how-they-compare-to-the-state-trend-since-2016) (Kadir)
 3. [Is there any COVID impact we might be able to deduce?](#objective-3-is-there-any-covid-impact-we-might-be-able-to-deduce) (Kadir)
 4. [Visualizing the averages of scores from each year.](#objective-4-visualizing-the-averages-of-scores-from-each-year) (Anna)
-   - [As a whole](#as-a-whole)
    - [Grouped by subject](#grouped-by-subject)
    - [Grouped by district](#grouped-by-district)
 5. [Compare scores between districts.](#objective-5-compare-scores-between-districts) (Anna)
 6. [Study cohorts as they progress from PSSA to Keystone](#objective-6-cohort-analysis) (Ronny)
-7. Any other information that data might tell us?
 
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2016?
@@ -208,31 +208,6 @@ and 2022 throughout the state which may be an indication of a COVID impact.~~
 
 # Objective 4: Visualizing the averages of scores from each year.
 
-### As a whole.
-
-##### Keystone
-
-![obj4ksa](/Resources/obj4ksa.png)
-![obj4ksb](/Resources/obj4ksb.png)
-![obj4ksc](/Resources/obj4ksc.png)
-![obj4ksd](/Resources/obj4ksd.png)
-![obj4kse](/Resources/obj4kse.png)
-
-
-
-
-When looking at the Keystone Score averages by year, there was no data collected for the 2020 year, as the pandemic haulted all testing. Even so, we see an extreme dip in Top and Proficient scores from 2019 to 2022. There was also a slight increase in Basic and Below Basic scores for the 2022 year.
-
-##### PSSA
-
-![obj4psa](/Resources/obj4psa.png)
-![obj4psb](/Resources/obj4psb.png)
-![obj4psc](/Resources/obj4psc.png)
-![obj4psd](/Resources/obj4psd.png)
-![obj4pse](/Resources/obj4pse.png)
-
-We see when analyzing the data for PPSA Score averages by year, there are little to no changes in scoring and in some cases. Top and advanced scores from 2019 to 2022 slightly suffered most likely due to the pandemic. There was also a slight increase in Basic and Below Basic scores from 2019 to 2022.
-
 ### Grouped by subject.
 
 ##### PSSA
@@ -310,11 +285,9 @@ When comparing Keystone average scores between districts, there seems to be no c
 
 ![obj6a](/Resources/Obj6a_cohort_grade.png)
 
-<!-- # Objective7 -->
-
-<!-- # Summary/Conclusion -->
 
 # Authors
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis
 - [Anna T. Schlecht](https://github.com/atschlecht) - Statistical Analysis
 - [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz) - Statistical Analysis
+- [Fletcher](/Resources/fletcher.jpg) - Kadir's Pet Cat

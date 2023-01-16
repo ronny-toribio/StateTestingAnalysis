@@ -40,20 +40,25 @@ ps = read_csv("PSSA/pssa.csv")
 cohorts = read_csv("Cohorts/cohorts.csv")
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
-ks %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ks
-p11 = ggplot(data = ks, aes(x = County, y = Score)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p11)
+#Keystone
+obj1ks = ks %>%
+  filter(County != "State" & Category == "Top") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Keystone Testing Averages in Columbia and Montour Counties")
+plot(obj1ks)
 
-
-ps %>% group_by(County) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ps
-p12 = ggplot(data = ps, aes(x = County, y = Score)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p12)
+#PSSA
+obj1ps = ps %>%
+  filter(County != "State" & Category == "Top") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "PSSA Testing Averages in Columbia and Montour Counties")
+plot(obj1ps)
 
 # Objective 2: How they compare to the state trend since 2015?
 
@@ -832,73 +837,272 @@ dev.off()
 # Objective 4: Visualizing the averages of scores from each year.
 # Objective 4a. As a whole.
 
-ks %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ks
+#Keystone
+obj4ksa = ks %>%
+  filter(Category == "Top") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Top Keystone Testing Averages")
+plot(obj4ksa)
 
-p3 = ggplot(data = ks, aes(x = Year, y = Score)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p3)
+obj4ksb = ks %>%
+  filter(Category == "Advanced") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green")  +
+  labs(title = "Advanced Keystone Testing Averages")
+plot(obj4ksb)
 
+obj4ksc = ks %>%
+  filter(Category == "Proficient") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Proficient Keystone Testing Averages")
+plot(obj4ksc)
 
-ps %>% group_by(Year) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ps
-p4 = ggplot(data = ps, aes(x = Year, y = Score)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p4)
+obj4ksd = ks %>%
+  filter(Category == "Basic") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green")  +
+  labs(title = "Basic Keystone Testing Averages")
+plot(obj4ksd)
+
+obj4kse = ks %>%
+  filter(Category == "BelowBasic") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green")  +
+  labs(title = "Below Basic Keystone Testing Averages")
+plot(obj4kse)
+
+#PSSA
+obj4psa = ps %>%
+  filter(Category == "Top") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green")  +
+  labs(title = "Top PSSA Testing Averages")
+plot(obj4psa)
+
+obj4psb = ps %>%
+  filter(Category == "Advanced") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Advanced PSSA Testing Averages")
+plot(obj4psb)
+
+obj4psc = ps %>%
+  filter(Category == "Proficient") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Proficient PSSA Testing Averages")
+plot(obj4psc)
+
+obj4psd = ps %>%
+  filter(Category == "Basic") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green")  +
+  labs(title = "Basic PSSA Testing Averages")
+plot(obj4psd)
+
+obj4pse = ps %>%
+  filter(Category == "BelowBasic") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Below Basic PSSA Testing Averages in Columbia and Montour Counties")
+plot(obj4pse)
+
 
 # Objective 4b. Grouped by subject.
-ks %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ks
-p5 = ggplot(data = ks, aes(x = Subject, y = Score)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p5)
+#Keystone
+obj4bksa = ks %>%
+  filter(Subject == "Math" & Category == "Top") %>%
+  group_by(Year, Subject) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Keystone Yearly Testing Averages for Math")
+plot(obj4bksa)
 
+obj4bksb = ks %>%
+  filter(Subject == "English" & Category == "Top") %>%
+  group_by(Year, Subject) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Keystone Yearly Testing Averages for English")
+plot(obj4bksb)
 
-ps %>% group_by(Subject) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ps
+obj4bksc = ks %>%
+  filter(Subject == "Science" & Category == "Top") %>%
+  group_by(Year, Subject) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill=Subject)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "Keystone Yearly Testing Averages for Science")
+plot(obj4bksc)
 
-p6 = ggplot(data = ps, aes(x = Subject, y = Score)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p6)
+#PSSA
+obj4bpsa = ps %>%
+  filter(Subject == "Math" & Category == "Top") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_col(position = "dodge", fill= "green")  +
+  labs(title = "PSSA Yearly Testing Averages for Math")
+plot(obj4bpsa)
+
+obj4bpsb = ps %>%
+  filter(Subject == "English" & Category == "Top") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "PSSA Yearly Testing Averages for English")
+plot(obj4bpsb)
+
+obj4bpsc = ps %>%
+  filter(Subject == "Science" & Category == "Top") %>%
+  group_by(Year, County) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = Subject)) +
+  geom_col(position = "dodge", fill= "green") +
+  labs(title = "PSSA Yearly Testing Averages for Science")
+plot(obj4bpsc)
+
 
 # Objective 4c. Grouped by district.
 
-ks %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ks
-p7 = ggplot(data = ks, aes(x = District, y = Score)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p7)
+obj4cksa = ks %>%
+  filter(Category == "Top") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Top Keystone Yearly Testing Averages by District")
+plot(obj4cksa)
+
+obj4cksb = ks %>%
+  filter(Category == "Advanced") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Advanced Keystone Yearly Testing Averages by District")
+plot(obj4cksb)
+
+obj4cksc = ks %>%
+  filter(Category == "Proficient") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Proficient Keystone Yearly Testing Averages by District")
+plot(obj4cksc)
+
+obj4cksd = ks %>%
+  filter(Category == "Basic") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Basic Keystone Yearly Testing Averages by District")
+plot(obj4cksd)
 
 
-ps %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ps
+obj4ckse = ks %>%
+  filter(Category == "BelowBasic") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Below Basic Keystone Yearly Testing Averages by District")
+plot(obj4ckse)
 
-p8 = ggplot(data = ps, aes(x = District, y = Score)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p8)
+obj4cpsa = ps %>%
+  filter(Category == "Top") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Top PSSA Yearly Testing Averages by District")
+plot(obj4cpsa)
 
-# Objective 5: Compare scores between districts.
-ks %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ks
+obj4cpsb = ps %>%
+  filter(Category == "Advanced") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Advanced PSSA Yearly Testing Averages by District")
+plot(obj4cpsb)
 
-p9 = ggplot(data = ks, aes(x = Score, y = District)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p9)
+obj4cpsc = ps %>%
+  filter(Category == "Proficient") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Proficient PSSA Yearly Testing Averages by District")
+plot(obj4cpsc)
+
+obj4cpsd = ps %>%
+  filter(Category == "Basic") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Basic PSSA Yearly Testing Averages by District")
+plot(obj4cpsd)
 
 
-ps %>% group_by(District) %>% mutate(Score=mean(Score)) %>% select(Score) %>% distinct()
-ps
-p10 = ggplot(data = ps, aes(x = Score, y = District)) +
-  geom_bar(stat = "identity", fill = "pink") +
-  facet_wrap(~ as_factor(Category))
-plot(p10)
+obj4cpse = ps %>%
+  filter(Category == "BelowBasic") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Below Basic PSSA Yearly Testing Averages by District")
+plot(obj4cpse)
+
+
+
+# Objective 5: Compare scores between districts
+
+obj4cksa = ks %>%
+  filter(Category == "Top") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Keystone Yearly Testing Averages by District")
+plot(obj4cksa)
+
+obj4cpsa = ps %>%
+  filter(Category == "Top") %>%
+  group_by(Year, District) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  ggplot(aes(x = Year, y = AvgScore, fill = District)) +
+  geom_col(position = "dodge") +
+  labs(title = "Keystone Yearly Testing Averages by District")
+plot(obj4cpsa)
 
 
 # Objective 6: Study Cohorts

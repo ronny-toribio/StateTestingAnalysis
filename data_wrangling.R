@@ -361,9 +361,6 @@ rm(cohort.3)
 # Organize Cohorts columns
 cohorts = cohorts %>% select(Cohort, Year, County, District, School, Grade, Subject, Scored, Category, Score, Students)
 
-# Drop NA's in Score
-cohorts = cohorts %>% filter(!is.na(Score))
-
 # Export Cohorts set to CSV for R
 write_csv(cohorts, "Cohorts/cohorts.csv")
 

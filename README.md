@@ -281,10 +281,15 @@ When comparing Keystone average scores between districts, there seems to be no c
 - Cohort 2: years: 2016 - 2021, grades: 6 - 8(PSSA), 11(Keystone)
 - Cohort 3: years: 2016 - 2022, grades: 5 - 8(PSSA), 11(Keystone)
 
-##### Cohorts 1-3 All Grades Top Scores
+##### Cohorts All
 
-![obj6a](/Resources/Obj6a_cohort_grade.png)
+![obj6a](/Resources/Obj6a.png)
 
+##### Cohorts by county
+
+Columbia County | Montour County
+:--------------:|:---------------:
+![obj6b_columbia](/Resources/Obj6b_columbia.png) | ![obj6b_montour](/Resources/Obj6b_montour.png)
 
 # Authors
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis

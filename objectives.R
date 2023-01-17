@@ -3,12 +3,10 @@
 # @file:    analysis.R
 # @desc:    Analysis of testing data
 
-library(tidyverse)
-library(ggplot2)
+library(tidyverse) # includes ggplot2, ggthemes
 library(GGally)
 library(hrbrthemes)
 library(patchwork)
-library(ggthemes)
 
 theme_main = function(base_size=11, base_family=""){
   theme(
@@ -35,9 +33,26 @@ theme_main = function(base_size=11, base_family=""){
 
 theme_set(theme_main())
 
-ks = read_csv("Keystone/keystone.csv")
+
+# PSSA and Keystone
 ps = read_csv("PSSA/pssa.csv")
+ks = read_csv("Keystone/keystone.csv")
+ps$County = as_factor(ps$County)
+ks$County = as_factor(ks$County)
+levels(ps$County) = c("State", "Columbia", "Montour")
+levels(ks$County) = c("State", "Columbia", "Montour")
+ps$Category = as_factor(ps$Category)
+ks$Category = as_factor(ks$Category)
+
+
+# Cohorts
 cohorts = read_csv("Cohorts/cohorts.csv")
+cohorts$County = as_factor(cohorts$County)
+levels(cohorts$County) = c("Columbia", "Montour")
+cohorts$Category = as_factor(cohorts$Category)
+cohorts$Grade = as_factor(cohorts$Grade)
+cohorts$Cohort = as.integer(cohorts$Cohort)
+
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2015?
 #Keystone
@@ -46,9 +61,10 @@ obj1ks = ks %>%
   group_by(Year, County) %>%
   mutate(AvgScore=sum(Students)/sum(Scored)) %>%
   ggplot(aes(x = Year, y = AvgScore, fill = County)) +
-  geom_col(position = "dodge", fill= "green") +
+  geom_col(position = "dodge") +
   labs(title = "Keystone Testing Averages in Columbia and Montour Counties")
 plot(obj1ks)
+ggsave("Resources/obj1ks.png", obj1ks)
 
 #PSSA
 obj1ps = ps %>%
@@ -56,18 +72,12 @@ obj1ps = ps %>%
   group_by(Year, County) %>%
   mutate(AvgScore=sum(Students)/sum(Scored)) %>%
   ggplot(aes(x = Year, y = AvgScore, fill = County)) +
-  geom_col(position = "dodge", fill= "green") +
+  geom_col(position = "dodge") +
   labs(title = "PSSA Testing Averages in Columbia and Montour Counties")
 plot(obj1ps)
+ggsave("Resources/obj1ps.png", obj1ps)
 
 # Objective 2: How they compare to the state trend since 2015?
-
-
-ks$County = as_factor(ks$County)
-str(ks$County)
-levels(ks$County) = c("State", "Colombia", "Montour")
-levels(ks$County)
-
 
 ks_group_by_year_county_top = ks %>% 
   select(Year, County, Category, Scored, Students) %>%
@@ -78,7 +88,6 @@ ks_group_by_year_county_top = ks %>%
 
 ks_group_by_year_county_top
 
-
 ks_group_by_year_state_subject_top = ks %>%
   select(Year, County, Category, Scored, Students, Subject) %>%
   group_by(Year, County, Subject) %>%
@@ -87,7 +96,6 @@ ks_group_by_year_state_subject_top = ks %>%
   mutate(AvgScore = Students/Scored)
 
 ks_group_by_year_state_subject_top
-
 
 ks_group_by_year_county_subject_school_top = ks %>% 
   select(Year, County, School, Category, Scored, Students, Subject) %>%
@@ -1116,12 +1124,8 @@ plot(obj4cpsa)
 # Cohort 2    6     7     8                11
 # Cohort 3    5     6     7     8                11
 
-# prepare columns
-cohorts$Cohort = as.integer(cohorts$Cohort)
-cohorts$Grade = as_factor(cohorts$Grade)
-cohorts$Category = as_factor(cohorts$Category)
 
-# cohorts timeline
+# Cohorts Timeline
 cohorts_timeline = cohorts %>% 
   ggplot() + 
   geom_rect(aes(xmin = Year, xmax = Year + 1, ymin = Cohort-0.5, ymax = Cohort, fill = Grade)) +
@@ -1133,8 +1137,35 @@ cohorts_timeline = cohorts %>%
 plot(cohorts_timeline)
 ggsave("Resources/Obj6_timeline.png", cohorts_timeline)
 
+# Cohorts Plot Function
+plot_cohorts = function(cas, title, filename){
+  cas1 = cas %>% filter(Cohort==1)
+  cas1$AvgScoreChange = round(cas1$AvgScore-lag(cas1$AvgScore), 2)
+  cas2 = cas %>% filter(Cohort==2)
+  cas2$AvgScoreChange = round(cas2$AvgScore-lag(cas2$AvgScore), 2)
+  cas3 = cas %>% filter(Cohort==3)
+  cas3$AvgScoreChange = round(cas3$AvgScore-lag(cas3$AvgScore), 2)
+  cas = rbind(cas1, cas2, cas3)
+  rm(cas1)
+  rm(cas2)
+  rm(cas3)
+  cas$AvgScoreChangePos = cas$AvgScoreChange
+  cas$AvgScoreChangePos[cas$AvgScoreChangePos < 0] = NA
+  cas$AvgScoreChangeNeg = cas$AvgScoreChange
+  cas$AvgScoreChangeNeg[cas$AvgScoreChangeNeg > 0] = NA
+  pcas = cas %>%
+    ggplot(aes(x=Grade, y=AvgScore, fill=Grade)) +
+    geom_col(position="dodge") +
+    geom_text(aes(x=Grade, y=AvgScore-1, label=AvgScoreLabel), color="white") +
+    geom_text(aes(x=Grade, y=20, label=AvgScoreChangePos), color="green") +
+    geom_text(aes(x=Grade, y=20, label=AvgScoreChangeNeg), color="red") +
+    facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
+    labs(title=title)
+  plot(pcas)
+  ggsave(filename, pcas)
+}
 
-# average scores by cohort and grade
+# Objective 6a All Counties
 cas = cohorts %>%
   filter(Category=="Top") %>%
   select(Cohort, Grade, Students, Scored) %>%
@@ -1145,34 +1176,43 @@ cas = cohorts %>%
   ) %>% 
   select(-Students, -Scored) %>%
   distinct()
+plot_cohorts(cas, "Cohort All Levels", "Resources/Obj6a.png")
 
-# get change for each cohort
-cas1 = cas %>% filter(Cohort==1)
-cas1$AvgScoreChange = round(cas1$AvgScore-lag(cas1$AvgScore), 2)
-cas2 = cas %>% filter(Cohort==2)
-cas2$AvgScoreChange = round(cas2$AvgScore-lag(cas2$AvgScore), 2)
-cas3 = cas %>% filter(Cohort==3)
-cas3$AvgScoreChange = round(cas3$AvgScore-lag(cas3$AvgScore), 2)
-cas = rbind(cas1, cas2, cas3)
-rm(cas1)
-rm(cas2)
-rm(cas3)
-cas$AvgScoreChangePos = cas$AvgScoreChange
-cas$AvgScoreChangePos[cas$AvgScoreChangePos < 0] = NA
-cas$AvgScoreChangeNeg = cas$AvgScoreChange
-cas$AvgScoreChangeNeg[cas$AvgScoreChangeNeg > 0] = NA
+# Objective 6b State
+cas_state = cohorts %>%
+  filter(Category=="Top" & County == "State") %>%
+  select(Cohort, Grade, Students, Scored) %>%
+  group_by(Cohort, Grade) %>%
+  mutate(
+    AvgScore = sum(Students)/sum(Scored) * 100,
+    AvgScoreLabel = round(AvgScore, 2)
+  ) %>% 
+  select(-Students, -Scored) %>%
+  distinct()
+plot_cohorts(cas_state, "Cohorts State Level", "Resources/Obj6b_state.png")
 
-# graph cas
-obj6bc1t = cas %>%
-  ggplot(aes(x=Grade, y=AvgScore, fill=Grade)) +
-  geom_col(position="dodge") +
-  geom_text(aes(x=Grade, y=AvgScore-1, label=AvgScoreLabel), color="white") +
-  geom_text(aes(x=Grade, y=20, label=AvgScoreChangePos), color="green") +
-  geom_text(aes(x=Grade, y=20, label=AvgScoreChangeNeg), color="red") +
-  facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
-  labs(title="Cohorts 1-3 All Grades Top Scores")
-plot(obj6bc1t)
-ggsave("Resources/Obj6a_cohort_grade.png", obj6bc1t)
+# Objective 6b Columbia county
+cas_columbia = cohorts %>%
+  filter(Category=="Top" & County == "Columbia") %>%
+  select(Cohort, Grade, Students, Scored) %>%
+  group_by(Cohort, Grade) %>%
+  mutate(
+    AvgScore = sum(Students)/sum(Scored) * 100,
+    AvgScoreLabel = round(AvgScore, 2)
+  ) %>% 
+  select(-Students, -Scored) %>%
+  distinct()
+plot_cohorts(cas_columbia, "Cohorts Columbia Level", "Resources/Obj6b_columbia.png")
 
-# Objective 7: Any other information that data might tell us? Summary.
-
+# Objective 6b Montour county
+cas_montour = cohorts %>%
+  filter(Category=="Top" & County == "Montour") %>%
+  select(Cohort, Grade, Students, Scored) %>%
+  group_by(Cohort, Grade) %>%
+  mutate(
+    AvgScore = sum(Students)/sum(Scored) * 100,
+    AvgScoreLabel = round(AvgScore, 2)
+  ) %>% 
+  select(-Students, -Scored) %>%
+  distinct()
+plot_cohorts(cas_montour, "Cohorts Montour Level", "Resources/Obj6b_montour.png")

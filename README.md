@@ -106,13 +106,13 @@ We see from taking the averages of Keystone scores from Columbia(1) and Montour(
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-![obj2_ps_st](/Resources/Obj2statePS.png) | ![obj2_ps_col](/Resources/Obj2colombiaPS.png) | ![obj2_ps_mon](/Resources/Obj2montourPS.png)
+![obj2_ps_st](/Resources/Obj2statePS.png) | ![obj2_ps_col](/Resources/Obj2columbiaPS.png) | ![obj2_ps_mon](/Resources/Obj2montourPS.png)
 
 PSSA data also shows similar observations all levels for the top category.
 
 For state level, average score percentage dipped in 2017 and went back to 2016 levels in 2018 and 2019. There was a decline in 2021 and a slight increase in 2022
 
-In Colombia County, average score percentage stayed steady from 2016 to 2019. There was a decline in percentage in 2021 which showed some recovery in 2022.
+In Columbia County, average score percentage stayed steady from 2016 to 2019. There was a decline in percentage in 2021 which showed some recovery in 2022.
 
 In Montour County, average score percentage rose all time high in 2019 in observed years (2016-2022). There was a sharp decline in 2021 and some recovery in 2022. 
 
@@ -120,14 +120,14 @@ In Montour County, average score percentage rose all time high in 2019 in observ
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-![obj2_ks_st](/Resources/Obj2stateKS.png) | ![obj2_ks_col](/Resources/Obj2colombiaKS.png) | ![obj2_ks_mon](/Resources/Obj2montourKS.png)
+![obj2_ks_st](/Resources/Obj2stateKS.png) | ![obj2_ks_col](/Resources/Obj2columbiaKS.png) | ![obj2_ks_mon](/Resources/Obj2montourKS.png)
 
 
-When we look at the graphs, we see that top category, which combines advanced and proficient categories, fluctuates for every levels (State, Montour County, and Colombia County).
+When we look at the graphs, we see that top category, which combines advanced and proficient categories, fluctuates for every levels (State, Montour County, and Columbia County).
 
 For state level, average score percentage for top category is trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and then started declining again for the rest of the years.
 
-In Colombia County, average score for the top category is also trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and stayed steady for 2019. However, it started to dip in 2021 and 2022
+In Columbia County, average score for the top category is also trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and stayed steady for 2019. However, it started to dip in 2021 and 2022
 
 In Montour County, average score for the top category shows fluctuations for the years observed. The average score percentage dipped in 2017 only to rise and dip again in 2018 and 2019 respectively. The same pattern of rise and dip was also observed in 2021 and 2022.
 
@@ -138,39 +138,39 @@ In Montour County, average score for the top category shows fluctuations for the
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ps_eng_st](/Resources/Obj3stateEngPS.png) | ![obj2_ps_eng_col](/Resources/Obj3colombiaEngPS.png) | ![obj2_ps_eng_mon](/Resources/Obj3montourEngPS.png) |
+| ![obj3_ps_eng_st](/Resources/Obj3stateEngPS.png) | ![obj2_ps_eng_col](/Resources/Obj3columbiaEngPS.png) | ![obj2_ps_eng_mon](/Resources/Obj3montourEngPS.png) |
 
 ##### PSSA Math
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ps_math_st](/Resources/Obj3stateMathPS.png) | ![obj2_ps_math_col](/Resources/Obj3colombiaMathPS.png) | ![obj2_ps_math_mon](/Resources/Obj3montourMathPS.png) |
+| ![obj3_ps_math_st](/Resources/Obj3stateMathPS.png) | ![obj2_ps_math_col](/Resources/Obj3columbiaMathPS.png) | ![obj2_ps_math_mon](/Resources/Obj3montourMathPS.png) |
 
 ##### PSSA Science
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ps_sci_st](/Resources/Obj3stateSciencePS.png) | ![obj2_ps_sci_col](/Resources/Obj3colombiaSciencePS.png) | ![obj2_ps_sci_mon](/Resources/Obj3montourSciPS.png) |
+| ![obj3_ps_sci_st](/Resources/Obj3stateSciencePS.png) | ![obj2_ps_sci_col](/Resources/Obj3columbiaSciencePS.png) | ![obj2_ps_sci_mon](/Resources/Obj3montourSciPS.png) |
 
 ##### Keystone English
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ks_eng_st](/Resources/Obj3stateEngKS.png) | ![obj2_ks_eng_col](/Resources/Obj3colombiaEngKS.png) | ![obj2_ks_eng_mon](/Resources/Obj3montourEngKS.png) |
+| ![obj3_ks_eng_st](/Resources/Obj3stateEngKS.png) | ![obj2_ks_eng_col](/Resources/Obj3columbiaEngKS.png) | ![obj2_ks_eng_mon](/Resources/Obj3montourEngKS.png) |
 
 ##### Keystone Math
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ks_math_st](/Resources/Obj3stateMathKS.png) | ![obj2_ks_math_col](/Resources/Obj3colombiaMathKS.png) | ![obj2_ks_math_mon](/Resources/Obj3montourMathKS.png) |
+| ![obj3_ks_math_st](/Resources/Obj3stateMathKS.png) | ![obj2_ks_math_col](/Resources/Obj3columbiaMathKS.png) | ![obj2_ks_math_mon](/Resources/Obj3montourMathKS.png) |
 
 ##### Keystone Science
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ks_sci_st](/Resources/Obj3stateScienceKS.png) | ![obj2_ks_sci_col](/Resources/Obj3colombiaScienceKS.png) | ![obj2_ks_sci_mon](/Resources/Obj3montourSciKS.png) |
+| ![obj3_ks_sci_st](/Resources/Obj3stateScienceKS.png) | ![obj2_ks_sci_col](/Resources/Obj3columbiaScienceKS.png) | ![obj2_ks_sci_mon](/Resources/Obj3montourSciKS.png) |
 
-When we look at both Keystone and PSSA data, we can clearly see that, COVID-19 has impacted top score average percentages. Especially in 2021, we see a sharp decline in all levels (State, Colombia County and Montour County). However, starting 2022, we see some recovery in percentages in those levels. 
+When we look at both Keystone and PSSA data, we can clearly see that, COVID-19 has impacted top score average percentages. Especially in 2021, we see a sharp decline in all levels (State, Columbia County and Montour County). However, starting 2022, we see some recovery in percentages in those levels. 
 
 However, there's no linearity between years and average score percentages so as to say, we don't see an upward or downward trend every year. The ANOVA table also indicates the absence of linearity in trend without any significant impact between top score average percentages and year.
 

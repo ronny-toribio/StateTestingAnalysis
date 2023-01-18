@@ -12,7 +12,9 @@ Our team consists of senior data science students [Kadir O. Altunel](https://git
 - [Data Wrangling](#data-wrangling) - Worked on by me [data_wrangling.R](/data_wrangling.R)
 - [Project Objectives](#project-objectives) - Worked on by our team [objectives.R](/objectives.R)
 
+
 <!-- Summary -->
+
 
 # Data Wrangling
 The data sets used in this project are the results from the [PSSA](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/PSSA-Results.aspx) and [Keystone](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/Keystone-Exams-Results.aspx) state tests.
@@ -179,23 +181,17 @@ However, there's no linearity between years and average score percentages so as 
 
 ##### PSSA
 
-![obj4bpsa](/Resources/obj4bpsa.png)
-![obj4bpsb](/Resources/obj4bpsb.png)
-![obj4bpsc](/Resources/obj4bpsc.png)
-![obj4bpsd](/Resources/obj4bpsd.png)
-![obj4bpse](/Resources/obj4bpse.png)
+Math | English | Science
+:---:|:-------:|:-------:
+| ![obj4bpsa](/Resources/obj4bpsa.png) | ![obj4bpsb](/Resources/obj4bpsb.png) | ![obj4bpsc](/Resources/obj4bpsc.png)
 
 Contrary to the Keystone analysis, the data for PSSA score averages by subject, student on average scored highly in Science and English, while having higher below basic and basic scores within Math. Science was the highest subject for both Top and advanced categories, with English remaining the highest subject for proficient scores. 
 
-
 ##### Keystone
 
-![obj4bksa](/Resources/obj4bksa.png)
-![obj4bksb](/Resources/obj4bksb.png)
-![obj4bksc](/Resources/obj4bksc.png)
-![obj4bksd](/Resources/obj4bksd.png)
-![obj4bkse](/Resources/obj4bkse.png)
-
+Math | English | Science
+:---:|:-------:|:-------:
+| ![obj4bksa](/Resources/obj4bksa.png) | ![obj4bksb](/Resources/obj4bksb.png) | ![obj4bksc](/Resources/obj4bksc.png)
 
 We see when analyzing the data for Keystone Score averages by subject, students on average scored highly in Math and English while more likely struggling with science. Both in top and advanced categories, more students scored well on the Math sections, with English being the highest in the proficient category. When looking at the scores for below basic, Science has the highest average for those scoring in th is category.
 

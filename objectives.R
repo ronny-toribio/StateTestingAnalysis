@@ -1167,9 +1167,9 @@ plot_cohorts = function(cas, title, filename){
   pcas = cas %>%
     ggplot(aes(x=Grade, y=AvgScore, fill=Grade)) +
     geom_col(position="dodge") +
-    geom_text(aes(x=Grade, y=AvgScore-1, label=AvgScoreLabel), color="white") +
-    geom_text(aes(x=Grade, y=20, label=AvgScoreChangePos), color="green") +
-    geom_text(aes(x=Grade, y=20, label=AvgScoreChangeNeg), color="red") +
+    geom_label(aes(x=Grade, y=AvgScore-1.5 , label = AvgScoreLabel), color="white") +
+    geom_label(aes(x=Grade, y=20 , label = AvgScoreChangePos), color="green", fill="darkblue") +
+    geom_label(aes(x=Grade, y=20 , label = AvgScoreChangeNeg), color="red", fill="darkblue") +
     facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
     labs(title=title)
   plot(pcas)

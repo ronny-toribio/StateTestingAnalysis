@@ -19,14 +19,12 @@ The data sets used in this project are the results from the [PSSA](https://www.e
 These sets contain aggregate data at the state level for both the PSSA and Keystone.
 They contain more granular data at the school level including counties, districts and schools.
 
-To wrangle this data and prepare it for analysis I created a script in R [data_wrangling.R](/data_wrangling.R) that loads the raw XLSX files and generates 3 CSV files and 2 XLSX files.
+To wrangle this data and prepare it for analysis I created a script in R [data_wrangling.R](/data_wrangling.R) that loads the raw XLSX files and generates 3 CSV files.
 The XLSX files are organized by year (2015 - 2022) and level (state, local).
 
 ##### The files generated are:
 - [pssa.csv](/PSSA/pssa.csv) - A data set containing the PSSA data at the state and local levels for use in R.
-- [pssa.xlsx](/PSSA/pssa.xlsx) - For use by Kadir in tableau
 - [keystone.csv](/Keystone/keystone.csv) - A data set containing the Keystone data at the state and local levels.
-- [keystone.xlsx](Keystone/keystone.xlsx) - For use by Kadir in tableau
 - [cohorts.csv](/Cohorts/cohorts.csv) - A data set containing both PSSA and Keystone data at the state and local levels that follows cohorts.
 
 ### Data Conventions
@@ -37,11 +35,6 @@ The XLSX files are organized by year (2015 - 2022) and level (state, local).
 - Proficient
 - Basic
 - Below Basic
-
-##### The convention used in this project for counties is as follows:
-- 0 is the state level aggregate data
-- 1 is Columbia county
-- 2 is Montour county
 
 ##### The convention used for subjects is the following:
 - English - is used for English, English Language Arts and Literature
@@ -113,43 +106,29 @@ State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 ![obj2_ps_st](/Resources/Obj2statePS.png) | ![obj2_ps_col](/Resources/Obj2colombiaPS.png) | ![obj2_ps_mon](/Resources/Obj2montourPS.png)
 
+PSSA data also shows similar observations all levels for the top category.
+
+For state level, average score percentage dipped in 2017 and went back to 2016 levels in 2018 and 2019. There was a decline in 2021 and a slight increase in 2022
+
+In Colombia County, average score percentage stayed steady from 2016 to 2019. There was a decline in percentage in 2021 which showed some recovery in 2022.
+
+In Montour County, average score percentage rose all time high in 2019 in observed years (2016-2022). There was a sharp decline in 2021 and some recovery in 2022. 
+
 ##### Keystone
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 ![obj2_ks_st](/Resources/Obj2stateKS.png) | ![obj2_ks_col](/Resources/Obj2colombiaKS.png) | ![obj2_ks_mon](/Resources/Obj2montourKS.png)
 
-##### ~~PSSA old interpretation~~
 
-**Top** ~~Category showed a slight decline between 2019 - 2021 in State and Colombia County.
-Top Category remained steady in Montour throughout the time frame.~~
+When we look at the graphs, we see that top category, which combines advanced and proficient categories, fluctuates for every levels (State, Montour County, and Colombia County).
 
-**Advanced** ~~Category showed a sharp decline in Colombia County and State from 2019
-to 2021. Montour County Category were pretty much stable.~~
+For state level, average score percentage for top category is trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and then started declining again for the rest of the years.
 
-**Proficient** ~~Category showed an increase in Colombia County in 2021 and then
-it swung back to its previous levels in 2022. State and Montour County fluctuated
-slightly throughout the time frame without any significant observation.~~
+In Colombia County, average score for the top category is also trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and stayed steady for 2019. However, it started to dip in 2021 and 2022
 
-**Basic** ~~Category  dropped slightly in Colombia county from 2018 to 2019. It remained
-steady in State from 2017 to 2019. Montour County showed a slight decline
-in 2019. Basic Category increased in both counties and state in 2021, only to
-drop slightly in Montour County and State in 2022. Colombia County showed
-a moderate decline in Basic Category.~~
+In Montour County, average score for the top category shows fluctuations for the years observed. The average score percentage dipped in 2017 only to rise and dip again in 2018 and 2019 respectively. The same pattern of rise and dip was also observed in 2021 and 2022.
 
-**BelowBasic** ~~Category remained stable for Montour County until 2019. There was a
-sharp increase between 2016 and 2017 in Colombia County and State. Both
-counties and state showed a decline in BelowBasic Category in 2019. There was
-a significant increase in all places in the Category from 2019 to 2021,
-especially in Colombia. From 2021 to 2022, Category remained stable in State 
-and dropped moderately in both counties~~
-
-##### ~~Keystone old interpretation~~
-
-~~We see that in general, Montour and Colombia county fared better than State 
-since 2015 in terms of Category levels. Basic level showed a sharp increase in Montour
-and Colombia counties in 2022. Proficient level also showed a sharp
-increase especially in 2022 for Montour county~~
 
 # Objective 3: Is there any COVID impact we might be able to deduce?
 
@@ -189,21 +168,9 @@ State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 | ![obj3_ks_sci_st](/Resources/Obj3stateScienceKS.png) | ![obj2_ks_sci_col](/Resources/Obj3colombiaScienceKS.png) | ![obj2_ks_sci_mon](/Resources/Obj3montourSciKS.png) |
 
-##### ~~PSSA old interpretation~~
+When we look at both Keystone and PSSA data, we can clearly see that, COVID-19 has impacted top score average percentages. Especially in 2021, we see a sharp decline in all levels (State, Colombia County and Montour County). However, starting 2022, we see some recovery in percentages in those levels. 
 
-~~From 2019 to 2022, Category levels seemed stable for the counties and the state
-There were only slight fluctuations which were inconclusive if COVID affected
-Category levels or not.~~
-
-##### ~~Keystone old interpretation~~
-
-~~Checking Category averages throughout the years for counties and subjects, it
-is interesting to see that COVID didn't impact Math and English for Categorys
-dramatically for Colombia, Montour and State. In fact, there was a significant
-improvement in the scores in 2022 compared to 2019 for math top, advanced
-and proficient Category in Colombia county.
-However, there was a steep decline in Science for Categorys between 2021
-and 2022 throughout the state which may be an indication of a COVID impact.~~
+However, there's no linearity between years and average score percentages so as to say, we don't see an upward or downward trend every year. The ANOVA table also indicates the absence of linearity in trend without any significant impact between top score average percentages and year.
 
 
 # Objective 4: Visualizing the averages of scores from each year.

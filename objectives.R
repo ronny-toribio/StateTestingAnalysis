@@ -39,8 +39,6 @@ ps = read_csv("PSSA/pssa.csv")
 ks = read_csv("Keystone/keystone.csv")
 ps$County = as_factor(ps$County)
 ks$County = as_factor(ks$County)
-levels(ps$County) = c("State", "Columbia", "Montour")
-levels(ks$County) = c("State", "Columbia", "Montour")
 ps$Category = as_factor(ps$Category)
 ks$Category = as_factor(ks$Category)
 
@@ -48,7 +46,6 @@ ks$Category = as_factor(ks$Category)
 # Cohorts
 cohorts = read_csv("Cohorts/cohorts.csv")
 cohorts$County = as_factor(cohorts$County)
-levels(cohorts$County) = c("Columbia", "Montour")
 cohorts$Category = as_factor(cohorts$Category)
 cohorts$Grade = as_factor(cohorts$Grade)
 cohorts$Cohort = as.integer(cohorts$Cohort)
@@ -554,10 +551,10 @@ summary(ps_model)
 
 # When we look at the graphs, we see that top category, which combines advanced
 # and proficient categories, fluctuates for every levels (State, Montour County,
-# and Colombia County). 
+# and Colombia County).
 
-# For state level, average score percentage for top category is trending lower 
-# than its high in 2016. We see that average score percentage declined in 2017 
+# For state level, average score percentage for top category is trending lower
+# than its high in 2016. We see that average score percentage declined in 2017
 # and rose in 2018 and then started declining again for the rest of the years.
 
 # In Colombia County, average score for the top category is also trending lower

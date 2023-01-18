@@ -118,9 +118,6 @@ ks.st = ks.st %>% mutate(District="", School="", County="State")
 ks = bind_rows(ks.st, ks.sc) %>% arrange(Year)
 rm(ks.sc)
 rm(ks.st)
-ks = ks %>% mutate(across(County, str_replace, "State", "0"))
-ks = ks %>% mutate(across(County, str_replace, "Columbia", "1"))
-ks = ks %>% mutate(across(County, str_replace, "Montour", "2"))
 ks = ks %>% mutate(across(Subject, str_replace, "E", "English"))
 ks = ks %>% mutate(across(Subject, str_replace, "M", "Math"))
 ks = ks %>% mutate(across(Subject, str_replace, "S", "Science"))
@@ -151,8 +148,6 @@ ks = ks %>% filter(!is.na(Score))
 
 # Export the Keystone data set as CSV for R and XLSX for tableau
 write_csv(ks, "Keystone/keystone.csv")
-write_excel_csv(ks, "Keystone/keystone.xlsx")
-
 
 # PSSA school level data
 ps.sc.2016 = readxl::read_xlsx("PSSA/School/2016.xlsx", skip=4)
@@ -283,9 +278,6 @@ ps.st = ps.st %>% mutate(District="", School="", School="", County="State")
 ps = bind_rows(ps.st, ps.sc) %>% arrange(Year)
 rm(ps.sc)
 rm(ps.st)
-ps = ps %>% mutate(across(County, str_replace, "State", "0"))
-ps = ps %>% mutate(across(County, str_replace, "Columbia", "1"))
-ps = ps %>% mutate(across(County, str_replace, "Montour", "2"))
 ps = ps %>% mutate(across(Subject, str_replace, "English Language Arts", "English"))
 ps = ps %>% mutate(across(Grade, str_replace, "State Total", "Total"))
 ps = ps %>% mutate(across(Grade, str_replace, "School Total", "Total"))
@@ -323,7 +315,6 @@ ps = ps %>% filter(!is.na(Score))
 
 # Export PSSA data to CSV for R and XLSX for tableau
 write_csv(ps, "PSSA/pssa.csv")
-write_excel_csv(ps, "PSSA/pssa.xlsx")
 
 
 # Cohorts

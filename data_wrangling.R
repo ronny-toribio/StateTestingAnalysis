@@ -319,23 +319,23 @@ write_csv(ps, "PSSA/pssa.csv")
 
 # Cohorts
 cohort.1 = bind_rows(
-  ps2 %>% filter(Year==2016 & Grade==8 & County!=0),
-  ks %>% filter(Year==2019 & County!=0) %>% mutate(Grade="11", SchoolNum="")
+  ps2 %>% filter(Year==2016 & Grade==8),
+  ks %>% filter(Year==2019) %>% mutate(Grade="11", SchoolNum="")
 ) %>% mutate(Cohort=1)
 
 cohort.2 = bind_rows(
-  ps2 %>% filter(Year==2016 & Grade==6 & County!=0),
-  ps2 %>% filter(Year==2017 & Grade==7 & County!=0),
-  ps2 %>% filter(Year==2018 & Grade==8 & County!=0),
-  ks %>% filter(Year==2021 & County!=0) %>% mutate(Grade="11", SchoolNum="")
+  ps2 %>% filter(Year==2016 & Grade==6),
+  ps2 %>% filter(Year==2017 & Grade==7),
+  ps2 %>% filter(Year==2018 & Grade==8),
+  ks %>% filter(Year==2021) %>% mutate(Grade="11", SchoolNum="")
 ) %>% mutate(Cohort=2)
 
 cohort.3 = bind_rows(
-  ps2 %>% filter(Year==2016 & Grade==5 & County!=0),
-  ps2 %>% filter(Year==2017 & Grade==6 & County!=0),
-  ps2 %>% filter(Year==2018 & Grade==7 & County!=0),
-  ps2 %>% filter(Year==2019 & Grade==8 & County!=0),
-  ks %>% filter(Year==2022 & County!=0) %>% mutate(Grade="11", SchoolNum="")
+  ps2 %>% filter(Year==2016 & Grade==5),
+  ps2 %>% filter(Year==2017 & Grade==6),
+  ps2 %>% filter(Year==2018 & Grade==7),
+  ps2 %>% filter(Year==2019 & Grade==8),
+  ks %>% filter(Year==2022) %>% mutate(Grade="11", SchoolNum="")
 ) %>% mutate(Cohort=3)
 rm(ps2)
 

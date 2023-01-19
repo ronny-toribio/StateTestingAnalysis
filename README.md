@@ -250,9 +250,9 @@ When comparing Keystone average scores between districts, there seems to be no c
 
 ##### Cohorts by county
 
-Columbia County | Montour County
-:--------------:|:---------------:
-![obj6b_columbia](/Resources/Obj6b_columbia.png) | ![obj6b_montour](/Resources/Obj6b_montour.png)
+State | Columbia County | Montour County
+:----:|:---------------:|:--------------:
+![obj6b_state](/Resources/Obj6b_state.png) | ![obj6b_columbia](/Resources/Obj6b_columbia.png) | ![obj6b_montour](/Resources/Obj6b_montour.png)
 
 # Authors
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis

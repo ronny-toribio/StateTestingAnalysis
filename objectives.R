@@ -4,9 +4,6 @@
 # @desc:    Analysis of testing data
 
 library(tidyverse) # includes ggplot2, ggthemes
-library(GGally)
-library(hrbrthemes)
-library(patchwork)
 
 theme_main = function(base_size=11, base_family=""){
   theme(
@@ -172,7 +169,7 @@ dev.off()
 png(filename = "Obj3stateEngKS.png", width = 1280, height = 1280)
 
 ks_state_subject_top_english = ks_group_by_year_state_subject_top %>%
-  filter(County == "State" & Subject == "English") %>% 
+  filter(County == "State" & Subject == "English") %>%
   ggplot(aes(x = Year, y = AvgScore)) +
   geom_bar(position="dodge", stat="identity", fill = "red") +
   geom_label(aes(x = Year, y = AvgScore-0.03 , label = AvgScoreLabel)) +
@@ -1187,7 +1184,7 @@ cas = cohorts %>%
   ) %>% 
   select(-Students, -Scored) %>%
   distinct()
-plot_cohorts(cas, "Cohort All Levels", "Resources/Obj6a.png")
+plot_cohorts(cas, "Cohorts All", "Resources/Obj6a.png")
 
 # Objective 6b State
 cas_state = cohorts %>%

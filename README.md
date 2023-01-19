@@ -240,19 +240,28 @@ When comparing Keystone average scores between districts, there seems to be no c
 ##### Cohort timeline
 
 ![obj6a_timeline](/Resources/Obj6_timeline.png)
-- Cohort 1: years: 2016 - 2019, grades: 8(PSSA),     11(Keystone)
-- Cohort 2: years: 2016 - 2021, grades: 6 - 8(PSSA), 11(Keystone)
-- Cohort 3: years: 2016 - 2022, grades: 5 - 8(PSSA), 11(Keystone)
+- Cohort 1: Grade 8(2016), Grade 11(2019)
+- Cohort 2: Grade 6(2016), Grade 7(2017), Grade 11(2021)
+- Cohort 3: Grade 5(2016), Grade 6(2017), Grade 7(2018), Grade 8(2019), Grade 11(2022)
 
-##### Cohorts All
+##### Cohorts State
 
-![obj6a](/Resources/Obj6a.png)
+![obj6a](/Resources/Obj6b_state.png)
 
-##### Cohorts by county
+In cohort 1 we see an increase of 16.94 percentage points from grade 8 to grade 11. In cohort 2 we see the grades stay stable between grades 7 and 8 then rising 14.53 percentage points at grade 11. In cohort 3 we see a dip between grades 5 and 6 of 12.55 percent points. Followed by a rebound to almost the grade 5 level in grade 7. For the rest of the grades their percentages stay stable with no real bump between grades 8 and 11 like in previous cohorts suggesting that they may have affected by the pandemic.
 
-State | Columbia County | Montour County
-:----:|:---------------:|:--------------:
-![obj6b_state](/Resources/Obj6b_state.png) | ![obj6b_columbia](/Resources/Obj6b_columbia.png) | ![obj6b_montour](/Resources/Obj6b_montour.png)
+##### Cohorts Columbia
+
+![obj6b_columbia](/Resources/Obj6b_columbia.png)
+
+In cohort 1 Columbia county outperforms the state of pennsylvania. In cohort 2 we're missing grades 5 and 6. Grade 7 begins one point below the state average then overtakes it by a few points in grade 8. In grade 11 Columbia county outperforms the state by around 6 percentage points. Cohort 3 breaks with the state pattern and the grades gradually worsen by up to 4 percentage points in some years. Even so the grades in cohort 3 stay above the state percentages. 
+
+##### Cohorts Montour
+
+![obj6b_montour](/Resources/Obj6b_montour.png)
+
+In cohort 1 Montour county outperforms both the state and Columbia county gaining 24.64 percentage points between grades 8 and 11. In cohort 2 the percentages stay stable above the state from grades 6 to 8. In grade 11 there is a 31.10 point jump in their percentages. Cohort 3 is also higher than both the state and columbia county. There is a 7 point dip from grade 5 to 6. Then it slightly ascends from 61.56 in grade 6 to 65.9 in grade 8. Finally, it jumps 16.57 percent points landing at 82.46 outperforming both the state and columbia county.
+
 
 # Authors
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis

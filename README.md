@@ -196,14 +196,14 @@ We see when analyzing the data for Keystone Score averages by subject, the avera
 
 ##### PSSA
 
-![obj5ps](/Resources/obj5ps.png)
+![Obj5PS](/Resources/Obj5PS.png)
 
 When comparing PSSA average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 
 
 ##### Keystone
 
-![obj5ks](/Resources/obj5ks.png)
+![Obj5KS](/Resources/Obj5KS.png)
 
 When comparing Keystone average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 

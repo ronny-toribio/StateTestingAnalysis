@@ -116,6 +116,7 @@ obj1ps = ps %>%
 obj1ps = calc_changes_trend_by_county(obj1ps)
 pobj1ps = obj1ps %>%
   ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  scale_fill_manual(values=c("steelblue", "magenta")) +
   geom_col(position = position_dodge2(0.9)) +
   geom_label(aes(x=Year, y=AvgScore-1.5, label = AvgScoreLabel), position = position_dodge2(0.9), color="white") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
@@ -136,6 +137,7 @@ obj1ks = ks %>%
 obj1ks = calc_changes_trend_by_county(obj1ks)
 pobj1ks = obj1ks %>%
   ggplot(aes(x = Year, y = AvgScore, fill = County)) +
+  scale_fill_manual(values=c("steelblue", "magenta")) +
   geom_col(position = position_dodge2(0.9)) +
   geom_label(aes(x=Year, y=AvgScore-1.5, label = AvgScoreLabel), position = position_dodge2(0.9), color="white") +
   geom_label(aes(x=Year, y=25 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +

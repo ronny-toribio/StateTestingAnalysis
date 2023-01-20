@@ -913,22 +913,30 @@ plot(obj4cpsa)
 
 # Objective 5: Compare scores between districts
 
+#Keystone
 obj4cksa = ks %>%
-  filter(Category == "Top") %>%
+  filter(District!= "State" & Category == "Top") %>%
   group_by(Year, District) %>%
-  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)*100, AvgScoreLabel=round(AvgScore,0)) %>%
   ggplot(aes(x = Year, y = AvgScore, fill = District)) +
-  geom_col(position = "dodge") +
-  labs(title = "Keystone Yearly Testing Averages by District")
+  geom_col(position = position_dodge(0.9)) +
+  geom_text(aes(x=Year, y=AvgScore+.5, label = AvgScoreLabel),angle=45,color= "white", position = position_dodge(0.9)) +
+  labs(title = "Keystone Top Yearly Testing Averages by District")+
+  xlab("Years") + 
+  ylab("Cumulative Average Score (%)")
 plot(obj4cksa)
 
+#PSSA
 obj4cpsa = ps %>%
-  filter(Category == "Top") %>%
+  filter(District!= "State" & Category == "Top") %>%
   group_by(Year, District) %>%
-  mutate(AvgScore=sum(Students)/sum(Scored)) %>%
+  mutate(AvgScore=sum(Students)/sum(Scored)*100, AvgScoreLabel=round(AvgScore,0)) %>%
   ggplot(aes(x = Year, y = AvgScore, fill = District)) +
-  geom_col(position = "dodge") +
-  labs(title = "Keystone Yearly Testing Averages by District")
+  geom_col(position = position_dodge(0.9)) +
+  geom_text(aes(x=Year, y=AvgScore+.5, label = AvgScoreLabel),angle=45,color= "white", position = position_dodge(0.9))+
+  labs(title = "PSSA Top Yearly Testing Averages by District")+
+  xlab("Years") + 
+  ylab("Cumulative Average Score (%)")
 plot(obj4cpsa)
 
 

@@ -154,7 +154,7 @@ State | Columbia County | Montour County
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ps_sci_st](/Graphs/Obj3stateSciencePS.png) | ![obj2_ps_sci_col](/Graphs/Obj3columbiaSciencePS.png) | ![obj2_ps_sci_mon](/Graphs/Obj3montourSciPS.png) |
+| ![obj3_ps_sci_st](/Graphs/Obj3stateSciPS.png) | ![obj2_ps_sci_col](/Graphs/Obj3columbiaSciPS.png) | ![obj2_ps_sci_mon](/Graphs/Obj3montourSciPS.png) |
 
 ##### Keystone English
 
@@ -172,7 +172,7 @@ State | Columbia County | Montour County
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ks_sci_st](/Graphs/Obj3stateScienceKS.png) | ![obj2_ks_sci_col](/Graphs/Obj3columbiaScienceKS.png) | ![obj2_ks_sci_mon](/Graphs/Obj3montourSciKS.png) |
+| ![obj3_ks_sci_st](/Graphs/Obj3stateSciKS.png) | ![obj2_ks_sci_col](/Graphs/Obj3columbiaSciKS.png) | ![obj2_ks_sci_mon](/Graphs/Obj3montourSciKS.png) |
 
 ##### PSSA ANOVA Summary
 

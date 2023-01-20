@@ -491,9 +491,6 @@ plot(ks_state_subject_top_science)
 ggsave()
 
 
-
-
-
 # Columbia
 png(filename = "Obj3columbiaEngKS.png", width = 900, height = 900)
 
@@ -564,8 +561,8 @@ ks_montour_subject_top_math = ks_montour_subjects %>%
   ggplot(aes(x = Year, y = AvgScore)) +
   geom_col(position="dodge", fill = "magenta", width=0.4) +
   geom_label(aes(x = Year, y = AvgScore-1.5 , label = AvgScoreLabel), fill="magenta", color="white") +
-  geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
-  geom_label(aes(x=Year, y=20 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
+  geom_label(aes(x=Year, y=25 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
+  geom_label(aes(x=Year, y=25 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
   ggtitle("Top Average Scores in Montour county for Math") +
   xlab("Years") + 
   ylab("Average Score in %")
@@ -578,8 +575,8 @@ ks_montour_subject_top_science = ks_montour_subjects %>%
   ggplot(aes(x = Year, y = AvgScore)) +
   geom_col(position="dodge", fill = "magenta", width=0.4) +
   geom_label(aes(x = Year, y = AvgScore-1.5 , label = AvgScoreLabel), fill="magenta", color="white") +
-  geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
-  geom_label(aes(x=Year, y=20 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
+  geom_label(aes(x=Year, y=25 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
+  geom_label(aes(x=Year, y=25 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
   ggtitle("Top Average Scores in Montour county for Science") +
   xlab("Years") + 
   ylab("Average Score in %")

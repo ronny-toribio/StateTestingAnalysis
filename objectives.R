@@ -82,7 +82,9 @@ plot_cohorts = function(t, title){
     geom_label(aes(x=Grade, y=20 , label = AvgScoreChangePos), color="green", fill="darkblue") +
     geom_label(aes(x=Grade, y=20 , label = AvgScoreChangeNeg), color="red", fill="darkblue") +
     facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
-    labs(title=title)
+    labs(title=title) +
+    xlab("Years") + 
+    ylab("Cumulative Average Score (%)")
   plot(pt)
 }
 
@@ -163,9 +165,9 @@ ps_state_bar = ps_group_by_year_county_top %>%
   geom_label(aes(x = Year, y = AvgScore-1.5 , label = AvgScoreLabel), fill="red", color="white") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
-  ggtitle("Score Average for Top Category by Years in State") +
+  ggtitle("Top PSSA Scores in Pennsylvania") +
   xlab("Years") + 
-  ylab("Average Score in %")
+  ylab("Cumulative Average Score (%)")
 plot(ps_state_bar)
 ggsave("Resources/Obj2statePS.png", ps_state_bar, width=900, height=900, units="px")
 
@@ -176,9 +178,9 @@ ps_columbia_bar =  ps_group_by_year_county_top %>%
   geom_label(aes(x = Year, y = AvgScore-1.5 , label = AvgScoreLabel), fill="steelblue", color="white") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
-  ggtitle("Score Average for Top Category by Years in Columbia County") +
+  ggtitle("Top PSSA Scores in Columbia county") +
   xlab("Years") + 
-  ylab("Average Score in %")
+  ylab("Cumulative Average Score (%)")
 plot(ps_columbia_bar)
 ggsave("Resources/Obj2columbiaPS.png", ps_columbia_bar, width=900, height=900, units="px")
 
@@ -189,9 +191,9 @@ ps_montour_bar = ps_group_by_year_county_top%>%
   geom_label(aes(x = Year, y = AvgScore-1.5 , label = AvgScoreLabel), fill="magenta", color="white") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
-  ggtitle("Score Average for Top Category by Years in Montour County") +
+  ggtitle("Top PSSA Scores in Montour county") +
   xlab("Years") + 
-  ylab("Average Score in %")
+  ylab("Cumulative Average Score (%)")
 plot(ps_montour_bar)
 ggsave("Resources/Obj2montourPS.png", ps_montour_bar, width=900, height=900, units="px")
 
@@ -226,9 +228,9 @@ ks_state_bar = ks_group_by_year_county_top %>%
   geom_label(aes(x = Year, y = AvgScore-1.5 , label = AvgScoreLabel), fill="red", color="white") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
-  ggtitle("Score Average for Top Category by Years in State") +
+  ggtitle("Top Keystone Scores in Pennsylvania") +
   xlab("Years") + 
-  ylab("Average Score in %")
+  ylab("Cumulative Average Score (%)")
 plot(ks_state_bar)
 ggsave("Resources/Obj2stateKS.png", width = 900, height = 900)
 
@@ -239,9 +241,9 @@ ks_columbia_bar =  ks_group_by_year_county_top %>%
   geom_label(aes(x = Year, y = AvgScore-1.5 , label = AvgScoreLabel), fill="steelblue", color="white") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
   geom_label(aes(x=Year, y=20 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
-  ggtitle("Score Average for Top Category by Years in Columbia County") +
+  ggtitle("Top Keystone Scores in Columbia county") +
   xlab("Years") + 
-  ylab("Average Score in %")
+  ylab("Cumulative Average Score (%)")
 plot(ks_columbia_bar)
 ggsave("Resources/Obj2columbiaKS.png", ks_columbia_bar, width = 900, height = 900)
 
@@ -250,11 +252,11 @@ ks_montour_bar = ks_group_by_year_county_top%>%
   ggplot(aes(x = Year, y = AvgScore)) +
   geom_col(position="dodge", fill = "magenta", width=0.4) +
   geom_label(aes(x = Year, y = AvgScore-1.5 , label = AvgScoreLabel), fill="magenta", color="white") +
-  geom_label(aes(x=Year, y=20 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
-  geom_label(aes(x=Year, y=20 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
-  ggtitle("Score Average for Top Category by Years in Montour County") +
+  geom_label(aes(x=Year, y=25 , label = AvgScoreChangePos), position = position_dodge2(0.9), color="green", fill="darkblue") +
+  geom_label(aes(x=Year, y=25 , label = AvgScoreChangeNeg), position = position_dodge2(0.9), color="red", fill="darkblue") +
+  ggtitle("Top Keystone Scores in Montour county") +
   xlab("Years") + 
-  ylab("Average Score in %")
+  ylab("Cumulative Average Score (%)")
 plot(ks_montour_bar)
 ggsave("Resources/Obj2montourKS.png", ks_montour_bar, width = 900, height = 900)
 
@@ -731,46 +733,13 @@ cohorts_timeline = cohorts %>%
 plot(cohorts_timeline)
 ggsave("Resources/Obj6_timeline.png", cohorts_timeline)
 
-# Cohorts Plot Function
-plot_cohorts = function(cas, title, filename){
-  cas1 = cas %>% filter(Cohort==1)
-  cas1$AvgScoreChange = round(cas1$AvgScore-lag(cas1$AvgScore), 2)
-  cas2 = cas %>% filter(Cohort==2)
-  cas2$AvgScoreChange = round(cas2$AvgScore-lag(cas2$AvgScore), 2)
-  cas3 = cas %>% filter(Cohort==3)
-  cas3$AvgScoreChange = round(cas3$AvgScore-lag(cas3$AvgScore), 2)
-  cas = rbind(cas1, cas2, cas3)
-  rm(cas1)
-  rm(cas2)
-  rm(cas3)
-  cas$AvgScoreChangePos = cas$AvgScoreChange
-  cas$AvgScoreChangePos[cas$AvgScoreChangePos < 0] = NA
-  cas$AvgScoreChangeNeg = cas$AvgScoreChange
-  cas$AvgScoreChangeNeg[cas$AvgScoreChangeNeg > 0] = NA
-  pcas = cas %>%
-    ggplot(aes(x=Grade, y=AvgScore, fill=Grade)) +
-    geom_col(position="dodge") +
-    geom_label(aes(x=Grade, y=AvgScore-1.5 , label = AvgScoreLabel), color="white") +
-    geom_label(aes(x=Grade, y=20 , label = AvgScoreChangePos), color="green", fill="darkblue") +
-    geom_label(aes(x=Grade, y=20 , label = AvgScoreChangeNeg), color="red", fill="darkblue") +
-    facet_wrap(~Cohort, labeller=labeller(Cohort=c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
-    labs(title=title) +
-    xlab("Grade") + 
-    ylab("Cumulative Average Score (%)")
-  plot(pcas)
-}
-
 # Objective 6b State
 cas_state = cohorts %>%
   filter(Category=="Top" & County == "State") %>%
   select(Cohort, Grade, Students, Scored) %>%
   group_by(Cohort, Grade) %>%
-  mutate(
-    AvgScore = sum(Students)/sum(Scored) * 100,
-    AvgScoreLabel = round(AvgScore, 2)
-  ) %>% 
-  select(-Students, -Scored) %>%
-  distinct()
+  summarise(across(c(Students, Scored), sum)) %>%
+  mutate(AvgScore = Students/Scored * 100, AvgScoreLabel = round(AvgScore, 2))
 plot_cohorts(cas_state, "Cohorts State Level")
 ggsave("Resources/Obj6b_state.png", pcas, width=900, height=900, units="px")
 
@@ -779,12 +748,8 @@ cas_columbia = cohorts %>%
   filter(Category=="Top" & County == "Columbia") %>%
   select(Cohort, Grade, Students, Scored) %>%
   group_by(Cohort, Grade) %>%
-  mutate(
-    AvgScore = sum(Students)/sum(Scored) * 100,
-    AvgScoreLabel = round(AvgScore, 2)
-  ) %>% 
-  select(-Students, -Scored) %>%
-  distinct()
+  summarise(across(c(Students, Scored), sum)) %>%
+  mutate(AvgScore = Students/Scored * 100, AvgScoreLabel = round(AvgScore, 2))
 plot_cohorts(cas_columbia, "Cohorts Columbia Level")
 ggsave("Resources/Obj6b_columbia.png", pcas, width=900, height=900, units="px")
 
@@ -793,12 +758,8 @@ cas_montour = cohorts %>%
   filter(Category=="Top" & County == "Montour") %>%
   select(Cohort, Grade, Students, Scored) %>%
   group_by(Cohort, Grade) %>%
-  mutate(
-    AvgScore = sum(Students)/sum(Scored) * 100,
-    AvgScoreLabel = round(AvgScore, 2)
-  ) %>% 
-  select(-Students, -Scored) %>%
-  distinct()
+  summarise(across(c(Students, Scored), sum)) %>%
+  mutate(AvgScore = Students/Scored * 100, AvgScoreLabel = round(AvgScore, 2))
 plot_cohorts(cas_montour, "Cohorts Montour Level")
 ggsave("Resources/Obj6b_montour.png", pcas, width=900, height=900, units="px")
 

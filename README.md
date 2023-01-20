@@ -248,9 +248,14 @@ When comparing Keystone average scores between districts, there seems to be no c
 ##### Cohort timeline
 
 ![obj6a_timeline](/Graphs/Obj6_timeline.png)
-- Cohort 1: Grade 8(2016), Grade 11(2019)
-- Cohort 2: Grade 6(2016), Grade 7(2017), Grade 11(2021)
-- Cohort 3: Grade 5(2016), Grade 6(2017), Grade 7(2018), Grade 8(2019), Grade 11(2022)
+```
+            |<------PSSA----->|
+                              |<---Keystone--->|
+         2016, 2017, 2018, 2019, 2020, 2021, 2022
+Cohort 1    8                11
+Cohort 2    6     7     8                11
+Cohort 3    5     6     7     8                11
+```
 
 ##### Cohorts State
 

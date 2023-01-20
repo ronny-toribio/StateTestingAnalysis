@@ -86,7 +86,7 @@ Grade 11 was extracted from the Keystone set.
 
 ##### PSSA
 
-![Obj1PS](/Resources/Obj1PS.png)
+![Obj1PS](/Graphs/Obj1PS.png)
 
 
 
@@ -95,7 +95,7 @@ We see from taking the averages of top PSSA scores from Columbia and Montour cou
 
 ##### Keystone
 
-![Obj1KS](/Resources/Obj1KS.png)
+![Obj1KS](/Graphs/Obj1KS.png)
 
 
 We see from taking the averages of top Keystone scores from Columbia and Montour counties, Montour county has the highest average overall of people scoring with top scores in comparision to Columbia county from 2016 to 2022. Montour county score averages also stayed pretty regular before and after the pandemic, ranging with the 80 and 90 percent. Meanwhile with Columbia county scores, before the pandemic they were averaging within the 70 percent range and declined the following years after the pandemic to around 60 and 50 percent. This could be a result of the pandemic along with the option of opting out of testing provided to students after the pandemic. 
@@ -103,11 +103,14 @@ We see from taking the averages of top Keystone scores from Columbia and Montour
 
 # Objective 2: How they compare to the state trend since 2016?
 
+
+
+
 ##### PSSA
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-![obj2_ps_st](/Resources/Obj2statePS.png) | ![obj2_ps_col](/Resources/Obj2columbiaPS.png) | ![obj2_ps_mon](/Resources/Obj2montourPS.png)
+![obj2_ps_st](/Graphs/Obj2statePS.png) | ![obj2_ps_col](/Graphs/Obj2columbiaPS.png) | ![obj2_ps_mon](/Graphs/Obj2montourPS.png)
 
 PSSA data also shows similar observations all levels for the top category.
 
@@ -121,7 +124,7 @@ In Montour County, average score percentage rose all time high in 2019 in observ
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-![obj2_ks_st](/Resources/Obj2stateKS.png) | ![obj2_ks_col](/Resources/Obj2columbiaKS.png) | ![obj2_ks_mon](/Resources/Obj2montourKS.png)
+![obj2_ks_st](/Graphs/Obj2stateKS.png) | ![obj2_ks_col](/Graphs/Obj2columbiaKS.png) | ![obj2_ks_mon](/Graphs/Obj2montourKS.png)
 
 
 When we look at the graphs, we see that top category, which combines advanced and proficient categories, fluctuates for every levels (State, Montour County, and Columbia County).
@@ -139,56 +142,88 @@ In Montour County, average score for the top category shows fluctuations for the
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ps_eng_st](/Resources/Obj3stateEngPS.png) | ![obj2_ps_eng_col](/Resources/Obj3columbiaEngPS.png) | ![obj2_ps_eng_mon](/Resources/Obj3montourEngPS.png) |
+| ![obj3_ps_eng_st](/Graphs/Obj3stateEngPS.png) | ![obj2_ps_eng_col](/Graphs/Obj3columbiaEngPS.png) | ![obj2_ps_eng_mon](/Graphs/Obj3montourEngPS.png) |
 
 ##### PSSA Math
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ps_math_st](/Resources/Obj3stateMathPS.png) | ![obj2_ps_math_col](/Resources/Obj3columbiaMathPS.png) | ![obj2_ps_math_mon](/Resources/Obj3montourMathPS.png) |
+| ![obj3_ps_math_st](/Graphs/Obj3stateMathPS.png) | ![obj2_ps_math_col](/Graphs/Obj3columbiaMathPS.png) | ![obj2_ps_math_mon](/Graphs/Obj3montourMathPS.png) |
 
 ##### PSSA Science
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ps_sci_st](/Resources/Obj3stateSciencePS.png) | ![obj2_ps_sci_col](/Resources/Obj3columbiaSciencePS.png) | ![obj2_ps_sci_mon](/Resources/Obj3montourSciPS.png) |
+| ![obj3_ps_sci_st](/Graphs/Obj3stateSciencePS.png) | ![obj2_ps_sci_col](/Graphs/Obj3columbiaSciencePS.png) | ![obj2_ps_sci_mon](/Graphs/Obj3montourSciPS.png) |
 
 ##### Keystone English
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ks_eng_st](/Resources/Obj3stateEngKS.png) | ![obj2_ks_eng_col](/Resources/Obj3columbiaEngKS.png) | ![obj2_ks_eng_mon](/Resources/Obj3montourEngKS.png) |
+| ![obj3_ks_eng_st](/Graphs/Obj3stateEngKS.png) | ![obj2_ks_eng_col](/Graphs/Obj3columbiaEngKS.png) | ![obj2_ks_eng_mon](/Graphs/Obj3montourEngKS.png) |
 
 ##### Keystone Math
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ks_math_st](/Resources/Obj3stateMathKS.png) | ![obj2_ks_math_col](/Resources/Obj3columbiaMathKS.png) | ![obj2_ks_math_mon](/Resources/Obj3montourMathKS.png) |
+| ![obj3_ks_math_st](/Graphs/Obj3stateMathKS.png) | ![obj2_ks_math_col](/Graphs/Obj3columbiaMathKS.png) | ![obj2_ks_math_mon](/Graphs/Obj3montourMathKS.png) |
 
 ##### Keystone Science
 
 State | Columbia County | Montour County
 :----:|:---------------:|:--------------:
-| ![obj3_ks_sci_st](/Resources/Obj3stateScienceKS.png) | ![obj2_ks_sci_col](/Resources/Obj3columbiaScienceKS.png) | ![obj2_ks_sci_mon](/Resources/Obj3montourSciKS.png) |
+| ![obj3_ks_sci_st](/Graphs/Obj3stateScienceKS.png) | ![obj2_ks_sci_col](/Graphs/Obj3columbiaScienceKS.png) | ![obj2_ks_sci_mon](/Graphs/Obj3montourSciKS.png) |
+
+##### PSSA ANOVA Summary
+
+```
+                      Df Sum Sq Mean Sq F value   Pr(>F)    
+Year                   1    374     374   2.800  0.09447 .  
+as_factor(County)      1     33      33   0.250  0.61746    
+as_factor(District)    5   1664     333   2.490  0.02952 *  
+as_factor(School)     18   5222     290   2.171  0.00303 ** 
+as_factor(Subject)     2   8434    4217  31.558 3.61e-14 ***
+Scored                 1    363     363   2.717  0.09951 .  
+as_factor(Category)    4 533718  133429 998.497  < 2e-16 ***
+Students               1  38800   38800 290.353  < 2e-16 ***
+Residuals           1601 213942     134                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
+##### Keystone ANOVA Summary
+
+```
+                     Df Sum Sq Mean Sq F value   Pr(>F)    
+Year                  1    531     531   4.913  0.02698 *  
+as_factor(County)     1    810     810   7.491  0.00636 ** 
+as_factor(District)   7   5450     779   7.202 2.41e-08 ***
+as_factor(School)     1      0       0   0.002  0.96902    
+as_factor(Subject)    2    281     141   1.301  0.27285    
+Scored                1    199     199   1.837  0.17577    
+as_factor(Category)   4 389399   97350 900.500  < 2e-16 ***
+Students              1  87868   87868 812.788  < 2e-16 ***
+Residuals           706  76323     108                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
 
 When we look at both Keystone and PSSA data, we can clearly see that, COVID-19 has impacted top score average percentages. Especially in 2021, we see a sharp decline in all levels (State, Columbia County and Montour County). However, starting 2022, we see some recovery in percentages in those levels. 
 
 However, there's no linearity between years and average score percentages so as to say, we don't see an upward or downward trend every year. The ANOVA table also indicates the absence of linearity in trend without any significant impact between top score average percentages and year.
 
 
-# Objective 4: Visualizing the averages of scores from each year.
-
-### Grouped by subject.
+# Objective 4: Visualizing the averages of scores from each year grouped by subject.
 
 ##### PSSA
 
-![Obj4PSA](/Resources/Obj4PSA.png) 
+![Obj4PSA](/Graphs/Obj4PSA.png) 
 
 For the PSSA Top Yearly Testing Averages by Subject, we have very different results in comparison to the Keystone analysis. The first thing we noticed was a drastic change in scores compared to the other years for 2017. Both english and science scores significantly suffered at 42.76% and 25.58% respectively. This is interesting since english scores for PSSAs usually averaged around 50 to 60 percent and science averaged around 60 and 70 percent. In 2017, math scores were also higher than usual at 61.1%, when the averages for the other years ranged from 30 to 40 percent. From 2021 to 2022, we can see math and english scores slightly declined from before the pandemic, while science scores remained within the same range as before the pandemic, and even in the case of 2021, were better than before the pandemic at 72.02%. This is interesting considering it is the highest science score average across all years. These scores seem to correlate with the timing of the pandemic and could be the cause of these scores.
 
 ##### Keystone
 
-![Obj4KSA](/Resources/Obj4KSA.png) 
+![Obj4KSA](/Graphs/Obj4KSA.png) 
 
 We see when analyzing the data for Keystone Score averages by subject, the averages of cumulative scores between english, math, and science. Interestingly, english and science seem to have flucuated within 2021 to 2022. On average before these years, english scores lie around 60 and 70 percent. After 2020, these english scores average between 40 and 50 percent. As for science, scores ranged within 50 to 60 percent all the way up to 2021, however, there was a drastic decline in scores in 2022 with the cumulative average scores for science being on 36.14%. With this information, some subject scores definetely could have been impacted by the most recent pandemic.
 
@@ -196,14 +231,14 @@ We see when analyzing the data for Keystone Score averages by subject, the avera
 
 ##### PSSA
 
-![Obj5PS](/Resources/Obj5PS.png)
+![Obj5PS](/Graphs/Obj5PS.png)
 
 When comparing PSSA average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 
 
 ##### Keystone
 
-![Obj5KS](/Resources/Obj5KS.png)
+![Obj5KS](/Graphs/Obj5KS.png)
 
 When comparing Keystone average scores between districts, there seems to be no correlation between districts and has no conclusive evidence towards an affect due to the pandemic.
 
@@ -212,26 +247,26 @@ When comparing Keystone average scores between districts, there seems to be no c
 
 ##### Cohort timeline
 
-![obj6a_timeline](/Resources/Obj6_timeline.png)
+![obj6a_timeline](/Graphs/Obj6_timeline.png)
 - Cohort 1: Grade 8(2016), Grade 11(2019)
 - Cohort 2: Grade 6(2016), Grade 7(2017), Grade 11(2021)
 - Cohort 3: Grade 5(2016), Grade 6(2017), Grade 7(2018), Grade 8(2019), Grade 11(2022)
 
 ##### Cohorts State
 
-![obj6a](/Resources/Obj6b_state.png)
+![obj6a](/Graphs/Obj6b_state.png)
 
 In cohort 1 we see an increase of 16.94 percentage points from grade 8 to grade 11. In cohort 2 we see the grades stay stable between grades 7 and 8 then rising 14.53 percentage points at grade 11. In cohort 3 we see a dip between grades 5 and 6 of 12.55 percent points. Followed by a rebound to almost the grade 5 level in grade 7. For the rest of the grades their percentages stay stable with no real bump between grades 8 and 11 like in previous cohorts suggesting that they may have affected by the pandemic.
 
 ##### Cohorts Columbia
 
-![obj6b_columbia](/Resources/Obj6b_columbia.png)
+![obj6b_columbia](/Graphs/Obj6b_columbia.png)
 
 In cohort 1 Columbia county outperforms the state of pennsylvania. In cohort 2 we're missing grades 5 and 6. Grade 7 begins one point below the state average then overtakes it by a few points in grade 8. In grade 11 Columbia county outperforms the state by around 6 percentage points. Cohort 3 breaks with the state pattern and the grades gradually worsen by up to 4 percentage points in some years. Even so the grades in cohort 3 stay above the state percentages. 
 
 ##### Cohorts Montour
 
-![obj6b_montour](/Resources/Obj6b_montour.png)
+![obj6b_montour](/Graphs/Obj6b_montour.png)
 
 In cohort 1 Montour county outperforms both the state and Columbia county gaining 24.64 percentage points between grades 8 and 11. In cohort 2 the percentages stay stable above the state from grades 6 to 8. In grade 11 there is a 31.10 point jump in their percentages. Cohort 3 is also higher than both the state and columbia county. There is a 7 point dip from grade 5 to 6. Then it slightly ascends from 61.56 in grade 6 to 65.9 in grade 8. Finally, it jumps 16.57 percent points landing at 82.46 outperforming both the state and columbia county.
 
@@ -240,4 +275,4 @@ In cohort 1 Montour county outperforms both the state and Columbia county gainin
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis
 - [Anna T. Schlecht](https://github.com/atschlecht) - Statistical Analysis
 - [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz) - Statistical Analysis
-- [Fletcher](/Resources/fletcher.jpg) - Kadir's Pet Cat
+- [Fletcher](/Graphs/fletcher.jpg) - Kadir's Pet Cat

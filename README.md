@@ -86,18 +86,19 @@ Grade 11 was extracted from the Keystone set.
 
 ##### PSSA
 
-![obj1ps](/Resources/obj1ps.png)
+![Obj1PS](/Resources/Obj1PS.png)
 
 
 
-We see from taking the averages of PSSA scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022.  Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exception of below basic scores, where the State and montour county averages were equal basically.
+We see from taking the averages of top PSSA scores from Columbia and Montour counties, Montour county has the highest average overall of people scoring with top scores in comparision to Columbia county from 2016 to 2022. Montour county score averages also stayed pretty regular before and after the pandemic, ranging with the 60 percent region, with only a minor spike leading towards the beginning of the pandemic. Meanwhile with Columbia county scores, before the pandemic they were averaging within the lower 60 percent range and declined the following years after the pandemic to the lower end of 50 percent scores. This could be a result of the pandemic along with the option of opting out of testing provided to students after the pandemic. 
+
 
 ##### Keystone
 
-![obj1ks](/Resources/obj1ks.png)
+![Obj1KS](/Resources/Obj1KS.png)
 
 
-We see from taking the averages of Keystone scores from Columbia(1) and Montour(2) counties along with the State(0), Columbia county has the highest average overall of people scoring in all five categories with major differences being in the top and proficient categories from 2016 to 2022. Both the Montour county and the state had signicficantly less people scoring within each category, however, Montour county had on average had slightly more people scoring in comparison to the state average with the exceptions of basic and below basic scores.
+We see from taking the averages of top Keystone scores from Columbia and Montour counties, Montour county has the highest average overall of people scoring with top scores in comparision to Columbia county from 2016 to 2022. Montour county score averages also stayed pretty regular before and after the pandemic, ranging with the 80 and 90 percent. Meanwhile with Columbia county scores, before the pandemic they were averaging within the 70 percent range and declined the following years after the pandemic to around 60 and 50 percent. This could be a result of the pandemic along with the option of opting out of testing provided to students after the pandemic. 
 
 
 # Objective 2: How they compare to the state trend since 2016?
@@ -181,43 +182,15 @@ However, there's no linearity between years and average score percentages so as 
 
 ##### PSSA
 
-Math | English | Science
-:---:|:-------:|:-------:
-| ![obj4bpsa](/Resources/obj4bpsa.png) | ![obj4bpsb](/Resources/obj4bpsb.png) | ![obj4bpsc](/Resources/obj4bpsc.png)
+![Obj4PSA](/Resources/Obj4PSA.png) 
 
-Contrary to the Keystone analysis, the data for PSSA score averages by subject, student on average scored highly in Science and English, while having higher below basic and basic scores within Math. Science was the highest subject for both Top and advanced categories, with English remaining the highest subject for proficient scores. 
+For the PSSA Top Yearly Testing Averages by Subject, we have very different results in comparison to the Keystone analysis. The first thing we noticed was a drastic change in scores compared to the other years for 2017. Both english and science scores significantly suffered at 42.76% and 25.58% respectively. This is interesting since english scores for PSSAs usually averaged around 50 to 60 percent and science averaged around 60 and 70 percent. In 2017, math scores were also higher than usual at 61.1%, when the averages for the other years ranged from 30 to 40 percent. From 2021 to 2022, we can see math and english scores slightly declined from before the pandemic, while science scores remained within the same range as before the pandemic, and even in the case of 2021, were better than before the pandemic at 72.02%. This is interesting considering it is the highest science score average across all years. These scores seem to correlate with the timing of the pandemic and could be the cause of these scores.
 
 ##### Keystone
 
-Math | English | Science
-:---:|:-------:|:-------:
-| ![obj4bksa](/Resources/obj4bksa.png) | ![obj4bksb](/Resources/obj4bksb.png) | ![obj4bksc](/Resources/obj4bksc.png)
+![Obj4KSA](/Resources/Obj4KSA.png) 
 
-We see when analyzing the data for Keystone Score averages by subject, students on average scored highly in Math and English while more likely struggling with science. Both in top and advanced categories, more students scored well on the Math sections, with English being the highest in the proficient category. When looking at the scores for below basic, Science has the highest average for those scoring in th is category.
-
-### Grouped by district.
-
-##### PSSA
-
-![obj4cpsa](/Resources/obj4cpsa.png)
-![obj4cpsb](/Resources/obj4cpsb.png)
-![obj4cpsc](/Resources/obj4cpsc.png)
-![obj4cpsd](/Resources/obj4cpsd.png)
-![obj4cpse](/Resources/obj4cpse.png)
-
-We can see when analyzing the PSSA average scores grouped by district, that there is a strong amount of top scores from students especially within the Berwick Area School District and Bloomsburg Area School District. We can see, these two school districts amount of students scoring within the top four categories is considerably higher in comparison to other school district. Otherwise, there is no direct correlation between districts.
-
-
-##### Keystone
-
-![obj4cksa](/Resources/obj4cksa.png)
-![obj4cksb](/Resources/obj4cksb.png)
-![obj4cksc](/Resources/obj4cksc.png)
-![obj4cksd](/Resources/obj4cksd.png)
-![obj4ckse](/Resources/obj4ckse.png)
-
-When looking at the Keystone average scores grouped by district, we can see a strong amount of Top and Proficient scores overall. We can see that the majority of average scores remain in the Top category and that there is an extreme difference when comparing to those who scored below basic and basic. Otherwise, there is no clear correlation between districts directly.
-
+We see when analyzing the data for Keystone Score averages by subject, the averages of cumulative scores between english, math, and science. Interestingly, english and science seem to have flucuated within 2021 to 2022. On average before these years, english scores lie around 60 and 70 percent. After 2020, these english scores average between 40 and 50 percent. As for science, scores ranged within 50 to 60 percent all the way up to 2021, however, there was a drastic decline in scores in 2022 with the cumulative average scores for science being on 36.14%. With this information, some subject scores definetely could have been impacted by the most recent pandemic.
 
 # Objective 5: Compare scores between districts.
 

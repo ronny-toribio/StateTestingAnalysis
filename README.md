@@ -217,13 +217,13 @@ However, there's no linearity between years and average score percentages so as 
 
 ##### PSSA
 
-![Obj4PSA](/Graphs/Obj4PSA.png) 
+![Obj4PSA](/Graphs/Obj4PS.png) 
 
 For the PSSA Top Yearly Testing Averages by Subject, we have very different results in comparison to the Keystone analysis. The first thing we noticed was a drastic change in scores compared to the other years for 2017. Both english and science scores significantly suffered at 42.76% and 25.58% respectively. This is interesting since english scores for PSSAs usually averaged around 50 to 60 percent and science averaged around 60 and 70 percent. In 2017, math scores were also higher than usual at 61.1%, when the averages for the other years ranged from 30 to 40 percent. From 2021 to 2022, we can see math and english scores slightly declined from before the pandemic, while science scores remained within the same range as before the pandemic, and even in the case of 2021, were better than before the pandemic at 72.02%. This is interesting considering it is the highest science score average across all years. These scores seem to correlate with the timing of the pandemic and could be the cause of these scores.
 
 ##### Keystone
 
-![Obj4KSA](/Graphs/Obj4KSA.png) 
+![Obj4KSA](/Graphs/Obj4KS.png) 
 
 We see when analyzing the data for Keystone Score averages by subject, the averages of cumulative scores between english, math, and science. Interestingly, english and science seem to have flucuated within 2021 to 2022. On average before these years, english scores lie around 60 and 70 percent. After 2020, these english scores average between 40 and 50 percent. As for science, scores ranged within 50 to 60 percent all the way up to 2021, however, there was a drastic decline in scores in 2022 with the cumulative average scores for science being on 36.14%. With this information, some subject scores definetely could have been impacted by the most recent pandemic.
 
@@ -259,19 +259,19 @@ Cohort 3    5     6     7     8                11
 
 ##### Cohorts State
 
-![obj6a](/Graphs/Obj6b_state.png)
+![obj6a](/Graphs/Obj6_state.png)
 
 In cohort 1 we see an increase of 16.94 percentage points from grade 8 to grade 11. In cohort 2 we see the grades stay stable between grades 7 and 8 then rising 14.53 percentage points at grade 11. In cohort 3 we see a dip between grades 5 and 6 of 12.55 percent points. Followed by a rebound to almost the grade 5 level in grade 7. For the rest of the grades their percentages stay stable with no real bump between grades 8 and 11 like in previous cohorts suggesting that they may have affected by the pandemic.
 
 ##### Cohorts Columbia
 
-![obj6b_columbia](/Graphs/Obj6b_columbia.png)
+![obj6b_columbia](/Graphs/Obj6_columbia.png)
 
 In cohort 1 Columbia county outperforms the state of pennsylvania. In cohort 2 we're missing grades 5 and 6. Grade 7 begins one point below the state average then overtakes it by a few points in grade 8. In grade 11 Columbia county outperforms the state by around 6 percentage points. Cohort 3 breaks with the state pattern and the grades gradually worsen by up to 4 percentage points in some years. Even so the grades in cohort 3 stay above the state percentages. 
 
 ##### Cohorts Montour
 
-![obj6b_montour](/Graphs/Obj6b_montour.png)
+![obj6b_montour](/Graphs/Obj6_montour.png)
 
 In cohort 1 Montour county outperforms both the state and Columbia county gaining 24.64 percentage points between grades 8 and 11. In cohort 2 the percentages stay stable above the state from grades 6 to 8. In grade 11 there is a 31.10 point jump in their percentages. Cohort 3 is also higher than both the state and columbia county. There is a 7 point dip from grade 5 to 6. Then it slightly ascends from 61.56 in grade 6 to 65.9 in grade 8. Finally, it jumps 16.57 percent points landing at 82.46 outperforming both the state and columbia county.
 
@@ -280,4 +280,4 @@ In cohort 1 Montour county outperforms both the state and Columbia county gainin
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis
 - [Anna T. Schlecht](https://github.com/atschlecht) - Statistical Analysis
 - [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz) - Statistical Analysis
-- [Fletcher](/Graphs/fletcher.jpg) - Kadir's Pet Cat
+- [Fletcher](/Resources/fletcher.jpg) - Kadir's Pet Cat

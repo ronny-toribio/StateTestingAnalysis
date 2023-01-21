@@ -1,7 +1,7 @@
 # @author:  Ronny Toribio
 # @project: State Testing Analysis
-# @file:    testing_data
-# @desc:    Loads and organizes the testing data
+# @file:    data_wrangling.R
+# @desc:    Loads and organizes the testing dataset
 
 library(tidyverse)
 

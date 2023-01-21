@@ -1,4 +1,4 @@
-# @authors: Ronny Toribio, Anna T. Schlecht, Kadir O. Altunel
+# @authors: Ronny Toribio, Anna Schlecht, Kadir Altunel
 # @project: State Testing Analysis
 # @file:    api.R
 # @desc:    Objective plotting functions and utilities
@@ -212,7 +212,7 @@ plot_trends6 = function(ds, county, title, filename){
     geom_label(aes(x = Grade, y = change_trend_height , label = AvgScoreChangeNeg), color = "red", fill = "darkblue") +
     facet_wrap(~Cohort, labeller=labeller(Cohort = c("1" = "Cohort 1", "2" = "Cohort 2", "3" = "Cohort 3"))) +
     labs(title=title) +
-    xlab("Years") + 
+    xlab("Grades") + 
     ylab("Cumulative Average Score (%)")
   plot(pt)
   ggsave(filename, pt, width=plot_width, height=plot_height, units=plot_units)

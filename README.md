@@ -6,15 +6,22 @@
 The aim of this project is to understand the performance of public school students in Columbia and Montour counties in Pennsylvania.
 It was requested by Jeffrey Emanuel, the director of the Foundation of the Columbia Montour Chamber of Commerce.
 Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises and coordinates with us on this project.
-Our team consists of senior data science students [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz), [Anna T. Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-phoenix).
+Our team consists of senior data science students [Kadir Altunel](https://github.com/KadirOrcunAltunel), [Anna Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-phoenix).
 
 ##### There are two major tasks in this project:
 - [Data Wrangling](#data-wrangling) - Worked on by me [data_wrangling.R](/data_wrangling.R)
 - [Project Objectives](#project-objectives) - Worked on by our team [objectives.R](/objectives.R)
 
 
-<!-- Summary -->
+# Abstract
+In our first objective where we view the trends of Columbia and Montour counties we notice the percent of top scores decline from before the pandemic 7.57 percent points in Columbia county and 9.19 in Montour county. For the Keystone tests Columbia county saw a dip of 3.57 points over the 2020 gap. While Montour improved in 2021 by 10 points rebounded back down 10 points. In our second objective we compared the local counties with the state in general. In Pennsylvania as a whole PSSA scores declined 9.85 points after the pandemic. That's 2.28 points worse than Columbia county and roughly the same as Montour county. For the Keystone, Pennsylvania as a whole dipped 2.69 points. Columbia county did slightly worse at 3.57 points. Montour county actually improved by 10.75 points.
 
+<!-- Objectives 3, 4, 5 -->
+
+In our sixth objective we compared the cohorts of students passing from one grade to the next during certain years. By taking the PSSA scores for grades 5-8 and Keystone scores for grade 11. The first Cohort ranges from 2016 to 2019. The second goes from 2016 to 2021. The third cohort goes from 2016 to 2022. For Pennsylvania cohort two improves by 14.5 points. While cohort 3 slightly improves 1.87 points. This suggests a slight lag in the effects of COVID from 2021 to 2022. In Columbia county cohort two also improves this time by 16.93 points while cohort three is slightly decline across all grades. Montour counties cohorts don't seem to be affected at all by the pandemic. Cohort two increases by 31.1 points and cohort three increases by 16.57 points. They end up at 95.51 and 82.46 percent top scores for their cohorts respectively. Showing a slight decrease from one to the next.
+
+
+In doing statistical tests and graphing different views of the top scores arranged by different we generally came to the conclusion that COVID 19 had an effect on test scores after 2020 especially on Science.
 
 # Data Wrangling
 The data sets used in this project are the results from the [PSSA](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/PSSA-Results.aspx) and [Keystone](https://www.education.pa.gov/DataAndReporting/Assessments/Pages/Keystone-Exams-Results.aspx) state tests.
@@ -106,7 +113,7 @@ We see from taking the averages of top Keystone scores from Columbia and Montour
 
 ##### PSSA
 
-State | Columbia County | Montour County
+Pennsylvania | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 ![obj2_ps_st](/Graphs/Obj2statePS.png) | ![obj2_ps_col](/Graphs/Obj2columbiaPS.png) | ![obj2_ps_mon](/Graphs/Obj2montourPS.png)
 
@@ -120,7 +127,7 @@ In Montour County, average score percentage rose all time high in 2019 in observ
 
 ##### Keystone
 
-State | Columbia County | Montour County
+Pennsylvania | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 ![obj2_ks_st](/Graphs/Obj2stateKS.png) | ![obj2_ks_col](/Graphs/Obj2columbiaKS.png) | ![obj2_ks_mon](/Graphs/Obj2montourKS.png)
 
@@ -138,37 +145,37 @@ In Montour County, average score for the top category shows fluctuations for the
 
 ##### PSSA English
 
-State | Columbia County | Montour County
+Pennsylvania | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 | ![obj3_ps_eng_st](/Graphs/Obj3stateEngPS.png) | ![obj2_ps_eng_col](/Graphs/Obj3columbiaEngPS.png) | ![obj2_ps_eng_mon](/Graphs/Obj3montourEngPS.png) |
 
 ##### PSSA Math
 
-State | Columbia County | Montour County
+Pennsylvania | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 | ![obj3_ps_math_st](/Graphs/Obj3stateMathPS.png) | ![obj2_ps_math_col](/Graphs/Obj3columbiaMathPS.png) | ![obj2_ps_math_mon](/Graphs/Obj3montourMathPS.png) |
 
 ##### PSSA Science
 
-State | Columbia County | Montour County
+Pennsylvania | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 | ![obj3_ps_sci_st](/Graphs/Obj3stateSciPS.png) | ![obj2_ps_sci_col](/Graphs/Obj3columbiaSciPS.png) | ![obj2_ps_sci_mon](/Graphs/Obj3montourSciPS.png) |
 
 ##### Keystone English
 
-State | Columbia County | Montour County
+Pennsylvania | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 | ![obj3_ks_eng_st](/Graphs/Obj3stateEngKS.png) | ![obj2_ks_eng_col](/Graphs/Obj3columbiaEngKS.png) | ![obj2_ks_eng_mon](/Graphs/Obj3montourEngKS.png) |
 
 ##### Keystone Math
 
-State | Columbia County | Montour County
+Pennsylvania | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 | ![obj3_ks_math_st](/Graphs/Obj3stateMathKS.png) | ![obj2_ks_math_col](/Graphs/Obj3columbiaMathKS.png) | ![obj2_ks_math_mon](/Graphs/Obj3montourMathKS.png) |
 
 ##### Keystone Science
 
-State | Columbia County | Montour County
+Pennsylvania | Columbia County | Montour County
 :----:|:---------------:|:--------------:
 | ![obj3_ks_sci_st](/Graphs/Obj3stateSciKS.png) | ![obj2_ks_sci_col](/Graphs/Obj3columbiaSciKS.png) | ![obj2_ks_sci_mon](/Graphs/Obj3montourSciKS.png) |
 
@@ -276,6 +283,6 @@ In cohort 1 Montour county outperforms both the state and Columbia county gainin
 
 # Authors
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis
-- [Anna T. Schlecht](https://github.com/atschlecht) - Statistical Analysis
-- [Kadir O. Altunel](https://github.com/KadirOrcunAltunel-zz) - Statistical Analysis
+- [Anna Schlecht](https://github.com/atschlecht) - Statistical Analysis
+- [Kadir Altunel](https://github.com/KadirOrcunAltunel) - Statistical Analysis
 - [Fletcher](/Resources/fletcher.jpg) - Kadir's Pet Cat

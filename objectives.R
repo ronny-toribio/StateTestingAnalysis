@@ -1,4 +1,4 @@
-# @authors: Ronny Toribio, Anna T. Schlecht, Kadir O. Altunel
+# @authors: Ronny Toribio, Anna Schlecht, Kadir Altunel
 # @project: State Testing Analysis
 # @file:    objectives.R
 # @desc:    Project Objectives

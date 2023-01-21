@@ -75,9 +75,7 @@ Grade 11 was extracted from the Keystone set.
 1. [How our local districts in Columbia and Montour Counties are trending since 2016?](#objective-1-how-our-local-districts-in-columbia-and-montour-counties-are-trending-since-2016) (Anna)
 2. [How they compare to the state trend since 2016?](#objective-2-how-they-compare-to-the-state-trend-since-2016) (Kadir)
 3. [Is there any COVID impact we might be able to deduce?](#objective-3-is-there-any-covid-impact-we-might-be-able-to-deduce) (Kadir)
-4. [Visualizing the averages of scores from each year.](#objective-4-visualizing-the-averages-of-scores-from-each-year) (Anna)
-   - [Grouped by subject](#grouped-by-subject)
-   - [Grouped by district](#grouped-by-district)
+4. [Visualizing the averages of scores from each year grouped by subject.](#objective-4-visualizing-the-averages-of-scores-from-each-year-grouped-by-subject) (Anna)
 5. [Compare scores between districts.](#objective-5-compare-scores-between-districts) (Anna)
 6. [Study cohorts as they progress from PSSA to Keystone](#objective-6-cohort-analysis) (Ronny)
 

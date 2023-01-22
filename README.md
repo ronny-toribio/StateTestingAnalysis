@@ -9,7 +9,8 @@ Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises
 Our team consists of senior data science students [Kadir Altunel](https://github.com/KadirOrcunAltunel), [Anna Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-phoenix).
 
 ##### There are three major tasks in this project:
-- [Data Wrangling](#data-wrangling) - Worked on by me [data_wrangling.R](/data_wrangling.R)
+- [Data Wrangling](#data-wrangling) - Worked on by me
+    - [data_wrangling.R](/data_wrangling.R)
 - [Project Objectives](#project-objectives) - Worked on by our team
     - [objectives.R](/objectives.R)
     - [api.R](/api.R)
@@ -295,11 +296,10 @@ I've decided to create a dashboard in R Shiny that could be used to explore ever
 The dashboard works with rstudio and uses the following libraries
 - tidyverse
 - shiny
-- jpeg
 
 To install these libraries in rstudio use the function
 ```r
-install.packages("tidyverse", "shiny", "jpeg")
+install.packages("tidyverse", "shiny")
 ```
 
 ##### Running the dashboard

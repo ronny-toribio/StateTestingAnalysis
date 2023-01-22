@@ -9,14 +9,16 @@ source("api.R")
 
 #PSSA
 plot_trends1(
-  ps,
+  ps %>% filter(County != "State"),
+  county_color_tuple,
   "PSSA Testing Averages in Columbia and Montour Counties",
   "Graphs/Obj1PS.png"
 )
 
 #Keystone
 plot_trends1(
-  ks,
+  ks %>% filter(County != "State"),
+  county_color_tuple,
   "Keystone Testing Averages in Columbia and Montour Counties",
   "Graphs/Obj1KS.png"
 )
@@ -325,4 +327,52 @@ plot_trends6(
   "Graphs/Obj6_montour.png"
 )
 
+# Objective 7: Compare PSSA Grades By Year
 
+# Grade 3
+plot_trends1(
+  ps2 %>% filter(Grade == 3),
+  county_color_list,
+  "PSSA Grade 3 by year",
+  "Graphs/Obj7_3.png"
+)
+
+# Grade 4
+plot_trends1(
+  ps2 %>% filter(Grade == 4),
+  county_color_list,
+  "PSSA Grade 4 by year",
+  "Graphs/Obj7_4.png"
+)
+
+# Grade 5
+plot_trends1(
+  ps2 %>% filter(Grade == 5),
+  county_color_list,
+  "PSSA Grade 5 by year",
+  "Graphs/Obj7_5.png"
+)
+
+# Grade 6
+plot_trends1(
+  ps2 %>% filter(Grade == 6),
+  county_color_list,
+  "PSSA Grade 6 by year",
+  "Graphs/Obj7_6.png"
+)
+
+# Grade 7
+plot_trends1(
+  ps2 %>% filter(Grade == 7),
+  county_color_list,
+  "PSSA Grade 7 by year",
+  "Graphs/Obj7_7.png"
+)
+
+# Grade 8
+plot_trends1(
+  ps2 %>% filter(Grade == 8),
+  county_color_list,
+  "PSSA Grade 8 by year",
+  "Graphs/Obj7_8.png"
+)

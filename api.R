@@ -90,9 +90,9 @@ calc_changes_trend_by_cohort = function(t){
 }
 
 # plotting functions
-plot_trends1 = function(ds, title, filename){
+plot_trends1 = function(ds, colors, title, filename){
   t = ds %>%
-    filter(County != "State" & Category == "Top") %>%
+    filter(Category == "Top") %>%
     select(Year, County, Category, Students, Scored) %>%
     group_by(Year, County) %>%
     summarise(across(c(Scored, Students), sum)) %>%
@@ -100,7 +100,7 @@ plot_trends1 = function(ds, title, filename){
   t = calc_changes_trend_by_county(t)
   pt = t %>%
     ggplot(aes(x = Year, y = AvgScore, fill = County)) +
-    scale_fill_manual(values=county_color_tuple) +
+    scale_fill_manual(values = colors) +
     geom_col(position = position_dodge2(0.9)) +
     geom_label(aes(x = Year, y = AvgScore-1.5, label = AvgScoreLabel), position = position_dodge2(position_dodge_width), color="white") +
     geom_label(aes(x = Year, y=change_trend_height , label = AvgScoreChangePos), position = position_dodge2(position_dodge_width), color="green", fill="darkblue") +
@@ -367,3 +367,9 @@ cohorts$County = as_factor(cohorts$County)
 cohorts$Category = as_factor(cohorts$Category)
 cohorts$Grade = as_factor(cohorts$Grade)
 cohorts$Cohort = as.integer(cohorts$Cohort)
+
+# PSSA with Grades
+ps2 = read_csv("PSSA/pssa2.csv")
+ps2$County = as_factor(ps2$County)
+ps2$Category = as_factor(ps2$Category)
+

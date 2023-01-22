@@ -305,7 +305,8 @@ ps = ps %>% mutate(Students=ceiling(Score /100 * Scored))
 
 # Create 2 PSSA data sets with and without Grades
 ps2 = ps
-ps = ps %>% filter(Grade=="Total") %>% select(-Grade)
+ps = ps %>% filter(Grade == "Total") %>% select(-Grade)
+ps2 = ps2 %>% filter(Grade != "Total")
 
 # Organize columns for PSSA
 ps = ps %>% select(Year, County, District, School, Subject, Scored, Category, Score, Students)
@@ -315,7 +316,7 @@ ps = ps %>% filter(!is.na(Score))
 
 # Export PSSA data to CSV for R and XLSX for tableau
 write_csv(ps, "PSSA/pssa.csv")
-
+write_csv(ps2, "PSSA/pssa2.csv")
 
 # Cohorts
 cohort.1 = bind_rows(

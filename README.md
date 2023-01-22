@@ -96,15 +96,13 @@ Grade 11 was extracted from the Keystone set.
 4. [Visualizing the averages of scores from each year grouped by subject.](#objective-4-visualizing-the-averages-of-scores-from-each-year-grouped-by-subject) (Anna)
 5. [Compare scores between districts.](#objective-5-compare-scores-between-districts) (Anna)
 6. [Study cohorts as they progress from PSSA to Keystone](#objective-6-cohort-analysis) (Ronny)
-
+7. [Objective 7: Compare PSSA Grades By Year](#objective-7-compare-pssa-grades-by-year) (Ronny)
 
 # Objective 1: How our local districts in Columbia and Montour Counties are trending since 2016?
 
 ##### PSSA
 
 ![Obj1PS](/Graphs/Obj1PS.png)
-
-
 
 We see from taking the averages of top PSSA scores from Columbia and Montour counties, Montour county has the highest average overall of people scoring with top scores in comparision to Columbia county from 2016 to 2022. Montour county score averages also stayed pretty regular before and after the pandemic, ranging with the 60 percent region, with only a minor spike leading towards the beginning of the pandemic. Meanwhile with Columbia county scores, before the pandemic they were averaging within the lower 60 percent range and declined the following years after the pandemic to the lower end of 50 percent scores. This could be a result of the pandemic along with the option of opting out of testing provided to students after the pandemic. 
 
@@ -113,41 +111,40 @@ We see from taking the averages of top PSSA scores from Columbia and Montour cou
 
 ![Obj1KS](/Graphs/Obj1KS.png)
 
-
 We see from taking the averages of top Keystone scores from Columbia and Montour counties, Montour county has the highest average overall of people scoring with top scores in comparision to Columbia county from 2016 to 2022. Montour county score averages also stayed pretty regular before and after the pandemic, ranging with the 80 and 90 percent. Meanwhile with Columbia county scores, before the pandemic they were averaging within the 70 percent range and declined the following years after the pandemic to around 60 and 50 percent. This could be a result of the pandemic along with the option of opting out of testing provided to students after the pandemic. 
 
 
 # Objective 2: How they compare to the state trend since 2016?
 
-
-
-
 ##### PSSA
-
-Pennsylvania | Columbia County | Montour County
-:----:|:---------------:|:--------------:
-![obj2_ps_st](/Graphs/Obj2statePS.png) | ![obj2_ps_col](/Graphs/Obj2columbiaPS.png) | ![obj2_ps_mon](/Graphs/Obj2montourPS.png)
 
 PSSA data also shows similar observations all levels for the top category.
 
+![obj2_ps_st](/Graphs/Obj2statePS.png)
+
 For state level, average score percentage dipped in 2017 and went back to 2016 levels in 2018 and 2019. There was a decline in 2021 and a slight increase in 2022
 
+![obj2_ps_col](/Graphs/Obj2columbiaPS.png)
+
 In Columbia County, average score percentage stayed steady from 2016 to 2019. There was a decline in percentage in 2021 which showed some recovery in 2022.
+
+![obj2_ps_mon](/Graphs/Obj2montourPS.png)
 
 In Montour County, average score percentage rose all time high in 2019 in observed years (2016-2022). There was a sharp decline in 2021 and some recovery in 2022. 
 
 ##### Keystone
 
-Pennsylvania | Columbia County | Montour County
-:----:|:---------------:|:--------------:
-![obj2_ks_st](/Graphs/Obj2stateKS.png) | ![obj2_ks_col](/Graphs/Obj2columbiaKS.png) | ![obj2_ks_mon](/Graphs/Obj2montourKS.png)
-
-
 When we look at the graphs, we see that top category, which combines advanced and proficient categories, fluctuates for every levels (State, Montour County, and Columbia County).
+
+![obj2_ks_st](/Graphs/Obj2stateKS.png)
 
 For state level, average score percentage for top category is trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and then started declining again for the rest of the years.
 
+![obj2_ks_col](/Graphs/Obj2columbiaKS.png)
+
 In Columbia County, average score for the top category is also trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and stayed steady for 2019. However, it started to dip in 2021 and 2022
+
+![obj2_ks_mon](/Graphs/Obj2montourKS.png)
 
 In Montour County, average score for the top category shows fluctuations for the years observed. The average score percentage dipped in 2017 only to rise and dip again in 2018 and 2019 respectively. The same pattern of rise and dip was also observed in 2021 and 2022.
 
@@ -275,21 +272,41 @@ Cohort 3    5     6     7     8                11
 
 ##### Cohorts State
 
-![obj6a](/Graphs/Obj6_state.png)
+![obj6_state](/Graphs/Obj6_state.png)
 
 In cohort 1 we see an increase of 16.94 percentage points from grade 8 to grade 11. In cohort 2 we see the grades stay stable between grades 7 and 8 then rising 14.53 percentage points at grade 11. In cohort 3 we see a dip between grades 5 and 6 of 12.55 percent points. Followed by a rebound to almost the grade 5 level in grade 7. For the rest of the grades their percentages stay stable with no real bump between grades 8 and 11 like in previous cohorts suggesting that they may have affected by the pandemic.
 
 ##### Cohorts Columbia
 
-![obj6b_columbia](/Graphs/Obj6_columbia.png)
+![obj6_columbia](/Graphs/Obj6_columbia.png)
 
 In cohort 1 Columbia county outperforms the state of pennsylvania. In cohort 2 we're missing grades 5 and 6. Grade 7 begins one point below the state average then overtakes it by a few points in grade 8. In grade 11 Columbia county outperforms the state by around 6 percentage points. Cohort 3 breaks with the state pattern and the grades gradually worsen by up to 4 percentage points in some years. Even so the grades in cohort 3 stay above the state percentages. 
 
 ##### Cohorts Montour
 
-![obj6b_montour](/Graphs/Obj6_montour.png)
+![obj6_montour](/Graphs/Obj6_montour.png)
 
 In cohort 1 Montour county outperforms both the state and Columbia county gaining 24.64 percentage points between grades 8 and 11. In cohort 2 the percentages stay stable above the state from grades 6 to 8. In grade 11 there is a 31.10 point jump in their percentages. Cohort 3 is also higher than both the state and columbia county. There is a 7 point dip from grade 5 to 6. Then it slightly ascends from 61.56 in grade 6 to 65.9 in grade 8. Finally, it jumps 16.57 percent points landing at 82.46 outperforming both the state and columbia county.
+
+# Objective 7: Compare PSSA Grades By Year
+
+![obj7_g3](/Graphs/Obj7_3.png)
+
+
+![obj7_g4](/Graphs/Obj7_4.png)
+
+
+![obj7_g5](/Graphs/Obj7_5.png)
+
+
+![obj7_g6](/Graphs/Obj7_6.png)
+
+
+![obj7_g7](/Graphs/Obj7_7.png)
+
+
+![obj7_g8](/Graphs/Obj7_8.png)
+
 
 # R Shiny Dashboard
 

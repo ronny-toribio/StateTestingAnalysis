@@ -8,10 +8,15 @@ It was requested by Jeffrey Emanuel, the director of the Foundation of the Colum
 Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises and coordinates with us on this project.
 Our team consists of senior data science students [Kadir Altunel](https://github.com/KadirOrcunAltunel), [Anna Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-phoenix).
 
-##### There are two major tasks in this project:
+##### There are three major tasks in this project:
 - [Data Wrangling](#data-wrangling) - Worked on by me [data_wrangling.R](/data_wrangling.R)
-- [Project Objectives](#project-objectives) - Worked on by our team [objectives.R](/objectives.R)
-
+- [Project Objectives](#project-objectives) - Worked on by our team
+    - [objectives.R](/objectives.R)
+    - [api.R](/api.R)
+- [Dashboard](#r-shiny-dashboard) - Worked on by me
+    - [app.R](/app.R)
+    - [ui.R](/ui.R)
+    - [server.R](/server.R)
 
 # Abstract
 In our first objective where we view the trends of Columbia and Montour counties we notice the percent of top scores decline from before the pandemic 7.57 percent points in Columbia county and 9.19 in Montour county. For the Keystone tests Columbia county saw a dip of 3.57 points over the 2020 gap. While Montour improved in 2021 by 10 points rebounded back down 10 points. In our second objective we compared the local counties with the state in general. In Pennsylvania as a whole PSSA scores declined 9.85 points after the pandemic. That's 2.28 points worse than Columbia county and roughly the same as Montour county. For the Keystone, Pennsylvania as a whole dipped 2.69 points. Columbia county did slightly worse at 3.57 points. Montour county actually improved by 10.75 points.
@@ -280,6 +285,31 @@ In cohort 1 Columbia county outperforms the state of pennsylvania. In cohort 2 w
 
 In cohort 1 Montour county outperforms both the state and Columbia county gaining 24.64 percentage points between grades 8 and 11. In cohort 2 the percentages stay stable above the state from grades 6 to 8. In grade 11 there is a 31.10 point jump in their percentages. Cohort 3 is also higher than both the state and columbia county. There is a 7 point dip from grade 5 to 6. Then it slightly ascends from 61.56 in grade 6 to 65.9 in grade 8. Finally, it jumps 16.57 percent points landing at 82.46 outperforming both the state and columbia county.
 
+# R Shiny Dashboard
+
+![Dashboard](/Resources/dashboard.png)
+
+I've decided to create a dashboard in R Shiny that could be used to explore every objective and interactively change their values. The dashboard can be launched in R Studio and viewed in your web browser. It allows you to create custom views not shown in this README.
+
+##### Setup
+The dashboard works with rstudio and uses the following libraries
+- tidyverse
+- shiny
+- jpeg
+
+To install these libraries in rstudio use the function
+```r
+install.packages("tidyverse", "shiny", "jpeg")
+```
+
+##### Running the dashboard
+Once you have the necessary libraries installed you can run the following
+```r
+library(shiny)
+
+runGitHub("StateTestingAnalysis", "ronny-phoenix")
+
+```
 
 # Authors
 - [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis

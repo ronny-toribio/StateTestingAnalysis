@@ -27,7 +27,8 @@ ui = fixedPage(
          "Objective 4 All by subjects" = 4,
          "Objective 5 All by districts" = 5,
          "Objective 6 Cohorts by counties" = 6,
-         "Cohorts Timeline" = 7
+         "Objective 6 Cohorts Timeline" = 6.5,
+         "Objective 7 PSSA Grades by year" = 7
         ),
         selected = 1
       ),
@@ -41,11 +42,19 @@ ui = fixedPage(
         selected = 1
       ),
       conditionalPanel(
-        condition = "input.objectives > 5",
+        condition = "input.objectives == 6 || input.objectives == 6.5",
         radioButtons(
           inputId = "datasets_obj6", 
           label = "Dataset",
           choices = list("Cohorts")
+        )
+      ),
+      conditionalPanel(
+        condition = "input.objectives == 7",
+        radioButtons(
+          inputId = "datasets_obj7", 
+          label = "Dataset",
+          choices = list("PSSA with grades")
         )
       ),
       conditionalPanel(
@@ -106,7 +115,7 @@ ui = fixedPage(
         selected = "Top"
       ),
       conditionalPanel(
-        condition = "input.objectives > 5",
+        condition = "input.objectives == 6 || input.objectives == 6.5",
         checkboxGroupInput(
           inputId = "grades",
           label="Grades",
@@ -118,6 +127,22 @@ ui = fixedPage(
             "Grade 11" = 11
           ),
           selected = c(5, 6, 7, 8, 11)
+        )
+      ),
+      conditionalPanel(
+        condition = "input.objectives == 7",
+        radioButtons(
+          inputId = "grades_radio",
+          label="Grades",
+          choices = list(
+            "Grade 3" = 3,
+            "Grade 4" = 4,
+            "Grade 5" = 5,
+            "Grade 6" = 6,
+            "Grade 7" = 7,
+            "Grade 8" = 8
+          ),
+          selected = 3
         )
       )
     ),

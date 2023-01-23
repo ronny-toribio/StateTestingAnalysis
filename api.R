@@ -348,7 +348,7 @@ gen_cohorts_timeline = function(ds){
     geom_rect(aes(xmin = Year, xmax = Year + 1, ymin = Cohort - 0.5, ymax = Cohort, fill = Grade)) +
     geom_text(aes(x = Year, y = Cohort, label = "")) +
     theme(axis.text.y = element_text(vjust = 2)) +
-    labs(title = "Cohorts Timeline")
+    labs(title = "Objective 6 Cohorts Timeline")
   pt
 }
 

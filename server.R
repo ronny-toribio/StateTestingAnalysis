@@ -47,6 +47,7 @@ server = function(input, output){
   subjects_radio = reactive(input$subjects_radio)
   categories = reactive(input$categories)
   grades = reactive(input$grades)
+  grades_radio = reactive(input$grades_radio)
   
   # Graphs
   output$graph = renderPlot({
@@ -88,22 +89,22 @@ server = function(input, output){
         gen_empty_image()
       }
       else if(obj_var == 1){
-        gen_trends1(ds, get_county_colors(counties_local()), "Objective 1")
+        gen_trends1(ds, get_county_colors(counties_local()), "Objective 1 Local counties")
       }
       else if(obj_var == 2){
-        gen_trends2(ds, get_county_colors(counties_radio()), "Objective 2")
+        gen_trends2(ds, get_county_colors(counties_radio()), "Objective 2 All counties")
       }
       else if(obj_var == 3){
-        gen_trends3(ds, get_county_colors(counties_radio()), "Objective 3")
+        gen_trends3(ds, get_county_colors(counties_radio()), "Objective 3 Counties by subjects")
       }
       else if(obj_var == 4){
-        gen_trends4(ds, "Objective 4")
+        gen_trends4(ds, "Objective 4 All by subjects")
       }
       else if(obj_var == 5){
-        gen_trends5(ds, "Objective 5")
+        gen_trends5(ds, "Objective 5 All by districts")
       }
     }
-    else if(obj_var > 5){
+    else if(obj_var == 6 || obj_var == 6.5){
       ds = cohorts %>%
         filter(Year %in% years_range(years())) %>%
         filter(County %in% counties_radio()) %>%
@@ -114,10 +115,24 @@ server = function(input, output){
         gen_empty_image()
       }
       else if(obj_var == 6){
-        gen_trends6(ds, "Objective 6")
+        gen_trends6(ds, "Objective 6 Cohorts by counties")
       }
-      else if(obj_var == 7){
+      else if(obj_var == 6.5){
         gen_cohorts_timeline(ds)
+      }
+    }
+    else if(obj_var == 7){
+      ds = ps2 %>%
+        filter(Year %in% years_range(years())) %>%
+        filter(County %in% counties()) %>%
+        filter(Subject %in% subjects()) %>%
+        filter(Category %in% categories()) %>%
+        filter(Grade %in% grades_radio())
+      if(length(ds$Score) == 0){
+        gen_empty_image()
+      }
+      else{
+        gen_trends1(ds, get_county_colors(counties()), "Objective 7 PSSA Grades by year")
       }
     }
   })
@@ -136,22 +151,26 @@ server = function(input, output){
     }
     else if(obj_var == 2){
       if(datasets() == 1){
-        p("PSSA data also shows similar observations all levels for the top category.
-
-For state level, average score percentage dipped in 2017 and went back to 2016 levels in 2018 and 2019. There was a decline in 2021 and a slight increase in 2022
-
-In Columbia County, average score percentage stayed steady from 2016 to 2019. There was a decline in percentage in 2021 which showed some recovery in 2022.
-
-In Montour County, average score percentage rose all time high in 2019 in observed years (2016-2022). There was a sharp decline in 2021 and some recovery in 2022.", style = "width:14in")
+        if("State" == counties_radio()){
+          p("For state level, average score percentage dipped in 2017 and went back to 2016 levels in 2018 and 2019. There was a decline in 2021 and a slight increase in 2022", style = "width:14in")
+        }
+        else if("Columbia" == counties_radio()){
+          p("In Columbia County, average score percentage stayed steady from 2016 to 2019. There was a decline in percentage in 2021 which showed some recovery in 2022.", style = "width:14in")
+        }
+        else if("Montour" == counties_radio()){
+          p("In Montour County, average score percentage rose all time high in 2019 in observed years (2016-2022). There was a sharp decline in 2021 and some recovery in 2022.", style = "width:14in")
+        }
       }
       else{
-        p("When we look at the graphs, we see that top category, which combines advanced and proficient categories, fluctuates for every levels (State, Montour County, and Columbia County).
-
-For state level, average score percentage for top category is trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and then started declining again for the rest of the years.
-
-In Columbia County, average score for the top category is also trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and stayed steady for 2019. However, it started to dip in 2021 and 2022
-
-In Montour County, average score for the top category shows fluctuations for the years observed. The average score percentage dipped in 2017 only to rise and dip again in 2018 and 2019 respectively. The same pattern of rise and dip was also observed in 2021 and 2022.", style = "width:14in")
+        if("State" == counties_radio()){
+          p("For state level, average score percentage for top category is trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and then started declining again for the rest of the years.", style = "width:14in")
+        }
+        else if("Columbia" == counties_radio()){
+          p("In Columbia County, average score for the top category is also trending lower than its high in 2016. We see that average score percentage declined in 2017 and rose in 2018 and stayed steady for 2019. However, it started to dip in 2021 and 2022", style = "width:14in")
+        }
+        else if("Montour" == counties_radio()){
+          p("In Montour County, average score for the top category shows fluctuations for the years observed. The average score percentage dipped in 2017 only to rise and dip again in 2018 and 2019 respectively. The same pattern of rise and dip was also observed in 2021 and 2022.", style = "width:14in")
+        }
       }
     }
     else if(obj_var == 3){
@@ -186,13 +205,33 @@ However, there's no linearity between years and average score percentages so as 
         p("In cohort 1 Montour county outperforms both the state and Columbia county gaining 24.64 percentage points between grades 8 and 11. In cohort 2 the percentages stay stable above the state from grades 6 to 8. In grade 11 there is a 31.10 point jump in their percentages. Cohort 3 is also higher than both the state and columbia county. There is a 7 point dip from grade 5 to 6. Then it slightly ascends from 61.56 in grade 6 to 65.9 in grade 8. Finally, it jumps 16.57 percent points landing at 82.46 outperforming both the state and columbia county.", style = "width:14in")
       }
     }
-    else if(obj_var == 7){
+    else if(obj_var == 6.5){
       pre("            |<------PSSA----->|
                               |<---Keystone--->|
          2016, 2017, 2018, 2019, 2020, 2021, 2022
 Cohort 1    8                11
 Cohort 2    6     7     8                11
 Cohort 3    5     6     7     8                11", style = "width:14in")
+    }
+    else if(obj_var == 7){
+      if(grades_radio() == 3){
+        p("Before the pandemic, Grade 3 in Columbia county held steady between 69.04 and 73.13 percent. The score dropped by 7.61 percent and then held steady. In Montour county grade 3 was steadily rising before the pandemic and dropped by 8.58 from 2021 to 2022. Columbia and Montour counties regularly outperformed the state.", style="width:14in")
+      }
+      else if(grades_radio() == 4){
+        p("Columbia county held steady before the pandemic dropping by 6.14 percent after the pandemic and rebounding by 2.68 percent in 2022. Montour county performed slightly better than Columbia county. It dropped 12.38 points after the pandemic and rose 3.43 percent the next year. Both counties outperformed the state.", style="width:14in")
+      }
+      else if(grades_radio() == 5){
+        p("In grade 5 Columbia county was trending downward from 2016 through the pandemic and rose a year later in 2022 by 2.61 points. Montour county was on an upward trajectory outperforming both the state and Columbia county peeking at 77.35 percent before the pandemic. That's 22.23 percent above Columbia county in 2019 and 26.60 percent above the state. After the pandemic Montour county dropped by 3.58 points to land at 64.29 percent and still outperforming both the state and Columbia county.", style="width:14in")
+      }
+      else if(grades_radio() == 6){
+        p("The grade 6 data for Columbia county is missing for 2016. From 2017 to 2019 both Columbia and Montour counties rise and fall roughly at the same rates with Montour county slightly above Columbia county slightly and both outperforming the state. After the pandemic Columbia county fell 10.57 points landing at 47.52 percent. Montour county fell by 7.99 points landing at 52.86 percent. In 2022 Columbia county rose 8.24 percent landing on 55.76 percent and outperforming Montour county by 3.70 percent which is exceptionally rare.", style="width:14in")
+      }
+      else if(grades_radio() == 7){
+        p("The grade 7 data for Columbia county in 2016 is missing. From 2017 to 2018 the Columbia county rose 9.64 percent and barely increased the next year. After the pandemic it dropped significantly by 11.34 points in 2021 then rose by 2.57 points. Montour county held steady the rose to 66.19 percent before the pandemic. After the pandemic it dropped by 8.86 percent and rose by 2.17 percent in 2022. Both counties outperformed the state except in 2017 where Columbia county was below the state.", style="width:14in")
+      }
+      else if(grades_radio() == 8){
+        p("In Columbia county grade 8 begins at 55.97 percent for 2016. The data for 2017 is missing. In 2018 it is down 3.33 percent before rising 3.45 in 2019. It loses 7.31 percent after the pandemic and stays there. Montour county begins at 57.12 percent in 2016 dips by 3.22 and rises to 61.42 percent. Before the pandemic it stands at 65.9 before falling sharply by 12.8 percent. The next year it spikes up to 68.66 massively outperforming the state and Columbia county", style="width:14in")
+      }
     }
   })
 }

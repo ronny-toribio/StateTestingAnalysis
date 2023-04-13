@@ -6,7 +6,7 @@
 The aim of this project is to understand the performance of public school students in Columbia and Montour counties in Pennsylvania.
 It was requested by Jeffrey Emanuel, the director of the Foundation of the Columbia Montour Chamber of Commerce.
 Our professor Dr. Calhoun, of the Bloomsburg University of Pennsylvania, advises and coordinates with us on this project.
-Our team consists of senior data science students [Kadir Altunel](https://github.com/KadirOrcunAltunel), [Anna Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-phoenix). A PDF version of this README is available here [StateTestingAnalysis.pdf](/Documents/StateTestingAnalysis.pdf).
+Our team consists of senior data science students [Kadir Altunel](https://github.com/KadirOrcunAltunel), [Anna Schlecht](https://github.com/atschlecht) and myself [Ronny Toribio](https://github.com/ronny-toribio). A PDF version of this README is available here [StateTestingAnalysis.pdf](/Documents/StateTestingAnalysis.pdf).
 
 ##### There are three major tasks in this project:
 - [Data Wrangling](#data-wrangling) - Worked on by me
@@ -335,12 +335,12 @@ Once you have the necessary libraries installed you can run the following
 ```r
 library(shiny)
 
-runGitHub("StateTestingAnalysis", "ronny-phoenix")
+runGitHub("StateTestingAnalysis", "ronny-toribio")
 
 ```
 
 # Authors
-- [Ronny Toribio](https://github.com/ronny-phoenix) - Project lead, Data Wrangling, Statistical Analysis
+- [Ronny Toribio](https://github.com/ronny-toribio) - Project lead, Data Wrangling, Statistical Analysis
 - [Anna Schlecht](https://github.com/atschlecht) - Statistical Analysis
 - [Kadir Altunel](https://github.com/KadirOrcunAltunel) - Statistical Analysis
 - [Fletcher](/Resources/fletcher.jpg) - Kadir's Pet Cat
